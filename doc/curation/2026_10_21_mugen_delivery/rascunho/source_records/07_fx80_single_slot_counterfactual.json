@@ -1,0 +1,799 @@
+{
+  "schema": "fx80_single_slot_counterfactual.v1",
+  "run_id": "fight_base_ryu_fx80_single_slot_counterfactual_20261021_r1",
+  "status": "measured_from_existing_owner_map",
+  "claim_ceiling": "diagnostic_only_no_product_promotion",
+  "budget_decision": "nao cabe",
+  "perceptual_axis": "not_measured",
+  "visual_quality_approved": false,
+  "new_rom": false,
+  "build_version": null,
+  "replaces_principal_rom": false,
+  "promotion_performed": false,
+  "official_emulator_gate_changed": false,
+  "h40_limits": {
+    "sprites_per_scanline": 20,
+    "sprite_width_sum_pixels": 320,
+    "over_when": "greater_than_limit"
+  },
+  "method": "Subtract recorded per-slot scanline counts from the same-frame whole-scene profile. Slot lines add to the FX80 profile and FX80 plus non-FX80 add to the scene on every line. Omitting a slot removes only that slot's sprites; remaining positions stay the recorded ones.",
+  "additivity_mismatches": 0,
+  "source_capture": {
+    "rom_path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/profiling/fight_base_ryu_fx80_owner_map_20261016_r1_attempt03/rom.bin",
+    "rom_sha256": "285d853d4be05f19db48203830cb06fa0b83a49828e59d574d045e16c6acd5bd",
+    "sram_path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/evidence/fight_base_ryu_fx80_owner_map_20261016_r1/frame1200_attempt03/home/.local/share/blastem/rom/save.sram",
+    "sram_sha256": "5c325be13c1cd9362f7271a8a606b39ca534e40ab8b0ab452bd583aeb1e80ecb",
+    "parser_status": "parsed",
+    "owner_map_status": "validated",
+    "emulator_status": "blocked",
+    "emulator_blockers": [
+      "debugger_timeout"
+    ],
+    "emulator_note": "The 2026-10-16 collector stayed blocked after FORGE_SNAPSHOT_COMPLETE. This pass uses the parser-validated SRAM profiles and does not relabel that capture.",
+    "line_profile_report": "out/evidence/fight_base_ryu_fx80_owner_map_20261016_r1/frame1200_attempt03/measurement_parse/fx80_owner_map_with_line_profiles_parse_report.json"
+  },
+  "stable_policy_passes_all_five_checkpoints": {
+    "all_active": false,
+    "oldest_only": false,
+    "newest_only": false,
+    "none": true
+  },
+  "oracle_best_single_slot_max_width_excess_pixels": 24,
+  "samples": [
+    {
+      "scene_frame": 321,
+      "fight_tick": 322,
+      "active": [
+        {
+          "slot": 0,
+          "elem": 1,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 172,
+              "y": 204,
+              "x_mod_8": 4,
+              "sat_entries": 10
+            },
+            {
+              "part": 1,
+              "x": 207,
+              "y": 300,
+              "x_mod_8": 7,
+              "sat_entries": 4
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "elem": 0,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 195,
+              "y": 242,
+              "x_mod_8": 3,
+              "sat_entries": 8
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "elem": 0,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 199,
+              "y": 246,
+              "x_mod_8": 7,
+              "sat_entries": 8
+            }
+          ]
+        }
+      ],
+      "policies": [
+        {
+          "policy": "all_active",
+          "keep_slots": [
+            0,
+            1,
+            2
+          ],
+          "peak": {
+            "sprites": 21,
+            "width_pixels": 520,
+            "line_0_based": 139
+          },
+          "over_limit_lines": {
+            "sprite_lines": 5,
+            "width_lines": 39
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "oldest_only",
+          "keep_slots": [
+            0
+          ],
+          "peak": {
+            "sprites": 15,
+            "width_pixels": 376,
+            "line_0_based": 141
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 6
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "newest_only",
+          "keep_slots": [
+            2
+          ],
+          "peak": {
+            "sprites": 13,
+            "width_pixels": 312,
+            "line_0_based": 141
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        },
+        {
+          "policy": "none",
+          "keep_slots": [],
+          "peak": {
+            "sprites": 10,
+            "width_pixels": 240,
+            "line_0_based": 141
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        }
+      ],
+      "better_single_slot": {
+        "policy": "newest_only",
+        "keep_slots": [
+          2
+        ],
+        "width_excess_pixels": 0,
+        "within_h40": true,
+        "hottest_overlap_lines": []
+      }
+    },
+    {
+      "scene_frame": 414,
+      "fight_tick": 324,
+      "active": [
+        {
+          "slot": 0,
+          "elem": 2,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 173,
+              "y": 203,
+              "x_mod_8": 5,
+              "sat_entries": 8
+            },
+            {
+              "part": 1,
+              "x": 160,
+              "y": 267,
+              "x_mod_8": 0,
+              "sat_entries": 10
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "elem": 1,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 172,
+              "y": 201,
+              "x_mod_8": 4,
+              "sat_entries": 10
+            },
+            {
+              "part": 1,
+              "x": 207,
+              "y": 297,
+              "x_mod_8": 7,
+              "sat_entries": 4
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "elem": 1,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 176,
+              "y": 205,
+              "x_mod_8": 0,
+              "sat_entries": 10
+            },
+            {
+              "part": 1,
+              "x": 211,
+              "y": 301,
+              "x_mod_8": 3,
+              "sat_entries": 4
+            }
+          ]
+        }
+      ],
+      "policies": [
+        {
+          "policy": "all_active",
+          "keep_slots": [
+            0,
+            1,
+            2
+          ],
+          "peak": {
+            "sprites": 24,
+            "width_pixels": 632,
+            "line_0_based": 140
+          },
+          "over_limit_lines": {
+            "sprite_lines": 15,
+            "width_lines": 62
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "oldest_only",
+          "keep_slots": [
+            0
+          ],
+          "peak": {
+            "sprites": 13,
+            "width_pixels": 336,
+            "line_0_based": 140
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 10
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "newest_only",
+          "keep_slots": [
+            2
+          ],
+          "peak": {
+            "sprites": 15,
+            "width_pixels": 376,
+            "line_0_based": 140
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 8
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "none",
+          "keep_slots": [],
+          "peak": {
+            "sprites": 10,
+            "width_pixels": 240,
+            "line_0_based": 140
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        }
+      ],
+      "better_single_slot": {
+        "policy": "oldest_only",
+        "keep_slots": [
+          0
+        ],
+        "width_excess_pixels": 16,
+        "within_h40": false,
+        "hottest_overlap_lines": [
+          {
+            "line_0_based": 139,
+            "non_fx80_sprites": 10,
+            "non_fx80_width_pixels": 240,
+            "slot_sprites": 3,
+            "slot_width_pixels": 96,
+            "combined_sprites": 13,
+            "combined_width_pixels": 336,
+            "width_excess_pixels": 16
+          },
+          {
+            "line_0_based": 140,
+            "non_fx80_sprites": 10,
+            "non_fx80_width_pixels": 240,
+            "slot_sprites": 3,
+            "slot_width_pixels": 96,
+            "combined_sprites": 13,
+            "combined_width_pixels": 336,
+            "width_excess_pixels": 16
+          },
+          {
+            "line_0_based": 148,
+            "non_fx80_sprites": 7,
+            "non_fx80_width_pixels": 168,
+            "slot_sprites": 5,
+            "slot_width_pixels": 160,
+            "combined_sprites": 12,
+            "combined_width_pixels": 328,
+            "width_excess_pixels": 8
+          },
+          {
+            "line_0_based": 149,
+            "non_fx80_sprites": 7,
+            "non_fx80_width_pixels": 168,
+            "slot_sprites": 5,
+            "slot_width_pixels": 160,
+            "combined_sprites": 12,
+            "combined_width_pixels": 328,
+            "width_excess_pixels": 8
+          },
+          {
+            "line_0_based": 150,
+            "non_fx80_sprites": 7,
+            "non_fx80_width_pixels": 168,
+            "slot_sprites": 5,
+            "slot_width_pixels": 160,
+            "combined_sprites": 12,
+            "combined_width_pixels": 328,
+            "width_excess_pixels": 8
+          }
+        ]
+      }
+    },
+    {
+      "scene_frame": 507,
+      "fight_tick": 326,
+      "active": [
+        {
+          "slot": 0,
+          "elem": 3,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 157,
+              "y": 202,
+              "x_mod_8": 5,
+              "sat_entries": 11
+            },
+            {
+              "part": 1,
+              "x": 168,
+              "y": 298,
+              "x_mod_8": 0,
+              "sat_entries": 7
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "elem": 2,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 172,
+              "y": 200,
+              "x_mod_8": 4,
+              "sat_entries": 8
+            },
+            {
+              "part": 1,
+              "x": 159,
+              "y": 264,
+              "x_mod_8": 7,
+              "sat_entries": 10
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "elem": 2,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 176,
+              "y": 204,
+              "x_mod_8": 0,
+              "sat_entries": 8
+            },
+            {
+              "part": 1,
+              "x": 163,
+              "y": 268,
+              "x_mod_8": 3,
+              "sat_entries": 10
+            }
+          ]
+        }
+      ],
+      "policies": [
+        {
+          "policy": "all_active",
+          "keep_slots": [
+            0,
+            1,
+            2
+          ],
+          "peak": {
+            "sprites": 22,
+            "width_pixels": 640,
+            "line_0_based": 159
+          },
+          "over_limit_lines": {
+            "sprite_lines": 9,
+            "width_lines": 80
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "oldest_only",
+          "keep_slots": [
+            0
+          ],
+          "peak": {
+            "sprites": 13,
+            "width_pixels": 360,
+            "line_0_based": 172
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 6
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "newest_only",
+          "keep_slots": [
+            2
+          ],
+          "peak": {
+            "sprites": 12,
+            "width_pixels": 344,
+            "line_0_based": 161
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 3
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "none",
+          "keep_slots": [],
+          "peak": {
+            "sprites": 10,
+            "width_pixels": 232,
+            "line_0_based": 139
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        }
+      ],
+      "better_single_slot": {
+        "policy": "newest_only",
+        "keep_slots": [
+          2
+        ],
+        "width_excess_pixels": 24,
+        "within_h40": false,
+        "hottest_overlap_lines": [
+          {
+            "line_0_based": 161,
+            "non_fx80_sprites": 7,
+            "non_fx80_width_pixels": 184,
+            "slot_sprites": 5,
+            "slot_width_pixels": 160,
+            "combined_sprites": 12,
+            "combined_width_pixels": 344,
+            "width_excess_pixels": 24
+          },
+          {
+            "line_0_based": 162,
+            "non_fx80_sprites": 6,
+            "non_fx80_width_pixels": 176,
+            "slot_sprites": 5,
+            "slot_width_pixels": 160,
+            "combined_sprites": 11,
+            "combined_width_pixels": 336,
+            "width_excess_pixels": 16
+          },
+          {
+            "line_0_based": 163,
+            "non_fx80_sprites": 6,
+            "non_fx80_width_pixels": 176,
+            "slot_sprites": 5,
+            "slot_width_pixels": 160,
+            "combined_sprites": 11,
+            "combined_width_pixels": 336,
+            "width_excess_pixels": 16
+          }
+        ]
+      }
+    },
+    {
+      "scene_frame": 600,
+      "fight_tick": 328,
+      "active": [
+        {
+          "slot": 0,
+          "elem": 4,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 206,
+              "y": 274,
+              "x_mod_8": 6,
+              "sat_entries": 6
+            }
+          ]
+        },
+        {
+          "slot": 1,
+          "elem": 3,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 157,
+              "y": 200,
+              "x_mod_8": 5,
+              "sat_entries": 11
+            },
+            {
+              "part": 1,
+              "x": 168,
+              "y": 296,
+              "x_mod_8": 0,
+              "sat_entries": 7
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "elem": 3,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 161,
+              "y": 204,
+              "x_mod_8": 1,
+              "sat_entries": 11
+            },
+            {
+              "part": 1,
+              "x": 172,
+              "y": 300,
+              "x_mod_8": 4,
+              "sat_entries": 7
+            }
+          ]
+        }
+      ],
+      "policies": [
+        {
+          "policy": "all_active",
+          "keep_slots": [
+            0,
+            1,
+            2
+          ],
+          "peak": {
+            "sprites": 21,
+            "width_pixels": 608,
+            "line_0_based": 157
+          },
+          "over_limit_lines": {
+            "sprite_lines": 3,
+            "width_lines": 45
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "oldest_only",
+          "keep_slots": [
+            0
+          ],
+          "peak": {
+            "sprites": 11,
+            "width_pixels": 288,
+            "line_0_based": 159
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        },
+        {
+          "policy": "newest_only",
+          "keep_slots": [
+            2
+          ],
+          "peak": {
+            "sprites": 13,
+            "width_pixels": 368,
+            "line_0_based": 160
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 11
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "none",
+          "keep_slots": [],
+          "peak": {
+            "sprites": 10,
+            "width_pixels": 240,
+            "line_0_based": 139
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        }
+      ],
+      "better_single_slot": {
+        "policy": "oldest_only",
+        "keep_slots": [
+          0
+        ],
+        "width_excess_pixels": 0,
+        "within_h40": true,
+        "hottest_overlap_lines": []
+      }
+    },
+    {
+      "scene_frame": 693,
+      "fight_tick": 330,
+      "active": [
+        {
+          "slot": 1,
+          "elem": 4,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 205,
+              "y": 272,
+              "x_mod_8": 5,
+              "sat_entries": 6
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "elem": 4,
+          "owner": 1,
+          "parts": [
+            {
+              "part": 0,
+              "x": 209,
+              "y": 276,
+              "x_mod_8": 1,
+              "sat_entries": 6
+            }
+          ]
+        }
+      ],
+      "policies": [
+        {
+          "policy": "all_active",
+          "keep_slots": [
+            1,
+            2
+          ],
+          "peak": {
+            "sprites": 14,
+            "width_pixels": 376,
+            "line_0_based": 157
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 7
+          },
+          "within_h40": false
+        },
+        {
+          "policy": "oldest_only",
+          "keep_slots": [
+            1
+          ],
+          "peak": {
+            "sprites": 11,
+            "width_pixels": 288,
+            "line_0_based": 154
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        },
+        {
+          "policy": "newest_only",
+          "keep_slots": [
+            2
+          ],
+          "peak": {
+            "sprites": 11,
+            "width_pixels": 296,
+            "line_0_based": 158
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        },
+        {
+          "policy": "none",
+          "keep_slots": [],
+          "peak": {
+            "sprites": 10,
+            "width_pixels": 264,
+            "line_0_based": 139
+          },
+          "over_limit_lines": {
+            "sprite_lines": 0,
+            "width_lines": 0
+          },
+          "within_h40": true
+        }
+      ],
+      "better_single_slot": {
+        "policy": "oldest_only",
+        "keep_slots": [
+          1
+        ],
+        "width_excess_pixels": 0,
+        "within_h40": true,
+        "hottest_overlap_lines": []
+      }
+    }
+  ],
+  "rejected_followups": [
+    "Do not rebuild the owner map; the five checkpoints are already attributed.",
+    "Do not repeat the transparent FX crop; it did not shrink the SAT cells.",
+    "A cap of one or two visible 8060 slots does not pass all five checkpoints.",
+    "Vertical shifts that pass move the effect off the fighter band, to the top of the 224-line display.",
+    "Flicker is not a fix for this critical super.",
+    "A single background plane cannot preserve the recorded part positions: their screen X values are not on one 8-pixel phase."
+  ],
+  "required_recuo": "Show at most one 8060 instance and remove at least 24 px of that instance's hardware-sprite width on every scanline shared with the fighters. That cut is an art/cell decision on the existing pair, then the same five checkpoints must be measured again.",
+  "next_causal_action": "Art direction on the shared 8060 pair: cut at least 24 px of sprite width from the single on-body instance where it shares scanlines with the fighters, then remeasure frames 321, 414, 507, 600 and 693. Do not invent pixels in code and do not replace the principal ROM."
+}

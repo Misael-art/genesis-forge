@@ -1,0 +1,26 @@
+[
+  {
+    "skill": "emulator-vdp-evidence-curator",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "megadrive-vdp-budget-analyst",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "sgdk-build-wrapper-operator",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  },
+  {
+    "skill": "sgdk-runtime-coder",
+    "exit": 0,
+    "stdout": "Skill is valid!\n",
+    "stderr": ""
+  }
+]

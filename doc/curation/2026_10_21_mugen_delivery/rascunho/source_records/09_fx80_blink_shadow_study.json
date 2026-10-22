@@ -1,0 +1,107 @@
+{
+  "schema_version": "fx80_blink_shadow_study.v1",
+  "run_id": "mugenesis_fx80_blink_shadow_20261021_r1",
+  "status": "measured_diagnostic",
+  "claim_ceiling": "supplementary_debugger_snapshot",
+  "promotion_performed": false,
+  "build_version": null,
+  "delivery_gate_passed": false,
+  "audio": "dummy_unvalidated",
+  "emulator": "BlastEm 1.0 native diagnostic",
+  "flag": "MG_STUDY_FX80_BLINK",
+  "product_build_defines_flag": false,
+  "principal_rom_sha256": "1b66cd1d7d3117f7fec0e487e1d4a7473357b5fa0693c24d21cf333eada1c7a8",
+  "principal_rom_size_bytes": 1441792,
+  "principal_unchanged": true,
+  "study_rom": {
+    "path": "out/profiling/mugenesis_fx80_blink_shadow_20261021_r1/rom.bin",
+    "sha256": "2d251c38d39f56b58d14057bb2702c8314168be706d337de865f63f62ad42dbd",
+    "size_bytes": 3670016
+  },
+  "build_report": "out/work_runs/mugenesis_fx80_blink_shadow_20261021_r1/reports/linux_wine_build_report.json",
+  "build_report_sha256": "870a0e28b8b4e1e96053f54d01871e126eab71c2ced850c6ee73e8104d3ccb17",
+  "behavior": {
+    "blink": "odd mg_fight.ticks hide only explods whose anim id is 8060 via SPR_setVisibility HIDDEN; draw() is skipped so those parts are not released",
+    "character_tiles": "player draw keeps fixed VRAM s_vram; bodies stayed on both the on and off photos",
+    "shadow": "Ken uses his authored 32x8 shadow; Ryu reuses the same Ken sprite through MG_fightUseSharedShadow; no new pixels",
+    "label_row": 26
+  },
+  "sat_method": "VRAM SAT at 0xF400, link chain, H40 limits 20 sprites and 320 px",
+  "measurements": [
+    {
+      "vdp_frame": 120,
+      "status": "captured",
+      "scene_frame": 66,
+      "label": "FX 8060 LIGADO",
+      "hardware_sprites": 29,
+      "peak_sprites": 9,
+      "peak_px": 264,
+      "lines_over_20": 0,
+      "lines_over_320": 0,
+      "budget": "cabe",
+      "note": "intro FIGHT; both 32x8 floor shadows in the SAT"
+    },
+    {
+      "vdp_frame": 338,
+      "status": "captured",
+      "scene_frame": 263,
+      "label": "FX 8060 APAGADO",
+      "hardware_sprites": 18,
+      "peak_sprites": 6,
+      "peak_px": 184,
+      "lines_over_20": 0,
+      "lines_over_320": 0,
+      "budget": "cabe",
+      "note": "before the 8060 cloud"
+    },
+    {
+      "vdp_frame": 339,
+      "status": "debugger_timeout",
+      "note": "not evidence; leaf frames_0339 left blocked"
+    },
+    {
+      "vdp_frame": 430,
+      "status": "captured",
+      "scene_frame": 328,
+      "script_tick": 239,
+      "label": "FX 8060 LIGADO",
+      "hardware_sprites": 69,
+      "peak_sprites": 21,
+      "peak_px": 600,
+      "lines_over_20": 3,
+      "lines_over_320": 51,
+      "budget": "nao cabe",
+      "note": "on frame of the burst; both floor shadows still linked"
+    },
+    {
+      "vdp_frame": 431,
+      "status": "captured",
+      "scene_frame": 329,
+      "script_tick": 239,
+      "label": "FX 8060 APAGADO",
+      "hardware_sprites": 69,
+      "peak_sprites": 21,
+      "peak_px": 600,
+      "lines_over_20": 3,
+      "lines_over_320": 51,
+      "budget": "nao cabe",
+      "note": "label already off while the SAT still holds the previous on list"
+    },
+    {
+      "vdp_frame": 432,
+      "status": "captured",
+      "scene_frame": 329,
+      "script_tick": 240,
+      "label": "FX 8060 APAGADO",
+      "hardware_sprites": 26,
+      "peak_sprites": 10,
+      "peak_px": 264,
+      "lines_over_20": 0,
+      "lines_over_320": 0,
+      "budget": "cabe",
+      "note": "settled off frame; large burst gone; both fighters and both floor shadows remain; a smaller blue cluster stays on Ken"
+    }
+  ],
+  "h40_product_blocker": "unchanged; on frame still nao cabe; blink is study economy only and does not replace the 24 px art cut",
+  "canonical_promotion_performed": false
+}

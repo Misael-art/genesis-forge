@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "quality_review_plan",
+  "tool": {
+    "name": "quality_review_router",
+    "version": "1.2.0"
+  },
+  "generated_at": "2026-10-22T02:09:27.234800Z",
+  "review_id": "mugen_delivery_curation_20261021",
+  "request_digest": "2277b0277b8c29a8026129b1c9adc91ea6fb56cf98ca45612e9d7e9c366ffc62",
+  "plan_digest": "82f2eedddb308642c0002431a95429d631da35d148bc1099ce1a894a6a2f614e",
+  "review_stage": "foundation",
+  "selected_reviews": [
+    {
+      "domain": "governance",
+      "owner_skill": "governance/aaa-pipeline-guardian",
+      "score": 230,
+      "selection_reasons": [
+        "explicitly_requested",
+        "changed_domain",
+        "risk:claim_risk"
+      ],
+      "model_tier": "balanced",
+      "evidence_requirements": [
+        "claim_matrix",
+        "fresh_hash_bound_evidence"
+      ]
+    }
+  ],
+  "deferred_domains": [],
+  "required_harness_skills": [
+    "governance/aaa-pipeline-guardian",
+    "governance/independent-quality-review",
+    "operation/harness-orchestration"
+  ],
+  "status": "ready",
+  "blockers": [],
+  "claim_ceiling": "quality_review_plan_only"
+}

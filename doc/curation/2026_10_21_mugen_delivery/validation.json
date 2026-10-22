@@ -1,0 +1,287 @@
+{
+  "source_records": [
+    {
+      "id": "source_01",
+      "status": "exact_snapshot",
+      "sha256": "dc73f10990bb6116d5940ecc29f6dbc7bef9378a08b76b2575f343ede100592d"
+    },
+    {
+      "id": "source_02",
+      "status": "exact_snapshot",
+      "sha256": "9bdb95324dfe30b19b16bcbf271426798ed4ff96bf13abf3b0a212b640bcebb1"
+    },
+    {
+      "id": "source_03",
+      "status": "exact_snapshot",
+      "sha256": "c9e082a08c4d7c5ebcda1d0487aaa450ec99d956087a9d84292c50b0d29246a2"
+    },
+    {
+      "id": "source_04",
+      "status": "exact_snapshot",
+      "sha256": "d02621ff654baef20492616e7a3c073e15ac675a9ab41cb7c6ed010c982e2797"
+    },
+    {
+      "id": "source_05",
+      "status": "exact_snapshot",
+      "sha256": "5d1d8b8917e1898701363751f807849f7cafdafeff53d394977c7e307187c0bf"
+    },
+    {
+      "id": "source_06",
+      "status": "exact_snapshot",
+      "sha256": "40d674c3297e83c08d3105f01e24f634c6fea33d0b3deeded12f48fa716721c4"
+    },
+    {
+      "id": "source_07",
+      "status": "exact_snapshot",
+      "sha256": "b6a50b16afac2d0e6c2895d0c9fd267225eaa2a163d7d8b755734b61ce33faf1"
+    },
+    {
+      "id": "source_08",
+      "status": "exact_snapshot",
+      "sha256": "b81c2370452a6ade902017f53d31443dff201de9a0d3216af3864ca28554f6f0"
+    },
+    {
+      "id": "source_09",
+      "status": "exact_snapshot",
+      "sha256": "43210a43bcb981ed354d3e239a0ff456953bfb60d9e9c7069665e3963ea4e432"
+    },
+    {
+      "id": "source_10",
+      "status": "exact_snapshot",
+      "sha256": "934d7bc101f0e40d0a588234c190e9796764a1be42b3ca1145493176f2a7cc39"
+    }
+  ],
+  "evidence_checks": [
+    {
+      "kind": "rom",
+      "sha256": "285d853d4be05f19db48203830cb06fa0b83a49828e59d574d045e16c6acd5bd",
+      "status": "hash_matches_counterfactual_record"
+    },
+    {
+      "kind": "sram",
+      "sha256": "5c325be13c1cd9362f7271a8a606b39ca534e40ab8b0ab452bd583aeb1e80ecb",
+      "status": "hash_matches_counterfactual_record"
+    },
+    {
+      "kind": "owner_map_line_profiles_report",
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/evidence/fight_base_ryu_fx80_owner_map_20261016_r1/frame1200_attempt03/measurement_parse/fx80_owner_map_with_line_profiles_parse_report.json",
+      "sha256": "4c50cafdd33981b5363bfbdeea9b4b7b813035d3b79000b37a0116fcfa382229",
+      "status": "arithmetic_recomputed_not_parser_recaptured"
+    }
+  ],
+  "counterfactual": [
+    {
+      "frame": 321,
+      "lines_reconciled": 128,
+      "policies": [
+        {
+          "policy": "all_active",
+          "max_count": 21,
+          "max_width": 520,
+          "limits_pass": false
+        },
+        {
+          "policy": "oldest_only",
+          "max_count": 15,
+          "max_width": 376,
+          "limits_pass": false
+        },
+        {
+          "policy": "newest_only",
+          "max_count": 13,
+          "max_width": 312,
+          "limits_pass": true
+        },
+        {
+          "policy": "none",
+          "max_count": 10,
+          "max_width": 240,
+          "limits_pass": true
+        }
+      ],
+      "reconstruction_mismatches": 0
+    },
+    {
+      "frame": 414,
+      "lines_reconciled": 130,
+      "policies": [
+        {
+          "policy": "all_active",
+          "max_count": 24,
+          "max_width": 632,
+          "limits_pass": false
+        },
+        {
+          "policy": "oldest_only",
+          "max_count": 13,
+          "max_width": 336,
+          "limits_pass": false
+        },
+        {
+          "policy": "newest_only",
+          "max_count": 15,
+          "max_width": 376,
+          "limits_pass": false
+        },
+        {
+          "policy": "none",
+          "max_count": 10,
+          "max_width": 240,
+          "limits_pass": true
+        }
+      ],
+      "reconstruction_mismatches": 0
+    },
+    {
+      "frame": 507,
+      "lines_reconciled": 132,
+      "policies": [
+        {
+          "policy": "all_active",
+          "max_count": 22,
+          "max_width": 640,
+          "limits_pass": false
+        },
+        {
+          "policy": "oldest_only",
+          "max_count": 13,
+          "max_width": 360,
+          "limits_pass": false
+        },
+        {
+          "policy": "newest_only",
+          "max_count": 13,
+          "max_width": 344,
+          "limits_pass": false
+        },
+        {
+          "policy": "none",
+          "max_count": 10,
+          "max_width": 232,
+          "limits_pass": true
+        }
+      ],
+      "reconstruction_mismatches": 0
+    },
+    {
+      "frame": 600,
+      "lines_reconciled": 132,
+      "policies": [
+        {
+          "policy": "all_active",
+          "max_count": 21,
+          "max_width": 608,
+          "limits_pass": false
+        },
+        {
+          "policy": "oldest_only",
+          "max_count": 11,
+          "max_width": 288,
+          "limits_pass": true
+        },
+        {
+          "policy": "newest_only",
+          "max_count": 13,
+          "max_width": 368,
+          "limits_pass": false
+        },
+        {
+          "policy": "none",
+          "max_count": 10,
+          "max_width": 240,
+          "limits_pass": true
+        }
+      ],
+      "reconstruction_mismatches": 0
+    },
+    {
+      "frame": 693,
+      "lines_reconciled": 97,
+      "policies": [
+        {
+          "policy": "all_active",
+          "max_count": 14,
+          "max_width": 376,
+          "limits_pass": false
+        },
+        {
+          "policy": "oldest_only",
+          "max_count": 11,
+          "max_width": 288,
+          "limits_pass": true
+        },
+        {
+          "policy": "newest_only",
+          "max_count": 11,
+          "max_width": 296,
+          "limits_pass": true
+        },
+        {
+          "policy": "none",
+          "max_count": 10,
+          "max_width": 264,
+          "limits_pass": true
+        }
+      ],
+      "reconstruction_mismatches": 0
+    }
+  ],
+  "record_ambiguities": [
+    {
+      "frame": 507,
+      "policy": "newest_only",
+      "recorded_pair_on_one_line": [
+        12,
+        344
+      ],
+      "independent_maxima": [
+        13,
+        344
+      ],
+      "interpretation": "peak.sprites is paired with max-width line, not always maximum sprite count; do not promote as both independent maxima",
+      "acceptance_decision_changed": false
+    }
+  ],
+  "new_rom": false,
+  "claim_ceiling": "record_integrity_and_arithmetic_only",
+  "quick_validate": [
+    {
+      "skill": "emulator-vdp-evidence-curator",
+      "exit": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "megadrive-vdp-budget-analyst",
+      "exit": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "sgdk-build-wrapper-operator",
+      "exit": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "sgdk-runtime-coder",
+      "exit": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    }
+  ],
+  "framework": {
+    "status": "blocked_in_baseline_and_candidate",
+    "baseline_failures": 28,
+    "candidate_failures": 28,
+    "new_failures": [],
+    "scope": "Same sparse checkout before and after documentation delta; baseline/sparse failures remain."
+  },
+  "learning_audit": {
+    "status": "learning_context_present",
+    "lessons": 320,
+    "candidates": 202,
+    "canonical_promotion_performed": false
+  },
+  "status": "passed_scoped_checks_with_source_ambiguity"
+}

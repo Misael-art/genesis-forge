@@ -610,3 +610,9 @@ nao confiar em `cadence_invariant` declarado. Contador de presentation nao prova
 upload efetivo, deadline de VBlank, sprites por scanline ou perceptibilidade. O
 budget continua exigindo pior quadro combinado e evidencia BlastEm/VDP quando
 aplicavel.
+
+## Curadoria de evidencia MUGEN (2026-10-21)
+
+Ao atribuir SAT por instancia, testar reducao de slots ou esconder FX, consultar
+`tools/sgdk_wrapper/.agent/references/mugen_delivery_evidence_lessons.md`.
+Aplicar somente os casos pertinentes; observacao suplementar nao promove entrega.

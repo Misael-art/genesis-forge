@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "independent_quality_review",
+  "review_id": "mugen_delivery_curation_20261021",
+  "request_digest": "2277b0277b8c29a8026129b1c9adc91ea6fb56cf98ca45612e9d7e9c366ffc62",
+  "plan_digest": "82f2eedddb308642c0002431a95429d631da35d148bc1099ce1a894a6a2f614e",
+  "artifact_bindings": [
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "sha256": "3b6a5a067b19961b3219716735ee38bb643f96d60db7f6d46fed2d8929b5ece1",
+      "role": "other"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "sha256": "d3a05e4ff016dc4d67ef37a4494e534d735a580a2dc1c6578243bf1c85ff8677",
+      "role": "other"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/operation/sgdk-build-wrapper-operator/SKILL.md",
+      "sha256": "53ca489d4746fec241dca76ad4f20be6a759c9e8e119eb9c2d3d4673861bd129",
+      "role": "other"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md",
+      "sha256": "90224635bc675bd2fdd5cc8f6e1587c8ba0115f150bd27996e0088af7c4ddc1e",
+      "role": "other"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/references/mugen_delivery_evidence_lessons.md",
+      "sha256": "89e737a20186cf18001bdcd2645cc724fdce8af207623240632ea20322328ea3",
+      "role": "other"
+    },
+    {
+      "path": "doc/06_AI_MEMORY_BANK.md",
+      "sha256": "445f8e96ba3474449a6fd3a73dbffd51bd9a771c932b40a2a9bca21be144097a",
+      "role": "other"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/decisions.json",
+      "sha256": "40965d6fe0963f0a87d316b6fbaa594e549e5f4d5e48cfdc6b3c8ce130774fa7",
+      "role": "other"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/source_manifest.json",
+      "sha256": "2706382f50981e55ff5ccfe7236ddbfb7271c498c094841a722c4e1def4063b7",
+      "role": "other"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/README.md",
+      "sha256": "145c6ddfd4174409ed4ea45a7f2555fe3718c00ff5e596f48f9e90bd2a82f741",
+      "role": "other"
+    }
+  ],
+  "reviewers": [
+    {
+      "domain": "governance",
+      "owner_skill": "governance/aaa-pipeline-guardian",
+      "reviewer_id": "mugen_curation_publication_review",
+      "producer_context_visible": false,
+      "status": "needs_adjustment",
+      "findings": [
+        {
+          "finding_id": "archival_peak_pair_semantics",
+          "classification": "risk",
+          "severity": "minor",
+          "confidence": 1.0,
+          "blocks_growth": false,
+          "evidence": [
+            "source_07 samples frame507/newest_only: peak sprites12,width_pixels344,line161; original line profiles independently yield count maximum13 on another line. The pair12/344 is correct at reported line161; count overflow lines remain0.",
+            "numerical_reproduction.json independently reconstructs all five source profiles and all20 published policy width/over-line results; oracle best-single excesses across all slots are0,16,24,0,0.",
+            "Canonical reference requires both count and hardware width; it does not promote the source-specific24px value or use this pair as a new production gate."
+          ],
+          "player_impact": "Future readers could confuse a paired hottest-width-line sample with the independent count maximum and understate count pressure. This particular diagnostic result and every published pass/fail remain unchanged.",
+          "smallest_correction": "Preserve the hash-bound historical record; accompany it with an explicit validation note distinguishing count at width peak from independent count maximum. Future reports should name both values/lines separately.",
+          "correction_owner_skill": "hardware/megadrive-vdp-budget-analyst",
+          "acceptance_evidence": [
+            "Publication validation preserves source_07 SHA b6a50b16afac2d0e6c2895d0c9fd267225eaa2a163d7d8b755734b61ce33faf1 and explicitly records frame507/newest_only paired12/344 versus independent13/344.",
+            "No claim of successful budget, performance or whole-scene sufficiency follows; remeasurement after changes remains required."
+          ],
+          "scope_change_required": false
+        }
+      ],
+      "external_sources": [],
+      "evidence_gaps": [
+        "No build, new emulator execution, audio audition, sustained performance or final mode acceptance was performed; these product claims remain unproven and outside this documentary review.",
+        "Arithmetic was independently recomputed from existing parsed line profiles. Raw ROM/SRAM/parser/collector records were rehashed, but SRAM decoder and collection process were not independently rerun."
+      ],
+      "observations": [
+        "Nine request-bound publish artifacts and ten snapshots plus ten originals have exact expected hashes.",
+        "Four changed skill entrypoints pass quick_validate; additions route conditional tasks to one shared reference without changing descriptions, defaults, lifecycle or runtime.",
+        "Ten source records are textual historical data with manifest/README explicitly limiting their authority. No ROM/SRAM/media, API keys, private-key material or absolute /home or /tmp runtime dependencies were found in the reviewed public source payload. This is a scoped inspection, not proof about unreviewed files.",
+        "Adjudication rejects historical-source identity from equal ROM hashes, unproven PTY causation, flicker promotion, numeric universalization, automatic lock removal and foreign WIP integration.",
+        "Existing framework baseline/candidate validation logs both fail with28 identical failures and zero new failures. This remains failed, including old contracts and sparse-checkout dependencies; no whole-framework pass is claimed."
+      ]
+    }
+  ],
+  "synthesis": {
+    "growth_decision": "proceed_with_tracked_risks",
+    "priority_finding_ids": [
+      "archival_peak_pair_semantics"
+    ],
+    "cross_domain_conflicts": [],
+    "scope": "Read-only independent review of publish delta against its HEAD/main. Proceed applies only to documented_method_only curation; no product or framework acceptance.",
+    "maximum_proven_claim": "documented_method_only"
+  },
+  "quality_claim": "unproven",
+  "ready_for_aaa": false,
+  "claim_ceiling": "independent_quality_review_only",
+  "validation_artifacts": [
+    "hash_validation.json",
+    "original_evidence_rehash.json",
+    "numerical_reproduction.json",
+    "skill_validation.json",
+    "forward_test.md",
+    "review_validation.json"
+  ],
+  "build": "unproven",
+  "rom_acceptance": "unproven",
+  "performance": "unproven",
+  "framework_validation": "failed_unchanged_baseline"
+}

@@ -80,3 +80,10 @@ Quando a entrega alegar observacao audiovisual, consumir o pipeline existente
 `coverage`. `event_observed` ou screenshot nao aprovam qualidade, movimento ou
 som. Registrar reviewer, metodo, ferramentas e intervalos realmente vistos;
 sequencia de imagens e metadado sao evidencia limitada, nao playback/audicao.
+
+## Curadoria de evidencia MUGEN (2026-10-21)
+
+Quando marcadores logicos, legenda, SAT e quadro capturado divergirem, ou
+um coletor falhar com dumps presentes, consultar
+`tools/sgdk_wrapper/.agent/references/mugen_delivery_evidence_lessons.md`.
+Aplicar somente os casos pertinentes; observacao suplementar nao promove entrega.

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "host_regression_note",
+  "date": "2026-10-21",
+  "cwd": "tools/mugen2sgdk_forge",
+  "command": "python3 -m pytest tests/test_host_runtime.py -k configured_round_timer -q --tb=line",
+  "result": "2 passed, 66 deselected, 16.71s",
+  "assertions": [
+    "continuous_held=1",
+    "training_timer_held=1"
+  ],
+  "runtime_roots": [
+    "canonical",
+    "installed_consumer"
+  ],
+  "build_version": null,
+  "rom_candidate": false,
+  "evidence_grade_ceiling": "E1_artifact",
+  "note": "Prova de host do round end padrao, da sessao continua e do timer de treino desligado. Nenhuma ROM foi produzida."
+}

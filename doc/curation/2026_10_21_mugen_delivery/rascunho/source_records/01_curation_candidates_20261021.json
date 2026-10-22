@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "local_canonical_curation_candidates",
+  "source_project": "Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]",
+  "date": "2026-10-21",
+  "canonical_promotion_performed": false,
+  "human_approval_required": true,
+  "existing_owners_only": true,
+  "apply_status": "not_applied",
+  "build_version": null,
+  "items": [
+    {
+      "id": "mcp_061",
+      "title": "Versionar candidata somente quando a ROM principal mudar de hash",
+      "source_learning_cards": [
+        "doc/agent_learning/build_version_absent_for_unbuilt_candidate_20261021.md"
+      ],
+      "canonical_owner": [
+        "tools/sgdk_wrapper/.agent/skills/operation/sgdk-build-wrapper-operator/SKILL.md"
+      ],
+      "lesson": "O log canonico e doc/changelog/roms/build_v###/rom.bin mais build_meta.json. Sem essa pasta, o ultimo build versionado permanece nenhum. A fonte de 2026-10-20 fica implementada e sem build. A ROM principal preservada nao vira build_v001.",
+      "risk": "Rodar update_project_changelog.ps1 sem -StatusOnly copiaria a ROM preservada para build_v001. -StatusOnly nao cria a pasta, mas sem validation_report alcancavel zeraria os blockers do bloco gerado e criaria diretorios de asset.",
+      "evidence": [
+        {
+          "card": "doc/agent_learning/build_version_absent_for_unbuilt_candidate_20261021.md",
+          "result": "doc/changelog/roms ausente; ROM principal 1441792 bytes, SHA-256 1b66cd1d7d3117f7fec0e487e1d4a7473357b5fa0693c24d21cf333eada1c7a8; bloco gerado ainda cita outra ROM de 1048576 bytes."
+        }
+      ],
+      "required_follow_up": [
+        "Build isolado com ROM e validation report em caminho alcancavel, fora de out/logs.",
+        "Substituir a ROM principal so quando a candidata for a versao a registrar.",
+        "Aí sim rodar update_project_changelog.ps1 e conferir build_meta.json."
+      ],
+      "classification": "local_note",
+      "decision": "no_canonical_patch",
+      "action": "none",
+      "human_approval_required": true,
+      "human_approval": null,
+      "apply_status": "not_applied",
+      "canonical_promotion_performed": false,
+      "evidence_grade": "E1_artifact",
+      "lifecycle_status": "evidence_incomplete",
+      "build_version": null
+    },
+    {
+      "id": "mcp_062",
+      "title": "Sessao continua e timer de treino tem prova de host, nao de ROM",
+      "source_learning_cards": [
+        "doc/agent_learning/evidence/mode_rules_host_20261021/host_round_timer_report.json",
+        "doc/mugen/mode_rules_time_attack_bonus_20261020.json"
+      ],
+      "canonical_owner": [
+        "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md"
+      ],
+      "lesson": "Pytest dos dois roots manteve a luta em round_state 1 com vida no chao quando a sessao continua, e recolocou o timer de treino em 99 segundos NTSC quando o timer de treino estava desligado. Isso nao abre build_v.",
+      "risk": "Tratar o host como menu, combate, audio, H40 ou BlastEm promoveria a fonte acima dos artefatos.",
+      "evidence": [
+        {
+          "card": "doc/agent_learning/evidence/mode_rules_host_20261021/host_round_timer_report.json",
+          "result": "2 passed, 66 deselected, 16.71s; continuous_held=1; training_timer_held=1; build_version null."
+        }
+      ],
+      "required_follow_up": [
+        "Repetir Time Attack, Bonus e os perfis de treino na ROM da proxima candidata, no BlastEm, com o hash dessa ROM."
+      ],
+      "classification": "local_note",
+      "decision": "no_canonical_patch",
+      "action": "none",
+      "human_approval_required": true,
+      "human_approval": null,
+      "apply_status": "not_applied",
+      "canonical_promotion_performed": false,
+      "evidence_grade": "E1_artifact",
+      "lifecycle_status": "evidence_incomplete",
+      "build_version": null
+    },
+    {
+      "id": "mcp_063",
+      "title": "Um slot de FX80 ainda nao cabe no H40",
+      "source_learning_cards": [
+        "doc/agent_learning/fight_base_ryu_fx80_single_slot_counterfactual_20261021.md"
+      ],
+      "canonical_owner": [
+        "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md"
+      ],
+      "lesson": "A subtracao linha a linha dos cinco checkpoints fecha com zero divergencias. Um ou dois slots visiveis de 8060 continuam acima de 320 px. O melhor slot unico estoura 16 px no quadro 414 e 24 px no 507. A contagem de sprites desse slot fica abaixo de 20.",
+      "risk": "Reconstruir o mapa, repetir o recorte transparente ou tratar um teto de slots como correcao publicaria um veredito que a conta ja rejeitou.",
+      "evidence": [
+        {
+          "card": "doc/agent_learning/fight_base_ryu_fx80_single_slot_counterfactual_20261021.md",
+          "result": "veredito nao cabe; sem ROM nova; promocao falsa."
+        }
+      ],
+      "required_follow_up": [
+        "Direcao de arte no par 8060 existente: cortar pelo menos 24 px de largura de sprite na instancia unica, nas linhas compartilhadas com os lutadores, e medir de novo os quadros 321, 414, 507, 600 e 693."
+      ],
+      "classification": "local_note",
+      "decision": "no_canonical_patch",
+      "action": "none",
+      "human_approval_required": true,
+      "human_approval": null,
+      "apply_status": "not_applied",
+      "canonical_promotion_performed": false,
+      "evidence_grade": "E1_artifact",
+      "lifecycle_status": "evidence_incomplete",
+      "build_version": null
+    },
+    {
+      "id": "mcp_064",
+      "title": "Levantamento mostra os seis modos sem fechar a luta",
+      "source_learning_cards": [
+        "doc/agent_learning/frontend_survey_modes_20261021.md"
+      ],
+      "canonical_owner": [
+        "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md"
+      ],
+      "lesson": "A ROM de levantamento mostrou menu, Arcade, Versus, Treino, Time Attack, Bonus, Options e a entrada da luta com timer 99 e depois 96. Antes da luta o deslocamento do VDP ficou em 55. Options nao altera gameMode.",
+      "risk": "Fundir o hash do levantamento com a candidata de modos ou com a ROM principal preservada, ou tratar a tela de Bonus como cota fechada.",
+      "evidence": [
+        {
+          "card": "out/work_runs/mugenesis_frontend_survey_20261021_r1/reports/frontend_survey_observation.json",
+          "result": "hash a93bf7f7fe34c90e50e176e0ec294868134438afc0b9cc44929c1fd7df49658a; 37 bordas; delivery_gate_passed false."
+        }
+      ],
+      "required_follow_up": [
+        "Rank de Time Attack, cota de bonus, audio ouvido e 60 fps da cena pesada continuam sem prova."
+      ],
+      "classification": "local_note",
+      "decision": "no_canonical_patch",
+      "action": "none",
+      "human_approval_required": true,
+      "human_approval": null,
+      "apply_status": "not_applied",
+      "canonical_promotion_performed": false,
+      "evidence_grade": "E1_artifact",
+      "lifecycle_status": "evidence_incomplete",
+      "build_version": null
+    },
+    {
+      "id": "mcp_065",
+      "title": "Timeout do depurador nao e quadro perdido",
+      "source_learning_cards": [
+        "doc/agent_learning/blastem_1_0_debugger_timeout_frame_map_20261021.md"
+      ],
+      "canonical_owner": [
+        "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md"
+      ],
+      "lesson": "FORGE_SNAPSHOT_COMPLETE com debugger_timeout continua timeout. O deslocamento antes da luta e 55. Na luta, 260 lacos viram 478 quadros de VDP. O lote com deslocamento 288 fica de fora da leitura.",
+      "risk": "Reclassificar a folha ou aplicar o atraso do fim da luta nas telas de menu.",
+      "evidence": [
+        {
+          "card": "out/work_runs/mugenesis_frontend_survey_20261021_r1/reports/frontend_survey_observation.json",
+          "result": "Bonus VDP 969 e luta VDP 1800 blocked_debugger_timeout; menu VDP 123 captured."
+        }
+      ],
+      "required_follow_up": [
+        "Nova folha para nova tentativa. Nao recuperar o BlastEm 0.6.2."
+      ],
+      "classification": "local_note",
+      "decision": "no_canonical_patch",
+      "action": "none",
+      "human_approval_required": true,
+      "human_approval": null,
+      "apply_status": "not_applied",
+      "canonical_promotion_performed": false,
+      "evidence_grade": "E1_artifact",
+      "lifecycle_status": "evidence_incomplete",
+      "build_version": null
+    },
+    {
+      "id": "mcp_066",
+      "title": "Lutadores do menu cobrem o texto de ajuda",
+      "source_learning_cards": [
+        "doc/agent_learning/menu_hint_sprite_occlusion_20261021.md"
+      ],
+      "canonical_owner": [
+        "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md"
+      ],
+      "lesson": "Ken e Ryu em pe cobrem as ajudas do rodape e parte do texto de Time Attack e Bonus. A lista de modos e os nomes foram lidos. As linhas 25 a 27 nao sao zona livre, e a linha 26 e do HUD de debug.",
+      "risk": "Tratar o texto coberto como ausente, ou declarar o deslocamento para as linhas 0 a 4 antes de uma ROM nova.",
+      "evidence": [
+        {
+          "card": "out/evidence/mugenesis_frontend_survey_20261021_r1/native_diag_menu_main_f123/window.png",
+          "result": "janela 640x480; ajudas inferiores atras dos pes; titulo e lista superiores legiveis."
+        }
+      ],
+      "required_follow_up": [
+        "Mover as instrucoes para as linhas 0 e 1, e as linhas extras de selecao e confronto para as linhas 3 e 4, numa ROM isolada de levantamento."
+      ],
+      "classification": "local_note",
+      "decision": "no_canonical_patch",
+      "action": "none",
+      "human_approval_required": true,
+      "human_approval": null,
+      "apply_status": "not_applied",
+      "canonical_promotion_performed": false,
+      "evidence_grade": "E1_artifact",
+      "lifecycle_status": "evidence_incomplete",
+      "build_version": null
+    },
+    {
+      "id": "mcp_067",
+      "title": "Ajudas do menu lidas na faixa superior",
+      "source_learning_cards": [
+        "doc/agent_learning/menu_hint_sprite_occlusion_20261021.md",
+        "doc/agent_learning/canonical_promotion_review.md"
+      ],
+      "canonical_owner": [
+        "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md"
+      ],
+      "lesson": "Duas ROMs isoladas de levantamento mostraram selecao, relogio, a frase 8 ACERTOS EM 30S e o perfil PARADO / especial normal acima dos lutadores. No menu principal, B ficou na linha 1 e A/START na linha 3 depois que a linha 0 da primeira pintura nao permaneceu.",
+      "risk": "Tratar a frase de cota ou o perfil PARADO como modo fechado, herdar o deslocamento 55 sem ler o marcador, ou promover a ROM de diagnostico.",
+      "evidence": [
+        {
+          "card": "out/evidence/mugenesis_menu_hint_upper_20261021_r2/native_diag_menu_main_f123/window.png",
+          "result": "A/START: CONFIRMAR sob o titulo; lista de modos legivel; BlastEm 1.0 suplementar."
+        },
+        {
+          "card": "out/evidence/mugenesis_menu_hint_upper_20261021_r2/native_diag_matchup_training_f640/window.png",
+          "result": "PERFIL: PARADO e ESPECIAL NORMAL legiveis. Nao e treino concluido."
+        }
+      ],
+      "required_follow_up": [
+        "Manter o recuo H40 de 24 px como bloqueio de arte. Nao abrir build_v por estas ROMs."
+      ],
+      "classification": "local_note",
+      "decision": "no_canonical_patch",
+      "action": "patch_existing_owner",
+      "human_approval_required": true,
+      "human_approval": null,
+      "apply_status": "not_applied",
+      "canonical_promotion_performed": false,
+      "evidence_grade": "E1_artifact",
+      "lifecycle_status": "human_review_required",
+      "build_version": null
+    },
+    {
+      "id": "mcp_068",
+      "title": "Pisca esconde o sprite e conserva o tile",
+      "source_learning_cards": [
+        "doc/agent_learning/canonical_promotion_review.md",
+        "doc/agent_learning/success_patterns.md",
+        "doc/agent_learning/failure_patterns.md"
+      ],
+      "canonical_owner": [
+        "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md"
+      ],
+      "lesson": "No tick impar, SPR_setVisibility HIDDEN tirou o explod 8060 da SAT sem devolver os tiles dos lutadores. O quadro ligado ficou em 600 px e 21 sprites. O quadro apagado desta amostra ficou em 264 px e 10 sprites, com as duas sombras 32x8 ainda alocadas.",
+      "risk": "Tratar o pisca como o corte de 24 px, ligar o governador por padrao, ou ler a SAT no primeiro tick do rotulo.",
+      "evidence": [
+        {
+          "card": "out/work_runs/mugenesis_fx80_blink_shadow_20261021_r1/reports/fx80_blink_shadow_study.json",
+          "result": "Ligado nao cabe. Apagado nesta amostra cabe. VDP 431 ainda mostra a SAT ligada."
+        },
+        {
+          "card": "out/evidence/mugenesis_fx80_blink_shadow_20261021_r1/frames_0432/window.png",
+          "result": "Nuvem grande ausente. Lutadores e sombra de Ryu permanecem."
+        }
+      ],
+      "required_follow_up": [
+        "Manter o recuo H40 de 24 px. O governador de Options fica desligado ate o jogador ligar. A ROM de menu 7a9cb566a32e1b105b115804269af36c5d7036215cb945d347469fdc66901cd0 ainda nao teve a SAT medida."
+      ],
+      "classification": "local_note",
+      "decision": "no_canonical_patch",
+      "action": "patch_existing_owner",
+      "human_approval_required": true,
+      "human_approval": null,
+      "apply_status": "not_applied",
+      "canonical_promotion_performed": false,
+      "evidence_grade": "E1_artifact",
+      "lifecycle_status": "human_review_required",
+      "build_version": null
+    }
+  ]
+}
