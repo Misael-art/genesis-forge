@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "owner": "canonical_workspace_curation",
+  "authorization": "user explicitly requested curation and Git publication on 2026-10-21",
+  "claim_ceiling": "documented_method_only",
+  "source_manifest": "source_manifest.json",
+  "new_skills": 0,
+  "decisions": [
+    {
+      "id": "mcp_061",
+      "decision": "deduplicated_with_existing_build_policy",
+      "scope": "Clarificacao de recibo e status-only na referencia; sem alterar versionador ou concluir ausencia atual de build_v.",
+      "owner": "operation/sgdk-build-wrapper-operator"
+    },
+    {
+      "id": "mcp_062",
+      "decision": "local_host_result_only",
+      "scope": "Teste host de timer/sessao nao promove gameplay/menu/ROM. Reforco condicional na referencia, sem nova regra de timer.",
+      "owner": "code/sgdk-runtime-coder"
+    },
+    {
+      "id": "mcp_063",
+      "decision": "method_assimilated_numbers_local",
+      "scope": "Contrafactual linha a linha com dois tetos. Reducao de 24px e condicao local necessaria de um recorte, nao suficiente para cena completa.",
+      "owner": "hardware/megadrive-vdp-budget-analyst"
+    },
+    {
+      "id": "mcp_064",
+      "decision": "method_assimilated_modes_unqualified",
+      "scope": "Matriz opcao->comportamento->resultado->reset; survey prova somente estados observados.",
+      "owner": "code/sgdk-runtime-coder"
+    },
+    {
+      "id": "mcp_065",
+      "decision": "partial_method_only",
+      "scope": "Timeout continua falha, offsets nao generalizam. Alegacao de corrida PTY nao foi reproduzida nesta curadoria e nao e causa canonizada.",
+      "owner": "operation/emulator-vdp-evidence-curator"
+    },
+    {
+      "id": "mcp_066",
+      "decision": "diagnostic_method_only",
+      "scope": "Oclusao de UI depende de viewport, sprites e debug. Coordenadas permanecem locais.",
+      "owner": "code/sgdk-runtime-coder"
+    },
+    {
+      "id": "mcp_067",
+      "decision": "method_assimilated_product_pending",
+      "scope": "Nova captura exigida para novo layout; textos legiveis nao qualificam treino/bonus.",
+      "owner": "code/sgdk-runtime-coder"
+    },
+    {
+      "id": "mcp_068",
+      "decision": "counterexample_assimilated_no_flicker_promotion",
+      "scope": "HIDDEN/SAT nao implica desalocacao VRAM; frame desligado nao aprova ligado. Sem habilitar governador ou flicker para mascarar overflow.",
+      "owner": "hardware/megadrive-vdp-budget-analyst"
+    },
+    {
+      "id": "source_perf_identity",
+      "decision": "claim_corrected",
+      "scope": "Hash ROM igual identifica bytes, nao fonte historica. Nao assimilar commit de WIP de terceiros nem remocao automatica de locks.",
+      "owner": "operation/sgdk-build-wrapper-operator"
+    },
+    {
+      "id": "source_owner_map",
+      "decision": "method_assimilated_local_measurement",
+      "scope": "Atribuicao exige SAT/frame/phase concordantes e reconstrucoes; mesmo tick insuficiente.",
+      "owner": "hardware/megadrive-vdp-budget-analyst"
+    }
+  ],
+  "not_promoted": [
+    "full engine compatibility",
+    "new ROM acceptance",
+    "60fps",
+    "audio quality",
+    "visual approval",
+    "performance flags",
+    "flicker default",
+    "all candidate numeric prescriptions",
+    "PTY race diagnosis",
+    "foreign WIP commits",
+    "automatic stale lock removal"
+  ]
+}

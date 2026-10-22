@@ -3260,3 +3260,11 @@ Fora do escopo desta remediacao, ainda abertos:
 Limite factual: `framework_conformance_validated` cobre infraestrutura de
 conformance. Nao use `ready_for_aaa`. Nada aqui prova ROM, gameplay, audio,
 budget VDP ou execucao no BlastEm.
+
+
+## Curadoria MUGEN: SAT, modos e identidade de build — 2026-10-21
+
+- Pedido humano explicito autorizou curadoria, commit, push e PR. Fontes locais de 16-21/10 foram congeladas com SHA e adjudicadas em doc/curation/2026_10_21_mugen_delivery/decisions.json. So metodos transferiveis foram assimilados; propostas automaticas locais permanecem not_applied.
+- Refinados quatro owners existentes pela referencia mugen_delivery_evidence_lessons.md: SAT/owner/frame iguais antes da atribuicao; contrafactual por linha sem somar maximos; legenda/loop diferentes de SAT/VBlank; menu visivel diferente de modo concluido; hash de ROM igual nao reconstitui fonte historica sem recibo.
+- Candidatos mcp_061..068 nao foram promovidos em bloco. Valores H40 de FX80, coordenadas de menu, flags e flicker continuam locais/diagnosticos. Nem o corte local observado nem HIDDEN comprovam budget ou VRAM liberada; timeout com arquivos presentes conserva falha do coletor.
+- Publicacao restrita a esta curadoria em branch baseada em origin/main; nao inclui o WIP compartilhado ou a implementacao do motor. Ver receipt, validacao e revisao independente no pacote. Sem nova execucao de ROM ou claim de gameplay, audio, cadencia ou compatibilidade completa.

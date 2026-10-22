@@ -650,3 +650,9 @@ Cada caso ali existe para travar um aprendizado real em forma reproduzivel.
 - combinar com `character-design` quando uma decisao de runtime depender de palette swap ou escala do roster
 - combinar com `forward-kinematics-rigging` quando a tarefa envolver juntas, correntes, tentaculos ou membros articulados
 - combinar com `xgm2-audio-director` quando a tarefa envolver ownership de canal, mix de PCM e arquitetura de audio
+
+## Curadoria de evidencia MUGEN (2026-10-21)
+
+Ao validar menus/modos ou sincronizar telemetria com render, consultar
+`tools/sgdk_wrapper/.agent/references/mugen_delivery_evidence_lessons.md`.
+Aplicar somente os casos pertinentes; observacao suplementar nao promove entrega.

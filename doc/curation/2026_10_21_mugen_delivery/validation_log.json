@@ -1,0 +1,29 @@
+{
+  "command": [
+    "python3",
+    "tools/sgdk_wrapper/quality_review_router.py",
+    "validate-report",
+    "--request",
+    "out/curation/2026_10_21_mugen_delivery/quality_review_request.json",
+    "--plan",
+    "out/curation/2026_10_21_mugen_delivery/quality_review_plan.json",
+    "--report",
+    "/tmp/mugen_curation_independent_20261021/independent_quality_review.json"
+  ],
+  "exit_code": 0,
+  "stderr": "",
+  "report_validation": {
+    "schema_version": "1.0.0",
+    "artifact_kind": "independent_quality_review_validation",
+    "review_id": "mugen_delivery_curation_20261021",
+    "status": "passed",
+    "findings": [],
+    "growth_decision": "proceed_with_tracked_risks",
+    "report_may_direct_remediation": true,
+    "quality_claim": "unproven",
+    "ready_for_aaa": false,
+    "claim_ceiling": "quality_review_validation_only"
+  },
+  "scope": "Read-only review; no Git mutation, network, build, emulator or source write. Output only in reviewer tmp directory.",
+  "initial_numeric_assertion": "Independent peak-count comparison failed for source_07 frame507/newest_only. Investigated and retained as archival_peak_pair_semantics; paired value is valid at reported line, separate count maximum13. No source normalization performed."
+}

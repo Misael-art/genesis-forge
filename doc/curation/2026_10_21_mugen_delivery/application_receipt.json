@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0.0",
+  "owner": "canonical_workspace_curation",
+  "authorization": "explicit user request curation, commit, PR and push",
+  "source_workspace_branch": "feat/mugenesis-impact-fx-v2",
+  "publication_branch": "codex/mugen-curation-delivery-20261021",
+  "publication_base": "c22479cb7af203d42afb0b357aa02acba575d959",
+  "applied_files": [
+    {
+      "path": "tools/sgdk_wrapper/.agent/references/mugen_delivery_evidence_lessons.md",
+      "before_sha256": null,
+      "after_sha256": "89e737a20186cf18001bdcd2645cc724fdce8af207623240632ea20322328ea3",
+      "operation": "created"
+    },
+    {
+      "path": "doc/06_AI_MEMORY_BANK.md",
+      "before_sha256": "be8baf8fe550ea9b64956f787e389bf01d2e93e0d64381c827c45be6e00a2695",
+      "after_sha256": "445f8e96ba3474449a6fd3a73dbffd51bd9a771c932b40a2a9bca21be144097a",
+      "operation": "modified"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md",
+      "before_sha256": "cd5e04ad626e9362b8ab1f08b8f971daaf2d6666e6f895efef525b01883a03f4",
+      "after_sha256": "90224635bc675bd2fdd5cc8f6e1587c8ba0115f150bd27996e0088af7c4ddc1e",
+      "operation": "modified"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "before_sha256": "55eacb65c914897d70811064de4e8e681faefb75d8232467f9361725a6a28240",
+      "after_sha256": "d3a05e4ff016dc4d67ef37a4494e534d735a580a2dc1c6578243bf1c85ff8677",
+      "operation": "modified"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "before_sha256": "84b092aca2bf77cc3b9544338e9168eaaf37e7ad9e6f81ca7af07aad88ce0462",
+      "after_sha256": "3b6a5a067b19961b3219716735ee38bb643f96d60db7f6d46fed2d8929b5ece1",
+      "operation": "modified"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/operation/sgdk-build-wrapper-operator/SKILL.md",
+      "before_sha256": "de546e21478383c523395aa4bd5cc272d22cb438f6cbdd127514fb902d0e7ee8",
+      "after_sha256": "53ca489d4746fec241dca76ad4f20be6a759c9e8e119eb9c2d3d4673861bd129",
+      "operation": "modified"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/validation.json",
+      "before_sha256": null,
+      "after_sha256": "d932492267f9b049510fd9d3508a9c30cb1c6e0bb6653bd7a09870f23f22f458",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/README.md",
+      "before_sha256": null,
+      "after_sha256": "145c6ddfd4174409ed4ea45a7f2555fe3718c00ff5e596f48f9e90bd2a82f741",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/decisions.json",
+      "before_sha256": null,
+      "after_sha256": "40965d6fe0963f0a87d316b6fbaa594e549e5f4d5e48cfdc6b3c8ce130774fa7",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/source_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "2706382f50981e55ff5ccfe7236ddbfb7271c498c094841a722c4e1def4063b7",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/validation_details/framework_baseline_comparison.json",
+      "before_sha256": null,
+      "after_sha256": "73d8d38cf76e239db58ccfad94aa6054f1e30a271a11084a70d73977c7135800",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/validation_details/quick_validate.json",
+      "before_sha256": null,
+      "after_sha256": "53132ad564b5009d8af247799d5fbdebf8db489e07efafa5c2d97343921563ab",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/10_host_round_timer_report.json",
+      "before_sha256": null,
+      "after_sha256": "934d7bc101f0e40d0a588234c190e9796764a1be42b3ca1145493176f2a7cc39",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/09_fx80_blink_shadow_study.json",
+      "before_sha256": null,
+      "after_sha256": "43210a43bcb981ed354d3e239a0ff456953bfb60d9e9c7069665e3963ea4e432",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/08_frontend_survey_observation.json",
+      "before_sha256": null,
+      "after_sha256": "b81c2370452a6ade902017f53d31443dff201de9a0d3216af3864ca28554f6f0",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/07_fx80_single_slot_counterfactual.json",
+      "before_sha256": null,
+      "after_sha256": "b6a50b16afac2d0e6c2895d0c9fd267225eaa2a163d7d8b755734b61ce33faf1",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/06_perf_and_divergence_audit_20261021.md",
+      "before_sha256": null,
+      "after_sha256": "40d674c3297e83c08d3105f01e24f634c6fea33d0b3deeded12f48fa716721c4",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/05_menu_hint_sprite_occlusion_20261021.md",
+      "before_sha256": null,
+      "after_sha256": "5d1d8b8917e1898701363751f807849f7cafdafeff53d394977c7e307187c0bf",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/04_blastem_1_0_debugger_timeout_frame_map_20261021.md",
+      "before_sha256": null,
+      "after_sha256": "d02621ff654baef20492616e7a3c073e15ac675a9ab41cb7c6ed010c982e2797",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/03_fight_base_ryu_fx80_single_slot_counterfactual_20261021.md",
+      "before_sha256": null,
+      "after_sha256": "c9e082a08c4d7c5ebcda1d0487aaa450ec99d956087a9d84292c50b0d29246a2",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/02_fight_base_ryu_fx80_owner_map_exact_sat_binding_20261016.md",
+      "before_sha256": null,
+      "after_sha256": "9bdb95324dfe30b19b16bcbf271426798ed4ff96bf13abf3b0a212b640bcebb1",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/rascunho/source_records/01_curation_candidates_20261021.json",
+      "before_sha256": null,
+      "after_sha256": "dc73f10990bb6116d5940ecc29f6dbc7bef9378a08b76b2575f343ede100592d",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/quality_review_plan.json",
+      "before_sha256": null,
+      "after_sha256": "f107f68b4dda2970f42ecd54419654a06cd6127f5e7bbfa8aeedbdcc810ed20a",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/quality_review_request.json",
+      "before_sha256": null,
+      "after_sha256": "289e3e0bb2e426a570a9b71d15bdb0fe90c06c089ae805913a4d782b85656c4f",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/numerical_reproduction.json",
+      "before_sha256": null,
+      "after_sha256": "2e0a073bbf0d7b3e78422f0e93e6ab7dcd57cc6a70aad8d2ab85669e42b00484",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/validation_log.json",
+      "before_sha256": null,
+      "after_sha256": "0a2f9e267ddf44529a2e35066bfa8b855790864aeb91a23d2f103e5335ee41cd",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/review_validation.json",
+      "before_sha256": null,
+      "after_sha256": "8477952fbafad8a9f1d3b932f793fca36cd1f0e9833db1edda279395deb54bef",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/forward_test.md",
+      "before_sha256": null,
+      "after_sha256": "62b181224711aaa25c22363527c7b558178859570618a62d2b2b5dfa666d816f",
+      "operation": "created"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/independent_review.json",
+      "before_sha256": null,
+      "after_sha256": "75469efdb1cc8c7647348641b59aa593367c76facfa11a7d2f37c89845633aeb",
+      "operation": "created"
+    }
+  ],
+  "claim_ceiling": "documented_method_only",
+  "game_rom_changed": false,
+  "runtime_flags_enabled": false,
+  "source_proposals_marked_applied": false,
+  "git_strategy": "isolated clone based on origin/main; shared branch/index preserved",
+  "validation": "validation.json; independent_review.json",
+  "limitations": [
+    "Framework baseline has 28 failures in this sparse checkout, candidate adds none",
+    "Scope is documentation and methods, no runtime/60fps/visual/audio qualification",
+    "Source peak pair semantics differ from independent maxima; preserved and qualified"
+  ],
+  "publication_payload": "text only, no licensed media or ROM",
+  "independent_review": {
+    "decision": "proceed_with_tracked_risks",
+    "finding": "minor archival peak pair semantics; explicit in validation, no budget change",
+    "validation": "review_validation.json"
+  },
+  "whitespace_policy": {
+    "active_delta": "git diff --cached --check excluding immutable source_records passed",
+    "raw_snapshot_exception": "source_records/06_perf_and_divergence_audit_20261021.md line67 retains one original trailing space to preserve SHA-256; source bytes not normalized"
+  }
+}

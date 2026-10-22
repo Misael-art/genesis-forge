@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "quality_review_request",
+  "review_id": "mugen_delivery_curation_20261021",
+  "review_stage": "foundation",
+  "project_context": "consulting",
+  "project_root": ".",
+  "as_of": "2026-10-21",
+  "current_claim_ceiling": "documented_method_only",
+  "changed_domains": [
+    "governance"
+  ],
+  "risk_flags": [
+    "claim_risk"
+  ],
+  "requested_domains": [
+    "governance"
+  ],
+  "domain_scope": [
+    "governance"
+  ],
+  "commercial_intent": false,
+  "narrative_weight": "none",
+  "audio_weight": "none",
+  "producer_ids": [
+    "root"
+  ],
+  "artifacts": [
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "sha256": "3b6a5a067b19961b3219716735ee38bb643f96d60db7f6d46fed2d8929b5ece1",
+      "role": "other"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "sha256": "d3a05e4ff016dc4d67ef37a4494e534d735a580a2dc1c6578243bf1c85ff8677",
+      "role": "other"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/operation/sgdk-build-wrapper-operator/SKILL.md",
+      "sha256": "53ca489d4746fec241dca76ad4f20be6a759c9e8e119eb9c2d3d4673861bd129",
+      "role": "other"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md",
+      "sha256": "90224635bc675bd2fdd5cc8f6e1587c8ba0115f150bd27996e0088af7c4ddc1e",
+      "role": "other"
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/references/mugen_delivery_evidence_lessons.md",
+      "sha256": "89e737a20186cf18001bdcd2645cc724fdce8af207623240632ea20322328ea3",
+      "role": "other"
+    },
+    {
+      "path": "doc/06_AI_MEMORY_BANK.md",
+      "sha256": "445f8e96ba3474449a6fd3a73dbffd51bd9a771c932b40a2a9bca21be144097a",
+      "role": "other"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/decisions.json",
+      "sha256": "40965d6fe0963f0a87d316b6fbaa594e549e5f4d5e48cfdc6b3c8ce130774fa7",
+      "role": "other"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/source_manifest.json",
+      "sha256": "2706382f50981e55ff5ccfe7236ddbfb7271c498c094841a722c4e1def4063b7",
+      "role": "other"
+    },
+    {
+      "path": "doc/curation/2026_10_21_mugen_delivery/README.md",
+      "sha256": "145c6ddfd4174409ed4ea45a7f2555fe3718c00ff5e596f48f9e90bd2a82f741",
+      "role": "other"
+    }
+  ]
+}

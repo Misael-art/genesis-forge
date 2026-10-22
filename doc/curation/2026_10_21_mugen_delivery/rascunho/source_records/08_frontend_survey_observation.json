@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "mugenesis_frontend_survey_20261021_r1",
+  "route": "blastem_native_1_0_diagnostic",
+  "build_version": null,
+  "replaces_principal_rom": false,
+  "promotion_performed": false,
+  "delivery_gate_passed": false,
+  "claim_ceiling": "supplementary_debugger_snapshot",
+  "audio": "dummy_unvalidated",
+  "principal_rom_sha256": "1b66cd1d7d3117f7fec0e487e1d4a7473357b5fa0693c24d21cf333eada1c7a8",
+  "survey_rom_sha256": "a93bf7f7fe34c90e50e176e0ec294868134438afc0b9cc44929c1fd7df49658a",
+  "flag": "MG_FRONTEND_SURVEY",
+  "product_build_includes_flag": false,
+  "edges_issued_at_vdp_1800": 37,
+  "menu_vdp_offset_before_fight": 55,
+  "observations": [
+    {"vdp_frame": 123, "survey_frame": 68, "collector": "captured", "seen": "menu_main_cursor_arcade_six_modes"},
+    {"vdp_frame": 205, "survey_frame": 150, "collector": "captured", "seen": "matchup_arcade_ken_cpu_ryu"},
+    {"vdp_frame": 407, "survey_frame": 352, "collector": "captured", "seen": "matchup_versus_ken_p2_ryu"},
+    {"vdp_frame": 640, "survey_frame": 585, "collector": "captured", "seen": "matchup_training_perfil_parado"},
+    {"vdp_frame": 808, "survey_frame": 753, "collector": "captured", "seen": "matchup_time_attack_relogio_partially_covered"},
+    {"vdp_frame": 969, "survey_frame": 914, "collector": "blocked_debugger_timeout", "seen": "matchup_bonus_alvo_acertos_30s_partially_covered"},
+    {"vdp_frame": 1089, "survey_frame": 1032, "collector": "captured", "seen": "options_cpu_normal_rounds_timer_music_sfx_voice"},
+    {"vdp_frame": 1322, "survey_frame": 1252, "collector": "captured", "seen": "fight_intro_timer_99"},
+    {"vdp_frame": 1800, "survey_frame": 1512, "collector": "blocked_debugger_timeout", "seen": "fight_timer_96_life_bars_and_exchange"}
+  ],
+  "cadence_note": "Before the fight, VDP frame minus survey frame stayed 55. From survey 1252 to 1512 the VDP advanced 478 frames while the main loop advanced 260. That window is not one game frame per VBlank on this diagnostic capture.",
+  "layout_note": "Ken and Ryu sprites cover the lower hint lines on the menu and matchup screens.",
+  "still_open": ["official_flatpak_gate", "audible_audio", "h40_owner_slot_map", "finished_time_attack", "finished_bonus_quota", "sustained_60fps_on_heavy_scene"]
+}

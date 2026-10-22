@@ -1,0 +1,596 @@
+{
+  "status": "passed",
+  "self_check": {
+    "status": "passed",
+    "checks": 6
+  },
+  "source_profile_sha256": "4c50cafdd33981b5363bfbdeea9b4b7b813035d3b79000b37a0116fcfa382229",
+  "scope": "Independent arithmetic from existing parsed line profiles; not independent SRAM decoder verification or new emulator measurement",
+  "samples": [
+    {
+      "scene_frame": 321,
+      "fight_tick": 322,
+      "whole": {
+        "sprites": 21,
+        "width_pixels": 520,
+        "over_count_lines": 5,
+        "over_width_lines": 39
+      },
+      "per_slot": {
+        "0": {
+          "sprites": 6,
+          "width_pixels": 160,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "1": {
+          "sprites": 3,
+          "width_pixels": 80,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "2": {
+          "sprites": 3,
+          "width_pixels": 80,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        }
+      },
+      "policies": {
+        "": {
+          "sprites": 10,
+          "width_pixels": 240,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "0": {
+          "sprites": 15,
+          "width_pixels": 376,
+          "over_count_lines": 0,
+          "over_width_lines": 6
+        },
+        "1": {
+          "sprites": 13,
+          "width_pixels": 304,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "2": {
+          "sprites": 13,
+          "width_pixels": 312,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "0,1": {
+          "sprites": 18,
+          "width_pixels": 440,
+          "over_count_lines": 0,
+          "over_width_lines": 24
+        },
+        "0,2": {
+          "sprites": 18,
+          "width_pixels": 448,
+          "over_count_lines": 0,
+          "over_width_lines": 27
+        },
+        "1,2": {
+          "sprites": 16,
+          "width_pixels": 384,
+          "over_count_lines": 0,
+          "over_width_lines": 8
+        },
+        "0,1,2": {
+          "sprites": 21,
+          "width_pixels": 520,
+          "over_count_lines": 5,
+          "over_width_lines": 39
+        }
+      },
+      "best_single_excess": 0,
+      "additivity_mismatches": 0
+    },
+    {
+      "scene_frame": 414,
+      "fight_tick": 324,
+      "whole": {
+        "sprites": 24,
+        "width_pixels": 632,
+        "over_count_lines": 15,
+        "over_width_lines": 62
+      },
+      "per_slot": {
+        "0": {
+          "sprites": 5,
+          "width_pixels": 160,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "1": {
+          "sprites": 6,
+          "width_pixels": 160,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "2": {
+          "sprites": 6,
+          "width_pixels": 160,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        }
+      },
+      "policies": {
+        "": {
+          "sprites": 10,
+          "width_pixels": 240,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "0": {
+          "sprites": 13,
+          "width_pixels": 336,
+          "over_count_lines": 0,
+          "over_width_lines": 10
+        },
+        "1": {
+          "sprites": 16,
+          "width_pixels": 400,
+          "over_count_lines": 0,
+          "over_width_lines": 5
+        },
+        "2": {
+          "sprites": 15,
+          "width_pixels": 376,
+          "over_count_lines": 0,
+          "over_width_lines": 8
+        },
+        "0,1": {
+          "sprites": 19,
+          "width_pixels": 496,
+          "over_count_lines": 0,
+          "over_width_lines": 42
+        },
+        "0,2": {
+          "sprites": 18,
+          "width_pixels": 480,
+          "over_count_lines": 0,
+          "over_width_lines": 45
+        },
+        "1,2": {
+          "sprites": 21,
+          "width_pixels": 536,
+          "over_count_lines": 1,
+          "over_width_lines": 36
+        },
+        "0,1,2": {
+          "sprites": 24,
+          "width_pixels": 632,
+          "over_count_lines": 15,
+          "over_width_lines": 62
+        }
+      },
+      "best_single_excess": 16,
+      "additivity_mismatches": 0
+    },
+    {
+      "scene_frame": 507,
+      "fight_tick": 326,
+      "whole": {
+        "sprites": 22,
+        "width_pixels": 640,
+        "over_count_lines": 9,
+        "over_width_lines": 80
+      },
+      "per_slot": {
+        "0": {
+          "sprites": 8,
+          "width_pixels": 216,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "1": {
+          "sprites": 5,
+          "width_pixels": 160,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "2": {
+          "sprites": 5,
+          "width_pixels": 160,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        }
+      },
+      "policies": {
+        "": {
+          "sprites": 10,
+          "width_pixels": 232,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "0": {
+          "sprites": 13,
+          "width_pixels": 360,
+          "over_count_lines": 0,
+          "over_width_lines": 6
+        },
+        "1": {
+          "sprites": 13,
+          "width_pixels": 352,
+          "over_count_lines": 0,
+          "over_width_lines": 8
+        },
+        "2": {
+          "sprites": 13,
+          "width_pixels": 344,
+          "over_count_lines": 0,
+          "over_width_lines": 3
+        },
+        "0,1": {
+          "sprites": 18,
+          "width_pixels": 512,
+          "over_count_lines": 0,
+          "over_width_lines": 53
+        },
+        "0,2": {
+          "sprites": 17,
+          "width_pixels": 480,
+          "over_count_lines": 0,
+          "over_width_lines": 48
+        },
+        "1,2": {
+          "sprites": 17,
+          "width_pixels": 480,
+          "over_count_lines": 0,
+          "over_width_lines": 60
+        },
+        "0,1,2": {
+          "sprites": 22,
+          "width_pixels": 640,
+          "over_count_lines": 9,
+          "over_width_lines": 80
+        }
+      },
+      "best_single_excess": 24,
+      "additivity_mismatches": 0
+    },
+    {
+      "scene_frame": 600,
+      "fight_tick": 328,
+      "whole": {
+        "sprites": 21,
+        "width_pixels": 608,
+        "over_count_lines": 3,
+        "over_width_lines": 45
+      },
+      "per_slot": {
+        "0": {
+          "sprites": 4,
+          "width_pixels": 104,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "1": {
+          "sprites": 8,
+          "width_pixels": 216,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "2": {
+          "sprites": 8,
+          "width_pixels": 216,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        }
+      },
+      "policies": {
+        "": {
+          "sprites": 10,
+          "width_pixels": 240,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "0": {
+          "sprites": 11,
+          "width_pixels": 288,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "1": {
+          "sprites": 13,
+          "width_pixels": 368,
+          "over_count_lines": 0,
+          "over_width_lines": 14
+        },
+        "2": {
+          "sprites": 13,
+          "width_pixels": 368,
+          "over_count_lines": 0,
+          "over_width_lines": 11
+        },
+        "0,1": {
+          "sprites": 16,
+          "width_pixels": 448,
+          "over_count_lines": 0,
+          "over_width_lines": 21
+        },
+        "0,2": {
+          "sprites": 16,
+          "width_pixels": 448,
+          "over_count_lines": 0,
+          "over_width_lines": 19
+        },
+        "1,2": {
+          "sprites": 18,
+          "width_pixels": 528,
+          "over_count_lines": 0,
+          "over_width_lines": 44
+        },
+        "0,1,2": {
+          "sprites": 21,
+          "width_pixels": 608,
+          "over_count_lines": 3,
+          "over_width_lines": 45
+        }
+      },
+      "best_single_excess": 0,
+      "additivity_mismatches": 0
+    },
+    {
+      "scene_frame": 693,
+      "fight_tick": 330,
+      "whole": {
+        "sprites": 14,
+        "width_pixels": 376,
+        "over_count_lines": 0,
+        "over_width_lines": 7
+      },
+      "per_slot": {
+        "1": {
+          "sprites": 4,
+          "width_pixels": 104,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "2": {
+          "sprites": 4,
+          "width_pixels": 104,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        }
+      },
+      "policies": {
+        "": {
+          "sprites": 10,
+          "width_pixels": 264,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "1": {
+          "sprites": 11,
+          "width_pixels": 288,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "2": {
+          "sprites": 11,
+          "width_pixels": 296,
+          "over_count_lines": 0,
+          "over_width_lines": 0
+        },
+        "1,2": {
+          "sprites": 14,
+          "width_pixels": 376,
+          "over_count_lines": 0,
+          "over_width_lines": 7
+        }
+      },
+      "best_single_excess": 0,
+      "additivity_mismatches": 0
+    }
+  ],
+  "counterfactual_comparisons": [
+    {
+      "frame": 321,
+      "policy": "all_active",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 21,
+      "independent_count_max": 21,
+      "count_is_independent_max": true,
+      "reported_line": 139
+    },
+    {
+      "frame": 321,
+      "policy": "oldest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 15,
+      "independent_count_max": 15,
+      "count_is_independent_max": true,
+      "reported_line": 141
+    },
+    {
+      "frame": 321,
+      "policy": "newest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 13,
+      "independent_count_max": 13,
+      "count_is_independent_max": true,
+      "reported_line": 141
+    },
+    {
+      "frame": 321,
+      "policy": "none",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 10,
+      "independent_count_max": 10,
+      "count_is_independent_max": true,
+      "reported_line": 141
+    },
+    {
+      "frame": 414,
+      "policy": "all_active",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 24,
+      "independent_count_max": 24,
+      "count_is_independent_max": true,
+      "reported_line": 140
+    },
+    {
+      "frame": 414,
+      "policy": "oldest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 13,
+      "independent_count_max": 13,
+      "count_is_independent_max": true,
+      "reported_line": 140
+    },
+    {
+      "frame": 414,
+      "policy": "newest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 15,
+      "independent_count_max": 15,
+      "count_is_independent_max": true,
+      "reported_line": 140
+    },
+    {
+      "frame": 414,
+      "policy": "none",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 10,
+      "independent_count_max": 10,
+      "count_is_independent_max": true,
+      "reported_line": 140
+    },
+    {
+      "frame": 507,
+      "policy": "all_active",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 22,
+      "independent_count_max": 22,
+      "count_is_independent_max": true,
+      "reported_line": 159
+    },
+    {
+      "frame": 507,
+      "policy": "oldest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 13,
+      "independent_count_max": 13,
+      "count_is_independent_max": true,
+      "reported_line": 172
+    },
+    {
+      "frame": 507,
+      "policy": "newest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 12,
+      "independent_count_max": 13,
+      "count_is_independent_max": false,
+      "reported_line": 161
+    },
+    {
+      "frame": 507,
+      "policy": "none",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 10,
+      "independent_count_max": 10,
+      "count_is_independent_max": true,
+      "reported_line": 139
+    },
+    {
+      "frame": 600,
+      "policy": "all_active",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 21,
+      "independent_count_max": 21,
+      "count_is_independent_max": true,
+      "reported_line": 157
+    },
+    {
+      "frame": 600,
+      "policy": "oldest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 11,
+      "independent_count_max": 11,
+      "count_is_independent_max": true,
+      "reported_line": 159
+    },
+    {
+      "frame": 600,
+      "policy": "newest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 13,
+      "independent_count_max": 13,
+      "count_is_independent_max": true,
+      "reported_line": 160
+    },
+    {
+      "frame": 600,
+      "policy": "none",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 10,
+      "independent_count_max": 10,
+      "count_is_independent_max": true,
+      "reported_line": 139
+    },
+    {
+      "frame": 693,
+      "policy": "all_active",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 14,
+      "independent_count_max": 14,
+      "count_is_independent_max": true,
+      "reported_line": 157
+    },
+    {
+      "frame": 693,
+      "policy": "oldest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 11,
+      "independent_count_max": 11,
+      "count_is_independent_max": true,
+      "reported_line": 154
+    },
+    {
+      "frame": 693,
+      "policy": "newest_only",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 11,
+      "independent_count_max": 11,
+      "count_is_independent_max": true,
+      "reported_line": 158
+    },
+    {
+      "frame": 693,
+      "policy": "none",
+      "width_and_over_line_counts_match": true,
+      "recorded_pair_matches_reported_line": true,
+      "recorded_count": 10,
+      "independent_count_max": 10,
+      "count_is_independent_max": true,
+      "reported_line": 139
+    }
+  ],
+  "all_width_and_over_line_counts_match": true,
+  "recorded_peak_count_is_independent_max_for_all_policies": false,
+  "max_best_single_excess": 24
+}

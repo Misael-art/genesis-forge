@@ -279,3 +279,9 @@ em `sdk_content_identity.json`, mantem staging por workspace e serializa builds.
 Feche o descritor do lock nos processos Flatpak: servicos Wine sobreviventes
 nao podem herdar o lock. Mudanca de SDK/bridge invalida biblioteca e staging;
 nenhuma ROM historica e recertificada por essa invalidacao.
+
+## Curadoria de evidencia MUGEN (2026-10-21)
+
+Ao registrar candidata sem build ou comparar ROM identica com fonte historica, consultar
+`tools/sgdk_wrapper/.agent/references/mugen_delivery_evidence_lessons.md`.
+Aplicar somente os casos pertinentes; observacao suplementar nao promove entrega.
