@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "branding_splash_v3_lab",
+  "active_epoch": "splash_v3_visual_wip_20261015_v019_broken_floor_refined",
+  "state": "active_production",
+  "production_sources": [
+    {
+      "asset_id": "splash_v3_backdrop_energy_v006_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v006_20261014.png",
+      "sha256": "f3e924c1580c8ead73b0df84b9b557cef69af45eeff4e311bf236b7b371829b8",
+      "role": "translation_source",
+      "status": "eligible"
+    },
+    {
+      "asset_id": "splash_v3_lettering_direction_b_source_20261014",
+      "path": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png",
+      "sha256": "d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8",
+      "role": "translation_source",
+      "status": "eligible"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v019_20261015",
+      "path": "data/source_art/branding_v3/v019/source_backdrop_concept_ai_v019_20261015.png",
+      "sha256": "9fc213cc726c3a2fbbfff0ff9e9f9e15023e29f74459398c0a5af9802536840e",
+      "role": "translation_source",
+      "status": "eligible"
+    }
+  ],
+  "reference_only_sources": [
+    {
+      "asset_id": "splash_v3_visual_direction_20261013",
+      "path": "doc/curation/splash_v3_visual_model_sheet_proposal_20261013.json",
+      "sha256": "57248370756ead020e0ecb9d063561d334b77617164b15e1cfdd7a9053cad99b",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_storyboard_20261014",
+      "path": "doc/branding_v3_cinematic_storyboard.json",
+      "sha256": "5dd87e291645a0ecb57de190587ee05e593111bfc43f742811f4b625f0c693f4",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_user_development_decision_20261014",
+      "path": "doc/curation/splash_v3_user_development_decision_20261014.md",
+      "sha256": "9e2cd637e3e6a5bbe49555974035b201d19c3511587145c50181435ab8d197de",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v004_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v004_20261014.png",
+      "sha256": "dcf271e7c4c21e7d3a2aee275d32fe24a3196ddbc4954ba9309ce659fdcb2efa",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_lettering_runtime_context_20261014",
+      "path": "data/source_art/branding_v3/sources/source_lettering_runtime_context_ai_v001_20261014.png",
+      "sha256": "20fa2e32a125d829f26bf33287103339699b4e1fb99a55b32e42ce2341fee7d7",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v005_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v005_20261014.png",
+      "sha256": "bb32cf3c7e954b99d71fe71ed0197ba10685f1742847ccd1f75e91313016daea",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v013_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v013_20261014.png",
+      "sha256": "21282b2204ac942123fa53cfcb7590a7b72b35d5d9e75843bb8332e13874ba46",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v017_20261015",
+      "path": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.png",
+      "sha256": "4bb6bc3cf60fff57dc396eafd9d21bdee86b03349800ba6e9c40eec8ebc38033",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v008_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v008_20261014.png",
+      "sha256": "feb571791d496fc9085d49bcb20ebbfe5caea5b60ef30d18bd1dc3f06ecc19af",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v009_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v009_20261014.png",
+      "sha256": "730df0013734861a5b07d32e1eba1bb41df4a4e9d77e5c5d4d4bf7f841b8a947",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v010_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v010_20261014.png",
+      "sha256": "ef09bf9c38629b14ab5209070c5e5f89dac8d4e25cecdf484b7121b4284328e7",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v011_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v011_20261014.png",
+      "sha256": "895cfe218f804f354a8dbf18846d72883437f57933bdbb52721ec8383d97db2d",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v012_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v012_20261014.png",
+      "sha256": "b8b9c7833f84a14f522c42301f0f660f4358a82b721bf96d32698d4b0cba7a78",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v014_20261014",
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v014_20261014.png",
+      "sha256": "70cacd65a63e000a4e9d2c2ed13fd3da32fe54ef3e9824095204f2e7bee47e31",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v015_20261015",
+      "path": "data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.png",
+      "sha256": "87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    },
+    {
+      "asset_id": "splash_v3_backdrop_energy_v018_20261015",
+      "path": "data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.png",
+      "sha256": "93ddcafa8e4fcff6cf2e28b206f0a262cf7171aa149c25c9d4ce12b2220c52f0",
+      "role": "quality_reference_only",
+      "status": "reference_only"
+    }
+  ],
+  "forbidden_source_roots": [
+    "out",
+    "res",
+    "rascunho/visual_lab",
+    "archives",
+    "data/archive",
+    "data/staging"
+  ],
+  "forbidden_source_roles": [
+    "negative_evidence",
+    "comparison_only",
+    "visual_lab_control",
+    "technical_temporal_probe",
+    "procedural_code_probe",
+    "historical_superseded",
+    "runtime_evidence_only"
+  ],
+  "allowed_operations": [
+    "read_only_audit",
+    "pixel_validate",
+    "route_verify",
+    "source_audit",
+    "technical_conversion",
+    "native_authoring",
+    "res_promotion"
+  ]
+}

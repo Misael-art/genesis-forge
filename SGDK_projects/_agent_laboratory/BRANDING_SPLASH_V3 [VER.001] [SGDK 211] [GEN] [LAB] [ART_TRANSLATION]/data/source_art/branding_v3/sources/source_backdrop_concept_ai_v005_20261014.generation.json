@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-14T11:43:51Z",
+  "generation_channel": "built_in_image_gen",
+  "asset_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v005_20261014.png",
+  "asset_sha256": "bb32cf3c7e954b99d71fe71ed0197ba10685f1742847ccd1f75e91313016daea",
+  "canvas_px": [1447, 1087],
+  "reference": {
+    "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v004_20261014.png",
+    "sha256": "dcf271e7c4c21e7d3a2aee275d32fe24a3196ddbc4954ba9309ce659fdcb2efa"
+  },
+  "brief": "Alternate crystal-arena backdrop concept for the Mega Drive Splash V3, keeping a dark logo-safe center, side crystal formations, and a bright lower-center convergence while using larger, cleaner facets and less surface noise.",
+  "prompt_constraints": [
+    "No lettering, logos, symbols, frames, or watermark.",
+    "Avoid small speckle texture, checkerboard repetition, noisy dithering, smooth gradients, and photorealistic texture.",
+    "Keep the central logo zone dark and crystals away from it."
+  ],
+  "acceptance_status": "development_only",
+  "translation_gate": [
+    "Translate to 320x224, 4bpp, no more than 15 visible colors, and 8x8 tile alignment.",
+    "Inspect the logo-safe zone, highlight footprint, and convergence at native resolution and in the exact ROM.",
+    "Do not promote generated pixels or this source to final without future human curation."
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "name": "BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]",
+    "project_root_policy": "all_project_material_inside_project",
+    "lab_not_delivery": true
+  },
+  "registry_source": "doc/05_technical/93_16bit_hardware_mastery_registry.json",
+  "documentation_sync": {
+    "doc_13_spec_cenas": true,
+    "doc_10_memory_bank": true,
+    "doc_changelog": true,
+    "notes": "GDD, scene spec, TDD, storyboard, memory bank and changelog list the selected registry techniques and WIP status. The simple handoff uses pattern_catalog fade_transition plus existing palette_state_transitions and dma_transfer_safety. Candidate build is blocked before compilation; no runtime or delivery claim."
+  },
+  "allowed_external_artifacts": [],
+  "techniques": [
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "fixed_point_trig_lookup",
+      "human_proficiency_status": "TEORICA_PRIORITARIA",
+      "technique_tags": [
+        "FIXED_POINT_MATH",
+        "TRIG_LOOKUP",
+        "CPU_OPTIMIZATION"
+      ],
+      "owner_skills": [
+        "code/sgdk-runtime-coder",
+        "hardware/megadrive-vdp-budget-analyst"
+      ],
+      "evidence": {
+        "rom_sha256": "04f24e1cd52f227c5e01547f2d30b9b915b45fde84a197873687243d5ef35c90",
+        "blastem_evidence_paths": [
+          "out/evidence/splash_v3_visible_deadline_v015_20261016/native_cadence_01/cadence_observation.json",
+          "out/evidence/splash_v3_visible_deadline_v015_20261016/native_all_visible_02/sat_samples.json"
+        ],
+        "budget_report_path": "out/reviews/splash_v3_visible_deadline_20261016/cpu_frame_budget_report.json",
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_cinematic_storyboard.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "Exact6324-pair motion unchanged; guarded manual setters and staged black preload. All216 visible updates use216 VBlanks in repeated traces, first F0 loading still2. Whole VDP/audio/host cadence and human quality gates remain open."
+    },
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "dma_transfer_safety",
+      "human_proficiency_status": "TEORICA_PRIORITARIA",
+      "technique_tags": [
+        "DMA_OPTIMIZADO",
+        "DMA_QUEUE",
+        "VBLANK_BUDGET_AUDIT"
+      ],
+      "owner_skills": [
+        "hardware/megadrive-vdp-budget-analyst",
+        "code/sgdk-runtime-coder"
+      ],
+      "evidence": {
+        "rom_sha256": null,
+        "blastem_evidence_paths": [],
+        "budget_report_path": null,
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_transition_contract.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "Safe preload and VBlank ownership. The handoff candidate waits for DMA_getQueueSize()==0 without manual flush; envelope and worst-frame fit remain pending."
+    },
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "palette_state_transitions",
+      "human_proficiency_status": "TEORICA_PRIORITARIA",
+      "technique_tags": [
+        "PALETTE_MANAGEMENT_AVANCADO",
+        "PALETTE_TRANSITION",
+        "PALETTE_FLASH"
+      ],
+      "owner_skills": [
+        "art/visual-excellence-standards",
+        "code/sgdk-runtime-coder"
+      ],
+      "evidence": {
+        "rom_sha256": null,
+        "blastem_evidence_paths": [],
+        "budget_report_path": null,
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_cinematic_storyboard.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "Outline/fill/sweep and preview fade remain WIP. Handoff candidate captures menu CRAM and applies a 12-frame PAL_fadeInAll; visual legibility and runtime verification remain pending."
+    },
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "shadow_highlight_slot_rule",
+      "human_proficiency_status": "LABORATORIO",
+      "technique_tags": [
+        "PALETTE_MANAGEMENT_AVANCADO",
+        "SHADOW_HIGHLIGHT",
+        "PALETTE_REMASTERING"
+      ],
+      "owner_skills": [
+        "art/visual-excellence-standards",
+        "hardware/megadrive-vdp-budget-analyst"
+      ],
+      "evidence": {
+        "rom_sha256": null,
+        "blastem_evidence_paths": [],
+        "budget_report_path": null,
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_cinematic_storyboard.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "Slot-reservation check only; the current direction does not enable Shadow/Highlight."
+    },
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "palette_remastering_slot_audit",
+      "human_proficiency_status": "TEORICA_STANDARD",
+      "technique_tags": [
+        "PALETTE_REMASTERING",
+        "PALETTE_MANAGEMENT_AVANCADO",
+        "SHADOW_HIGHLIGHT"
+      ],
+      "owner_skills": [
+        "art/art-conversion-pipeline",
+        "art/visual-excellence-standards",
+        "hardware/megadrive-vdp-budget-analyst"
+      ],
+      "evidence": {
+        "rom_sha256": null,
+        "blastem_evidence_paths": [],
+        "budget_report_path": null,
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_context_pack_manifest.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "Palette roles are planned; material audit and dead-color report await authored source pixels."
+    },
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "tile_flipping",
+      "human_proficiency_status": "TEORICA_PRIORITARIA",
+      "technique_tags": [
+        "CUSTOM_SPRITE_COMPOSITION",
+        "METASPRITE_OPTIMIZATION",
+        "SPRITE_ENGINEERING",
+        "VRAM_TILE_INDEX_MANAGEMENT"
+      ],
+      "owner_skills": [
+        "art/megadrive-pixel-strict-rules",
+        "art/sprite-animation"
+      ],
+      "evidence": {
+        "rom_sha256": null,
+        "blastem_evidence_paths": [],
+        "budget_report_path": null,
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_context_pack_manifest.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "Hardware flips are a backdrop reuse candidate; no tilemap has been produced."
+    },
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "tile_dedup_hvflip_hashing",
+      "human_proficiency_status": "TEORICA_PRIORITARIA",
+      "technique_tags": [
+        "TILE_DEDUP_HVFLIP",
+        "VRAM_TILE_INDEX_MANAGEMENT",
+        "METASPRITE_OPTIMIZATION"
+      ],
+      "owner_skills": [
+        "art/art-conversion-pipeline",
+        "hardware/megadrive-vdp-budget-analyst"
+      ],
+      "evidence": {
+        "rom_sha256": null,
+        "blastem_evidence_paths": [],
+        "budget_report_path": null,
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_context_pack_manifest.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "Candidate for the BG_B backdrop; dedup savings and VRAM remain unmeasured."
+    },
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "xgm2_pcm_multiplexing",
+      "human_proficiency_status": "LABORATORIO",
+      "technique_tags": [
+        "AUDIO_ENGINEERING",
+        "MULTIPLEXING",
+        "PCM_AUDIO",
+        "XGM2_AUDIO",
+        "YM2612_AUDIO",
+        "DAC_AUDIO"
+      ],
+      "owner_skills": [
+        "code/xgm2-audio-director",
+        "code/sgdk-runtime-coder"
+      ],
+      "evidence": {
+        "rom_sha256": null,
+        "blastem_evidence_paths": [],
+        "budget_report_path": null,
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_scene_conception.md",
+        "doc/branding_v3_audio_architecture_card.json",
+        "doc/branding_v3_composition_scope_contract.json",
+        "doc/branding_v3_audio_event_matrix.json",
+        "doc/branding_v3_frequency_masking_plan.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "E Dorian loop and four PCM cues are documented; score, sample audit, channel budget, and simultaneous-play proof remain pending."
+    },
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "registry_id": "xgm2_audio_architecture",
+      "human_proficiency_status": "TEORICA_STANDARD",
+      "technique_tags": [
+        "AUDIO_ENGINEERING",
+        "XGM2_AUDIO",
+        "FM_SYNTHESIS",
+        "YM2612_AUDIO",
+        "PSG_AUDIO",
+        "DAC_AUDIO"
+      ],
+      "owner_skills": [
+        "code/xgm2-audio-director",
+        "code/sgdk-runtime-coder",
+        "architecture/scene-state-architect"
+      ],
+      "evidence": {
+        "rom_sha256": null,
+        "blastem_evidence_paths": [],
+        "budget_report_path": null,
+        "validation_report_path": null,
+        "promotion_record_path": null
+      },
+      "doc_refs": [
+        "doc/11-gdd.md",
+        "doc/13-spec-cenas.md",
+        "doc/15-tdd.md",
+        "doc/tdd_contract.json",
+        "doc/branding_v3_transition_contract.json",
+        "doc/branding_v3_audio_architecture_card.json",
+        "doc/branding_v3_composition_scope_contract.json",
+        "doc/branding_v3_frequency_masking_plan.json",
+        "doc/branding_v3_audio_event_matrix.json",
+        "doc/branding_v3_loop_integrity_plan.json",
+        "doc/branding_v3_blastem_audio_proof_plan.json",
+        "doc/10-memory-bank.md",
+        "doc/changelog/changelog.md"
+      ],
+      "notes": "V3 channel ownership and masking are contracted; XGM2 playback, PCM concurrency, and BlastEm audio proof remain pending."
+    }
+  ]
+}

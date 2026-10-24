@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "splash_v3_lettering_direction_board",
+  "scene_id": "branding_sequence_v3",
+  "status": "development_wip_review_pending",
+  "board": {
+    "path": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png",
+    "sha256": "d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8",
+    "size_px": [
+      1672,
+      941
+    ],
+    "generation_record": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.generation.json",
+    "acceptance_status": "visual_lab_control"
+  },
+  "v005_context_contact_sheet": {
+    "path": "data/source_art/branding_v3/sources/source_lettering_runtime_context_ai_v001_20261014.png",
+    "sha256": "20fa2e32a125d829f26bf33287103339699b4e1fb99a55b32e42ce2341fee7d7",
+    "size_px": [
+      1024,
+      1536
+    ],
+    "generation_record": "data/source_art/branding_v3/sources/source_lettering_runtime_context_ai_v001_20261014.generation.json",
+    "role": "three_panel_composition_comparison_only",
+    "panel_order": [
+      "A_heroic_ice",
+      "B_faceted_crystal",
+      "C_forward_energy"
+    ],
+    "acceptance_status": "visual_lab_control",
+    "limits": [
+      "AI contact sheet, not exact 320x224 viewport captures.",
+      "Not pixel-art conversion, native palette proof, model sheet, or runtime asset.",
+      "Use only to compare composition, hierarchy, and broad readability before a deterministic native translation."
+    ]
+  },
+  "reference_input": {
+    "path": "data/source_art/branding_v3/sources/source_lettering_plate_ai_v002.png",
+    "sha256": "701f28c87caf80171d2328c433a10dc176d27c60cab8011add0935345b2086c3",
+    "role": "loose_reference_only"
+  },
+  "runtime_context": {
+    "rom_sha256": "22c6e3962c253b2588cd07d0b9d4fa2d890d4366b8e4de71a87b59e1b755baf4",
+    "backdrop_candidate": "res/branding_v3/splash_backdrop_v3_v006_320x224.png",
+    "target_viewport_px": [
+      320,
+      224
+    ],
+    "sgdk_plate_px": [
+      224,
+      48
+    ],
+    "forge_plate_px": [
+      192,
+      32
+    ],
+    "last_observed_rom_sha256": "22c6e3962c253b2588cd07d0b9d4fa2d890d4366b8e4de71a87b59e1b755baf4",
+    "rom_contains_active_b_assets": true,
+    "candidate_build_status": "built_wip_observed_in_blastem",
+    "candidate_build_block_report": "out/logs/splash_v3_lettering_b_build_block_20261014.json",
+    "last_successful_build_report": "out/logs/linux_wine_build_report.json",
+    "capture_evidence_report": "out/logs/emulator_evidence_splash_v3_visual_v006_20261014.json"
+  },
+  "directions": [
+    {
+      "id": "A",
+      "name": "heroic_ice",
+      "description": "Squared beveled glyphs, broad white/ice faces, restrained cyan cut and cobalt outline; FORGE compact and subordinate.",
+      "curator_read": "Clear and legible after palette reduction, but its native probe is very close to the current placeholder and adds little new identity.",
+      "recommended_for_native_scale_probe": false,
+      "recommended_for_next_refinement": false,
+      "human_selection": "pending"
+    },
+    {
+      "id": "B",
+      "name": "faceted_crystal",
+      "description": "Large crystal facet cuts across the letter faces with cyan highlights and broad navy separation.",
+      "curator_read": "Strongest crystal identity. The current 4bpp probe keeps SGDK/FORGE readable and counters open; human small-screen review remains pending.",
+      "recommended_for_native_scale_probe": false,
+      "recommended_for_next_refinement": true,
+      "human_selection": "pending"
+    },
+    {
+      "id": "C",
+      "name": "forward_energy",
+      "description": "Forward-leaning geometry, short diagonal cuts, navy shadow and sparse cyan accents.",
+      "curator_read": "Most motion-oriented; italic posture may make the mark feel sporty and compete with the cinematic reveal.",
+      "recommended_for_native_scale_probe": false,
+      "recommended_for_next_refinement": false,
+      "human_selection": "pending"
+    }
+  ],
+  "native_translation_probes": {
+    "report": "out/logs/splash_v3_lettering_native_probe_20261014.json",
+    "builder": "data/source_art/branding_v3/build_splash_v3_lettering_native_probes.py",
+    "status": "b_candidate_active_in_res_built_wip",
+    "formats": "All six plates are indexed 4bpp PNGs, palette index 0 transparent, dimensions 224x48 for SGDK and 192x32 for FORGE, with 13-15 visible colors on the Mega Drive 9-bit grid.",
+    "variants_contact": {
+      "path": "rascunho/visual_lab/splash_v3_lettering_variants_native_v001_960x224.png",
+      "sha256": "bee7c1c00bdafa665b635b7501a4e98cd3e6726cc6ef2d39766fce6038a66ad3",
+      "panel_order": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "baseline_comparison": {
+      "path": "rascunho/visual_lab/splash_v3_lettering_current_vs_variants_native_v001_1280x224.png",
+      "sha256": "596df8462b6d90be5a54f788a673c2e70f60415aa35d75d923352cf9d4e117d5",
+      "panel_order": [
+        "current_runtime_placeholder",
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "runtime_integrated": true,
+    "human_selection": "pending",
+    "runtime_assets_in_res": true,
+    "candidate_build_status": "built_wip_observed_in_blastem",
+    "build_block_report": "out/logs/splash_v3_lettering_b_build_block_20261014.json",
+    "runtime_assets": [
+      {
+        "path": "res/branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+        "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9"
+      },
+      {
+        "path": "res/branding_v3/splash_forge_wordmark_v3_192x32.png",
+        "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c"
+      }
+    ],
+    "static_viewport_probe": {
+      "path": "rascunho/visual_lab/splash_v3_lettering_probe_b_v001_320x224.png",
+      "sha256": "15e97ea38a63f48b45d7a97a35ad7cb47d85b3161ed967e452243cc4964d1745",
+      "size_px": [
+        320,
+        224
+      ],
+      "rom_capture": false
+    },
+    "last_successful_build_report": "out/logs/linux_wine_build_report.json",
+    "capture_evidence_report": "out/logs/emulator_evidence_splash_v3_visual_v006_20261014.json"
+  },
+  "curator_recommendation": "B remains the curator WIP candidate because its crystal facets read clearly at native plate size and the counters remain open. The static 320x224 composite is review material only. B is active in isolated /res paths but has not been compiled or observed in a ROM; no human direction selection, model-sheet approval or final visual approval exists.",
+  "constraints": [
+    "Exact spelling SGDK and FORGE.",
+    "SGDK remains the dominant mark; FORGE stays subordinate.",
+    "Use 4bpp palettes with at most 15 visible colors on the 9-bit VDP grid.",
+    "Author an approved per-glyph model sheet before final pixel art.",
+    "No AI high-resolution board enters res directly; no runtime font or code-drawn glyphs.",
+    "Bind any later ROM comparison to exact source, asset and ROM hashes."
+  ],
+  "open_review": [
+    "Compare the native 320x224 probes against the current placeholder; choose B, A, C, or request a revision. B is only a curator recommendation.",
+    "Check counter openness, letter spacing, SGDK/FORGE hierarchy and readability at 320x224.",
+    "Approve per-glyph silhouettes, bevel/facet rules, outline thickness, palette indices and minimum contrast before raster production.",
+    "Review the exact V006/B ROM screenshot at native 320x224; the screenshot is hash-bound evidence but does not approve lettering or background quality.",
+    "Check that A: REVER is centered below the lockup and clears the lower crystal flare; capture BUTTON_A replay separately.",
+    "Observe a complete frame-marked cycle before deciding whether B needs glyph, counter, spacing or facet revisions."
+  ],
+  "approvals": {
+    "model_sheet_approved": false,
+    "final_pixels_approved": false,
+    "runtime_integration_approved": false
+  }
+}

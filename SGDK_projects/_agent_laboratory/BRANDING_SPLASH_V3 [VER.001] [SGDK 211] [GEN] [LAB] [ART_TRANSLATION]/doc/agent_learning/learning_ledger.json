@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "name": "BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]"
+  },
+  "policy": {
+    "local_auto_update": true,
+    "canonical_auto_mutation": false,
+    "human_approval_required": true,
+    "evidence_required": true
+  },
+  "generated_at": "2026-10-16T21:56:30Z",
+  "source_digest": "42d4fffeaeccba1c4d7d621db5da132b11db02b0b152a20396e89673d3e370a3",
+  "lessons": [
+    {
+      "lesson_id": "lesson_05fc10db50a0baa6",
+      "title": "2026-10-16 \u2014 ownership da paleta e observacao",
+      "source_kind": "failure_pattern",
+      "source_document": "doc/agent_learning/failure_patterns.md",
+      "classification": "local_note",
+      "lifecycle_status": "evidence_incomplete",
+      "observed_at": "date_not_declared",
+      "problem_signature": "2026_10_16_ownership_da_paleta_e_observacao",
+      "context": "",
+      "observation": "2026-10-16 \u2014 ownership da paleta e observacao",
+      "diagnosis": "",
+      "resolution_or_preventive_heuristic": "",
+      "scope_limits": [],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/failure_patterns.md",
+          "out/reviews/splash_v3_visible_deadline_20261016/review_summary.json"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "human_review",
+        "deduplication": "no_match",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "none",
+        "target_path": null,
+        "summary": "Keep local until an existing owner or reusable procedural gap is proven.",
+        "required_tests": [
+          "human classification review"
+        ],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "lesson_id": "lesson_66ee9eb1b5dea1c2",
+      "title": "O usu\u00e1rio relatou que as part\u00edculas ainda ficavam aglutinadas e que o contorno do SGDK perdia defini\u00e7\u00e3o quando o brilho azul escurecia.",
+      "source_kind": "failure_pattern",
+      "source_document": "doc/agent_learning/failure_patterns.md",
+      "classification": "local_note",
+      "lifecycle_status": "evidence_incomplete",
+      "observed_at": "2026-10-15",
+      "problem_signature": "o_usu_rio_relatou_que_as_part_culas_ainda_ficavam_aglutinadas_e_que_o_contorno_do_sgdk_perdia_defini_o_quando_o_brilho_azul_escurecia",
+      "context": "branding_sequence_v3`, sweep v003 e fade do wordmark",
+      "observation": "O usu\u00e1rio relatou que as part\u00edculas ainda ficavam aglutinadas e que o contorno do SGDK perdia defini\u00e7\u00e3o quando o brilho azul escurecia.",
+      "diagnosis": "As seis trajet\u00f3rias iniciavam e terminavam em janelas pr\u00f3ximas, compartilhavam um corredor visual e n\u00e3o havia medida de dist\u00e2ncia m\u00ednima entre centros; os tr\u00eas tons mais escuros do contorno permaneciam quase pretos durante a redu\u00e7\u00e3o do fundo.",
+      "resolution_or_preventive_heuristic": "Variar in\u00edcio, dura\u00e7\u00e3o e dist\u00e2ncia por part\u00edcula; exigir tr\u00eas bandas de velocidade, dois desvios de vento independentes e separa\u00e7\u00e3o m\u00ednima medida; elevar somente a rampa azul do contorno no in\u00edcio do fade, preservando os pixels e a paleta de preenchimento.",
+      "scope_limits": [],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/failure_patterns.md",
+          "doc/curation/splash_v3_wind_dispersal_contract_v004_20261015.json",
+          "out/logs/splash_v3_wind_dispersal_scanline_v004_20261015.json"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "human_review",
+        "deduplication": "no_match",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "none",
+        "target_path": null,
+        "summary": "Keep local until an existing owner or reusable procedural gap is proven.",
+        "required_tests": [
+          "human classification review"
+        ],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "lesson_id": "lesson_efa744e4ec4c7274",
+      "title": "Usu\u00e1rio rejeitou o resultado ROM SHA `9d34b114b86311e6b7924205d7317af7472f5624e2848ed214a328dc44272006` como mon\u00f3tono, sem a anima\u00e7\u00e3o e energia combinadas.",
+      "source_kind": "failure_pattern",
+      "source_document": "doc/agent_learning/failure_patterns.md",
+      "classification": "local_note",
+      "lifecycle_status": "evidence_incomplete",
+      "observed_at": "2026-10-15",
+      "problem_signature": "usu_rio_rejeitou_o_resultado_rom_sha_9d34b114b86311e6b7924205d7317af7472f5624e2848ed214a328dc44272006_como_mon_tono_sem_a_anima_o_e_energia_combinadas",
+      "context": "branding_sequence_v3`, sweep F180-F209",
+      "observation": "Usu\u00e1rio rejeitou o resultado ROM SHA `9d34b114b86311e6b7924205d7317af7472f5624e2848ed214a328dc44272006` como mon\u00f3tono, sem a anima\u00e7\u00e3o e energia combinadas.",
+      "diagnosis": "O diretor de cena transformou o pedido em varia\u00e7\u00e3o de posi\u00e7\u00e3o, mas n\u00e3o em fases de vida, linguagem visual por part\u00edcula, rastro, flicker e dissipa\u00e7\u00e3o; os oito frames eram alternados por \u00edndice global.",
+      "resolution_or_preventive_heuristic": "Traduzir cada part\u00edcula em origem/timing/trajet\u00f3ria + nascimento/ativo/fade, perfil de quadros e rastro; declarar limites de hardware e checks de leitura antes do build; revisar a cena viva com o usu\u00e1rio.",
+      "scope_limits": [],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/failure_patterns.md",
+          "doc/curation/splash_v3_wind_lifecycle_motion_contract_v002_20261015.json"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "human_review",
+        "deduplication": "no_match",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "none",
+        "target_path": null,
+        "summary": "Keep local until an existing owner or reusable procedural gap is proven.",
+        "required_tests": [
+          "human classification review"
+        ],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "lesson_id": "lesson_67dc09de86bb0fc9",
+      "title": "Varredura linear da sonda e cache de visibilidade passaram em equivalencia, mas nao reduziram VBlanks do respectivo par.",
+      "source_kind": "failure_pattern",
+      "source_document": "doc/agent_learning/failure_patterns.md",
+      "classification": "local_note",
+      "lifecycle_status": "evidence_incomplete",
+      "observed_at": "2026-10-16",
+      "problem_signature": "varredura_linear_da_sonda_e_cache_de_visibilidade_passaram_em_equivalencia_mas_nao_reduziram_vblanks_do_respectivo_par",
+      "context": "Otimizacao de sonda e visibilidade",
+      "observation": "Varredura linear da sonda e cache de visibilidade passaram em equivalencia, mas nao reduziram VBlanks do respectivo par.",
+      "diagnosis": "A contagem de operacoes C nao quantifica o custo nem demonstra cruzamento do deadline 68000.",
+      "resolution_or_preventive_heuristic": "Rejeitar ambas, restaurar fonte exata, guardar ROM/trace e exigir evidencia nova antes de reabrir a hipotese.",
+      "scope_limits": [],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/failure_patterns.md",
+          "out/logs/splash_v3_linear_probe_rejection_20261016.json",
+          "out/logs/splash_v3_visibility_cache_rejection_20261016.json"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "human_review",
+        "deduplication": "no_match",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "none",
+        "target_path": null,
+        "summary": "Keep local until an existing owner or reusable procedural gap is proven.",
+        "required_tests": [
+          "human classification review"
+        ],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "lesson_id": "lesson_290ecbbb4ef7395e",
+      "title": "Aprimorar `cutscene-cinematic-direction` com um handoff de part\u00edculas que exige ciclo visual completo, ao menos tr\u00eas bandas de velocidade, duas trajet\u00f3rias de vento n\u00e3o uniformes, separa\u00e7\u00e3o m\u00ednima quantificada, rastro/flicker e contraste do contorno ap\u00f3s o fade.",
+      "source_kind": "skill_promotion_candidate",
+      "source_document": "doc/agent_learning/skill_promotion_candidates.md",
+      "classification": "promotion_candidate",
+      "lifecycle_status": "human_review_required",
+      "observed_at": "2026-10-15",
+      "problem_signature": "aprimorar_cutscene_cinematic_direction_com_um_handoff_de_part_culas_que_exige_ciclo_visual_completo_ao_menos_tr_s_bandas_de_velocidade_duas_trajet_rias_de_vento_n_o_uniformes_separa_o_m_nima_quantificada_rastro_flicker_e_contraste_do_contorno_ap_s_o_fade",
+      "context": "",
+      "observation": "O v003 continuou visualmente aglutinado apesar das posi\u00e7\u00f5es independentes; o handoff tamb\u00e9m n\u00e3o definiu um piso de contraste para o nome quando o campo escurece.",
+      "diagnosis": "",
+      "resolution_or_preventive_heuristic": "",
+      "scope_limits": [
+        "Curador de cena/arte deve revisar a captura v004 e o feedback humano; s\u00f3 reconsiderar promo\u00e7\u00e3o depois de aceita\u00e7\u00e3o e reprodu\u00e7\u00e3o independente em outra cena."
+      ],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/skill_promotion_candidates.md"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "skill",
+        "deduplication": "no_match",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "create_skill",
+        "target_path": null,
+        "summary": "Evaluate whether a new skill is justified: Aprimorar `cutscene-cinematic-direction` com um handoff de part\u00edculas que exige ciclo visual completo, ao menos tr\u00eas bandas de velocidade, duas trajet\u00f3rias de vento n\u00e3o uniformes, separa\u00e7\u00e3o m\u00ednima quantificada, rastro/flicker e contraste do contorno ap\u00f3s o fade.",
+        "required_tests": [
+          "cross-project reproduction",
+          "skill framework validation",
+          "human approval"
+        ],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "lesson_id": "lesson_cae61f075b901e90",
+      "title": "2026-10-16 \u2014 reducao de custo com fidelidade medida",
+      "source_kind": "success_pattern",
+      "source_document": "doc/agent_learning/success_patterns.md",
+      "classification": "local_note",
+      "lifecycle_status": "evidence_incomplete",
+      "observed_at": "date_not_declared",
+      "problem_signature": "2026_10_16_reducao_de_custo_com_fidelidade_medida",
+      "context": "",
+      "observation": "2026-10-16 \u2014 reducao de custo com fidelidade medida",
+      "diagnosis": "",
+      "resolution_or_preventive_heuristic": "",
+      "scope_limits": [],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/success_patterns.md",
+          "out/reviews/splash_v3_visible_deadline_20261016/review_summary.json"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "none",
+        "deduplication": "not_applicable",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "none",
+        "target_path": null,
+        "summary": "Local success note; no canonical change proposed.",
+        "required_tests": [],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "lesson_id": "lesson_d408b03c23a39bd0",
+      "title": "Gerar coordenadas com as funcoes C originais e conferir todos os 6.324 pares nos bytes da ROM reduziu o custo sem reduzir particulas ou alterar trajetorias. Com geometria 8x8 validada por guarda, expansao usa 60 VBlanks/60 updates e sweep 30/30; SAT igual em nove quadros.",
+      "source_kind": "success_pattern",
+      "source_document": "doc/agent_learning/success_patterns.md",
+      "classification": "local_note",
+      "lifecycle_status": "evidence_incomplete",
+      "observed_at": "2026-10-16",
+      "problem_signature": "gerar_coordenadas_com_as_funcoes_c_originais_e_conferir_todos_os_6_324_pares_nos_bytes_da_rom_reduziu_o_custo_sem_reduzir_particulas_ou_alterar_trajetorias_com_geometria_8x8_validada_por_guarda_expansao_usa_60_vblanks_60_updates_e_sweep_30_30_sat_igual_em_nove_quadros",
+      "context": "Coreografia inteira deterministica",
+      "observation": "Gerar coordenadas com as funcoes C originais e conferir todos os 6.324 pares nos bytes da ROM reduziu o custo sem reduzir particulas ou alterar trajetorias. Com geometria 8x8 validada por guarda, expansao usa 60 VBlanks/60 updates e sweep 30/30; SAT igual em nove quadros.",
+      "diagnosis": "",
+      "resolution_or_preventive_heuristic": "",
+      "scope_limits": [
+        "Caminhos deterministicos pequenos; paga 25.296 bytes de ROM. Convergencia ainda fora do deadline e qualidade artistica continua sem aceite humano."
+      ],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/success_patterns.md",
+          "out/logs/splash_v3_motion_lut_compiled_equivalence_v005_20261016.json",
+          "out/logs/splash_v3_stable_geometry_sat_equivalence_20261016.json",
+          "out/reviews/splash_v3_handoff_motion_20261016/cpu_frame_budget_report.json"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "none",
+        "deduplication": "not_applicable",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "none",
+        "target_path": null,
+        "summary": "Local success note; no canonical change proposed.",
+        "required_tests": [],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "lesson_id": "lesson_0f4fe47db6c911b1",
+      "title": "Medir cadeia submetida com deltas count/width empacotados reduziu custo e removeu sprites ocultos. 15 cadeias igualam VRAM; 12 amostras de largura medidas conferem; cadencia repetiu 255/241.",
+      "source_kind": "success_pattern",
+      "source_document": "doc/agent_learning/success_patterns.md",
+      "classification": "local_note",
+      "lifecycle_status": "evidence_incomplete",
+      "observed_at": "2026-10-16",
+      "problem_signature": "medir_cadeia_submetida_com_deltas_count_width_empacotados_reduziu_custo_e_removeu_sprites_ocultos_15_cadeias_igualam_vram_12_amostras_de_largura_medidas_conferem_cadencia_repetiu_255_241",
+      "context": "Observador SAT",
+      "observation": "Medir cadeia submetida com deltas count/width empacotados reduziu custo e removeu sprites ocultos. 15 cadeias igualam VRAM; 12 amostras de largura medidas conferem; cadencia repetiu 255/241.",
+      "diagnosis": "",
+      "resolution_or_preventive_heuristic": "",
+      "scope_limits": [
+        "Scanner no cache submetido nao e readback hardware; dumps separados provam 15 instantes, nao todos os quadros nem qualidade."
+      ],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/success_patterns.md",
+          "out/reviews/splash_v3_convergence_cost_20261016/review_summary.json"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "none",
+        "deduplication": "not_applicable",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "none",
+        "target_path": null,
+        "summary": "Local success note; no canonical change proposed.",
+        "required_tests": [],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    },
+    {
+      "lesson_id": "lesson_b79d677ed590be64",
+      "title": "Prontidao de entrada/fade/DMA manteve o mutex ativo mesmo com contador visual zero; B chegou a ROM durante o bloqueio e foi ignorado, depois reiniciou a splash; START abriu a demo.",
+      "source_kind": "success_pattern",
+      "source_document": "doc/agent_learning/success_patterns.md",
+      "classification": "local_note",
+      "lifecycle_status": "evidence_incomplete",
+      "observed_at": "2026-10-16",
+      "problem_signature": "prontidao_de_entrada_fade_dma_manteve_o_mutex_ativo_mesmo_com_contador_visual_zero_b_chegou_a_rom_durante_o_bloqueio_e_foi_ignorado_depois_reiniciou_a_splash_start_abriu_a_demo",
+      "context": "Handoff Splash V3/menu",
+      "observation": "Prontidao de entrada/fade/DMA manteve o mutex ativo mesmo com contador visual zero; B chegou a ROM durante o bloqueio e foi ignorado, depois reiniciou a splash; START abriu a demo.",
+      "diagnosis": "",
+      "resolution_or_preventive_heuristic": "",
+      "scope_limits": [
+        "Oito casos locais; nao substitui QA de todos os estados, load failure ou gate canonico."
+      ],
+      "evidence": {
+        "grade": "E1_artifact",
+        "freshness": "fresh",
+        "refs": [
+          "doc/agent_learning/success_patterns.md",
+          "out/evidence/splash_v3_stable_geometry_v005_20261016/native_handoff_01/handoff_observation.json"
+        ],
+        "gaps": [
+          "operational_evidence_missing"
+        ]
+      },
+      "routing": {
+        "candidate_kind": "none",
+        "deduplication": "not_applicable",
+        "canonical_target": null,
+        "owner_skill": null,
+        "match_rule_id": null
+      },
+      "canonical_patch_proposal": {
+        "action": "none",
+        "target_path": null,
+        "summary": "Local success note; no canonical change proposed.",
+        "required_tests": [],
+        "human_approval_required": true,
+        "human_approval": {
+          "status": "pending",
+          "record_ref": null
+        },
+        "apply_status": "not_applied"
+      }
+    }
+  ],
+  "candidate_index": [
+    {
+      "lesson_id": "lesson_05fc10db50a0baa6",
+      "title": "2026-10-16 \u2014 ownership da paleta e observacao",
+      "lifecycle_status": "evidence_incomplete",
+      "evidence_grade": "E1_artifact",
+      "action": "none",
+      "target_path": null
+    },
+    {
+      "lesson_id": "lesson_66ee9eb1b5dea1c2",
+      "title": "O usu\u00e1rio relatou que as part\u00edculas ainda ficavam aglutinadas e que o contorno do SGDK perdia defini\u00e7\u00e3o quando o brilho azul escurecia.",
+      "lifecycle_status": "evidence_incomplete",
+      "evidence_grade": "E1_artifact",
+      "action": "none",
+      "target_path": null
+    },
+    {
+      "lesson_id": "lesson_efa744e4ec4c7274",
+      "title": "Usu\u00e1rio rejeitou o resultado ROM SHA `9d34b114b86311e6b7924205d7317af7472f5624e2848ed214a328dc44272006` como mon\u00f3tono, sem a anima\u00e7\u00e3o e energia combinadas.",
+      "lifecycle_status": "evidence_incomplete",
+      "evidence_grade": "E1_artifact",
+      "action": "none",
+      "target_path": null
+    },
+    {
+      "lesson_id": "lesson_67dc09de86bb0fc9",
+      "title": "Varredura linear da sonda e cache de visibilidade passaram em equivalencia, mas nao reduziram VBlanks do respectivo par.",
+      "lifecycle_status": "evidence_incomplete",
+      "evidence_grade": "E1_artifact",
+      "action": "none",
+      "target_path": null
+    },
+    {
+      "lesson_id": "lesson_290ecbbb4ef7395e",
+      "title": "Aprimorar `cutscene-cinematic-direction` com um handoff de part\u00edculas que exige ciclo visual completo, ao menos tr\u00eas bandas de velocidade, duas trajet\u00f3rias de vento n\u00e3o uniformes, separa\u00e7\u00e3o m\u00ednima quantificada, rastro/flicker e contraste do contorno ap\u00f3s o fade.",
+      "lifecycle_status": "human_review_required",
+      "evidence_grade": "E1_artifact",
+      "action": "create_skill",
+      "target_path": null
+    }
+  ],
+  "canonical_promotion_performed": false
+}

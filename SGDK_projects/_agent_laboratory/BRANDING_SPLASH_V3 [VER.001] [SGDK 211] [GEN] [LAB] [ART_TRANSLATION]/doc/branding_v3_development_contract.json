@@ -1,0 +1,970 @@
+{
+  "schema_version": "1.0.0",
+  "contract_id": "branding_sequence_v3_development",
+  "status": "em_desenvolvimento",
+  "applies_to": "laboratorio BRANDING_SPLASH_V3",
+  "scene_id": "APP_SCENE_BRANDING",
+  "scope": "isolated_visual_and_audio_development_with_preview_and_menu_handoff_candidate",
+  "user_decision_ref": "doc/curation/splash_v3_user_development_decision_20261014.md",
+  "visual_curation_ref": "doc/curation/splash_v3_visual_curation_record_20261014.md",
+  "storyboard_ref": "doc/branding_v3_cinematic_storyboard.json",
+  "asset_provenance_ref": "doc/asset_provenance_manifest.json",
+  "promotion": {
+    "final_visual_approval": false,
+    "final_audio_approval": false,
+    "model_sheet_approved": false,
+    "template_promotion_authorized": false,
+    "forja_v2_archive_authorized": false,
+    "future_review_required": true
+  },
+  "curatorial_brief": {
+    "emotional_target": [
+      "energia positiva e heroismo",
+      "brilho cristalino e sofisticacao tecnologica",
+      "aventura e revelacao",
+      "movimento articulado com pausas"
+    ],
+    "audio_feedback_history": [
+      "A primeira versao tocava, mas soava abafada e monofonica, com camadas percebidas como instancias do mesmo timbre.",
+      "Uma versao posterior melhorou; o usuario pediu mais cristalino e ainda considerou a qualidade musical insuficiente.",
+      "O usuario rejeitou depois uma cama sonora continua e monotona, sem animacao nem energia.",
+      "V012 e a referencia positiva; V013 e V014 estao rejeitadas; V016/VGM4 pode integrar o preview, mas ainda nao foi ouvida pelo usuario nem aprovada.",
+      "A two-pass V016/VGM4 audition is ready in stereo and mono fold-down; it repeats one captured 3-second cycle from the V012 preview, whose VGM/cue and audio.c hashes match V017. This is a review aid, not a direct two-cycle capture from the current ROM; human approval remains pending.",
+      "On 2026-10-15, a direct two-pass V016/VGM4 audio capture was prepared from an isolated preview ROM; BlastEm reported 358/358 XGM2 frames and zero dropouts. Stereo/mono WAVs are ready for human review. The route is unsealed, the ROM is not project baseline V017, and musical approval, DAC budget and sustained performance remain pending."
+    ],
+    "brand_references": "Capcom e Konami sao referencias emocionais; nao copiar melodias, logo ou timbres. A agressividade SNK nao e alvo.",
+    "avoid": [
+      "som continuo, monotono ou abafado",
+      "brilho constante sem acentos",
+      "glow difuso como substituto de movimento",
+      "ruido cristalino que prejudique a leitura do lockup",
+      "fanfarra agressiva ou resolucao sombria"
+    ],
+    "visual_review_points": [
+      "Review exact spelling and each glyph counter at the native 320x224 H40 viewport; keep SGDK primary and FORGE subordinate.",
+      "Approve a per-glyph model sheet before final pixels: silhouette, width, spacing, baseline, bevel/facet direction, contour thickness, highlight side and shadow side.",
+      "Measure letter-to-background contrast in every reveal beat and on the 9-bit VDP grid; set and record numeric luma floors before final approval.",
+      "Confirm palette roles remain coherent: indices 1-9 contour and 10-15 fill; verify the runtime contour/fill reveal does not black out or wash out the mark.",
+      "Review 4:3 framing, safe margins and CRT/overscan readability in contour, fill, FORGE, sweep, hold, fade and prompt states.",
+      "Check that the dark negative space continues protecting the wordmark while the crystal convergence, lower flare and edge clusters animate.",
+      "Check crystal silhouettes, highlight clusters, edge density and background-to-letter separation; reject visual noise and mechanical repetition.",
+      "Review FORGE size, spacing, contrast and interaction with the lower convergence flare so it reads as a secondary signature.",
+      "Review particle scale, lifetime, spawn distribution, overlap with counters and letters, sprite priority and measured H40 scanline pressure.",
+      "Revisit anchor revision r1: the user reports that its 22-sprite F109 peak looked flawless; bind the observation to an exact ROM and frame, check VDP overflow and distinguish visual tolerance from the 20-sprite H40 budget.",
+      "Review sweep angle, width, speed, entry/exit, duration and readability over both wordmarks; confirm it adds motion without masking letters.",
+      "Review fade timing, final hold and prompt spelling/contrast; observe BUTTON_A replay response in the exact ROM.",
+      "Re-author the backdrop as reusable facet vocabulary; current V006 uses 583 H/V tiles. Keep 20-40 tiles as a curation target only when visual fidelity survives; avoid checkerboard and obvious repetition.",
+      "Capture exact frame markers for all seven beats and review the full cycle twice in BlastEm at 320x224; selected stills are not runtime validation.",
+      "Review the V006 final PAL0 transition from the source palette to the cool hold palette; confirm that edge facets remain crystalline while SGDK/FORGE stay primary.",
+      "Review the Portuguese replay hint A: REVER at tile column 16, row 21; capture the BUTTON_A replay response separately because this evidence burst does not contain an input trace.",
+      "V007 foi rejeitado após comparação nativa: excesso de microdetalhe e 719 tiles H/V; não reutilizar sua imagem como fonte da próxima rota.",
+      "V008 abre o centro e reduz o fundo para 438 tiles H/V, porém ficou simétrico e estático; manter só como controle.",
+      "V009 recupera assimetria e direção, também com 438 tiles H/V; revisar se raios/ignição invadem a safe area ou competem com SGDK/FORGE antes de seleção.",
+      "V010 manteve a corrente diagonal, mas deixou luma P95=105 sob a máscara atual do SGDK; comparação apenas.",
+      "V011 reduziu o luma médio sob as máscaras para 4,78, mas 1,13% dos pixels sob SGDK ainda passam de luma 32; a revisão localizou o restante no canto do S.",
+      "V012 deixa luma máximo 3 sob as máscaras atuais, zero pixels acima de 32, e mede 272 tiles H/V. Comparar a leitura dos clusters de borda e o centro negativo na ROM antes de qualquer seleção.",
+      "Relatório comparativo de área segura: out/logs/splash_v3_backdrop_safe_area_20261014.json; os resultados usam os wordmarks WIP atuais e não aprovam composição nem pixels finais.",
+      "V006 segue como fundo da última ROM compilada e como baseline de runtime; nenhuma versão V008–V012 foi promovida a /res.",
+      "O sprite strip de partícula 8x8 permanece placeholder; rever silhueta, leitura 1x, timing, convergência sobre counters e scanline antes de trocar pixels."
+    ],
+    "audio_review_points": [
+      "Listen to at least two complete cycles in the integrated scene with a functional audio backend.",
+      "Preserve the positive, heroic, adventurous and energetic intent with a short recognizable motif and a clear final resolution.",
+      "Reject continuous sustained beds, monotony, muffled/monophonic perception and layers that sound like copies of one timbre.",
+      "Check rhythm, attack/release, audible pauses, phrase separation, brass/FM lead, firm subordinate bass and short crystalline accents.",
+      "Check crystal brightness as selective accents rather than continuous high-frequency wash; compare emotional impact with V012.",
+      "Check level balance, masking, PCM/BGM ownership, fatigue and the loop seam; do not approve from waveform presence alone.",
+      "Bind the listening report and capture to the same exact ROM SHA-256 as the visual review."
+    ],
+    "future_review_required": true
+  },
+  "visual_development_candidate": {
+    "source_route": "development_only_ai_reference_translation",
+    "status": "b_candidate_active_wip_needs_review",
+    "viewport": [
+      320,
+      224
+    ],
+    "display_mode": "h40_ntsc",
+    "tile_grid_px": 8,
+    "visible_colors_per_palette_max": 15,
+    "color_depth": "Mega Drive 9-bit grid",
+    "transparent_index": 0,
+    "backdrop": {
+      "asset": "res/branding_v3/splash_backdrop_v3_v006_320x224.png",
+      "sha256": "bd50ab81a7900806dc9f1e1fcdd0ccba76dad7fcebf8996162f3af46825c069b",
+      "unique_tiles": 585,
+      "rescomp_hv_unique_tiles": 583,
+      "palette_index0_rgb": [
+        0,
+        0,
+        0
+      ],
+      "decision": "V006 full-detail is the selected WIP runtime backdrop. It keeps the central negative space broad, moves the brightest convergence below the wordmark, and reduces edge clutter. The final preview fades PAL0 to a cool lower-luminance hold palette instead of erasing the field. This is a development candidate, not approved art. The target of 20-40 reusable tiles remains open only if visual fidelity survives; do not use mechanical repetition.",
+      "source": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v006_20261014.png",
+      "source_sha256": "f3e924c1580c8ead73b0df84b9b557cef69af45eeff4e311bf236b7b371829b8",
+      "raw_tiles": 1120
+    },
+    "backdrop_comparison_20261014": {
+      "report": "out/logs/splash_v3_backdrop_safe_area_20261014.json",
+      "comparison_board": "rascunho/visual_lab/splash_v3_backdrop_v012_comparison_wip_v002_20261014.png",
+      "comparison_board_sha256": "d20c07a7d463876acbe42ecd8a39704c30678d0f982693084f933939b34a47a2",
+      "status": "comparison_only_no_selection",
+      "safe_area_method": {
+        "box_xyxy": [
+          48,
+          72,
+          272,
+          160
+        ],
+        "wordmark_masks": "current WIP SGDK and FORGE alpha masks",
+        "luma_formula": "(3*R + 6*G + B) // 10",
+        "review_threshold": 32,
+        "threshold_is_diagnostic_only": true
+      },
+      "candidates": [
+        {
+          "version": "V006",
+          "asset": "res/branding_v3/splash_backdrop_v3_v006_320x224.png",
+          "sha256": "bd50ab81a7900806dc9f1e1fcdd0ccba76dad7fcebf8996162f3af46825c069b",
+          "role": "runtime_baseline",
+          "under_wordmark_mean_p95_max_luma": [
+            4.71,
+            3,
+            238
+          ],
+          "share_above_diagnostic_threshold": 0.0173,
+          "unique_hv_tiles": 583
+        },
+        {
+          "version": "V009",
+          "asset": "rascunho/visual_lab/splash_v3_backdrop_v009_elite_320x224.png",
+          "sha256": "8f98b3cef4b04a1fb7c67c4ca64033f6d2d455609a19930071dc3d305b77f2e7",
+          "role": "comparison_only",
+          "under_wordmark_mean_p95_max_luma": [
+            16.16,
+            125,
+            176
+          ],
+          "share_above_diagnostic_threshold": 0.1454,
+          "unique_hv_tiles": 438
+        },
+        {
+          "version": "V010",
+          "asset": "rascunho/visual_lab/splash_v3_backdrop_v010_elite_320x224.png",
+          "sha256": "86346d1d48c12893678c6d23209a4e5950ae940924a14bf558567bf08498dc29",
+          "role": "comparison_only",
+          "under_wordmark_mean_p95_max_luma": [
+            11.3,
+            105,
+            238
+          ],
+          "share_above_diagnostic_threshold": 0.0727,
+          "unique_hv_tiles": 443
+        },
+        {
+          "version": "V011",
+          "asset": "rascunho/visual_lab/splash_v3_backdrop_v011_elite_320x224.png",
+          "sha256": "e790eaed07a8d460b9b59af733062abb5679516fb948b60031f10728cd0bb0cb",
+          "role": "comparison_only",
+          "under_wordmark_mean_p95_max_luma": [
+            4.78,
+            3,
+            238
+          ],
+          "share_above_diagnostic_threshold": 0.0113,
+          "unique_hv_tiles": 403
+        },
+        {
+          "version": "V012",
+          "asset": "rascunho/visual_lab/splash_v3_backdrop_v012_elite_320x224.png",
+          "sha256": "af1380658408ebfa0a03fc7d37d36cb4c5fe6169088843ec31963ffa32e9622d",
+          "role": "strongest_measured_logo_safe_area_wip_candidate_not_selected",
+          "under_wordmark_mean_p95_max_luma": [
+            3.0,
+            3,
+            3
+          ],
+          "share_above_diagnostic_threshold": 0.0,
+          "unique_hv_tiles": 272
+        }
+      ],
+      "visual_decision": "V012 ranks first in the current WIP wordmark-mask comparison, but has not been selected. Review edge energy, center negative space and interaction with animated particles/sweep against final lettering in ROM.",
+      "runtime_backdrop_unchanged": "V006",
+      "human_visual_approval": false,
+      "rom_validation": false,
+      "template_promotion_authorized": false
+    },
+    "wordmarks": [
+      {
+        "asset": "res/branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+        "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+        "unique_tiles": 143,
+        "rescomp_hv_unique_tiles": 141,
+        "hierarchy": "primary"
+      },
+      {
+        "asset": "res/branding_v3/splash_forge_wordmark_v3_192x32.png",
+        "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+        "unique_tiles": 92,
+        "rescomp_hv_unique_tiles": 91,
+        "hierarchy": "secondary"
+      }
+    ],
+    "particles": {
+      "asset": "res/sprites/splash_particle_v3_8x8_strip.png",
+      "sha256": "4baa794092464967dff4f1dd1c1cc169ae0bbd6693215099aef5cbf7aebe2780",
+      "frame_size_px": [
+        8,
+        8
+      ],
+      "frame_count": 8,
+      "rescomp_hv_unique_tiles": 8,
+      "candidate_instance_count": 64,
+      "scanline_pressure_status": "candidate_measurement_only"
+    },
+    "lettering_b_candidate": {
+      "direction": "B_faceted_crystal",
+      "status": "active_wip_in_res_built_and_observed",
+      "source": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png",
+      "source_sha256": "d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8",
+      "builder": "data/source_art/branding_v3/build_splash_v3_lettering_native_probes.py",
+      "baseline_sgdk": "rascunho/visual_lab/splash_sgdk_wordmark_v3_baseline_pre_b_20261014_224x48.png",
+      "baseline_forge": "rascunho/visual_lab/splash_forge_wordmark_v3_baseline_pre_b_20261014_192x32.png",
+      "palette_roles": "indices 1-9 contour; 10-15 fill",
+      "human_selection": false,
+      "final_visual_approval": false,
+      "review_required": true,
+      "runtime_assets": [
+        {
+          "path": "res/branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+          "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+          "visible_colors": 15,
+          "raw_tiles": 143,
+          "hv_unique_tiles": 141
+        },
+        {
+          "path": "res/branding_v3/splash_forge_wordmark_v3_192x32.png",
+          "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+          "visible_colors": 14,
+          "raw_tiles": 92,
+          "hv_unique_tiles": 91
+        }
+      ],
+      "static_viewport_probe": {
+        "path": "rascunho/visual_lab/splash_v3_lettering_probe_b_v001_320x224.png",
+        "sha256": "15e97ea38a63f48b45d7a97a35ad7cb47d85b3161ed967e452243cc4964d1745",
+        "size_px": [
+          320,
+          224
+        ],
+        "is_rom_capture": false
+      },
+      "baseline_sgdk_sha256": "9f54b33d35178804321243029c0ab65eeea9a24e7f29ef63a447d36ef68b2c85",
+      "baseline_forge_sha256": "77b38bcbb7e50ff902565e87c1df3273dda88ce7dd0e07722b8ea8bab21ac178",
+      "build_block_report": "out/logs/splash_v3_lettering_b_build_block_20261014.json",
+      "build_report": "out/logs/linux_wine_build_report.json",
+      "runtime_evidence_ref": "out/logs/splash_v3_v017_visual_review_report_20261014.json",
+      "runtime_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2"
+    },
+    "estimated_unique_tile_sum": 823,
+    "runtime_tile_residency": {
+      "report": "out/logs/splash_v3_tile_residency_v006_lettering_b_20261014.json",
+      "post_rescomp_hv_unique_tiles": 823,
+      "asset_payload_bytes": 26336,
+      "usable_art_tile_ceiling": 1740,
+      "utilization_percent": 47.3,
+      "headroom_percent": 52.7,
+      "scope": "Selected V006/B WIP art payload only: backdrop 583 + SGDK 141 + FORGE 91 + particle 8 H/V-unique tiles. The report warns about inactive comparison resources and does not measure runtime code-loaded tiles, full VRAM, maps/font, SAT, VBlank/DMA, CPU, DAC or sustained frame performance."
+    },
+    "palette_correction_20261014": {
+      "finding": "A blanket RGB change on transparent index 0 made the first rebuilt ROM render black; BlastEm comparison with the preserved pre-change ROM confirmed a runtime regression.",
+      "change": "Current WIP keeps the ResComp magenta transparency key for the SGDK/FORGE plates and particle sprite. Only the full-screen backdrop stores VDP-valid black (0,0,0) at palette index 0.",
+      "attempted_blank_rom_sha256": "437c38299181107647efae737c84eaf9db37302cbd44784d3f144b36240998e3",
+      "runtime_verification": "The V006 backdrop and transparency keys are visible in the V017 diagnostic contact sheet for ROM SHA-256 5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2; this is an unsealed WIP preview, not final visual approval.",
+      "source_concepts_unchanged": true,
+      "final_visual_approval": false
+    },
+    "total_vram_dma_cpu_and_frame_budget": "not_measured",
+    "visual_review_findings_wip": [
+      "V006 is the active development-only backdrop translation; its broad dark logo-safe zone, larger facets and lower convergence remain WIP and await human judgment at native 320x224/CRT scale.",
+      "V005 full-detail backdrop measures 1120 raw / 755 non-flipped unique / 744 H-V-deduplicated tiles with 15 visible colors. Compared with V004's 916 H-V tiles, it saves 172 tiles (18.8%) and improves H/V deduplication from 18.2% to 33.6%.",
+      "The automatic 40-tile V005 control creates checkerboard-like texture and is rejected; do not meet the 20-40 tile vocabulary target through mechanical repetition.",
+      "The V017 diagnostic contact sheet shows sampled energy, SGDK contour/fill reveal, FORGE entry, sweep and lockup. Wall-clock sample labels do not form a frame-accurate full-cycle recording.",
+      "Review lower-center brightness against FORGE, edge-crystal density, white highlight footprint, negative space, particle overlap, SGDK/FORGE hierarchy and native-resolution contrast.",
+      "The SGDK/FORGE plates and particle strip remain placeholders; source route, authored lettering model sheet, final pixels and production approval are open.",
+      "No final visual approval, complete runtime evidence seal, total hardware budget or template migration is approved.",
+      "The B faceted_crystal plates are active WIP placeholders in the existing res paths; the A/B/C source-derived probes and baseline remain preserved for comparison.",
+      "B is a curator-selected WIP candidate because it adds crystal facets while counters remain open in the 4bpp probe. Human selection, model sheet approval and final visual approval remain false.",
+      "V017 is retained as a negative control: its lower horizontal stripe persisted and its translation uses 1104 H/V-unique tiles.",
+      "V018 uses broad asymmetric facets and a broken lower shelf. The exact-hash still is legible, but native 320x224/CRT safe area, edge density, particles and sweep await human review.",
+      "V018 capture uses r2 and measures 14/20 H40 sprites; the separate r1 F109 peak of 22/20 remains visual WIP tolerance and does not change the hardware ceiling."
+    ],
+    "lettering_direction_candidate_ref": "doc/curation/splash_v3_lettering_direction_board_20261014.json",
+    "lettering_context_mockup_ref": "data/source_art/branding_v3/sources/source_lettering_runtime_context_ai_v001_20261014.png",
+    "lettering_native_probe_report_ref": "out/logs/splash_v3_lettering_native_probe_20261014.json",
+    "lettering_route_decision_ref": "doc/curation/splash_v3_lettering_route_decision_20261014.json"
+  },
+  "timeline_ntsc_frames": [
+    {
+      "range": [
+        0,
+        24
+      ],
+      "beat": "black silence and queued asset preload"
+    },
+    {
+      "range": [
+        24,
+        84
+      ],
+      "beat": "blue crystal field expands; energy cue at 24; music begins at 60"
+    },
+    {
+      "range": [
+        84,
+        120
+      ],
+      "beat": "Particles converge as the blue SGDK contour fades in; fill colors stay dark."
+    },
+    {
+      "range": [
+        120,
+        150
+      ],
+      "beat": "SGDK bright fill reveals from frame 120 to 138; particles lock at frame 120."
+    },
+    {
+      "range": [
+        150,
+        180
+      ],
+      "beat": "FORGE appears as a subordinate second line"
+    },
+    {
+      "range": [
+        180,
+        210
+      ],
+      "beat": "seven 8x8 crystal sprites make a diagonal left-to-right sweep; sweep cue at 178"
+    },
+    {
+      "range": [
+        210,
+        240
+      ],
+      "beat": "tail cue at 210 and palette fade out; preview waits for A to replay"
+    }
+  ],
+  "future_review_gate": [
+    "Review native 320x224 composition and letter hierarchy against the exact ROM hash.",
+    "Watch at least two full cycles; judge motion, spacing, crystal density, and reveal timing.",
+    "Hear at least two full music cycles and record the user's judgment of energy, articulation, timbral separation, crystalline accents, and resolution.",
+    "Remeasure exact runtime sprite positions, VRAM residency, DMA, CPU, DAC ownership, and sustained 60fps with audio.",
+    "Review lettering directions A/B/C; select or request revision, then approve a per-glyph model sheet before native pixel production.",
+    "Keep all WIP assets as placeholders until source route, model sheet, and final pixels are approved.",
+    "Archive FORJA V2 and promote the V3 template only after technical gates pass and the user gives a separate final approval.",
+    "Review the V017 exact ROM and full movement in BlastEm at native 320x224; the current diagnostic contact sheet is unsealed and does not provide frame markers or final visual approval.",
+    "Compare V011 and V012 under the final wordmark model sheet in BlastEm; V012 measured 3 maximum background luma under the current WIP glyph mask and 272 H/V tiles, but remains an unselected concept translation.",
+    "Reproduce the user's visually flawless 22-sprite r1 peak at temporal frame 109 in an exact ROM; inspect the rendered particles and VDP overflow before changing the H40 budget claim.",
+    "Record a BUTTON_A input trace proving replay and compare a complete frame-marked 240-frame cycle.",
+    "Re-measure the V017 runtime budget; the prior V006 bundle recorded 37/1200 over-budget frames. Prove sustained 60fps with audio before promotion."
+  ],
+  "visual_source_of_truth_ref": "doc/contracts/visual_source_of_truth_branding_splash_v3.json",
+  "scanline_report_ref": "out/logs/splash_v3_scanline_glyph_anchor_v002_20261014.json",
+  "preview_report_ref": "out/evidence/splash_v3_v018_sprite_alloc_telemetry_20261015/blastem-linux-manual-v018-sprite-alloc-telemetry-20261015/evidence_manifest.json",
+  "previous_sealed_runtime_preview": {
+    "status": "testado_em_emulador",
+    "rom_sha256": "22c6e3962c253b2588cd07d0b9d4fa2d890d4366b8e4de71a87b59e1b755baf4",
+    "emulator": "BlastEm Linux Flatpak app/com.retrodev.blastem/x86_64/stable, commit b0e3d27d6993b84933aadd707535d752e955c668f2c9459d9b67519623bcd704; temporary local adapter selected the installed official Flatpak without changing the canonical capture helper.",
+    "visible_states": [
+      "The first 48 sampled frames show the active energy/reveal sequence at 0.08-second intervals; labels are approximate and are not hardware frame markers.",
+      "The final screenshot shows the V006 crystal field retained at reduced PAL0 luminance, SGDK/FORGE lockup, and the centered A: REVER hint."
+    ],
+    "unverified": [
+      "Exact mapping of all seven beats to global frame numbers across the full 240-frame cycle.",
+      "BUTTON_A replay response has not been captured with an input trace.",
+      "Sustained 60fps with audio; the current window-title snapshot is only 57.7 and the metric claim remains unproven.",
+      "Complete runtime VRAM, code-loaded tiles, VBlank/DMA, CPU worst-frame and DAC budgets.",
+      "Human approval of the V006 backdrop, lettering B, model sheet, final pixels, integrated audio, ROM, template or migration.",
+      "Subjective listening to at least two complete music cycles and the loop seam."
+    ],
+    "audio_observation": "The exact-ROM evidence bundle contains a disk-rendered audio.raw artifact. It confirms capture only; no human timbre, mix, energy or loop-seam approval is recorded. The older physical-monitor WAV is still linked only to V005.",
+    "audio_capture": {
+      "path": "out/audio/reviews/v005_audio_review_20261014/v015_v005_native_two_cycle.wav",
+      "sha256": "3f68234a59889ed7f337e0c1d72534dd955eecd52a4a6e79282af0c22b45f453",
+      "format": "48 kHz, stereo, signed 16-bit PCM",
+      "duration_seconds": 10.24,
+      "peak_abs_sample": 23282,
+      "rms_sample": 2626.3,
+      "review_status": "signal_confirmed_subjective_quality_pending"
+    },
+    "latest_runtime_capture": {
+      "status": "sealed",
+      "session_id": "blastem-linux-20261014T133648Z-289753",
+      "capture_root": "out/blastem_splash_v3_visual_v006_hold_wip_v004_20261014/blastem-linux-20261014T133648Z-289753",
+      "rom_sha256": "22c6e3962c253b2588cd07d0b9d4fa2d890d4366b8e4de71a87b59e1b755baf4",
+      "screenshot_path": "out/blastem_splash_v3_visual_v006_hold_wip_v004_20261014/blastem-linux-20261014T133648Z-289753/screenshot.png",
+      "screenshot_sha256": "a5a189903c49e7f6e58a32c5e89365870650669207c8e9da5c99bef5f18a2b5a",
+      "semantic_gate_status": "passed",
+      "semantic_capture_valid": true,
+      "freshness_status": "ok",
+      "same_session": true,
+      "target_scene": 0,
+      "measurement_frames": 1200,
+      "measurement_target_frames": 1200,
+      "measurement_window_complete": true,
+      "window_fps_snapshot": 57.7,
+      "performance_claim": "unproven",
+      "over_budget_frames": 37,
+      "max_cpu_load": 459,
+      "max_scanline_sprites": 17,
+      "max_active_sprites": 64,
+      "vdp_dump_scope": "204-byte VLAB SRAM telemetry block; not a full VRAM dump.",
+      "audio_raw": {
+        "path": "out/blastem_splash_v3_visual_v006_hold_wip_v004_20261014/blastem-linux-20261014T133648Z-289753/audio.raw",
+        "sha256": "fcbcb315b3d3db1c68490c282cd93e6529fa2b801157ee85a0d4feb335a790ce",
+        "size_bytes": 32129024,
+        "review_status": "captured_not_listened"
+      },
+      "close_note": "BlastEm Flatpak flushes SRAM on X11 window close; this build may report BadWindow after the flush."
+    }
+  },
+  "runtime_preview": {
+    "status": "preview_observed_unsealed",
+    "rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+    "emulator": "BlastEm Linux Flatpak 1.0.0 diagnostic, commit b0e3d27d6993b84933aadd707535d752e955c668f2c9459d9b67519623bcd704; canonical helper remains blocked by its stale 0.6.2 pin.",
+    "capture_report_ref": "out/blastem_splash_v3_visual_v016_diagnostic_20261014/blastem-hold-probe-20261014T152322Z/hold_probe_report.json",
+    "canonical_seal": false,
+    "visible_states": [
+      "Sixteen wall-clock samples show the particle field, SGDK contour/fill reveal, FORGE entry, sweep and final lockup; sample times are not hardware frame markers.",
+      "The final hold shows A: REVER with SGDK/FORGE retained on the V006 cool crystal field. The hold screenshot hash matches the pre-request hold."
+    ],
+    "unverified": [
+      "Exact frame mapping and a frame-marked full 240-frame cycle.",
+      "Independent ROM-side confirmation of the BUTTON_A replay request.",
+      "A canonical sealed capture bundle for the V017 ROM.",
+      "Full VRAM, code-loaded tiles, DMA/VBlank, CPU, DAC and sustained 60fps with audio.",
+      "Human approval of visual art, lettering model sheet, V016 music, ROM, template or migration."
+    ],
+    "audio_observation": "The diagnostic wrote 12,427,264 bytes of audio.raw, but the current V016/VGM4 composition has not been heard or approved by the user.",
+    "human_visual_approval": false,
+    "human_audio_approval": false
+  },
+  "visual_review_findings_wip": [
+    "V017 replaces the uniform contraction grid with 64 provisional centers sampled from visible cells of the current SGDK WIP wordmark mask (source SHA f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9). A model sheet and human per-glyph approval remain required.",
+    "The selected 64x8x8 profile measures 13 sprites/104 pixels on the busiest H40 scanline at frame 106, with 64 total links. This local geometry result does not close the workspace measurement gate or total runtime budget.",
+    "The V017 diagnostic contact sheet shows all described visual beats in sampled order. It is unsealed, wall-clock sampled and not proof of exact timing, complete cycles, input trace, CRT readability or artistic approval.",
+    "The final V017 hold visibly retains SGDK/FORGE and the A: REVER prompt. Its matching before/after screenshot hashes do not independently confirm ROM-side input handling.",
+    "V006 keeps a wide dark center and separated crystal edges; the actual ROM screenshot shows the field retained through the final hold. Human aesthetic review at native 320x224/CRT scale remains pending.",
+    "The final hold now preserves SGDK/FORGE and reduces the backdrop through a PAL0-only custom palette transition. Check that the reduced highlight levels do not flatten facets or make the field too bright behind the mark.",
+    "The replay prompt is localized to A: REVER and centered at tile column 16, row 21. Its current screenshot clears the flare, but BUTTON_A replay has no input-trace evidence.",
+    "Lettering B remains a WIP translation in ROM V017. It has not been selected by the user; spelling, counters, per-glyph rules and model sheet remain open.",
+    "V006 backdrop has 583 H/V-unique tiles, 161 fewer than V005. The full selected art plan is 823/1740 tiles (47.3%); this is art payload only, not a complete VRAM/DMA budget. The 20-40 tile target remains unresolved.",
+    "The 48-image burst is sampled in wall-clock intervals, not frame-accurate telemetry. It does not prove all beat timing or two complete cycles.",
+    "The previous sealed V006 capture has 1200/1200 measurement frames, 37 over-budget frames, max CPU load 459, 64 active sprites and 17 sprites on the busiest scanline. It is historical performance evidence; sustained 60fps remains unproven for V017.",
+    "V017 audio.raw is present, but V016/VGM4 still requires a two-cycle human listen for energy, articulation, timbral separation, crystalline accents, resolution and loop seam.",
+    "V014 isolated preview ROM SHA cd3946fcd7de61709b590f77fec16f0066e3e30b3fe283fd5dad0f20a72cba5c was captured diagnostically at frame 700. The selected final-hold still shows SGDK, FORGE and A: REVER legibly; review remains open because the 640x480 private-display screenshot is not a frame-marked full-cycle or CRT review, and the user has not approved the candidate."
+  ],
+  "tile_residency_report_ref": "out/logs/splash_v3_tile_residency_v006_lettering_b_20261014.json",
+  "asset_provenance_report_ref": "out/logs/splash_v3_asset_provenance_wip_post_v006_20261014.json",
+  "tile_residency": {
+    "status": "local_audit_passed_with_warning",
+    "peak_unique_tiles": 823,
+    "available_art_tile_ceiling": 1740,
+    "peak_utilization": 0.473,
+    "per_state_residency": {
+      "black_silence": 823,
+      "energy": 823,
+      "outline": 823,
+      "fill": 823,
+      "forge": 823,
+      "sweep": 823,
+      "hold_fade": 823
+    },
+    "headroom_justification": "The selected V006/B WIP art plan uses 823/1740 calculated art tiles (26,336 bytes, 47.3%), with the V006 backdrop at 583 H/V tiles, SGDK 141, FORGE 91 and particle 8. This is asset payload only, not full runtime VRAM. Inactive V004/V005 comparison resources and C-loaded tiles require separate accounting."
+  },
+  "asset_provenance": {
+    "status": "audit_passed_non_final",
+    "report": "out/logs/splash_v3_asset_provenance_wip_post_v006_20261014.json",
+    "all_wip_assets": "placeholder",
+    "pixel_bearing_symbols": 22,
+    "blocking_findings": []
+  },
+  "latest_candidate_build": {
+    "status": "buildado",
+    "preview_status": "preview_captured_sealed_experimental_route_wip_needs_review",
+    "report": "out/work_runs/splash_v3_v019_backdrop_preview_retry_20261015/reports/linux_wine_build_report.json",
+    "candidate_rom_path": "out/profiling/splash_v3_v019_backdrop_preview_retry_20261015/rom.bin",
+    "candidate_rom_sha256": "6731a055ce88cbb2b122cfd2e03f1690ef8a430b890670477ef2438549d2019b",
+    "size_bytes": 524288,
+    "build_flags": "-DSPLASH_V3_VISUAL_PREVIEW -DSPLASH_V3_BACKDROP_V019",
+    "previous_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+    "build_report_ref": "out/work_runs/splash_v3_v019_backdrop_preview_retry_20261015/reports/linux_wine_build_report.json",
+    "capture_report": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/evidence_manifest.json",
+    "capture_screenshot": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/screenshot.png",
+    "capture_screenshot_sha256": "1d65db41a51ba5dfd130235ae30a98aaedc51dd17a90399855642fc54cefe4b2",
+    "translation_report": "out/logs/splash_v3_backdrop_v019_translation_report_20261015.json",
+    "unique_tiles_hv": 552,
+    "declared_loader_tiles": 792,
+    "peak_sprites_per_scanline": 14,
+    "peak_sprite_pixels_per_scanline": 112,
+    "frames_over_h40_count": 0,
+    "frames_over_h40_width": 0,
+    "cpu_over_budget_frames": 37,
+    "max_cpu_load": 398,
+    "audio": "dummy_not_captured_or_reviewed",
+    "claim_ceiling": "wip_visual_preview",
+    "human_selected": false,
+    "human_visual_approval": false,
+    "human_audio_approval": false,
+    "delivery_gate_passed": false
+  },
+  "current_development_update": {
+    "recorded_at": "2026-10-15T08:35:33Z",
+    "user_state": "em_desenvolvimento",
+    "future_review_required": true,
+    "visual_baseline": "V006 remains default and out/rom.bin remains V017 (5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2); V019 is an opt-in backdrop candidate only.",
+    "visual_candidates": [
+      {
+        "version": "V007",
+        "status": "rejected_visual_lab",
+        "reason": "cluttered microdetail; 719 H/V tiles",
+        "report": "out/logs/splash_v3_backdrop_v007_translation_report_v002_20261014.json",
+        "board": "rascunho/visual_lab/splash_v3_backdrop_v007_comparison_wip_v002_20261014.png"
+      },
+      {
+        "version": "V008",
+        "status": "comparison_only_not_selected",
+        "reason": "clean central window and 438 H/V tiles, but too symmetric/static",
+        "sha256": "feb571791d496fc9085d49bcb20ebbfe5caea5b60ef30d18bd1dc3f06ecc19af",
+        "report": "out/logs/splash_v3_backdrop_v008_translation_report_v002_20261014.json",
+        "board": "rascunho/visual_lab/splash_v3_backdrop_v008_comparison_wip_v002_20261014.png"
+      },
+      {
+        "version": "V009",
+        "status": "comparison_only_not_selected",
+        "reason": "directional/asymmetric, 438 H/V tiles; safe-area and energy-line hierarchy require later ROM review",
+        "sha256": "730df0013734861a5b07d32e1eba1bb41df4a4e9d77e5c5d4d4bf7f841b8a947",
+        "report": "out/logs/splash_v3_backdrop_v009_translation_report_v002_20261014.json",
+        "board": "rascunho/visual_lab/splash_v3_backdrop_v009_comparison_wip_v002_20261014.png"
+      },
+      {
+        "version": "V010",
+        "status": "comparison_only_safe_area_rejected_for_letter_overlap",
+        "reason": "443 H/V tiles; diagonal current is stronger, but 7.27% of current SGDK/FORGE mask pixels have background luma above 32",
+        "sha256": "ef09bf9c38629b14ab5209070c5e5f89dac8d4e25cecdf484b7121b4284328e7",
+        "report": "out/logs/splash_v3_backdrop_v010_translation_report_v002_20261014.json",
+        "board": "rascunho/visual_lab/splash_v3_backdrop_v010_comparison_wip_v002_20261014.png"
+      },
+      {
+        "version": "V011",
+        "status": "comparison_only_revised_edge_clusters",
+        "reason": "403 H/V tiles; 1.13% of current mark-mask pixels still exceed luma 32, concentrated behind the upper-left S",
+        "sha256": "895cfe218f804f354a8dbf18846d72883437f57933bdbb52721ec8383d97db2d",
+        "report": "out/logs/splash_v3_backdrop_v011_translation_report_v002_20261014.json",
+        "board": "rascunho/visual_lab/splash_v3_backdrop_v011_comparison_wip_v002_20261014.png"
+      },
+      {
+        "version": "V012",
+        "status": "runtime_preview_captured_unselected",
+        "reason": "272 H/V tiles; WIP mark-mask luma mean/p95/max 3/3/3. Separate V012 ROM preview captured with a sealed same-session bundle; runtime probe measured 14 sprites/scanline and zero H40 over-limit frames. Negative-space/edge energy, lettering and overall visual quality still need human review.",
+        "sha256": "b8b9c7833f84a14f522c42301f0f660f4358a82b721bf96d32698d4b0cba7a78",
+        "report": "out/logs/splash_v3_backdrop_v012_translation_report_v002_20261014.json",
+        "board": "rascunho/visual_lab/splash_v3_backdrop_v012_comparison_wip_v002_20261014.png",
+        "runtime_preview_report": "out/logs/splash_v3_v012_preview_capture_20261014.json",
+        "rom_sha256": "234f73abc68e94d9175fe2b4714bb5cd7d531904113f150bcd9c49751ff55eb7",
+        "capture_session_id": "sess-20261014T173801-224faca3"
+      },
+      {
+        "version": "V014",
+        "status": "preview_captured_diagnostic_unselected_needs_review",
+        "reason": "The diagnostic frame-700 hold is legible; the 0.6847 aesthetic score still says needs_review, edge density and CRT reading remain open, and tile residency has a low-dedup warning.",
+        "sha256": "65e9b38aa59a5c8318827bcd1398d5d8bae4b037d0d652dccd8175aee6ef06db",
+        "report": "out/logs/splash_v3_backdrop_v014_translation_report_v002_20261014.json",
+        "rom_sha256": "cd3946fcd7de61709b590f77fec16f0066e3e30b3fe283fd5dad0f20a72cba5c",
+        "runtime_preview_report": "out/evidence/splash_v3_v014_headless_retry_20261014/native_diag_f700/native_diagnostic_report.json",
+        "screenshot": "out/evidence/splash_v3_v014_headless_retry_20261014/native_diag_f700/window.png",
+        "screenshot_sha256": "6bf7b5815b9ae2807a40b963e773042879aca9ce9c9a3f8031e3e450ffcf6613",
+        "tile_residency_report": "out/logs/splash_v3_v014_headless_retry_20261014/tile_residency_v014_active_only.json",
+        "peak_art_tiles": 1096,
+        "art_tile_ceiling": 1740,
+        "human_selected": false,
+        "human_visual_approval": false
+      },
+      {
+        "version": "V015",
+        "status": "runtime_preview_captured_sealed_unselected_wip",
+        "reason": "Asymmetric crystal frame derived from the V015 AI concept. The runtime still shows a hard rectangular dark-field edge; retain as a comparison candidate, not selected or approved.",
+        "sha256": "e1f73e699f7a2d4c0f3e6cacb9959e350a613b8aca58da7205d87bfa7793880d",
+        "source_sha256": "87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188",
+        "report": "out/logs/splash_v3_backdrop_v015_translation_report_20261015.json",
+        "board": "rascunho/visual_lab/splash_v3_backdrop_v015_comparison_wip_v001_20261015.png",
+        "rom_sha256": "e6ced5c004d0e239a845187ea96a371f61df5af0ed332cf2e63f57fcab8e1416",
+        "runtime_preview_report": "out/evidence/splash_v3_v015_visual_preview_20261015/blastem-linux-20261015T033329Z-v015/evidence_manifest.json",
+        "screenshot_sha256": "477e1c98328dbc58b03f667d8b801c913713a57d456ada66c5faf13eda1c302f",
+        "unique_hv_tiles": 708,
+        "human_selected": false,
+        "human_visual_approval": false
+      },
+      {
+        "version": "V016",
+        "status": "runtime_preview_captured_sealed_unselected_wip",
+        "reason": "Feathered oval smooths the rectangular dark-field edge from V015, but the center remains strongly dark and the pixel-level difference is subtle; review native 320x224/CRT before selecting.",
+        "sha256": "3b90384ce5fc9ad4e7f8515281371eff423abb7106a2aab66196fc97f4294f4e",
+        "source_sha256": "87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188",
+        "report": "out/logs/splash_v3_backdrop_v016_translation_report_20261015.json",
+        "board": "out/logs/splash_v3_backdrop_v016_comparison_wip_v001_20261015.png",
+        "tile_residency_report": "out/logs/tile_residency_v016_preview_20261015.json",
+        "rom_sha256": "64d333bf4ec246bbf67c4d947ebae25f33fa5e7eed99e942c9c174d57f98a532",
+        "runtime_preview_report": "out/evidence/splash_v3_v016_visual_preview_20261015/blastem-linux-20261015T033848Z-v016/evidence_manifest.json",
+        "screenshot": "out/evidence/splash_v3_v016_visual_preview_20261015/blastem-linux-20261015T033848Z-v016/screenshot.png",
+        "screenshot_sha256": "a6b31554cf2e9d723f657efbd1aa5ec86d76516d39b3731f972a2e7f9fb13596",
+        "unique_hv_tiles": 652,
+        "peak_sprites_per_scanline": 14,
+        "peak_sprite_pixels_per_scanline": 112,
+        "cpu_over_budget_frames": 37,
+        "cpu_max": 396,
+        "fps_title_snapshot": 61.1,
+        "audio": "dummy_unvalidated",
+        "claim_ceiling": "wip_visual_preview",
+        "delivery_gate_passed": false,
+        "human_selected": false,
+        "human_visual_approval": false,
+        "human_audio_approval": false
+      },
+      {
+        "version": "V017",
+        "status": "negative_control_horizontal_line",
+        "reason": "Continuous bright lower horizontal band persisted; translation measured 1104 H/V-unique tiles.",
+        "report": "out/logs/splash_v3_backdrop_v017_translation_report_20261015.json",
+        "board": "out/logs/splash_v3_backdrop_v017_comparison_wip_v001_20261015.png"
+      },
+      {
+        "version": "V018",
+        "status": "runtime_preview_captured_unselected_wip",
+        "reason": "Broad facets and broken shelf reduce the horizontal-line read; 901 H/V tiles and 3.07% of WIP wordmark mask above diagnostic luma 32. Human review remains open.",
+        "sha256": "e1eabc9dee606add3ebacad4b05bdb69686eba749d5720a71cc7c4bb2b1509d2",
+        "report": "out/logs/splash_v3_backdrop_v018_translation_report_20261015.json",
+        "board": "out/logs/splash_v3_backdrop_v018_comparison_wip_v001_20261015.png",
+        "rom_sha256": "a94700a7a79b5fb6ffb074402909e2f7c2f0ddc89a790b05ac143e89edfeb493",
+        "runtime_preview_report": "out/evidence/splash_v3_v018_visual_preview_retry_20261015/blastem-linux-20261015T040001Z-v018/evidence_manifest.json",
+        "capture_session_id": "blastem-linux-20261015T040001Z-v018"
+      },
+      {
+        "version": "V019",
+        "status": "runtime_preview_captured_unselected_wip_needs_review",
+        "reason": "Broken lower energy seams and reduced logo intrusions remove the continuous horizon read in the captured hold; the native screenshot keeps SGDK/FORGE legible. The full animation and human review remain open.",
+        "sha256": "b8b403f30c170554df647ac1b6b2a54fc83b3e3c76a695765ec4ac0ec313e819",
+        "source_sha256": "9fc213cc726c3a2fbbfff0ff9e9f9e15023e29f74459398c0a5af9802536840e",
+        "report": "out/logs/splash_v3_backdrop_v019_translation_report_20261015.json",
+        "candidate_direction": "doc/curation/splash_v3_v019_art_direction_candidate_20261015.json",
+        "runtime_tile_ranges_report": "out/logs/splash_v3_v019_runtime_tile_ranges_20261015.json",
+        "rom_sha256": "6731a055ce88cbb2b122cfd2e03f1690ef8a430b890670477ef2438549d2019b",
+        "runtime_preview_report": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/evidence_manifest.json",
+        "screenshot": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/screenshot.png",
+        "screenshot_sha256": "1d65db41a51ba5dfd130235ae30a98aaedc51dd17a90399855642fc54cefe4b2",
+        "native_320x224_review_crop": "out/reviews/splash_v3_v019_visual_review_20261015/screenshot_native_320x224.png",
+        "unique_hv_tiles": 552,
+        "declared_loader_tiles": 792,
+        "peak_sprites_per_scanline": 14,
+        "peak_sprite_width_pixels": 112,
+        "frames_over_h40_count": 0,
+        "frames_over_h40_width": 0,
+        "cpu_over_budget_frames": 37,
+        "max_cpu_load": 398,
+        "audio": "dummy_not_captured_or_reviewed",
+        "capture_route": "experimental_manual_flatpak_x11",
+        "claim_ceiling": "wip_visual_preview",
+        "human_selected": false,
+        "human_visual_approval": false,
+        "human_audio_approval": false,
+        "delivery_gate_passed": false,
+        "motion_samples_manifest": "out/evidence/splash_v3_v019_motion_samples_long_20261015/motion_samples_manifest.json",
+        "motion_contact_sheet": "out/evidence/splash_v3_v019_motion_samples_long_20261015/motion_contact_sheet.png",
+        "motion_contact_sheet_sha256": "2a1e6fa3dcf5a0fbd833ee0633b21246130ba911c21710d0b74ec6e634e38afe"
+      }
+    ],
+    "handoff_candidate": {
+      "status": "implemented_uncompiled",
+      "contract": "doc/branding_v3_transition_contract.json",
+      "build_attempt": "out/logs/splash_v3_handoff_build_attempt_20261014.json"
+    },
+    "last_compiled_rom": "out/rom.bin",
+    "last_compiled_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+    "menu_dependency": "Menu artwork and brand BGM remain inherited from FORJA/V2; resolve before V2 archive/template replacement.",
+    "promotion": {
+      "final_visual_approval": false,
+      "final_audio_approval": false,
+      "model_sheet_approved": false,
+      "template_promotion_authorized": false,
+      "forja_v2_archive_authorized": false,
+      "future_review_required": true
+    },
+    "scanline_review_disposition": {
+      "visual_status": "tolerated_wip_by_user_observation",
+      "curatorial_decision": "Do not automatically reject r1 visually solely because of this rare decorative peak; record the F109 appearance as visually tolerated WIP.",
+      "measured_natural_sequence": "22 sprite-list entries in 2/1200 frames, 176/320 horizontal pixels.",
+      "hardware_budget_status": "over_limit_not_approved",
+      "measurement_limit": "The probe measures SGDK sprite-list demand and does not prove that all 22 entries were emitted by the final SAT/VDP.",
+      "current_default": "r2; exact d46 V018 preview measured 14/20, 112/320 pixels, zero observed over-limit frames.",
+      "hardware_limit": "H40 remains a hard maximum of 20 sprite entries per scanline; visual tolerance does not waive budget compliance.",
+      "user_observation": "The user reports the r1 F109 peak looked perfect; tolerate only as a WIP visual observation."
+    },
+    "candidate_runtime_preview_ref": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/evidence_manifest.json",
+    "candidate_tile_residency_report_ref": "out/logs/splash_v3_v019_runtime_tile_ranges_20261015.json",
+    "candidate_build_run_ref": "out/work_runs/splash_v3_v019_backdrop_preview_retry_20261015/reports/linux_wine_build_report.json",
+    "audio_review_candidate": {
+      "status": "ready_for_human_audition_unapproved",
+      "track": "V016 / VGM4",
+      "review_manifest": "out/audio/reviews/v009_v016_two_cycle_rom_capture_20261015/splash_v3_v016_two_cycle_rom_review.json",
+      "stereo_wav": "out/audio/reviews/v009_v016_two_cycle_rom_capture_20261015/splash_v3_v016_two_cycle_rom_stereo.wav",
+      "stereo_sha256": "d42e8cb3733340981c2c81178d423ad2975390f65b1da7681773c6f879dbff36",
+      "mono_fold_down_wav": "out/audio/reviews/v009_v016_two_cycle_rom_capture_20261015/splash_v3_v016_two_cycle_rom_mono.wav",
+      "mono_sha256": "0d6366f6f4d6997f39a9de5a8e348d9558abcf3623dea2cfea97fe41dd223ce1",
+      "preview_build_run": "out/work_runs/splash_v3_v016_rom_two_cycle_capture_20261015/run.json",
+      "source_capture_rom_sha256": "35af30bb5b0cfe52fb527858b9cd164ed496ee46f144e2396fd151841fb16e71",
+      "source_capture_screenshot": "out/evidence/splash_v3_v016_rom_two_cycle_capture_20261015/screenshot.png",
+      "source_capture_screenshot_sha256": "80800e4faf5a9f0c27d5c4dff59589ba86a9e0c31a8c79094263b63f34fb82a9",
+      "emulator": "BlastEm Flatpak 1.0.0; private Xvfb; experimental unsealed route",
+      "direct_two_pass_rom_capture": true,
+      "xgm2_playback_frames": 358,
+      "xgm2_playback_dropouts": 0,
+      "project_baseline_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+      "source_relation": "The audio comes directly from two preview passes on isolated ROM 35af30bb5b0cfe52fb527858b9cd164ed496ee46f144e2396fd151841fb16e71. VGM4, cues and audio.c content match baseline V017 by hash, but the isolated preview binary is not out/rom.bin. The UI-only recapture build compiled but its emulator attempt failed before valid evidence.",
+      "human_audio_approval": false,
+      "dac_budget_validated": false,
+      "sustained_performance_validated": false,
+      "promotion_performed": false,
+      "recorded_at": "2026-10-15T03:05:14Z"
+    },
+    "latest_preview_status": "preview_captured_sealed_experimental_route_wip_needs_review",
+    "latest_preview_rom_sha256": "6731a055ce88cbb2b122cfd2e03f1690ef8a430b890670477ef2438549d2019b",
+    "latest_preview_screenshot_sha256": "1d65db41a51ba5dfd130235ae30a98aaedc51dd17a90399855642fc54cefe4b2",
+    "validation_report_ref": "out/logs/validation_report.json",
+    "validation_summary": {
+      "status": "errors_present",
+      "timestamp": "2026-10-15T05:28:09.2090481-03:00",
+      "errors": 3,
+      "warnings": 19,
+      "blocking_statuses": [
+        "gdd_substantial_insufficient",
+        "agent_context_degraded",
+        "visual_gate_blocked",
+        "visual_delivery_gate_missing",
+        "audio_validation_stale",
+        "changelog_missing",
+        "emulator_evidence_stale",
+        "code_loaded_tiles_unmeasured",
+        "scene_tilemap_conversion_report_missing",
+        "tilemap_flag_report_missing",
+        "per_tile_palette_conflict_report_missing",
+        "freshness_audit_stale",
+        "scene_closeout_gate_stale",
+        "report_rom_identity_mismatch",
+        "report_status_conflict"
+      ],
+      "v019_specific_blockers": []
+    },
+    "freshness_report_ref": "out/logs/freshness_audit_report.json",
+    "freshness_summary": {
+      "checks_total": 10,
+      "stale_count": 5,
+      "missing_required_count": 0,
+      "warnings": 5,
+      "errors": 0
+    },
+    "motion_review_ref": "out/evidence/splash_v3_v019_motion_samples_long_20261015/motion_samples_manifest.json",
+    "motion_contact_sheet_ref": "out/evidence/splash_v3_v019_motion_samples_long_20261015/motion_contact_sheet.png",
+    "motion_contact_sheet_sha256": "2a1e6fa3dcf5a0fbd833ee0633b21246130ba911c21710d0b74ec6e634e38afe"
+  },
+  "candidate_build_history": [
+    {
+      "status": "buildado",
+      "preview_status": "preview_captured_experimental_route",
+      "report": "out/logs/splash_v3_visual_preview_v012_headless_20261014/linux_wine_build_report.json",
+      "candidate_rom_path": "out/tests/splash_v3_visual_preview_v012_headless_20261014/rom.bin",
+      "candidate_rom_sha256": "234f73abc68e94d9175fe2b4714bb5cd7d531904113f150bcd9c49751ff55eb7",
+      "size_bytes": 393216,
+      "build_flags": "-DSPLASH_V3_VISUAL_PREVIEW -DSPLASH_V3_BACKDROP_V012",
+      "previous_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+      "previous_rom_contains_b_candidate": true,
+      "capture_session_id": "sess-20261014T173801-224faca3",
+      "evidence_manifest_ref": "out/blastem_splash_v3_visual_v012_preview_20261014/isolated_session/sess-20261014T173801-224faca3/evidence_manifest.json",
+      "capture_report": "out/logs/splash_v3_v012_preview_capture_20261014.json",
+      "capture_quality_claim": "same-session bundle sealed for the exact V012 ROM hash in isolated BlastEm 1.0.0; semantic screenshot passed and 1200 runtime frames measured. Runtime H40 peak is 14 sprites/112 pixels with zero count or pixel over-limit frames; performance remains unproven (37 over-budget frames). Button A was SDL-acknowledged but ROM-side replay was not visibly confirmed. Visual and audio approvals remain pending."
+    },
+    {
+      "status": "buildado",
+      "preview_status": "preview_captured_sealed_experimental_route_wip",
+      "report": "out/work_runs/splash_v3_v015_visual_preview_20261015/reports/linux_wine_build_report.json",
+      "candidate_rom_path": "out/profiling/splash_v3_v015_visual_preview_20261015/rom.bin",
+      "candidate_rom_sha256": "e6ced5c004d0e239a845187ea96a371f61df5af0ed332cf2e63f57fcab8e1416",
+      "size_bytes": 393216,
+      "build_flags": "-DSPLASH_V3_VISUAL_PREVIEW -DSPLASH_V3_BACKDROP_V015",
+      "previous_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+      "run_ref": "out/work_runs/splash_v3_v015_visual_preview_20261015/run.json",
+      "capture_session_id": "blastem-linux-20261015T033329Z-v015",
+      "evidence_manifest_ref": "out/evidence/splash_v3_v015_visual_preview_20261015/blastem-linux-20261015T033329Z-v015/evidence_manifest.json",
+      "capture_screenshot": "out/evidence/splash_v3_v015_visual_preview_20261015/blastem-linux-20261015T033329Z-v015/screenshot.png",
+      "capture_screenshot_sha256": "477e1c98328dbc58b03f667d8b801c913713a57d456ada66c5faf13eda1c302f",
+      "capture_quality_claim": "Experimental BlastEm 1.0.0 sealed capture bound to the exact V015 ROM and 1200/1200 frames. H40 max 14 sprites/112 pixels; CPU/performance and audio quality remain unvalidated."
+    },
+    {
+      "status": "buildado",
+      "preview_status": "preview_captured_sealed_experimental_route_wip",
+      "report": "out/work_runs/splash_v3_v016_visual_preview_20261015/reports/linux_wine_build_report.json",
+      "candidate_rom_path": "out/profiling/splash_v3_v016_visual_preview_20261015/rom.bin",
+      "candidate_rom_sha256": "64d333bf4ec246bbf67c4d947ebae25f33fa5e7eed99e942c9c174d57f98a532",
+      "size_bytes": 393216,
+      "build_flags": "-DSPLASH_V3_VISUAL_PREVIEW -DSPLASH_V3_BACKDROP_V016",
+      "previous_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+      "run_ref": "out/work_runs/splash_v3_v016_visual_preview_20261015/run.json",
+      "capture_session_id": "blastem-linux-20261015T033848Z-v016",
+      "evidence_manifest_ref": "out/evidence/splash_v3_v016_visual_preview_20261015/blastem-linux-20261015T033848Z-v016/evidence_manifest.json",
+      "capture_screenshot": "out/evidence/splash_v3_v016_visual_preview_20261015/blastem-linux-20261015T033848Z-v016/screenshot.png",
+      "capture_screenshot_sha256": "a6b31554cf2e9d723f657efbd1aa5ec86d76516d39b3731f972a2e7f9fb13596",
+      "capture_quality_claim": "Experimental BlastEm 1.0.0 isolated capture is sealed to this ROM hash and covers 1200/1200 frames. The visual candidate remains WIP; audio used dummy, 37 CPU-over-budget frames were measured, and neither sustained performance nor human approval is established."
+    },
+    {
+      "status": "buildado",
+      "preview_status": "preview_captured_sealed_experimental_route_wip",
+      "report": "out/work_runs/splash_v3_v018_visual_preview_retry_20261015/reports/linux_wine_build_report.json",
+      "candidate_rom_path": "out/profiling/splash_v3_v018_visual_preview_retry_20261015/rom.bin",
+      "candidate_rom_sha256": "a94700a7a79b5fb6ffb074402909e2f7c2f0ddc89a790b05ac143e89edfeb493",
+      "size_bytes": 524288,
+      "build_flags": "-DSPLASH_V3_VISUAL_PREVIEW -DSPLASH_V3_BACKDROP_V018",
+      "previous_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+      "run_ref": "out/work_runs/splash_v3_v018_visual_preview_retry_20261015/run.json",
+      "capture_session_id": "blastem-linux-20261015T040001Z-v018",
+      "evidence_manifest_ref": "out/evidence/splash_v3_v018_visual_preview_retry_20261015/blastem-linux-20261015T040001Z-v018/evidence_manifest.json",
+      "capture_screenshot": "out/evidence/splash_v3_v018_visual_preview_retry_20261015/blastem-linux-20261015T040001Z-v018/screenshot.png",
+      "capture_screenshot_sha256": "ece64b486de3b46fb2a7c4867c9a34d68b1b85c8d5710d9b8bab25e3b648808f",
+      "translation_report": "out/logs/splash_v3_backdrop_v018_translation_report_20261015.json",
+      "unique_tiles_hv": 901,
+      "estimated_peak_art_tiles": 1141,
+      "art_tile_ceiling": 1740,
+      "peak_sprites_per_scanline": 14,
+      "peak_sprite_pixels_per_scanline": 112,
+      "frames_over_h40_count": 0,
+      "frames_over_h40_width": 0,
+      "cpu_over_budget_frames": 37,
+      "max_cpu_load": 396,
+      "audio": "dummy_unvalidated",
+      "claim_ceiling": "wip_visual_preview",
+      "human_selected": false,
+      "human_visual_approval": false,
+      "human_audio_approval": false,
+      "delivery_gate_passed": false
+    },
+    {
+      "status": "buildado",
+      "preview_status": "preview_captured_sealed_experimental_route_wip_needs_review",
+      "report": "out/work_runs/splash_v3_v019_backdrop_preview_retry_20261015/reports/linux_wine_build_report.json",
+      "candidate_rom_path": "out/profiling/splash_v3_v019_backdrop_preview_retry_20261015/rom.bin",
+      "candidate_rom_sha256": "6731a055ce88cbb2b122cfd2e03f1690ef8a430b890670477ef2438549d2019b",
+      "size_bytes": 524288,
+      "build_flags": "-DSPLASH_V3_VISUAL_PREVIEW -DSPLASH_V3_BACKDROP_V019",
+      "previous_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+      "build_report_ref": "out/work_runs/splash_v3_v019_backdrop_preview_retry_20261015/reports/linux_wine_build_report.json",
+      "capture_report": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/evidence_manifest.json",
+      "capture_screenshot": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/screenshot.png",
+      "capture_screenshot_sha256": "1d65db41a51ba5dfd130235ae30a98aaedc51dd17a90399855642fc54cefe4b2",
+      "translation_report": "out/logs/splash_v3_backdrop_v019_translation_report_20261015.json",
+      "unique_tiles_hv": 552,
+      "declared_loader_tiles": 792,
+      "peak_sprites_per_scanline": 14,
+      "peak_sprite_pixels_per_scanline": 112,
+      "frames_over_h40_count": 0,
+      "frames_over_h40_width": 0,
+      "cpu_over_budget_frames": 37,
+      "max_cpu_load": 398,
+      "audio": "dummy_not_captured_or_reviewed",
+      "claim_ceiling": "wip_visual_preview",
+      "human_selected": false,
+      "human_visual_approval": false,
+      "human_audio_approval": false,
+      "delivery_gate_passed": false
+    }
+  ],
+  "candidate_runtime_preview": {
+    "status": "preview_captured_sealed_experimental_route_wip_needs_review",
+    "rom_sha256": "6731a055ce88cbb2b122cfd2e03f1690ef8a430b890670477ef2438549d2019b",
+    "emulator": "Installed BlastEm Linux Flatpak 1.0.0 direct manual X11; commit b0e3d27d6993b84933aadd707535d752e955c668f2c9459d9b67519623bcd704.",
+    "report_ref": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/evidence_manifest.json",
+    "screenshot_ref": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/screenshot.png",
+    "screenshot_sha256": "1d65db41a51ba5dfd130235ae30a98aaedc51dd17a90399855642fc54cefe4b2",
+    "native_320x224_review_crop": "out/reviews/splash_v3_v019_visual_review_20261015/screenshot_native_320x224.png",
+    "runtime_metrics_ref": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/runtime_metrics.json",
+    "claim_ceiling": "wip_visual_preview",
+    "delivery_gate_passed": false,
+    "audio": "dummy_not_captured_or_reviewed",
+    "human_visual_approval": false,
+    "human_audio_approval": false,
+    "runtime_observation": "1200/1200 frames; max 14/20 sprites and 112/320 pixels; 64 particles spawned, 0 failed; 37/1200 CPU-over-budget frames, max 398; 60.9 FPS title snapshot only.",
+    "budget_observation": "Probe-declared asset load ranges total 792 tiles through tile 807; not full VRAM readback. Requested DMA queue peak 5832 bytes/29 entries sampled before VBlank.",
+    "capture_route": "experimental_manual_flatpak_x11; canonical pinned helper blocked by HTTP 404.",
+    "unverified": [
+      "Sustained 60 FPS and CPU budget with approved audio.",
+      "Physical VBlank DMA completion/cadence and full VRAM residency.",
+      "Human visual review of native 320x224/CRT and full animation.",
+      "Human audio review across two integrated cycles.",
+      "Canonical emulator delivery gate and project-wide claim reconciliation."
+    ],
+    "motion_samples_manifest": "out/evidence/splash_v3_v019_motion_samples_long_20261015/motion_samples_manifest.json",
+    "motion_contact_sheet": "out/evidence/splash_v3_v019_motion_samples_long_20261015/motion_contact_sheet.png",
+    "motion_contact_sheet_sha256": "2a1e6fa3dcf5a0fbd833ee0633b21246130ba911c21710d0b74ec6e634e38afe"
+  },
+  "candidate_tile_residency_report_ref": "out/logs/splash_v3_v019_runtime_tile_ranges_20261015.json",
+  "candidate_asset_provenance_report_ref": "out/logs/asset_provenance_audit_report.json",
+  "candidate_tile_residency": {
+    "status": "runtime_probe_declared_ranges_only",
+    "declared_asset_tiles": 792,
+    "comparison_ceiling_tiles": 1740,
+    "declared_payload_share": 0.4552,
+    "full_vram_readback": false,
+    "report_ref": "out/logs/splash_v3_v019_runtime_tile_ranges_20261015.json",
+    "note": "This is not a full VRAM budget; code-loaded tiles, maps, SAT, buffers and physical uploads remain to be measured."
+  },
+  "candidate_asset_provenance": {
+    "status": "audit_passed_non_final",
+    "report": "out/logs/splash_v3_v014_headless_retry_20261014/workspace_relative_audit_outputs/provenance_report.json",
+    "visual_symbols": 24,
+    "blocking_findings": 0,
+    "human_final_approval": false
+  },
+  "latest_audio_review": {
+    "status": "ready_for_human_audition_unapproved",
+    "track": "V016 / VGM4",
+    "review_manifest": "out/audio/reviews/v009_v016_two_cycle_rom_capture_20261015/splash_v3_v016_two_cycle_rom_review.json",
+    "stereo_wav": "out/audio/reviews/v009_v016_two_cycle_rom_capture_20261015/splash_v3_v016_two_cycle_rom_stereo.wav",
+    "stereo_sha256": "d42e8cb3733340981c2c81178d423ad2975390f65b1da7681773c6f879dbff36",
+    "mono_fold_down_wav": "out/audio/reviews/v009_v016_two_cycle_rom_capture_20261015/splash_v3_v016_two_cycle_rom_mono.wav",
+    "mono_sha256": "0d6366f6f4d6997f39a9de5a8e348d9558abcf3623dea2cfea97fe41dd223ce1",
+    "preview_build_run": "out/work_runs/splash_v3_v016_rom_two_cycle_capture_20261015/run.json",
+    "source_capture_rom_sha256": "35af30bb5b0cfe52fb527858b9cd164ed496ee46f144e2396fd151841fb16e71",
+    "source_capture_screenshot": "out/evidence/splash_v3_v016_rom_two_cycle_capture_20261015/screenshot.png",
+    "source_capture_screenshot_sha256": "80800e4faf5a9f0c27d5c4dff59589ba86a9e0c31a8c79094263b63f34fb82a9",
+    "emulator": "BlastEm Flatpak 1.0.0; private Xvfb; experimental unsealed route",
+    "direct_two_pass_rom_capture": true,
+    "xgm2_playback_frames": 358,
+    "xgm2_playback_dropouts": 0,
+    "project_baseline_rom_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+    "source_relation": "The audio comes directly from two preview passes on isolated ROM 35af30bb5b0cfe52fb527858b9cd164ed496ee46f144e2396fd151841fb16e71. VGM4, cues and audio.c content match baseline V017 by hash, but the isolated preview binary is not out/rom.bin. The UI-only recapture build compiled but its emulator attempt failed before valid evidence.",
+    "human_audio_approval": false,
+    "dac_budget_validated": false,
+    "sustained_performance_validated": false,
+    "promotion_performed": false,
+    "recorded_at": "2026-10-15T03:05:14Z"
+  },
+  "candidate_runtime_preview_ref": "out/evidence/splash_v3_v019_preview_20261015/blastem-linux-manual-v019-preview-20261015/evidence_manifest.json",
+  "candidate_build_run_ref": "out/work_runs/splash_v3_v019_backdrop_preview_retry_20261015/reports/linux_wine_build_report.json",
+  "runtime_vdp_telemetry_review": {
+    "status": "within_observed_scanline_limits_full_budget_unvalidated",
+    "rom_sha256": "6731a055ce88cbb2b122cfd2e03f1690ef8a430b890670477ef2438549d2019b",
+    "code_review_ref": "out/reviews/splash_v3_v019_visual_review_20261015/code_review_report.json",
+    "vdp_budget_report_ref": "out/reviews/splash_v3_v019_visual_review_20261015/vdp_budget_report.json",
+    "visual_review_ref": "out/reviews/splash_v3_v019_visual_review_20261015/visual_quality_review.json",
+    "capture_route_ref": "out/logs/splash_v3_v019_runtime_telemetry_20261015/capture_route_override.json"
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "tdd_id": "branding_splash_v3_tdd",
+  "scene_manager_scope": {
+    "topology": "linear",
+    "deterministic": true,
+    "transition_handling": "Candidate SPLASH_V3_MENU_HANDOFF: frame-240 request waits for fade and DMA drain, manager owns a 12-frame input/update/nested-transition lock, menu fade-in, then unlock; compiled runtime proof pending.",
+    "transition_pattern": {
+      "pattern_catalog_id": "fade_transition",
+      "registry_ids": [
+        "palette_state_transitions",
+        "dma_transfer_safety"
+      ],
+      "owner": "application_scene_manager",
+      "fallback": "Hard cut if fade cannot progress; not implemented."
+    }
+  },
+  "input_abstraction_scope": {
+    "abstraction_layer": "No scene input during the 240-frame splash. In menu-handoff candidate, APP_update retains scene-transition ownership and blocks menu input/update for 12 frames after entry.",
+    "latency_target_ms": 0,
+    "supported_devices": [
+      "Mega Drive joypad ignored during splash"
+    ],
+    "rebind_support": false
+  },
+  "state_fsm_map": [
+    {
+      "scene_id": "APP_SCENE_BRANDING",
+      "states": [
+        "black_silence",
+        "energy",
+        "outline",
+        "fill",
+        "forge",
+        "sweep",
+        "hold_fade"
+      ],
+      "transitions": [
+        {
+          "from": "black_silence",
+          "to": "energy",
+          "trigger": "frame 24"
+        },
+        {
+          "from": "energy",
+          "to": "outline",
+          "trigger": "frame 84"
+        },
+        {
+          "from": "outline",
+          "to": "fill",
+          "trigger": "frame 120"
+        },
+        {
+          "from": "fill",
+          "to": "forge",
+          "trigger": "frame 150"
+        },
+        {
+          "from": "forge",
+          "to": "sweep",
+          "trigger": "frame 180"
+        },
+        {
+          "from": "sweep",
+          "to": "hold_fade",
+          "trigger": "frame 210"
+        },
+        {
+          "from": "hold_fade",
+          "to": "front_end_main_menu",
+          "trigger": "Handoff profile: nominal frame 240, after PAL fade idle and DMA queue empty; menu update/input unlock after 12 frames. Preview profile remains on A: REVER."
+        }
+      ]
+    }
+  ],
+  "memory_pool_map": [
+    {
+      "pool_id": "branding_v3_particle_pool",
+      "type": "particle",
+      "size": 64,
+      "owner": "scene_branding_v3",
+      "lifecycle": "Static candidate capacity for density inputs; runtime capacity is not selected until measurement."
+    },
+    {
+      "pool_id": "branding_v3_sweep_segments",
+      "type": "sprite",
+      "size": 7,
+      "owner": "scene_branding_v3",
+      "lifecycle": "Created at frame 180 and removed at frame 210; candidate count, not runtime proof."
+    }
+  ],
+  "sprite_engine_constraints": {
+    "sgdk_version": "2.11",
+    "current_call": "SPR_initEx(16)",
+    "argument_semantics": "VRAM tile reservation, not number of Sprite instances",
+    "sprite_pool_limit": 80,
+    "source_refs": [
+      "sdk/sgdk-2.11/inc/sprite_eng.h:404",
+      "sdk/sgdk-2.11/src/sprite_eng.c:128-132"
+    ],
+    "remaining_limits": "The 80-link total and H40 limits of 20 links and 320 pixels per scanline still apply."
+  },
+  "vblank_dma_ownership": {
+    "vblank_owner": "application_vblank_dispatcher",
+    "dma_owners": [
+      "scene_branding_v3_resource_preload"
+    ],
+    "safety_pattern": "Preload only in scene entry through the application VBlank path. Per-frame palette updates and any queued transfer must be confirmed against SGDK 2.11 and measured before runtime."
+  },
+  "h_int_ownership": {
+    "h_int_in_use": false,
+    "singleton_owner": "none; no H-Int effect is selected"
+  },
+  "audio_ownership": {
+    "driver": "xgm2",
+    "channel_owners": [
+      "branding_v3_music_director owns the XGM2 background loop; physical channel assignment pending audio architecture card",
+      "branding_v3_sound_director owns rise, lock, sweep, and tail cues; PCM overlap policy pending audio architecture card"
+    ],
+    "sample_rate_hz": 13300
+  },
+  "save_scope": "not_applicable",
+  "region_timing_scope": {
+    "region": "NTSC",
+    "justification": "The 240-frame timing proposal is NTSC-specific. PAL adaptation is future architectural work."
+  },
+  "rom_mastering_scope": {
+    "header_validated": false,
+    "checksum_validated": false,
+    "sram_size_bytes": 0
+  },
+  "technique_selection": {
+    "registry_source": "doc/05_technical/93_16bit_hardware_mastery_registry.json",
+    "usage_manifest_path": "doc/technique_usage_manifest.json",
+    "selected_registry_ids": [
+      "fixed_point_trig_lookup",
+      "dma_transfer_safety",
+      "palette_state_transitions",
+      "shadow_highlight_slot_rule",
+      "palette_remastering_slot_audit",
+      "tile_flipping",
+      "tile_dedup_hvflip_hashing",
+      "xgm2_pcm_multiplexing",
+      "xgm2_audio_architecture"
+    ],
+    "required_tags": [
+      "FIXED_POINT_MATH",
+      "TRIG_LOOKUP",
+      "CPU_OPTIMIZATION",
+      "DMA_OPTIMIZADO",
+      "DMA_QUEUE",
+      "VBLANK_BUDGET_AUDIT",
+      "PALETTE_MANAGEMENT_AVANCADO",
+      "PALETTE_TRANSITION",
+      "PALETTE_FLASH",
+      "SHADOW_HIGHLIGHT",
+      "PALETTE_REMASTERING",
+      "CUSTOM_SPRITE_COMPOSITION",
+      "METASPRITE_OPTIMIZATION",
+      "SPRITE_ENGINEERING",
+      "VRAM_TILE_INDEX_MANAGEMENT",
+      "TILE_DEDUP_HVFLIP",
+      "AUDIO_ENGINEERING",
+      "MULTIPLEXING",
+      "PCM_AUDIO",
+      "XGM2_AUDIO",
+      "YM2612_AUDIO",
+      "DAC_AUDIO",
+      "FM_SYNTHESIS",
+      "PSG_AUDIO"
+    ],
+    "owner_skills": [
+      "code/sgdk-runtime-coder",
+      "hardware/megadrive-vdp-budget-analyst",
+      "art/visual-excellence-standards",
+      "art/art-conversion-pipeline",
+      "art/megadrive-pixel-strict-rules",
+      "code/xgm2-audio-director",
+      "architecture/scene-state-architect"
+    ],
+    "selection_rationale": "The selected techniques directly cover the proposed particle motion, safe resource loading, palette states, indexed tile reuse, and XGM2 event ownership.",
+    "fallback_strategy": "Reduce or simplify only after measuring the worst candidate frame; never use flicker, out-of-VBlank DMA, or unowned CRAM writes.",
+    "signature_technique_ids": [
+      "fixed_point_trig_lookup",
+      "palette_state_transitions"
+    ],
+    "rejected_or_deferred": [
+      {
+        "registry_id": "sprite_temporal_multiplexing",
+        "decision": "deferred",
+        "reason": "The current choreography reuses the same legal sprite population and does not plan flicker or time-sliced SAT overcommit.",
+        "reconsideration_gate": "Only if all-frame measurement shows pressure that a static allocation cannot resolve."
+      },
+      {
+        "registry_id": "sprite_band_slot_allocator",
+        "decision": "deferred",
+        "reason": "The sweep is a seven-segment moving band, not a slot-overcommit system; its ordinary sprite geometry still requires measurement.",
+        "reconsideration_gate": "Revisit if measured pressure requires per-band slot arbitration."
+      },
+      {
+        "registry_id": "h_int_control_plane",
+        "decision": "deferred",
+        "reason": "No raster effect or mid-frame palette write is part of the selected direction.",
+        "reconsideration_gate": "Reopen only with a new scene-direction decision and singleton/reset plan."
+      },
+      {
+        "registry_id": "contextual_scene_transition_system",
+        "decision": "deferred",
+        "reason": "The cutscene exits through a timed palette fade and explicit teardown without H-Int choreography.",
+        "reconsideration_gate": "Reopen only if transition direction adds a measured raster effect."
+      },
+      {
+        "registry_id": "source_baked_pixel_art_standard",
+        "decision": "deferred",
+        "reason": "The human choice between hand-authored pixels and an ImageGen-authored master is pending.",
+        "reconsideration_gate": "Select the source-specific art standard after the lettering route is approved."
+      }
+    ],
+    "application_plan": [
+      {
+        "registry_id": "fixed_point_trig_lookup",
+        "scene_or_system": "branding_sequence_v3 particle motion",
+        "gameplay_or_narrative_purpose": "Make blue particles expand and contract around the central mark without floating point math.",
+        "visual_or_audio_role": "Same numeric motion; opt-in ROM coordinate tables remove repeated per-frame curve calculations.",
+        "owner_skill": "code/sgdk-runtime-coder",
+        "budget_evidence": "out/logs/splash_v3_motion_lut_compiled_equivalence_20261016.json and out/evidence/splash_v3_motion_lut_v002_20261016/native_cadence_01/cadence_observation.json; 25296 bytes, all coordinate pairs verified; sustained 60fps still unproven.",
+        "fallback": "Retain unchanged integer C reference with SPLASH_V3_MOTION_LUT undefined. The r1 anchor experiment always uses reference energy math."
+      },
+      {
+        "registry_id": "dma_transfer_safety",
+        "scene_or_system": "scene resource entry and palette updates",
+        "gameplay_or_narrative_purpose": "Keep resource handoff safe while the splash owns the display.",
+        "visual_or_audio_role": "Prevent visible transfer stalls and out-of-VBlank writes.",
+        "owner_skill": "hardware/megadrive-vdp-budget-analyst",
+        "budget_evidence": "Load envelope, per-frame envelope, and worst-frame VBlank fit are pending.",
+        "fallback": "Defer uploads to entry or reduce the resident set after measurement."
+      },
+      {
+        "registry_id": "palette_state_transitions",
+        "scene_or_system": "SGDK outline, fill, and final fade",
+        "gameplay_or_narrative_purpose": "Make the mark progress from luminous outline to filled lockup without redrawing pixels.",
+        "visual_or_audio_role": "Use ordered CRAM states as the reveal and exit motion.",
+        "owner_skill": "art/visual-excellence-standards",
+        "budget_evidence": "Palette ownership, transfer path, and all state changes await API review and runtime measurement.",
+        "fallback": "Keep one readable filled state and use a simple tested fade."
+      },
+      {
+        "registry_id": "shadow_highlight_slot_rule",
+        "scene_or_system": "PAL2 and PAL3 slot policy",
+        "gameplay_or_narrative_purpose": "Protect reserved operator slots while assigning color roles to the two wordmarks.",
+        "visual_or_audio_role": "Keep authored luminance ramps distinct from Shadow/Highlight operator colors.",
+        "owner_skill": "art/visual-excellence-standards",
+        "budget_evidence": "Slot reservation audit is pending until palette assets exist.",
+        "fallback": "Do not enable Shadow/Highlight for this scene."
+      },
+      {
+        "registry_id": "palette_remastering_slot_audit",
+        "scene_or_system": "four palette domains",
+        "gameplay_or_narrative_purpose": "Assign roles to environment, FX, SGDK, and FORGE colors before art is finalized.",
+        "visual_or_audio_role": "Remove dead colors and preserve legibility across outline, fill, and sweep states.",
+        "owner_skill": "art/art-conversion-pipeline",
+        "budget_evidence": "Per-material slot audit and remap report are pending until source pixels exist.",
+        "fallback": "Reduce palette complexity while keeping each plate readable."
+      },
+      {
+        "registry_id": "tile_flipping",
+        "scene_or_system": "backdrop tile reuse",
+        "gameplay_or_narrative_purpose": "Allow authored background motifs to reuse mirrored tiles when their shapes permit.",
+        "visual_or_audio_role": "Reduce duplicate tile storage without changing source pixels.",
+        "owner_skill": "art/megadrive-pixel-strict-rules",
+        "budget_evidence": "Tilemap flip flags and collision-free indices are pending asset conversion.",
+        "fallback": "Keep distinct tiles where mirroring damages composition."
+      },
+      {
+        "registry_id": "tile_dedup_hvflip_hashing",
+        "scene_or_system": "BG_B backdrop",
+        "gameplay_or_narrative_purpose": "Measure normal and mirrored 8x8 tiles before closing the scene residency budget.",
+        "visual_or_audio_role": "Keep the background vocabulary small while preserving original authored composition.",
+        "owner_skill": "art/art-conversion-pipeline",
+        "budget_evidence": "Unique-tile, savings, flag, and index-collision reports await candidate assets.",
+        "fallback": "Reauthor the backdrop with deliberate tile variety if dedup is weak."
+      },
+      {
+        "registry_id": "xgm2_pcm_multiplexing",
+        "scene_or_system": "BGM plus short splash cues",
+        "gameplay_or_narrative_purpose": "Give energy, lock, sweep, and tail events clear ownership alongside the loop.",
+        "visual_or_audio_role": "Tie sound changes to narrative beats without masking the visual timing.",
+        "owner_skill": "code/xgm2-audio-director",
+        "budget_evidence": "Channel map, sample audit, and simultaneous-play proof are pending.",
+        "fallback": "Remove secondary PCM cues and retain the loop plus one lock accent."
+      },
+      {
+        "registry_id": "xgm2_audio_architecture",
+        "scene_or_system": "branding_v3_audio_director",
+        "gameplay_or_narrative_purpose": "Keep loop, cues, pause, stop, and scene exit in one deterministic audio owner.",
+        "visual_or_audio_role": "Make the soundtrack support silence, energy rise, mark lock, sweep, and handoff.",
+        "owner_skill": "architecture/scene-state-architect",
+        "budget_evidence": "Audio architecture card, seamless-loop report, and BlastEm audio proof are pending.",
+        "fallback": "Use a short loop with no overlapping PCM until ownership is proven."
+      }
+    ]
+  },
+  "risk_mitigation_table": [
+    {
+      "risk_id": "measurement_gate",
+      "risk": "Shared active runtime_probe mirrors are stale, so measurement is not authorized.",
+      "mitigation": "Keep all budgets unmeasured and do not modify protected consumer projects.",
+      "severity": "critical"
+    },
+    {
+      "risk_id": "sprite_geometry",
+      "risk": "One ResComp SpriteDefinition cannot mix 8x8 and 16x16 frame dimensions.",
+      "mitigation": "Compare separate geometry profiles and decide the actual resource after measurement.",
+      "severity": "high"
+    },
+    {
+      "risk_id": "lettering_source",
+      "risk": "The lettering master has no human-approved source route.",
+      "mitigation": "Keep source gate blocked and create no production pixels.",
+      "severity": "high"
+    },
+    {
+      "risk_id": "scanline_pressure",
+      "risk": "Particle or sweep frames may exceed either H40 scanline limit.",
+      "mitigation": "Measure every candidate frame and both link and pixel pressure before fixing the pool.",
+      "severity": "high"
+    },
+    {
+      "risk_id": "audio_ownership",
+      "risk": "PCM cues could interrupt the loop or compete with DMA.",
+      "mitigation": "Define channel ownership and validate concurrent audio in BlastEm.",
+      "severity": "high"
+    },
+    {
+      "risk_id": "state_teardown",
+      "risk": "Stale audio, sprites, or callbacks could leak into the menu.",
+      "mitigation": "Use the state transition contract and verify reentry in BlastEm.",
+      "severity": "medium"
+    }
+  ],
+  "handoff_runtime_candidate": {
+    "status": "buildado_native_functional_observation_pending_delivery_gate",
+    "contract_ref": "doc/branding_v3_transition_contract.json",
+    "build_attempt_ref": "out/logs/splash_v3_handoff_build_attempt_20261014.json",
+    "build_report_ref": "out/logs/splash_v3_visible_deadline_v015_20261016/linux_wine_build_report.json",
+    "runtime_evidence_ref": "out/evidence/splash_v3_visible_deadline_v015_20261016/native_handoff_01/handoff_observation.json",
+    "rom_sha256": "04f24e1cd52f227c5e01547f2d30b9b915b45fde84a197873687243d5ef35c90",
+    "input_readiness": "destination entered, fade idle, DMA empty; countdown does not release lock",
+    "resource_loading_model": "out/reviews/splash_v3_visible_deadline_20261016/resource_loading_model.json",
+    "api_reality_check": "out/reviews/splash_v3_visible_deadline_20261016/api_reality_check.json"
+  }
+}

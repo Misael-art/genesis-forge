@@ -1,0 +1,20 @@
+# Local evidence, builds and private Git worktrees stay on disk.
+/out/
+/.agent
+/.ai-memory.toml
+/rds
+
+# Temporary recovery mirrors and host executables are reproducible, not sources.
+/rascunho/temporario/
+/rascunho/bounded_sat_sweep_20261016/sat_pressure_self_check
+/rascunho/manual_position_path_20261016/position_differential
+/rascunho/manual_tile_path_20261016/manual_tile_differential
+/rascunho/motion_lut_reference/*/reference
+/rascunho/menu_blackout_20261016/menu_palette_target
+/rascunho/prepared_logo_map_20261016/logo_map_differential
+/rascunho/queued_plane_clear_20261016/plane_clear_lifetime
+/rascunho/quiet_beat_export_20261016/export_schedule
+/rascunho/sat_pressure_probe_20261016/sat_pressure_self_check
+/rascunho/scanline_probe_linear_20261016/scanline_differential
+__pycache__/
+*.pyc

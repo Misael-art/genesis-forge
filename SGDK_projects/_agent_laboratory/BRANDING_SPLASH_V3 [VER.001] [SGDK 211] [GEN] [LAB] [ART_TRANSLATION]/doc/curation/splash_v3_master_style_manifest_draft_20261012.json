@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "master_style_manifest",
+  "manifest_id": "splash_v3_master_style_draft_20261012",
+  "scene_id": "branding_sequence_v3",
+  "status": "draft_visual_lab_only",
+  "style_id": "vibrant_16bit_pixel",
+  "canvas": {
+    "width": 320,
+    "height": 224,
+    "mode": "H40",
+    "tile_grid": 8
+  },
+  "palette_roles": {
+    "environment": "near-black navy and restrained cobalt; preserve a readable center",
+    "energy": "electric blue and cyan in short, high-contrast ramps; crystal highlight reserved for accents",
+    "SGDK": "ice-white or pale-cyan face with a crisp dark-blue boundary and limited bright edge",
+    "FORGE": "same material family with one controlled cyan accent; lower hierarchy than SGDK"
+  },
+  "cluster_rules": [
+    "hard pixel edges; no blur or subpixel gradient",
+    "silhouette and 1-2 pixel outline remain readable at 320x224",
+    "energy fragments have clear birth, peak, convergence, and dissipation phases",
+    "keep background frequency low under the two wordmarks",
+    "use no more than 15 visible colors per tile palette, with index 0 reserved"
+  ],
+  "layer_memory": {
+    "BG_B": "dark atmosphere and sparse outer energy",
+    "BG_A": "clean mark stage and imported logo plates",
+    "SPRITES": "particle motion and later sweep; mutually exclusive pools by state",
+    "WINDOW": "unused"
+  },
+  "style_drift_policy": {
+    "status": "draft",
+    "allowed": "adjust blue/cyan hue balance and particle density only if logo contrast, animation direction, and readability stay intact",
+    "blocked": "diffuse glow, continuous gradient, busy halftone across text, unrelated props, silent logo redesign, warm palette takeover",
+    "change_requires": "record source/hash, compare at 320x224, update curator record, rerun legal VDP translation and scene measurement"
+  },
+  "quality_reference_board": null,
+  "quality_ceiling": "needs_review_until_human_route_model_sheet_and_reference_board_are_approved",
+  "human_review_required": true
+}

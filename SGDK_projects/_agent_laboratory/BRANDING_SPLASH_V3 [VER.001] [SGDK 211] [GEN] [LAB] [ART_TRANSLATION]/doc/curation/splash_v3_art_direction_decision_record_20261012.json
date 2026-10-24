@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "art_direction_decision_record",
+  "record_id": "splash_v3_art_direction_draft_20261012",
+  "scene_id": "branding_sequence_v3",
+  "status": "draft_concept_only_requires_human_review",
+  "source_authority": "doc/branding_v3_cinematic_storyboard.json and user-approved Splash V3 brief",
+  "catalog_ref": "tools/sgdk_wrapper/.agent/references/art_style_catalog.json",
+  "catalog_sha256": "640c50c883d97a7de2d2851415e6c4329d7585b2f3e0ba7749a8c20c14e4057e",
+  "style_candidate_matrix_ref": "doc/curation/splash_v3_style_candidate_matrix_20261012.json",
+  "recommended_style": "vibrant_16bit_pixel",
+  "direction": "Original technical brand reveal: sharply clustered electric-blue/cyan energy frames a clean central mark stage; the wordmark is bright, immediately legible, and carries the strongest value contrast. Motion reads as expansion, convergence, fill, directional sweep, and exit.",
+  "composition_target": "320x224 H40; BG_B atmosphere, BG_A structural mark stage, sprites for independent energy motion; WINDOW unused.",
+  "emotional_target": [
+    "positive",
+    "confident",
+    "energetic",
+    "adventurous",
+    "premium"
+  ],
+  "concept_reference": {
+    "path": "rascunho/visual_lab/branding_v3_backdrop_concept_20261012.png",
+    "sha256": "d1e719488a7e21f0122c9a8a0680995988b887155a8c64c9992089a21ea94063",
+    "role": "visual_lab_control_only"
+  },
+  "human_gates": {
+    "lettering_master_route": "pending",
+    "model_sheet_approval": "pending",
+    "quality_reference_board": "absent"
+  },
+  "production_pixels_authorized": false,
+  "notes": [
+    "The V2 art-direction record is frozen and remains separate.",
+    "This draft guides curatorial discussion only; it does not approve source pixels or production assets."
+  ]
+}

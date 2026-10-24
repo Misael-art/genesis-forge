@@ -1,0 +1,52 @@
+{
+  "schema_version": "scene_reset_plan.v1",
+  "status": "implemented_uncompiled",
+  "transition_contract_ref": "doc/branding_v3_transition_contract.json",
+  "old_owner": "scene_branding_v3",
+  "new_owner": "scene_menu",
+  "manager_owner": "application_scene_manager",
+  "release_before_switch": [
+    "wait for PAL fade idle",
+    "wait for DMA queue empty",
+    "stop all branding audio",
+    "disable Shadow/Highlight",
+    "restore HSCROLL_PLANE/VSCROLL_PLANE and zero BG_A/B offsets",
+    "disable WINDOW",
+    "restore text plane BG_A"
+  ],
+  "manager_switch": [
+    "SPR_reset",
+    "SPR_update empty SAT",
+    "set previous/current scene",
+    "arm 12-frame transition lock",
+    "set sceneNeedsEnter"
+  ],
+  "new_enter_while_locked": [
+    "scene_menuEnter runs once",
+    "menu clears/redraws planes",
+    "menu sets palettes",
+    "menu samples 64 target CRAM colors",
+    "menu starts 12-frame PAL_fadeInAll",
+    "menu starts inherited brand BGM"
+  ],
+  "locked_window": [
+    "skip input",
+    "skip scene update",
+    "reject nested transitions",
+    "continue global AUDIO_update and VBlank dispatch",
+    "decrement transitionFrames"
+  ],
+  "callback_policy": {
+    "scene_local_vint": false,
+    "scene_local_hint_timer": false,
+    "global_vblank_dispatcher": "unchanged"
+  },
+  "known_dependency": "Menu art/BGM still comes from inherited FORJA/V2 resources and must be resolved before V2 archival.",
+  "verification_pending": [
+    "compile",
+    "BlastEm exact ROM hash",
+    "input observed by ROM after unlock",
+    "menu palette read and fade",
+    "re-entry without stale state"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "track_id": "splash_v3_sonic_logo_v2",
+  "region": "ntsc",
+  "tempo_bpm": 120,
+  "meter": "7/8",
+  "grouping_eighths": [3, 2, 2],
+  "eighth_note_frames": 15,
+  "bar_frames": 105,
+  "bar_count": 2,
+  "frames": 210,
+  "loop_frame": 0,
+  "tonal_center": "E major",
+  "motif": ["E5", "G#5", "B5", "E6"],
+  "answer": ["C#6", "B5", "G#5", "E6"],
+  "identity": "An original eight-note reveal: rising E-major brass motif, bell harmony and a clear open E-major cadence. No legacy FORJA V2 material or third-party melody is reused.",
+  "scene_alignment": {
+    "scene_music_start_frame": 30,
+    "scene_music_stop_frame": 240,
+    "mark_lock_scene_frame": 118,
+    "sweep_scene_frame": 178,
+    "tail_scene_frame": 210,
+    "final_chord_score_frame": 178
+  },
+  "mix_notes": [
+    "Keep the FM brass lead forward with a fast attack and enough upper harmonics to read on a small television speaker.",
+    "The FM bell voice carries chord tones under the lead; the final voicing is E3, G#4, E6 with B5/B6 glints.",
+    "Bass is limited to short E/A/B/E root accents; avoid a continuous low bed.",
+    "PSG glints follow the E-major motif and thin out under PCM cues.",
+    "The final E-major chord begins at score frame 178, aligns with the tail window, and lasts through the scene exit."
+  ],
+  "fm_patches": [
+    {
+      "id": "splash_fm_short_bass_v2",
+      "channel": 0,
+      "algorithm": 0,
+      "feedback": 1,
+      "pan": 3,
+      "operators": [
+        {"detune": 0, "multiple": 1, "total_level": 58, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 10, "decay2": 5, "sustain_level": 4, "release": 5, "ssg_eg": 0},
+        {"detune": 0, "multiple": 2, "total_level": 46, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 10, "decay2": 5, "sustain_level": 4, "release": 5, "ssg_eg": 0},
+        {"detune": 0, "multiple": 1, "total_level": 30, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 9, "decay2": 4, "sustain_level": 3, "release": 5, "ssg_eg": 0},
+        {"detune": 0, "multiple": 1, "total_level": 8, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 12, "decay2": 7, "sustain_level": 4, "release": 5, "ssg_eg": 0}
+      ]
+    },
+    {
+      "id": "splash_fm_brass_lead_v2",
+      "channel": 1,
+      "algorithm": 4,
+      "feedback": 2,
+      "pan": 3,
+      "operators": [
+        {"detune": 0, "multiple": 2, "total_level": 30, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 13, "decay2": 6, "sustain_level": 4, "release": 5, "ssg_eg": 0},
+        {"detune": 0, "multiple": 1, "total_level": 8, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 12, "decay2": 6, "sustain_level": 3, "release": 5, "ssg_eg": 0},
+        {"detune": 0, "multiple": 1, "total_level": 18, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 11, "decay2": 5, "sustain_level": 3, "release": 5, "ssg_eg": 0},
+        {"detune": 0, "multiple": 2, "total_level": 26, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 10, "decay2": 5, "sustain_level": 3, "release": 5, "ssg_eg": 0}
+      ]
+    },
+    {
+      "id": "splash_fm_bell_harmony_v2",
+      "channel": 2,
+      "algorithm": 7,
+      "feedback": 0,
+      "pan": 3,
+      "operators": [
+        {"detune": 0, "multiple": 1, "total_level": 14, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 8, "decay2": 4, "sustain_level": 4, "release": 6, "ssg_eg": 0},
+        {"detune": 0, "multiple": 2, "total_level": 22, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 8, "decay2": 4, "sustain_level": 4, "release": 6, "ssg_eg": 0},
+        {"detune": 0, "multiple": 3, "total_level": 34, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 7, "decay2": 4, "sustain_level": 5, "release": 6, "ssg_eg": 0},
+        {"detune": 0, "multiple": 4, "total_level": 44, "rate_scale": 0, "attack": 31, "am_enable": 0, "decay1": 7, "decay2": 4, "sustain_level": 6, "release": 6, "ssg_eg": 0}
+      ]
+    }
+  ],
+  "fm_notes": [
+    {"instrument": "splash_fm_short_bass_v2", "frame": 0, "duration": 10, "midi": 52},
+    {"instrument": "splash_fm_short_bass_v2", "frame": 54, "duration": 10, "midi": 45},
+    {"instrument": "splash_fm_short_bass_v2", "frame": 96, "duration": 10, "midi": 47},
+    {"instrument": "splash_fm_short_bass_v2", "frame": 148, "duration": 10, "midi": 47},
+    {"instrument": "splash_fm_short_bass_v2", "frame": 178, "duration": 31, "midi": 52},
+
+    {"instrument": "splash_fm_brass_lead_v2", "frame": 0, "duration": 18, "midi": 76},
+    {"instrument": "splash_fm_brass_lead_v2", "frame": 18, "duration": 18, "midi": 80},
+    {"instrument": "splash_fm_brass_lead_v2", "frame": 36, "duration": 24, "midi": 83},
+    {"instrument": "splash_fm_brass_lead_v2", "frame": 60, "duration": 32, "midi": 88},
+    {"instrument": "splash_fm_brass_lead_v2", "frame": 92, "duration": 28, "midi": 85},
+    {"instrument": "splash_fm_brass_lead_v2", "frame": 120, "duration": 28, "midi": 83},
+    {"instrument": "splash_fm_brass_lead_v2", "frame": 148, "duration": 30, "midi": 80},
+    {"instrument": "splash_fm_brass_lead_v2", "frame": 178, "duration": 31, "midi": 88},
+
+    {"instrument": "splash_fm_bell_harmony_v2", "frame": 0, "duration": 54, "midi": 64},
+    {"instrument": "splash_fm_bell_harmony_v2", "frame": 54, "duration": 42, "midi": 69},
+    {"instrument": "splash_fm_bell_harmony_v2", "frame": 96, "duration": 54, "midi": 71},
+    {"instrument": "splash_fm_bell_harmony_v2", "frame": 150, "duration": 28, "midi": 68},
+    {"instrument": "splash_fm_bell_harmony_v2", "frame": 178, "duration": 31, "midi": 68}
+  ],
+  "psg_notes": [
+    {"channel": 0, "frame": 4, "duration": 8, "midi": 88, "attenuation": 10},
+    {"channel": 0, "frame": 40, "duration": 8, "midi": 95, "attenuation": 10},
+    {"channel": 0, "frame": 64, "duration": 8, "midi": 100, "attenuation": 11},
+    {"channel": 0, "frame": 96, "duration": 8, "midi": 97, "attenuation": 11},
+    {"channel": 0, "frame": 124, "duration": 8, "midi": 95, "attenuation": 10},
+    {"channel": 0, "frame": 152, "duration": 8, "midi": 92, "attenuation": 10},
+    {"channel": 0, "frame": 180, "duration": 29, "midi": 95, "attenuation": 11},
+    {"channel": 1, "frame": 178, "duration": 31, "midi": 83, "attenuation": 10}
+  ]
+}

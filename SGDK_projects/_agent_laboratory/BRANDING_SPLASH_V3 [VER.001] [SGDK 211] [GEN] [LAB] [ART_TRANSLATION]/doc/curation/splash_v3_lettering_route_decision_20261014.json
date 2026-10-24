@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "route_decision_record",
+  "recorded_at": "2026-10-14T12:20:50Z",
+  "context_type": "projeto_existente",
+  "affected_surface": "asset",
+  "user_goal": "Avancar a direcao visual da Splash V3 em desenvolvimento e deixar lettering legivel, cristalino e pronto para revisao futura no Mega Drive.",
+  "dominant_route": "source_translation",
+  "first_skill": "art/art-translation-to-vdp",
+  "supporting_skills": [
+    "art/visual-excellence-standards",
+    "art/megadrive-pixel-strict-rules",
+    "operation/sgdk-build-wrapper-operator",
+    "operation/emulator-vdp-evidence-curator"
+  ],
+  "existing_curation": {
+    "builder": "data/source_art/branding_v3/build_splash_v3_lettering_native_probes.py",
+    "source_case_manifest": "none",
+    "reference_implementation": "Existing Splash V3 IMAGE plates at 224x48 and 192x32, composed on BG_A over the selected V006 crystal backdrop in BG_B."
+  },
+  "technical_family": {
+    "resource_loading_model": "scene_local_preload",
+    "plane_model": "BG_B holds the full-screen crystal backdrop; BG_A receives separate SGDK and FORGE image tilemaps; sprites carry particles and sweep.",
+    "asset_strategy": "IMAGE"
+  },
+  "first_tool": {
+    "command": "python3 data/source_art/branding_v3/build_splash_v3_lettering_native_probes.py --activate-b-preview",
+    "reason": "Translate the persisted V003 direction B through aspect-preserving reduction and the VDP 9-bit palette, preserve the current plates by hash, and activate the candidate only in the isolated lab runtime."
+  },
+  "decision": {
+    "candidate": "B_faceted_crystal",
+    "basis": "The native 4bpp probes show stronger crystal identity than A while SGDK/FORGE counters remain open in this translation; C leans sporty and A is close to the current placeholder.",
+    "selection_type": "curator_wip_candidate_under_user_authorized_development",
+    "human_selection": false,
+    "final_visual_approval": false,
+    "runtime_scope": "isolated laboratory preview only",
+    "archive_or_template_promotion_authorized": false
+  },
+  "evidence_required": [
+    "Builder report with source/runtime hashes and plate formats.",
+    "Provenance audit for all symbols in res/resources.res.",
+    "Tile residency and palette-role validation for B plates.",
+    "SGDK 2.11 wrapper build with exact flags and ROM SHA-256.",
+    "BlastEm screenshots of contour, fill, FORGE, sweep, fade and prompt for that ROM hash.",
+    "Human visual review before final pixel or model-sheet approval."
+  ],
+  "forbidden_shortcuts_until_evidence": [
+    "Do not draw or repair letter silhouettes with runtime or PIL primitives.",
+    "Do not treat a contact sheet, 4bpp normalization, or selected screenshot as final art approval.",
+    "Do not change FORJA V2, canonical template, consumer projects, or final-promotion flags.",
+    "Do not claim total VRAM, stable 60fps, or final audio quality from lettering probes."
+  ],
+  "handoff_next": "Submit the exact V006/B ROM and screenshot for human native-resolution review; capture BUTTON_A replay and a frame-marked full cycle, listen to two integrated audio cycles, and close performance/budget findings before any promotion.",
+  "result": {
+    "candidate_status": "B active WIP in isolated res paths and observed in the exact V006 ROM; not selected/approved by the user.",
+    "static_probe": {
+      "path": "rascunho/visual_lab/splash_v3_lettering_probe_b_v001_320x224.png",
+      "sha256": "15e97ea38a63f48b45d7a97a35ad7cb47d85b3161ed967e452243cc4964d1745"
+    },
+    "provenance_audit": "passed: 22/22 pixel-bearing symbols; out/logs/splash_v3_asset_provenance_wip_post_v006_20261014.json",
+    "tile_residency": {
+      "report": "out/logs/splash_v3_tile_residency_v006_lettering_b_20261014.json",
+      "selected_state_peak_tiles": 823,
+      "payload_bytes": 26336
+    },
+    "rom_build": "buildado: 22c6e3962c253b2588cd07d0b9d4fa2d890d4366b8e4de71a87b59e1b755baf4; out/logs/linux_wine_build_report.json",
+    "human_selection": false,
+    "final_visual_approval": false,
+    "archive_or_template_promotion_authorized": false,
+    "runtime_capture": {
+      "session_id": "blastem-linux-20261014T133648Z-289753",
+      "report": "out/logs/emulator_evidence_splash_v3_visual_v006_20261014.json",
+      "screenshot_sha256": "a5a189903c49e7f6e58a32c5e89365870650669207c8e9da5c99bef5f18a2b5a",
+      "semantic_gate": "passed",
+      "freshness": "ok",
+      "measurement_frames": "1200/1200",
+      "performance_claim": "unproven"
+    }
+  }
+}

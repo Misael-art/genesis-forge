@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "branding_v3_sonic_logo_v015_frequency_masking",
+  "scene_id": "branding_sequence_v3",
+  "status": "design_only",
+  "music_identity": {
+    "tonal_center": "C major",
+    "fundamental_focus_hz": [
+      87,
+      2093
+    ],
+    "low_end_policy": "Five short C3/G2/F2/G2/C3 bass accents; no sustained low bed.",
+    "high_end_policy": "Short brass attacks carry the hook. Three 5-frame additive FM C6/E6/G6 flashes sit at score frames 0/30/105, outside PCM windows; PSG remains silent."
+  },
+  "cue_windows": [
+    {
+      "event": "splash_energy_rise",
+      "start_frame": 24,
+      "end_frame_exclusive": 60,
+      "spectrum_role": "tonal C3-to-C5 rise with restrained air",
+      "music_action": "music enters at frame 60, after the cue completes"
+    },
+    {
+      "event": "splash_mark_lock",
+      "start_frame": 118,
+      "end_frame_exclusive": 130,
+      "spectrum_role": "short G7 lock chord",
+      "music_action": "The mark-lock cue fills the score-frame 58-70 rest; the next music attack is at score frame 72 (scene frame 132)."
+    },
+    {
+      "event": "splash_sweep_pass",
+      "start_frame": 178,
+      "end_frame_exclusive": 204,
+      "spectrum_role": "ascending G4-to-C6 tonal sweep",
+      "music_action": "All authored music notes end at scene frame 174, leaving the complete sweep cue free of FM notes."
+    },
+    {
+      "event": "splash_tail",
+      "start_frame": 210,
+      "end_frame_exclusive": 234,
+      "spectrum_role": "soft C/E/G triad resolution",
+      "music_action": "The music remains silent through the tail cue; PCM carries the final resolution."
+    }
+  ],
+  "mix_constraints": {
+    "pcm_channels": [
+      "SOUND_PCM_CH2",
+      "SOUND_PCM_CH3"
+    ],
+    "max_concurrent_pcm": 2,
+    "source_peak_dbfs_target": "about -7.5 before 8-bit conversion; verify actual samples and keep cues below the FM lead",
+    "clipping": "No full-scale 0x00/0xFF PCM samples; measure payload after conversion.",
+    "loudness": "No normalization based only on file peak; compare cues by perceived level in BlastEm."
+  },
+  "pending_measurements": [
+    "cue_peak_and_rms",
+    "two_cycle_loop_seam",
+    "sample_memory_bytes",
+    "runtime_audio_cpu_and_dma",
+    "human_v015_mixing_review"
+  ]
+}

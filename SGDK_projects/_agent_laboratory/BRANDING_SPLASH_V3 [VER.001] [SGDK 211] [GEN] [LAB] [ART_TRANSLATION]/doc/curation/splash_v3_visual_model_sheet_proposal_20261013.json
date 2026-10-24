@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "splash_v3_visual_model_sheet_proposal",
+  "scene_id": "branding_sequence_v3",
+  "status": "development_wip_authorized_final_review_pending",
+  "authority": {
+    "storyboard": "doc/branding_v3_cinematic_storyboard.json",
+    "visual_style_draft": "doc/curation/splash_v3_master_style_manifest_draft_20261012.json",
+    "curator_record": "doc/curation/splash_v3_visual_curation_record_20261013.md",
+    "user_decision": "doc/curation/splash_v3_user_development_decision_20261013.md",
+    "visual_source_of_truth_gate": "doc/contracts/visual_source_of_truth_branding_splash_v3.json"
+  },
+  "review_candidate": {
+    "composition": "rascunho/visual_lab/branding_v3_composition_concept_ai_v003_20261013.png",
+    "sha256": "bbae39df46cc432043f1c9853fa2bb691ad0c8f8fab1fd5cb78bb220df4ba90a",
+    "visual_lab_control_only": true,
+    "human_approval": false,
+    "runtime_preview": "out/logs/splash_v3_visual_preview_report_20261013.json"
+  },
+  "target": {
+    "resolution_px": [
+      320,
+      224
+    ],
+    "display_mode": "H40",
+    "tile_grid_px": 8,
+    "status": "provisional_anchors_for_wip_only"
+  },
+  "emotional_direction": [
+    "positive",
+    "confident",
+    "energetic",
+    "adventurous",
+    "premium",
+    "crystalline"
+  ],
+  "composition": {
+    "energy_origin_px": [
+      160,
+      112
+    ],
+    "central_negative_space": "preserve a clean dark field behind the mark; energy vectors point inward without diffuse glow",
+    "sgdk_plate": {
+      "x": 48,
+      "y": 72,
+      "width": 224,
+      "height": 48,
+      "role": "dominant hero wordmark"
+    },
+    "forge_plate": {
+      "x": 64,
+      "y": 128,
+      "width": 192,
+      "height": 32,
+      "role": "smaller second line; keep clearly subordinate"
+    },
+    "sweep": {
+      "x_start": -16,
+      "x_end": 274,
+      "x_step_per_frame": 10,
+      "segment_count": 7,
+      "segment_size_px": [
+        8,
+        8
+      ],
+      "segment_y_px": [
+        76,
+        84,
+        92,
+        100,
+        108,
+        116,
+        124
+      ],
+      "duration_frames": 30,
+      "role": "brief diagonal crystal accent using seven shared instances of the 8x8 particle sprite"
+    },
+    "background": {
+      "role": "BG_B perimeter crystal field",
+      "density": "medium at edges, low under logo",
+      "forbidden": "blurred glow, noisy sparkle fill across center, lower corners overpowering mark",
+      "status": "WIP uses 610 unique tiles; the 20-40 tile target remains a future re-authoring/optimization gate.",
+      "current_unique_tiles_raw": 610,
+      "current_rescomp_tiles_hv_deduplicated": 604,
+      "tile_vocabulary_target": [
+        20,
+        40
+      ]
+    }
+  },
+  "asset_roles": [
+    {
+      "id": "bg_b_crystal_energy",
+      "target_symbol": "img_splash_backdrop_v3",
+      "target_size_px": [
+        320,
+        224
+      ],
+      "plane": "BG_B",
+      "palette_slot": "PAL0",
+      "source_candidate": "rascunho/visual_lab/branding_v3_backdrop_concept_ai_v002_20261013.png",
+      "source_sha256": "c06fdcbc9a4ae481bb1652c6fa3260132eaff66c982eb9d19c71d7a827cf9f48",
+      "status": "development_wip_indexed_plate_not_final",
+      "tile_vocabulary_target": [
+        20,
+        40
+      ],
+      "current_unique_tiles": 610
+    },
+    {
+      "id": "sgdk_wordmark",
+      "target_symbol": "img_splash_sgdk_v3",
+      "target_size_px": [
+        224,
+        48
+      ],
+      "plane": "BG_A",
+      "palette_slot": "PAL1",
+      "source_candidate": "rascunho/visual_lab/branding_v3_lettering_plate_preview_ai_v002.png",
+      "source_sha256": "701f28c87caf80171d2328c433a10dc176d27c60cab8011add0935345b2086c3",
+      "status": "development_wip_indexed_plate_not_final",
+      "rendering": "one original authored plate per word; no runtime font or code-drawn glyphs"
+    },
+    {
+      "id": "forge_wordmark",
+      "target_symbol": "img_splash_forge_v3",
+      "target_size_px": [
+        192,
+        32
+      ],
+      "plane": "BG_A",
+      "palette_slot": "PAL2",
+      "source_candidate": "rascunho/visual_lab/branding_v3_lettering_plate_preview_ai_v002.png",
+      "source_sha256": "701f28c87caf80171d2328c433a10dc176d27c60cab8011add0935345b2086c3",
+      "status": "development_wip_indexed_plate_not_final",
+      "rendering": "same visual material family as SGDK, subordinate scale and contrast"
+    },
+    {
+      "id": "particle_animation",
+      "target_symbol": "spr_splash_particle_v3",
+      "target_cell_px": [
+        8,
+        8
+      ],
+      "frame_count_candidate": 8,
+      "plane": "SPRITES",
+      "palette_slot": "PAL3",
+      "source_candidate": "rascunho/visual_lab/branding_v3_particle_strip_concept_20261013.png",
+      "source_sha256": "f27219421ce39a62979d46e09a3291e61f2234d80f07a0040052de5f2e325f7c",
+      "status": "development_wip_native_sprite_not_final",
+      "translation_note": "The concept has partial alpha and 36,991 RGBA values; it is not an indexed 8x8 sprite strip. Re-author clusters on native grid.",
+      "candidate_instance_count": 64
+    },
+    {
+      "id": "sweep_instances",
+      "target_symbol": "spr_splash_particle_v3",
+      "target_cell_px": [
+        8,
+        8
+      ],
+      "frame_count_candidate": 8,
+      "plane": "SPRITES",
+      "palette_slot": "PAL3",
+      "status": "reused_particle_pool_wip",
+      "note": "Seven shared 8x8 instances use y=76..124 in 8px steps; x starts at -16 and moves 10px/frame.",
+      "instance_count": 7
+    }
+  ],
+  "palette_roles": {
+    "index0": "Transparent for imported plates and sprites.",
+    "PAL0": "Dark navy and restrained cobalt environment for BG_B.",
+    "PAL1": "SGDK wordmark, ice face, cobalt outline and pale cyan highlights.",
+    "PAL2": "FORGE wordmark in the same material family at subordinate hierarchy.",
+    "PAL3": "Crystal particles and sweep; brief white replay hint after the lab preview fade.",
+    "hardware_constraints": "Maximum 15 visible colors per 4bpp palette; every color on the 9-bit VDP grid. Exact index-role mapping remains provisional."
+  },
+  "motion_model": {
+    "energy_births": "Distributed across frames 24-83; no 8-at-once pileup at center.",
+    "radial_motion": "16 directions, 8.8 fixed-point vectors; particles start at radius 8px, expand to 88px, turn inward, then converge during frames 84-119.",
+    "particle_pressure_candidate": {
+      "count": 64,
+      "cell_px": [
+        8,
+        8
+      ],
+      "worst_frame": 108,
+      "sprites_per_scanline_peak": 17,
+      "pixels_per_scanline_peak": 136,
+      "total_sprite_links": 64,
+      "status": "measured_pressure_candidate_not_asset_approval",
+      "report": "out/logs/splash_v3_scanline_visual_runtime_20261013.json",
+      "sweep_profile": {
+        "instance_count": 7,
+        "cell_px": [
+          8,
+          8
+        ],
+        "max_sprites_per_scanline": 1,
+        "max_sprite_pixels_per_scanline": 8,
+        "status": "local_geometry_measurement_passed_visual_review_pending"
+      }
+    },
+    "hold_fade": "Frames 210-239 fade the complete lockup. At frame 240 the isolated lab preview stops audio, clears BG_A, writes A: REPLAY SPLASH V3 and waits for A; clean capture of that prompt remains pending."
+  },
+  "palette_suggestions_on_vdp_grid": [
+    "#002266",
+    "#0044AA",
+    "#0066CC",
+    "#2288EE",
+    "#66CCEE",
+    "#AACCEE",
+    "#EEEEEE"
+  ],
+  "human_gates": {
+    "development_wip_authorized": true,
+    "lettering_source_route": "provisional_ai_source_for_lab_preview",
+    "model_sheet_approval": "pending",
+    "quality_reference_board": "pending_native_scale_review",
+    "visual_source_of_truth_contract": "lineage_scan_passed_direction_only",
+    "final_visual_approval": false,
+    "production_pixels_authorized": false
+  },
+  "development_scope": {
+    "user_decision_date": "2026-10-13",
+    "allowed": "WIP assets and isolated laboratory preview for future review and improvement",
+    "not_approved": "final artwork, final musical quality, template promotion, FORJA V2 archive, or consumer-project migration"
+  },
+  "approval_checks": [
+    "SGDK and FORGE spell exactly and remain distinct at native 320x224.",
+    "SGDK is the dominant mark; FORGE reads as its signature line.",
+    "The energy reads as separate expansion and convergence beats, not a continuous glow.",
+    "The BG_B edges frame the mark without competing with it in grayscale.",
+    "Each final asset is native 8x8 clustered, indexed, has index 0 role declared, and has no partial alpha.",
+    "Final particle choreography is re-measured from actual anchors and final sprite cells.",
+    "Inspect the sweep during motion, not only a still frame, and confirm it leaves SGDK/FORGE readable.",
+    "Verify the A: REPLAY SPLASH V3 hold screen with a clean BlastEm capture and replay the scene twice.",
+    "Review the 610-tile backdrop against the stated 20-40 tile art vocabulary target before any final asset approval.",
+    "Bind final visual and audio judgment to the exact ROM and asset hashes; keep those approvals separate."
+  ],
+  "runtime_preview": {
+    "status": "preview_observed_unsealed",
+    "rom_sha256": "3478ae036d80d8df8fc99259ab6e1175c27ceeb9b33bf4f5ec4c724f8010cfd0",
+    "emulator": "local pinned BlastEm 1.0.0; canonical capture route not sealed",
+    "capture_report": "out/logs/splash_v3_visual_preview_report_20261013.json",
+    "selected_frame_captures": [
+      "out/blastem_splash_v3_visual_preview_20261013/splash_v3_visual_viewport_320x224.png",
+      "out/blastem_splash_v3_visual_preview_20261013/splash_v3_convergence_viewport_320x224.png"
+    ],
+    "tile_residency_report": "out/logs/splash_v3_tile_residency_20261013.json",
+    "effective_scene_tile_peak": 808,
+    "available_art_tile_ceiling": 1740,
+    "tile_residency_status": "local_audit_passed_46_percent; total_VDP_budget_pending"
+  }
+}

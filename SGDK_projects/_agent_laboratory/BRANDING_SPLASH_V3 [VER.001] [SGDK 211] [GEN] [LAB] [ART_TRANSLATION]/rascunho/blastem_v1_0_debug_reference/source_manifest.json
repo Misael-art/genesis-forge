@@ -1,0 +1,31 @@
+{
+  "revision": "2b2a182f4522_v1_0_0",
+  "retrieved_at": "2026-10-16T18:08:44.262670+00:00",
+  "source_kind": "official_upstream_code_readonly_reference_not_runtime_dependency",
+  "files": [
+    {
+      "path": "debug.c",
+      "url": "https://www.retrodev.com/repos/blastem/raw-file/2b2a182f4522/debug.c",
+      "sha256": "dfc74249bae0ebd1c5dea87adc52d3b33e2470a52b3898fdaf916f34c4a092f8",
+      "size_bytes": 173629
+    },
+    {
+      "path": "debug.h",
+      "url": "https://www.retrodev.com/repos/blastem/raw-file/2b2a182f4522/debug.h",
+      "sha256": "1def451a8abefbfa730f636bb14fe98355837b360c9d69f9bb0d78fa13c10d37",
+      "size_bytes": 5016
+    },
+    {
+      "path": "genesis.c",
+      "url": "https://www.retrodev.com/repos/blastem/raw-file/2b2a182f4522/genesis.c",
+      "sha256": "142e8271076752ae602aa7ad70bdc5c91cfc8c0d32777c50cb523416dc148403",
+      "size_bytes": 122179
+    },
+    {
+      "path": "vdp.c",
+      "url": "https://www.retrodev.com/repos/blastem/raw-file/2b2a182f4522/vdp.c",
+      "sha256": "4c30c5b36a2c82eb056adff31a122196845ffe892a14ea1bc058e8e1e9576144",
+      "size_bytes": 216349
+    }
+  ]
+}

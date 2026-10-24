@@ -1,0 +1,73 @@
+{
+  "case_id": "splash_v3_v015_backdrop_source_semantics",
+  "source_image": "../../data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.png",
+  "scene_truth_kind": "human_reviewed_source_semantics",
+  "layout_complexity": "low",
+  "reports_dir": "out/logs/splash_v3_v015_semantic_panels_20261015",
+  "source_inventory": {
+    "includes": [
+      "scene_plane_bg_b",
+      "logo_safe_negative_space",
+      "crystal_edge_groups",
+      "lower_reflection"
+    ],
+    "notes": [
+      "The full canvas is one continuous high-resolution background concept, not a stage board, editorial sheet, sprite sheet or mockup.",
+      "The center is intentional negative space for separately authored SGDK and FORGE wordmarks; crystals, glints and the lower reflection belong to the same source plane."
+    ]
+  },
+  "drop_policy": {
+    "drop_classes": [
+      "mockup_preview",
+      "author_credits",
+      "avatar_or_icon",
+      "unrelated_reference"
+    ],
+    "notes": [
+      "No editorial or unrelated region is present in V015. Do not crop the source into artificial planes.",
+      "The long lower reflection is a source detail to simplify in native translation, not a separate image region to discard as a rectangle."
+    ]
+  },
+  "composition_schema": {
+    "kind": "single_background_plate",
+    "roles": [
+      {
+        "region_id": "full_crystal_energy_plate",
+        "composition_role": "scene_plane_bg_b",
+        "order": 0
+      }
+    ]
+  },
+  "semantic_parse_report": {
+    "source_layout_type": "single_frame",
+    "semantic_regions": [
+      {
+        "id": "full_crystal_energy_plate",
+        "classification": "scene_plane_bg_b",
+        "bbox": [
+          0,
+          0,
+          1500,
+          1049
+        ],
+        "notes": "One full-frame crystalline energy background. Internal landmarks: dark central logo-safe field; large upper-left crystal mass; sparse upper-right shards; stronger right-side crystals lower in the frame; reduced but still visible horizontal reflection and small glint below the logo area."
+      }
+    ],
+    "auxiliary_regions": [],
+    "drop_regions": [],
+    "animation_ranges": [],
+    "final_scene_hypothesis": {
+      "summary": "Use V015 only as a single BG_B source plate. Keep the dark center quiet for separate SGDK/FORGE BG_A marks; runtime particles and sweep remain separate sprites.",
+      "reference_image": ""
+    },
+    "notes_on_why": [
+      "The source contains one coherent full-screen environment; it does not provide separable authored BG_A/B plates.",
+      "The central negative space is a compositional region within BG_B, not a third hardware plane.",
+      "The lower reflection remains part of the source and should be shortened through native reauthoring rather than a hard rectangular crop."
+    ]
+  },
+  "training_labels": {
+    "goal": "Classify a generated full-frame branding backdrop as one BG_B plate and distinguish internal logo-safe negative space from independent hardware layers.",
+    "reference_images": []
+  }
+}

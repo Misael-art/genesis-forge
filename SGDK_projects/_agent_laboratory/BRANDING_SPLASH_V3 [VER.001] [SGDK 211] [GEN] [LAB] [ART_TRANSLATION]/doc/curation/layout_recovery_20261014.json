@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "layout_recovery_map",
+  "status": "relocated_and_hash_verified",
+  "original_path": "SGDK_projects/_agent_laboratory/BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]/out/logs/choreography_inputs_v3_visual_runtime_20261013",
+  "recovered_path": "rascunho/temporario/layout_recovery_20261014/choreography_inputs_v3_visual_runtime_20261013_nested",
+  "relocation_plan": "out/logs/layout_recovery_plan_20261014.json",
+  "relocation_receipt": "out/logs/layout_recovery_receipt_20261014.json",
+  "relocation_plan_sha256": "72f6b58da4aaf018290d5ef9df205851494c776055a7ce9cd6dfec3c131447c6",
+  "consumer_audit": {
+    "searched_project_paths": ["doc", "data", "src", "inc", "res"],
+    "references_found": false,
+    "direct_output_with_same_basename": "out/logs/choreography_inputs_v3_visual_runtime_20261013",
+    "byte_comparison": {
+      "nested_file_count": 1002,
+      "direct_file_count": 1002,
+      "same_name_hash_mismatches": ["manifest.json"],
+      "meaning": "All frame inputs and simulator inputs matched the direct run byte-for-byte; only the nested manifest captured the malformed repeated SGDK_projects path. Both trees were preserved."
+    }
+  },
+  "rollback": "The relocate_artifact_trees.py receipt supports hash-bound rollback while the recovered destination remains intact and the original path is free."
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": "art_asset_registry.v1",
+  "project_id": "BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]",
+  "locations": [
+    {
+      "path": "data/source_art/branding_v3/v015",
+      "mode": "managed",
+      "purpose": "Registered Splash V3 V015 source concept and generation record"
+    },
+    {
+      "path": "data/source_art/branding_v3/v017",
+      "mode": "managed",
+      "purpose": "Registered Splash V3 visual concept source and generation record"
+    },
+    {
+      "path": "data/source_art/branding_v3/v018",
+      "mode": "managed",
+      "purpose": "Registered Splash V3 visual concept source and generation record"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "splash-v3-backdrop-v015-concept-r1",
+      "asset_id": "splash_v3_backdrop_v015",
+      "role": "background_plate",
+      "stage": "concept",
+      "revision": 1,
+      "status": "candidate",
+      "reason": "New asymmetric crystal composition awaiting native Mega Drive translation and human review",
+      "parents": [],
+      "files": [
+        {
+          "role": "source_image",
+          "path": "data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.png",
+          "sha256": "87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188"
+        },
+        {
+          "role": "generation_record",
+          "path": "data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.generation.json",
+          "sha256": "2d9cab472bc5950d05fb32932af91a06f70df38165d35ed4bbaf1170cfc7d519"
+        }
+      ]
+    },
+    {
+      "id": "splash-v3-backdrop-v017-concept-control-r1",
+      "asset_id": "splash_v3_backdrop_v017",
+      "role": "background_plate",
+      "stage": "concept",
+      "revision": 1,
+      "status": "superseded",
+      "reason": "Superseded as a runtime-source candidate after its native translation measured 1104 unique H/V tiles and 5.69% of wordmark-mask pixels above diagnostic luma 32. Kept as source lineage only.",
+      "parents": [
+        "splash-v3-backdrop-v015-concept-r1"
+      ],
+      "files": [
+        {
+          "role": "source_image",
+          "path": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.png",
+          "sha256": "4bb6bc3cf60fff57dc396eafd9d21bdee86b03349800ba6e9c40eec8ebc38033"
+        },
+        {
+          "role": "generation_record",
+          "path": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.generation.json",
+          "sha256": "addbcbbfa3c9fd8863083af3c89a64832c5570681b2ab9dca935130472ee8f2a"
+        }
+      ]
+    },
+    {
+      "id": "splash-v3-backdrop-v018-concept-r1",
+      "asset_id": "splash_v3_backdrop_v018",
+      "role": "background_plate",
+      "stage": "concept",
+      "revision": 1,
+      "status": "candidate",
+      "reason": "Broad-facet source with broken lower shelf; 901 H/V-unique tiles, 3.07% of WIP wordmark mask over diagnostic luma 32. Exact-hash isolated BlastEm preview captured; approval remains false and V006 stays default.",
+      "parents": [
+        "splash-v3-backdrop-v017-concept-control-r1"
+      ],
+      "files": [
+        {
+          "role": "source_image",
+          "path": "data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.png",
+          "sha256": "93ddcafa8e4fcff6cf2e28b206f0a262cf7171aa149c25c9d4ce12b2220c52f0"
+        },
+        {
+          "role": "generation_record",
+          "path": "data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.generation.json",
+          "sha256": "7559e4811997cf9aa9f0bccec3a0cdce332aa42215d561f33a309f30bb8774ae"
+        }
+      ]
+    }
+  ],
+  "heads": [
+    {
+      "asset_id": "splash_v3_backdrop_v015",
+      "role": "background_plate",
+      "stage": "concept",
+      "candidate": "splash-v3-backdrop-v015-concept-r1",
+      "approved": null
+    },
+    {
+      "asset_id": "splash_v3_backdrop_v018",
+      "role": "background_plate",
+      "stage": "concept",
+      "candidate": "splash-v3-backdrop-v018-concept-r1",
+      "approved": null
+    },
+    {
+      "asset_id": "splash_v3_backdrop_v017",
+      "role": "background_plate",
+      "stage": "concept",
+      "candidate": null,
+      "approved": null
+    }
+  ],
+  "legacy_inventory": []
+}

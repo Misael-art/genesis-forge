@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "project_root": "/mnt/sdcard/Projects/Sgdk Forge/SGDK_projects/_agent_laboratory/BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]",
+  "mode": "capture",
+  "status": "learning_context_present",
+  "capture_status": "captured",
+  "is_blocking": false,
+  "canonical_promotion_performed": false,
+  "required_files": [
+    "README.md",
+    "success_patterns.md",
+    "failure_patterns.md",
+    "skill_promotion_candidates.md",
+    "canonical_promotion_review.md",
+    "learning_ledger.json"
+  ],
+  "present_files": [
+    "README.md",
+    "success_patterns.md",
+    "failure_patterns.md",
+    "skill_promotion_candidates.md",
+    "canonical_promotion_review.md",
+    "learning_ledger.json"
+  ],
+  "missing_files": [],
+  "lesson_count": 2,
+  "candidate_count": 1,
+  "candidate_index": [
+    {
+      "lesson_id": "lesson_7ba2a789fc9860af",
+      "title": "Aprimorar `cutscene-cinematic-direction` com contrato declarativo de movimento de particulas pequenas (partida, origem, velocidade, aceleracao, gravidade, ondulacao e faixa de quadros) e handoff obrigatorio para o `megadrive-vdp-budget-analyst` medir geometria por quadro.",
+      "lifecycle_status": "human_review_required",
+      "evidence_grade": "E1_artifact",
+      "action": "create_skill",
+      "target_path": null
+    }
+  ],
+  "warnings": [],
+  "written_files": [
+    "doc/agent_learning/learning_ledger.json",
+    "doc/agent_learning/evidence/splash_v3_wind_sweep_20261015/capture.json"
+  ],
+  "recurring_blockers": [],
+  "no_qualified_lessons_justification": null
+}

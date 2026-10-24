@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "branding_splash_v3_visual_identity",
+  "evaluated_at": "2026-10-15T04:50:40Z",
+  "status": "needs_review",
+  "approved_authorial_source": {
+    "path": "doc/curation/splash_v3_visual_model_sheet_proposal_20261013.json",
+    "role": "authorial_concept",
+    "approval_status": "approved_as_direction",
+    "approval_scope": "Direction for isolated WIP development only. No final lettering, pixels, model sheet, or template replacement is approved."
+  },
+  "allowed_generation_sources": [
+    {
+      "path": "doc/curation/splash_v3_visual_model_sheet_proposal_20261013.json",
+      "role": "direction_brief",
+      "source_status": "direction_brief"
+    },
+    {
+      "path": "doc/branding_v3_cinematic_storyboard.json",
+      "role": "direction_brief",
+      "source_status": "direction_contract"
+    },
+    {
+      "path": "doc/curation/splash_v3_user_development_decision_20261014.md",
+      "role": "human_review_record",
+      "source_status": "development_wip_authorized"
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v006_20261014.png",
+      "role": "direction_brief",
+      "source_status": "direction_brief"
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v013_20261014.png",
+      "role": "direction_brief",
+      "source_status": "development_wip_challenger_used_for_targeted_edit_only"
+    }
+  ],
+  "forbidden_generation_sources": [
+    "out/blastem_splash_v3_visual_preview_20261013/*",
+    "rascunho/visual_lab/source_backdrop_tilemap_wip_v001_20261014.json",
+    "rascunho/visual_lab/source_backdrop_tilemap_wip_v002_20261014.json",
+    "rascunho/visual_lab/splash_backdrop_v3_40tile_control_20261013.png",
+    "rascunho/visual_lab/splash_v3_native_pixel_candidate_wip_20261013.png",
+    "rascunho/visual_lab/splash_v3_native_tilemap_candidate_wip_20261014.png",
+    "rascunho/visual_lab/splash_v3_native_tilemap_lockup_contact_wip_v002_20261014.png",
+    "res/branding_v3/*",
+    "res/sprites/splash_particle_v3_8x8_strip.png"
+  ],
+  "obsolete_assets": [
+    {
+      "path": "res/branding_v3/*",
+      "generation_source_status": "obsolete_for_generation_source",
+      "allowed_usage": [
+        "comparison_only",
+        "runtime_evidence_only",
+        "do_not_use_for_generation"
+      ],
+      "reason": "Pixels in res are derivative WIP runtime placeholders, not masters for future image generation or final art."
+    },
+    {
+      "path": "out/blastem_splash_v3_visual_preview_20261013/*",
+      "generation_source_status": "obsolete_for_generation_source",
+      "allowed_usage": [
+        "comparison_only",
+        "runtime_evidence_only",
+        "do_not_use_for_generation"
+      ],
+      "reason": "BlastEm captures prove selected preview frames only; they are not art sources."
+    }
+  ],
+  "partial_runtime_candidates": [
+    {
+      "path": "out/rom.bin",
+      "generation_source_status": "obsolete_for_generation_source",
+      "runtime_status": "runtime_candidate_not_aaa_not_source",
+      "missing_gates": [
+        "final_visual_review",
+        "final_audio_review",
+        "runtime_vram_dma_cpu_dac_budget",
+        "sustained_60fps",
+        "canonical_blastem_capture",
+        "user_final_approval"
+      ]
+    }
+  ],
+  "lineage_scan_policy": {
+    "blocked_fields": [
+      "source",
+      "baseline",
+      "reference_for_generation",
+      "img2img_base",
+      "generation_source",
+      "image_reference"
+    ],
+    "scan_roots": [
+      "data/source_art/branding_v3",
+      "src"
+    ]
+  },
+  "decision": {
+    "generation_source_locked": true,
+    "next_sprite_sheet_must_start_from_model_sheet": true,
+    "ready_for_aaa": false,
+    "note": "Direction and source pixels remain provisional. V006 is the authorized origin for V019; V019 is a WIP translation candidate, not an authorized source for further image generation. No final lettering, model sheet, pixels, or template replacement is approved."
+  }
+}

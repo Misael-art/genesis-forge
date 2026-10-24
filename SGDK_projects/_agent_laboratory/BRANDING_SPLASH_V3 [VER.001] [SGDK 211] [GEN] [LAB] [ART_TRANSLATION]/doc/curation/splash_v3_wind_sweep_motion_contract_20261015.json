@@ -1,0 +1,181 @@
+{
+  "schema_version": "splash_v3_wind_sweep_motion_contract.v1",
+  "artifact_kind": "cutscene_motion_beat_map",
+  "scene_id": "branding_sequence_v3",
+  "status": "geometry_measured_runtime_review_captured_human_approval_pending",
+  "source": {
+    "kind": "user_direction",
+    "date": "2026-10-15",
+    "summary": "Seven final sparks sweep from left to right across the name with staggered lower-left launches, varied speed, diagonal undulation and light upward arcs that lose altitude at different times."
+  },
+  "owner": "scene_branding_v3",
+  "visual_role": "A brief crystal accent that carries the lockup from reveal into hold. It should imply wind through unequal launch timing and trajectories while keeping SGDK/FORGE readable.",
+  "timeline": {
+    "start_frame": 180,
+    "end_frame_exclusive": 210,
+    "audio_sweep_cue_frame": 178,
+    "display_mode": "h40",
+    "viewport_px": [
+      320,
+      224
+    ],
+    "sprite_cell_px": [
+      8,
+      8
+    ]
+  },
+  "trajectory_model": {
+    "position_units": "sprite top-left pixels",
+    "velocity_units": "Q8 pixels per frame",
+    "acceleration_units": "Q8 pixels per frame squared",
+    "x_formula": "x0 + trunc_toward_zero(vx_q8 * t / 256) + trunc_toward_zero(wind_x_q8 * t * t / 512)",
+    "y_formula": "y0 + trunc_toward_zero(vy_q8 * t / 256) + trunc_toward_zero(gravity_y_q8 * t * t / 512) + trunc_toward_zero(wave_amplitude_px * sin16[((t + wave_phase) >> 1) & 15] / 256)",
+    "sin16_q8": [
+      0,
+      98,
+      181,
+      237,
+      256,
+      237,
+      181,
+      98,
+      0,
+      -98,
+      -181,
+      -237,
+      -256,
+      -237,
+      -181,
+      -98
+    ],
+    "runtime_policy": "Integer-only fixed trajectories; no heap, floating point, random state, H-Int, per-frame tile upload or sprite multiplexing. Hide each spark outside its authored lifetime."
+  },
+  "sparks": [
+    {
+      "id": "spark_0",
+      "start_frame": 180,
+      "lifetime_frames": 30,
+      "x0": -8,
+      "y0": 124,
+      "vx_q8": 2176,
+      "wind_x_q8": 18,
+      "vy_q8": -768,
+      "gravity_y_q8": 56,
+      "wave_amplitude_px": 1,
+      "wave_phase": 0
+    },
+    {
+      "id": "spark_1",
+      "start_frame": 180,
+      "lifetime_frames": 30,
+      "x0": -12,
+      "y0": 130,
+      "vx_q8": 2304,
+      "wind_x_q8": 12,
+      "vy_q8": -640,
+      "gravity_y_q8": 44,
+      "wave_amplitude_px": 2,
+      "wave_phase": 3
+    },
+    {
+      "id": "spark_2",
+      "start_frame": 181,
+      "lifetime_frames": 29,
+      "x0": -8,
+      "y0": 116,
+      "vx_q8": 2688,
+      "wind_x_q8": 20,
+      "vy_q8": -896,
+      "gravity_y_q8": 66,
+      "wave_amplitude_px": 1,
+      "wave_phase": 7
+    },
+    {
+      "id": "spark_3",
+      "start_frame": 182,
+      "lifetime_frames": 28,
+      "x0": 4,
+      "y0": 128,
+      "vx_q8": 2432,
+      "wind_x_q8": 14,
+      "vy_q8": -717,
+      "gravity_y_q8": 48,
+      "wave_amplitude_px": 3,
+      "wave_phase": 10
+    },
+    {
+      "id": "spark_4",
+      "start_frame": 183,
+      "lifetime_frames": 27,
+      "x0": -20,
+      "y0": 110,
+      "vx_q8": 2944,
+      "wind_x_q8": 8,
+      "vy_q8": -461,
+      "gravity_y_q8": 36,
+      "wave_amplitude_px": 1,
+      "wave_phase": 13
+    },
+    {
+      "id": "spark_5",
+      "start_frame": 184,
+      "lifetime_frames": 26,
+      "x0": -4,
+      "y0": 132,
+      "vx_q8": 2688,
+      "wind_x_q8": 10,
+      "vy_q8": -819,
+      "gravity_y_q8": 61,
+      "wave_amplitude_px": 2,
+      "wave_phase": 5
+    },
+    {
+      "id": "spark_6",
+      "start_frame": 185,
+      "lifetime_frames": 25,
+      "x0": -20,
+      "y0": 120,
+      "vx_q8": 3072,
+      "wind_x_q8": 14,
+      "vy_q8": -666,
+      "gravity_y_q8": 51,
+      "wave_amplitude_px": 1,
+      "wave_phase": 12
+    }
+  ],
+  "budget_contract": {
+    "visible_sparks_max": 7,
+    "total_sprite_links_max": 64,
+    "h40_sprites_per_scanline_max": 20,
+    "h40_sprite_pixels_per_scanline_max": 320,
+    "headroom_justification": "The seven-particle accent is intentionally sparse and brief so the SGDK mark remains dominant; its path overlap will be measured for every sweep frame.",
+    "measurement_required": "All 30 scene frames with actual 8x8 positions; report peak count, width and frame/line.",
+    "measurement_ref": "out/logs/splash_v3_wind_sweep_scanline_20261015.json",
+    "measurement_status": "measured_geometry_only",
+    "measured_frames": 30,
+    "measured_peak_sprites_per_scanline": 4,
+    "measured_peak_sprite_pixels_per_scanline": 32,
+    "measured_top_left_envelope_px": {
+      "x": [
+        -20,
+        316
+      ],
+      "y": [
+        92,
+        133
+      ]
+    },
+    "runtime_review_ref": "out/logs/splash_v3_wind_sweep_runtime_review_20261015.json"
+  },
+  "fallback": {
+    "trigger": "The new paths obscure the wordmark, bunch into a single streak, exceed H40 limits, or produce visible stepping.",
+    "action": "Restore the prior straight sweep from the same particle strip and keep the motion contract as a rejected WIP experiment."
+  },
+  "approval": {
+    "human_visual_approval": false,
+    "final_art_approval": false,
+    "template_promotion_authorized": false
+  },
+  "visual_review_status": "rejected_by_user",
+  "visual_review_note": "The user rejected this ROM as monotonous and lacking the agreed animation and energy. Keep this contract and its measurements as a historical failure record, not as an accepted art-direction result."
+}

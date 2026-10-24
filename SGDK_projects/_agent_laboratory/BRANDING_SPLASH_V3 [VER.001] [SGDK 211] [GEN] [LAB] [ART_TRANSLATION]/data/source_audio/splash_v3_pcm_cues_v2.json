@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "composition_id": "splash_v3_pcm_cues_sonic_logo_v2",
+  "region": "ntsc",
+  "authoring_sample_rate_hz": 44100,
+  "xgm2_sample_rate_hz": 13300,
+  "target_peak": 0.62,
+  "source_kind": "procedural_composed_from_authored",
+  "acceptance_status": "lab",
+  "musical_center": "E major",
+  "cue_cohesion": "Use the E-major scale and open fifth/triad tones from the music; reduce broadband noise so each cue reads as one part of the signature.",
+  "cues": [
+    {
+      "id": "splash_energy_rise_v2",
+      "filename": "splash_energy_rise_v2.wav",
+      "trigger_frame": 24,
+      "max_duration_frames": 56,
+      "render_duration_frames": 36,
+      "waveform": "rising_current",
+      "seed": 71232,
+      "frequency_start_hz": 164.81,
+      "frequency_end_hz": 659.25,
+      "noise_mix": 0.08,
+      "noise_cutoff_start_hz": 280,
+      "noise_cutoff_end_hz": 4600
+    },
+    {
+      "id": "splash_mark_lock_v2",
+      "filename": "splash_mark_lock_v2.wav",
+      "trigger_frame": 118,
+      "max_duration_frames": 18,
+      "render_duration_frames": 12,
+      "waveform": "fifth_lock",
+      "frequencies_hz": [659.25, 987.77, 1318.51],
+      "weights": [0.48, 0.30, 0.18],
+      "decay_seconds": 0.14,
+      "attack_seconds": 0.003,
+      "noise_click_mix": 0.008,
+      "seed": 44119
+    },
+    {
+      "id": "splash_sweep_pass_v2",
+      "filename": "splash_sweep_pass_v2.wav",
+      "trigger_frame": 178,
+      "max_duration_frames": 32,
+      "render_duration_frames": 26,
+      "waveform": "tonal_sweep",
+      "seed": 87179,
+      "frequency_start_hz": 329.63,
+      "frequency_end_hz": 987.77,
+      "noise_mix": 0.07,
+      "noise_cutoff_start_hz": 350,
+      "noise_cutoff_end_hz": 5200
+    },
+    {
+      "id": "splash_tail_v2",
+      "filename": "splash_tail_v2.wav",
+      "trigger_frame": 210,
+      "max_duration_frames": 30,
+      "render_duration_frames": 24,
+      "waveform": "soft_resolution",
+      "frequencies_hz": [329.63, 415.30, 493.88],
+      "weights": [0.46, 0.29, 0.20],
+      "decay_seconds": 0.24,
+      "fade_out_seconds": 0.10,
+      "seed": 90211
+    }
+  ]
+}

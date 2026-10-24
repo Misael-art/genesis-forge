@@ -1,0 +1,58 @@
+{
+  "schema": "splash_v3_deadline_experiment_plan.v1",
+  "owner": "branding_splash_v3",
+  "path_base": "project_root",
+  "claim": "Reduce remaining emulated deadlines without changing density, authored animation frames, coordinates, reveal frames or audio.",
+  "reference_rom": "8aed3920593594b56b9bf4acc62699ff21c9082baeead6e1a13d2642764cd9d7",
+  "reference_cadence": {
+    "updates": 241,
+    "vblanks": 255,
+    "convergence_updates": 36,
+    "convergence_vblanks": 45
+  },
+  "steps": [
+    {
+      "id": "profile_rejected_r2",
+      "result": "New calibrated profile shows app frame-change cost falls about115k MCLK while median rises about5k; same cadence. This distinguishes no frame gain from no CPU gain.",
+      "evidence": "out/evidence/splash_v3_manual_tile_v008r2_20261016/native_cpu_01/cpu_block_profile.json"
+    },
+    {
+      "id": "bounded_sat",
+      "result": "Host 1024 cases x3 and malformed/recovery pass. Cadence255 unchanged, median probe249102 vs261842 MCLK; narrowing bounds pays late in convergence.",
+      "evidence": "out/evidence/splash_v3_bounded_sat_v009_20261016/native_cpu_01/cpu_block_profile.json"
+    },
+    {
+      "id": "combined",
+      "status": "no_cadence_gain",
+      "acceptance": "Compare full emulated cadence and physical SAT/pressure; do not infer success from sum of local cycle reductions.",
+      "rom_sha256": "636064c9f93f40dadffef4b5652372bb1b94a3f841f79a1248d81abcc4bde837",
+      "evidence": "out/evidence/splash_v3_combined_cost_v010_20261016/native_cadence_01/cadence_observation.json",
+      "result": "255 VBlanks/241 updates; do not select on CPU projections alone."
+    },
+    {
+      "id": "manual_position",
+      "status": "retained_with_ROM_proof",
+      "mechanism": "Guarded manual-visibility path stores exactly the SGDK-biased x/y; original API used in auto/debug modes. New mechanism addresses all64 position setter calls, unlike rejected tile-only attempts.",
+      "host_evidence": "out/logs/splash_v3_position_differential_20261016.json",
+      "cases": 114244,
+      "acceptance": "Actual cadence gain, physical SAT match and post-probe width readback. Fallback flags/coordinates checked against extracted SGDK setter.",
+      "result": "248/241 intermediate; retained in selected O242/241."
+    },
+    {
+      "id": "prepare_map_in_black",
+      "status": "retained_with_ROM_proof",
+      "method": "Prepare existing authored tile attributes in static RAM before F24, then submit unchanged data at F84/F150. Never reveal BG_A early. Exact SGDK attribute formula from vdp_tile.c and paired full VRAM needed.",
+      "result": "327680 row cases and21 whole VRAM equal snapshots, original reveal boundaries."
+    },
+    {
+      "id": "first_sram_export",
+      "status": "retained_with_ROM_proof",
+      "method": "Keep full telemetry and coherent export; any scheduling change must preserve schema, heartbeat and snapshot freshness.",
+      "result": "All150 samples retained; exports F120,F180,F239; final64 words match RAM."
+    }
+  ],
+  "human_visual_approval": false,
+  "canonical_changes": false,
+  "selected_rom_sha256": "04f24e1cd52f227c5e01547f2d30b9b915b45fde84a197873687243d5ef35c90",
+  "result_ref": "out/reviews/splash_v3_visible_deadline_20261016/review_summary.json"
+}

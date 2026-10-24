@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "branding_v3_blastem_audio_proof",
+  "scene_id": "branding_sequence_v3",
+  "required_emulator": "BlastEm",
+  "capture_scope": "one complete 240-frame NTSC splash, including silence, cue events, menu handoff and audio teardown",
+  "rom_identity": { "rom_sha256": null, "build_id": null },
+  "required_artifacts": [
+    "dedicated BlastEm screenshot of the visual signature",
+    "save.sram and visual_vdp_dump.bin tied to the same ROM and capture session",
+    "audio recording or directly listenable capture preserving the complete signal",
+    "runtime_metrics.json with scene id, audio update cadence, cue events and over-budget counters",
+    "out/logs/audio_validation_report.json and out/logs/evidence_closeout_report.json"
+  ],
+  "review_dimensions": ["audio_signal_present", "event_timing", "music_loop_integrity", "cue_legibility", "visual_audio_sync", "handoff_teardown", "human_audio_quality"],
+  "rules": [
+    "A screenshot or metadata cannot approve audio quality.",
+    "Audio quality requires a human listener and the same hash-bound ROM used for runtime evidence.",
+    "Any rebuild invalidates capture artifacts bound to the previous ROM hash."
+  ],
+  "status": "plan_only",
+  "blockers": ["v3_rom_missing", "audio_capture_route_unverified", "human_listening_pending"]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "ai_image_generation_record",
+  "generated_at": "2026-10-14T12:09:08+00:00",
+  "output_path": "data/source_art/branding_v3/sources/source_lettering_runtime_context_ai_v001_20261014.png",
+  "output_sha256": "20fa2e32a125d829f26bf33287103339699b4e1fb99a55b32e42ce2341fee7d7",
+  "output_size_px": [1024, 1536],
+  "source_kind": "ai_generated",
+  "acceptance_status": "visual_lab_control",
+  "tool": "built_in_image_gen",
+  "reference_inputs": [
+    {"path": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png", "sha256": "d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8", "role": "three_lettering_directions_A_B_C"},
+    {"path": "res/branding_v3/splash_backdrop_v3_v005_320x224.png", "sha256": "ef75c6ec1c429e16ad3fa3aae55acf846631d4ff0d5f2a0f3c8b02fe47c39ab0", "role": "selected_WIP_backdrop_visual_reference"}
+  ],
+  "prompt_brief": "Three vertically stacked visual-only contact mockups comparing lettering directions A, B and C over the V005 crystal backdrop; exact SGDK/FORGE spelling and hierarchy requested. The generator returned a 1024x1536 concept sheet, not exact 320x224 native plates.",
+  "review": {
+    "panel_order": ["A_heroic_ice", "B_faceted_crystal", "C_forward_energy"],
+    "exact_text_observed": ["SGDK", "FORGE"],
+    "curator_read": "A is the clearest at first glance; B has more facets; C has stronger forward slant. This is a preliminary curator observation only.",
+    "native_320x224_verified": false,
+    "pixel_art_conversion": false,
+    "human_approval": false,
+    "runtime_use_authorized": false
+  }
+}

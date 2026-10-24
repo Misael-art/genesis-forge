@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "composition_id": "splash_v3_pcm_cues_sonic_logo_v3",
+  "region": "ntsc",
+  "authoring_sample_rate_hz": 44100,
+  "xgm2_sample_rate_hz": 13300,
+  "target_peak": 0.42,
+  "source_kind": "procedural_composed_from_authored",
+  "acceptance_status": "lab",
+  "musical_center": "C major",
+  "cue_cohesion": "Each cue uses the active C-major harmony at its trigger: C rise into the opening, G7 lock during the held F, G-to-C sweep through the leading tone, and C/E/G tail over the final chord. Transients sit below the FM lead and broadband noise stays restrained.",
+  "cues": [
+    {
+      "id": "splash_energy_rise_v3",
+      "filename": "splash_energy_rise_v3.wav",
+      "trigger_frame": 24,
+      "max_duration_frames": 56,
+      "render_duration_frames": 36,
+      "waveform": "rising_current",
+      "seed": 77321,
+      "frequency_start_hz": 130.81,
+      "frequency_end_hz": 523.25,
+      "attack_seconds": 0.035,
+      "release_seconds": 0.08,
+      "noise_mix": 0.025,
+      "noise_cutoff_start_hz": 240,
+      "noise_cutoff_end_hz": 5200
+    },
+    {
+      "id": "splash_mark_lock_v3",
+      "filename": "splash_mark_lock_v3.wav",
+      "trigger_frame": 118,
+      "max_duration_frames": 18,
+      "render_duration_frames": 12,
+      "waveform": "fifth_lock",
+      "frequencies_hz": [392.00, 493.88, 587.33, 698.46],
+      "weights": [0.31, 0.27, 0.23, 0.19],
+      "decay_seconds": 0.16,
+      "attack_seconds": 0.003,
+      "noise_click_mix": 0.003,
+      "seed": 45217
+    },
+    {
+      "id": "splash_sweep_pass_v3",
+      "filename": "splash_sweep_pass_v3.wav",
+      "trigger_frame": 178,
+      "max_duration_frames": 32,
+      "render_duration_frames": 26,
+      "waveform": "tonal_sweep",
+      "seed": 89137,
+      "frequency_start_hz": 392.00,
+      "frequency_end_hz": 1046.50,
+      "noise_mix": 0.018,
+      "noise_cutoff_start_hz": 300,
+      "noise_cutoff_end_hz": 6800
+    },
+    {
+      "id": "splash_tail_v3",
+      "filename": "splash_tail_v3.wav",
+      "trigger_frame": 210,
+      "max_duration_frames": 30,
+      "render_duration_frames": 24,
+      "waveform": "soft_resolution",
+      "frequencies_hz": [523.25, 659.25, 783.99],
+      "weights": [0.42, 0.33, 0.25],
+      "decay_seconds": 0.30,
+      "fade_out_seconds": 0.10,
+      "seed": 91403
+    }
+  ]
+}

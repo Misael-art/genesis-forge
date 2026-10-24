@@ -1,0 +1,4383 @@
+{
+  "schema": "branding_v3_pause_checkpoint.v1",
+  "recorded_at": "2026-10-24T12:03:34.595098+00:00",
+  "issue_id": "BRANDING-001",
+  "status": "deferred_by_human_request",
+  "project_root_from_workspace": "SGDK_projects/_agent_laboratory/BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]",
+  "owner": "branding_splash_v3_laboratory",
+  "resume_document": "doc/pending/branding_v3_resume_20261024.md",
+  "git": {
+    "source_worktree_head": "99395ee0c2bbc9e85309d2a9b4ad84b92097a357",
+    "source_worktree_branch": "feat/mugenesis-impact-fx-v2",
+    "pr_base_ref": "origin/main",
+    "pr_base_commit": "c22479cb7af203d42afb0b357aa02acba575d959",
+    "checkpoint_branch": "codex/branding-v3-pending-20261024",
+    "unrelated_local_commits_included": false
+  },
+  "claims": {
+    "delivery": false,
+    "visual_approved": false,
+    "music_approved": false,
+    "template_promoted": false,
+    "v2_archived": false,
+    "shared_skills_promoted": false,
+    "new_build_or_runtime_test_this_session": false,
+    "scope": "source_preservation_and_pending_record_only"
+  },
+  "rom_identities_local_only": [
+    {
+      "label": "baseline",
+      "path": "out/rom.bin",
+      "expected_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+      "checkpoint_sha256": "5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2",
+      "size_bytes": 393216,
+      "identity_matches": true,
+      "included_in_git": false
+    },
+    {
+      "label": "O",
+      "path": "out/profiling/splash_v3_visible_deadline_v015_20261016/rom.bin",
+      "expected_sha256": "04f24e1cd52f227c5e01547f2d30b9b915b45fde84a197873687243d5ef35c90",
+      "checkpoint_sha256": "04f24e1cd52f227c5e01547f2d30b9b915b45fde84a197873687243d5ef35c90",
+      "size_bytes": 524288,
+      "identity_matches": true,
+      "included_in_git": false
+    },
+    {
+      "label": "Q",
+      "path": "out/profiling/splash_v3_queued_clear_v017_20261016/rom.bin",
+      "expected_sha256": "eba5b0451246dc84d620746ab79aadc311ac200eeccc705891cb173e6596b632",
+      "checkpoint_sha256": "eba5b0451246dc84d620746ab79aadc311ac200eeccc705891cb173e6596b632",
+      "size_bytes": 524288,
+      "identity_matches": true,
+      "included_in_git": false
+    },
+    {
+      "label": "R",
+      "path": "out/profiling/splash_v3_menu_blackout_v018_20261016/rom.bin",
+      "expected_sha256": "8900504ca480cbddc7aa0c01351ff82c2638476eb5fce2ec1402e906a3d1ae7d",
+      "checkpoint_sha256": "8900504ca480cbddc7aa0c01351ff82c2638476eb5fce2ec1402e906a3d1ae7d",
+      "size_bytes": 524288,
+      "identity_matches": true,
+      "included_in_git": false
+    }
+  ],
+  "latest_build": {
+    "candidate": "R",
+    "historical_build_report": "out/logs/splash_v3_menu_blackout_v018_20261016/linux_wine_build_report.json",
+    "status_at_build": "buildado",
+    "build_completed_at": "2026-10-16T22:34:12.631897+00:00",
+    "sdk_content_sha256": "fa4d70402a5819eca642e6f9d10a9cfbcc1a97de0c4769b2d788175365b498aa",
+    "requested_extra_flags": "-DSPLASH_V3_MENU_HANDOFF -DSPLASH_V3_BACKDROP_V019 -DSPLASH_V3_MOTION_LUT -DSPLASH_V3_STABLE_PARTICLE_GEOMETRY -DSPLASH_V3_SAT_PRESSURE_PROBE -DSPLASH_V3_BOUNDED_SAT_SWEEP -DSPLASH_V3_MANUAL_TILE_FASTPATH -DSPLASH_V3_MANUAL_POSITION_FASTPATH -DSPLASH_V3_PREPARED_LOGO_MAPS -DSPLASH_V3_QUIET_BEAT_EXPORT -DSPLASH_V3_SRAM_WORD_COPY -DSPLASH_V3_AMORTIZED_PARTICLE_POOL -DSPLASH_V3_SLICED_BACKDROP_MAP -DSPLASH_V3_FINAL_EDGE_FADE -DSPLASH_V3_QUEUED_PLANE_CLEAR -DMG_ROM_HEADER_PATH=\\\"out/profiling/splash_v3_menu_blackout_v018_20261016/rom_head.bin\\\"",
+    "effective_extra_flags_recorded": "-DSPLASH_V3_MENU_HANDOFF -DSPLASH_V3_BACKDROP_V019 -DSPLASH_V3_MOTION_LUT -DSPLASH_V3_STABLE_PARTICLE_GEOMETRY -DSPLASH_V3_SAT_PRESSURE_PROBE -DSPLASH_V3_BOUNDED_SAT_SWEEP -DSPLASH_V3_MANUAL_TILE_FASTPATH -DSPLASH_V3_MANUAL_POSITION_FASTPATH -DSPLASH_V3_PREPARED_LOGO_MAPS -DSPLASH_V3_QUIET_BEAT_EXPORT -DSPLASH_V3_SRAM_WORD_COPY -DSPLASH_V3_AMORTIZED_PARTICLE_POOL -DSPLASH_V3_SLICED_BACKDROP_MAP -DSPLASH_V3_FINAL_EDGE_FADE -DSPLASH_V3_QUEUED_PLANE_CLEAR -DMG_ROM_HEADER_PATH=\\\"out/profiling/splash_v3_menu_blackout_v018_20261016/rom_head.bin\\\"",
+    "historical_source_tree_sha256": "f72a1df4b89dced6ea55ed2bef41456e0ef5a1653c93b25ad31ef564b1660f36",
+    "input_comparison_at_pause": [
+      {
+        "path": ".mddev/project.json",
+        "sha256": "d88beba335a63cc67116de068f4400e88a5b5f7bcc0f41300e5eb70b20156bfc",
+        "size_bytes": 1740,
+        "checkpoint_sha256": "d88beba335a63cc67116de068f4400e88a5b5f7bcc0f41300e5eb70b20156bfc",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/core/app.h",
+        "sha256": "6e87998900d70d4a940de58c42dcb872327ec8408aae7585125984fce720d2bf",
+        "size_bytes": 1374,
+        "checkpoint_sha256": "6e87998900d70d4a940de58c42dcb872327ec8408aae7585125984fce720d2bf",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/game_vars.h",
+        "sha256": "aa3942155d667a94617c40faf7a3745d9ad0481f200312afe079b37161ff9288",
+        "size_bytes": 789,
+        "checkpoint_sha256": "aa3942155d667a94617c40faf7a3745d9ad0481f200312afe079b37161ff9288",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/generated/splash_v3_motion_lut.h",
+        "sha256": "fce3b2d78cca125812573ebe10c24657aa1adfe7bd456d26f35acc30a6b09523",
+        "size_bytes": 61854,
+        "checkpoint_sha256": "fce3b2d78cca125812573ebe10c24657aa1adfe7bd456d26f35acc30a6b09523",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/scenes/branding_v2.h",
+        "sha256": "8b7eeb9190f5f45996c3f975ec14c30a91f29f8397272fef346d0b6b13a3f185",
+        "size_bytes": 4546,
+        "checkpoint_sha256": "8b7eeb9190f5f45996c3f975ec14c30a91f29f8397272fef346d0b6b13a3f185",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/scenes/branding_v3.h",
+        "sha256": "328989debb57afa16d9f49a851d71b93af9207b40aceedc18d9fc123c88b86d1",
+        "size_bytes": 155,
+        "checkpoint_sha256": "328989debb57afa16d9f49a851d71b93af9207b40aceedc18d9fc123c88b86d1",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/scenes/scene_boot.h",
+        "sha256": "b19260cc718025a7d224d0920ba143ca191dc36126f5f0934c5aa7a5a893afb5",
+        "size_bytes": 108,
+        "checkpoint_sha256": "b19260cc718025a7d224d0920ba143ca191dc36126f5f0934c5aa7a5a893afb5",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/scenes/scene_branding.h",
+        "sha256": "c477fa6070168947486306a36a5909d3a20dd920708e0bb98b715dbd83adead8",
+        "size_bytes": 138,
+        "checkpoint_sha256": "c477fa6070168947486306a36a5909d3a20dd920708e0bb98b715dbd83adead8",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/scenes/scene_branding_v3_audio_preview.h",
+        "sha256": "09559a535461af8ffa2cbd2f6a6c582670e87a142f92a18dd4d65d21fba6387d",
+        "size_bytes": 186,
+        "checkpoint_sha256": "09559a535461af8ffa2cbd2f6a6c582670e87a142f92a18dd4d65d21fba6387d",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/scenes/scene_demo.h",
+        "sha256": "6a14cb71262f5762536f69dd4042b2d208d0dc67065a3108c54cb55d1fc3f590",
+        "size_bytes": 108,
+        "checkpoint_sha256": "6a14cb71262f5762536f69dd4042b2d208d0dc67065a3108c54cb55d1fc3f590",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/scenes/scene_menu.h",
+        "sha256": "836e8126bb91d012225a7d36cae133155b6f51798db0f799572230606bd81e16",
+        "size_bytes": 108,
+        "checkpoint_sha256": "836e8126bb91d012225a7d36cae133155b6f51798db0f799572230606bd81e16",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/system/audio.h",
+        "sha256": "7173edc7599b67b8875a5a7c0ec2f0dd9ccedd7c402fd6b2081e28d2df45382c",
+        "size_bytes": 814,
+        "checkpoint_sha256": "7173edc7599b67b8875a5a7c0ec2f0dd9ccedd7c402fd6b2081e28d2df45382c",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/system/input.h",
+        "sha256": "d7cd0ecbbe4f48b6c8d8236c3b94bf40cb4547d91a90925bc38e643e7cba4f5d",
+        "size_bytes": 265,
+        "checkpoint_sha256": "d7cd0ecbbe4f48b6c8d8236c3b94bf40cb4547d91a90925bc38e643e7cba4f5d",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/system/overlay.h",
+        "sha256": "97978cc3495f143168c6a9ef4aeae0dde96a0abc4a6b58c6c70ece2511a07ad1",
+        "size_bytes": 540,
+        "checkpoint_sha256": "97978cc3495f143168c6a9ef4aeae0dde96a0abc4a6b58c6c70ece2511a07ad1",
+        "matches_build_input": true
+      },
+      {
+        "path": "inc/system/runtime_probe.h",
+        "sha256": "d5e103f419c21e21eac771787f0a5769ac5249b2d53853e8b652bf5afd899a34",
+        "size_bytes": 2232,
+        "checkpoint_sha256": "d5e103f419c21e21eac771787f0a5769ac5249b2d53853e8b652bf5afd899a34",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/README.md",
+        "sha256": "a09ce1e9e2cbb01312884bc7471185a2423a5bbc7fac77fee67bffe7d3b7d023",
+        "size_bytes": 320,
+        "checkpoint_sha256": "a09ce1e9e2cbb01312884bc7471185a2423a5bbc7fac77fee67bffe7d3b7d023",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding/bell_forge.wav",
+        "sha256": "57476e9a49af4d0ad70c7eacd89d8f2f9bec45eef13cece54acc67b91b6b396d",
+        "size_bytes": 7360,
+        "checkpoint_sha256": "57476e9a49af4d0ad70c7eacd89d8f2f9bec45eef13cece54acc67b91b6b396d",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding/bell_terminal.wav",
+        "sha256": "bb65229169c1aeb8a8e0a0a507d3fda0e6552f76c7872b45f03fedf3f8cbda61",
+        "size_bytes": 6694,
+        "checkpoint_sha256": "bb65229169c1aeb8a8e0a0a507d3fda0e6552f76c7872b45f03fedf3f8cbda61",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding/hammer_slam.wav",
+        "sha256": "e6d0700547ada8da00c2ca6ccb7eadb7ea05f8ac1c09284580e3bbf24955f5fc",
+        "size_bytes": 5630,
+        "checkpoint_sha256": "e6d0700547ada8da00c2ca6ccb7eadb7ea05f8ac1c09284580e3bbf24955f5fc",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding/reverb_tail.wav",
+        "sha256": "f5076a46f312fd82da64fd8d1843f0667b35f38995d3995fada9e619d1e0cd75",
+        "size_bytes": 10019,
+        "checkpoint_sha256": "f5076a46f312fd82da64fd8d1843f0667b35f38995d3995fada9e619d1e0cd75",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding/stamp_whoosh.wav",
+        "sha256": "b808db020ebc5a369d14f858e2ebeb473d5be5c3b05fbf3bf381d342ea759309",
+        "size_bytes": 6428,
+        "checkpoint_sha256": "b808db020ebc5a369d14f858e2ebeb473d5be5c3b05fbf3bf381d342ea759309",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding/typewriter_click.wav",
+        "sha256": "887a40719ffe130fc59150785968ddec671eea3077e1488465ca62b1399ad112",
+        "size_bytes": 410,
+        "checkpoint_sha256": "887a40719ffe130fc59150785968ddec671eea3077e1488465ca62b1399ad112",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_splash_v3/splash_energy_rise_v3.provenance.json",
+        "sha256": "d5fd83c5a1b244380994c579ff744ee6f9bc8a22e59a2e81826371eed3c8ec17",
+        "size_bytes": 898,
+        "checkpoint_sha256": "d5fd83c5a1b244380994c579ff744ee6f9bc8a22e59a2e81826371eed3c8ec17",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_splash_v3/splash_energy_rise_v3.wav",
+        "sha256": "24df43a3701d718a1d8fb1f73d61031f4ec809f03c198aa33ad1e99879d75aba",
+        "size_bytes": 52964,
+        "checkpoint_sha256": "24df43a3701d718a1d8fb1f73d61031f4ec809f03c198aa33ad1e99879d75aba",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_splash_v3/splash_mark_lock_v3.provenance.json",
+        "sha256": "ac3e9266d78b3323b75de138c044b2b184933c3bdba610e8e4495b595154b2d6",
+        "size_bytes": 893,
+        "checkpoint_sha256": "ac3e9266d78b3323b75de138c044b2b184933c3bdba610e8e4495b595154b2d6",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_splash_v3/splash_mark_lock_v3.wav",
+        "sha256": "1bf18040fa9034a93b9ede0bd65a5d29774283aadc7d0f0fdd8f0683bfe096db",
+        "size_bytes": 17684,
+        "checkpoint_sha256": "1bf18040fa9034a93b9ede0bd65a5d29774283aadc7d0f0fdd8f0683bfe096db",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_splash_v3/splash_sweep_pass_v3.provenance.json",
+        "sha256": "b5f7dc54b04b66c74aed2b32adf0d9804ff267ba2ece844230de2c1a456355a1",
+        "size_bytes": 901,
+        "checkpoint_sha256": "b5f7dc54b04b66c74aed2b32adf0d9804ff267ba2ece844230de2c1a456355a1",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_splash_v3/splash_sweep_pass_v3.wav",
+        "sha256": "3050ce16e5775f63e79b82a20b0e6eedb858bb361eeb519eef31d1cbe716fa24",
+        "size_bytes": 38264,
+        "checkpoint_sha256": "3050ce16e5775f63e79b82a20b0e6eedb858bb361eeb519eef31d1cbe716fa24",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_splash_v3/splash_tail_v3.provenance.json",
+        "sha256": "428fcdefe3a38ecabeb8708d1cc6b880e109e205086b3d4db049f8583d7a6b63",
+        "size_bytes": 884,
+        "checkpoint_sha256": "428fcdefe3a38ecabeb8708d1cc6b880e109e205086b3d4db049f8583d7a6b63",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_splash_v3/splash_tail_v3.wav",
+        "sha256": "b6806c8fe7befaf5cdb9be16bbb81bd569bddefc50f85b8600750aa74023666d",
+        "size_bytes": 35324,
+        "checkpoint_sha256": "b6806c8fe7befaf5cdb9be16bbb81bd569bddefc50f85b8600750aa74023666d",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_v3/splash_energy_rise.wav",
+        "sha256": "f596ad4f1dbfca0564676409a4d781a91a4c9184b25aed2bc48a3a2233908fff",
+        "size_bytes": 67664,
+        "checkpoint_sha256": "f596ad4f1dbfca0564676409a4d781a91a4c9184b25aed2bc48a3a2233908fff",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_v3/splash_mark_lock.wav",
+        "sha256": "4ccac96b02a6c8939af9b850408cde583dd5815f6e08e2116e94927222c1e622",
+        "size_bytes": 17684,
+        "checkpoint_sha256": "4ccac96b02a6c8939af9b850408cde583dd5815f6e08e2116e94927222c1e622",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_v3/splash_sweep_pass.wav",
+        "sha256": "2ffe0f4639f4444d3ae7cef5a1938b2fb22064aaea4a0d7f99463fed93b2a621",
+        "size_bytes": 38264,
+        "checkpoint_sha256": "2ffe0f4639f4444d3ae7cef5a1938b2fb22064aaea4a0d7f99463fed93b2a621",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_v3/splash_tail.wav",
+        "sha256": "43715d751348a0e6725a1ca4f2773a1d767c4b02edac0737b59a4b788d630af8",
+        "size_bytes": 35324,
+        "checkpoint_sha256": "43715d751348a0e6725a1ca4f2773a1d767c4b02edac0737b59a4b788d630af8",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_v3_v2/splash_energy_rise_v2.wav",
+        "sha256": "dbd98d2bf0ac62f5fc1c4d53983351b80c66093933ad249f83912297baa56764",
+        "size_bytes": 52964,
+        "checkpoint_sha256": "dbd98d2bf0ac62f5fc1c4d53983351b80c66093933ad249f83912297baa56764",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_v3_v2/splash_mark_lock_v2.wav",
+        "sha256": "91786d6f7829bf705f52c001f085b2f814a447f22174836f0fb7d05c90878e77",
+        "size_bytes": 17684,
+        "checkpoint_sha256": "91786d6f7829bf705f52c001f085b2f814a447f22174836f0fb7d05c90878e77",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_v3_v2/splash_sweep_pass_v2.wav",
+        "sha256": "253a5ae669b60a96009ea3b139c9234ffb5063fb9018b7c94b85afe9d06bbdee",
+        "size_bytes": 38264,
+        "checkpoint_sha256": "253a5ae669b60a96009ea3b139c9234ffb5063fb9018b7c94b85afe9d06bbdee",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/audio/branding_v3_v2/splash_tail_v2.wav",
+        "sha256": "717bd0a61b2158c146dd975e1c920b438720cd155bfd0e257ae4bbe9327561de",
+        "size_bytes": 35324,
+        "checkpoint_sha256": "717bd0a61b2158c146dd975e1c920b438720cd155bfd0e257ae4bbe9327561de",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/bgs/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/brand_author_logo.png",
+        "sha256": "b3831cb5ee92541baaf77610681cb8a63d8c2890229a2d23141821e754397443",
+        "size_bytes": 578,
+        "checkpoint_sha256": "b3831cb5ee92541baaf77610681cb8a63d8c2890229a2d23141821e754397443",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/brand_engine_logo.png",
+        "sha256": "958782dcfdf2cd892102b2436aabe5b5886b2cf75ef152ecfe424d11737d279f",
+        "size_bytes": 1166,
+        "checkpoint_sha256": "958782dcfdf2cd892102b2436aabe5b5886b2cf75ef152ecfe424d11737d279f",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/brand_fx_tiles.png",
+        "sha256": "60a67c72e517275f7aab298976944d3539e20d955d2821bcdd30710a71f8c9a9",
+        "size_bytes": 530,
+        "checkpoint_sha256": "60a67c72e517275f7aab298976944d3539e20d955d2821bcdd30710a71f8c9a9",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/brand_presents_text.png",
+        "sha256": "bce36b6c56e8ef89993b7936d352b4829c3b433ecdc5a9dc2bff02633af907b5",
+        "size_bytes": 375,
+        "checkpoint_sha256": "bce36b6c56e8ef89993b7936d352b4829c3b433ecdc5a9dc2bff02633af907b5",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/brand_project_logo.png",
+        "sha256": "2bf6726bc8f0bb649a3c505a6f26eba9af15cd36bbfc52c6ecc0f67193328955",
+        "size_bytes": 772,
+        "checkpoint_sha256": "2bf6726bc8f0bb649a3c505a6f26eba9af15cd36bbfc52c6ecc0f67193328955",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/forge_bg_a_props_320x224.png",
+        "sha256": "b20fd153c4f0c4d34f8817470e656b834c56e1a577ebf6738643d03e8b76f20a",
+        "size_bytes": 5165,
+        "checkpoint_sha256": "b20fd153c4f0c4d34f8817470e656b834c56e1a577ebf6738643d03e8b76f20a",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/forge_bg_b_320x224.png",
+        "sha256": "03a9cd073b6a0be5aefd98b979590b323d60be4efee1776db444ed15766a1f1a",
+        "size_bytes": 9896,
+        "checkpoint_sha256": "03a9cd073b6a0be5aefd98b979590b323d60be4efee1776db444ed15766a1f1a",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/logo_author_192x32.png",
+        "sha256": "07055a970a2b8753e74daf89f056095420530693e28830163e6fa8c45632e2b9",
+        "size_bytes": 1606,
+        "checkpoint_sha256": "07055a970a2b8753e74daf89f056095420530693e28830163e6fa8c45632e2b9",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/logo_engine_224x64.png",
+        "sha256": "7a5e900ab31ad50cf6aa352a4cb4f41764036aecec7a068ca29d07f7335f844c",
+        "size_bytes": 2756,
+        "checkpoint_sha256": "7a5e900ab31ad50cf6aa352a4cb4f41764036aecec7a068ca29d07f7335f844c",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/logo_project_224x48.png",
+        "sha256": "63e4efbbccf025a81f808f898de4d3aa49f405125282de29398a08b8387a3d49",
+        "size_bytes": 2716,
+        "checkpoint_sha256": "63e4efbbccf025a81f808f898de4d3aa49f405125282de29398a08b8387a3d49",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/presents_bar_8x8.png",
+        "sha256": "c8ff01b3e712e85699359659762132013c953edd12688b9d60a924f0a52ff4fc",
+        "size_bytes": 147,
+        "checkpoint_sha256": "c8ff01b3e712e85699359659762132013c953edd12688b9d60a924f0a52ff4fc",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/presents_text_96x16.png",
+        "sha256": "9e7ac21a94347e38bbcc50575caf060167c23b4c3b45a0af6f8912a4e4d1bab3",
+        "size_bytes": 505,
+        "checkpoint_sha256": "9e7ac21a94347e38bbcc50575caf060167c23b4c3b45a0af6f8912a4e4d1bab3",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/spr_forge_ember_16x16_strip.png",
+        "sha256": "1d1f972c7a7378a24609d0fab42ff1271831f0c003c41324f22fa0cde8f16b9d",
+        "size_bytes": 1335,
+        "checkpoint_sha256": "1d1f972c7a7378a24609d0fab42ff1271831f0c003c41324f22fa0cde8f16b9d",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/spr_forge_hammer_48x48_strip.png",
+        "sha256": "72d0f0e1730b13f35aaae3947159ea066453ba73af3c704d527590aebd95b83f",
+        "size_bytes": 3450,
+        "checkpoint_sha256": "72d0f0e1730b13f35aaae3947159ea066453ba73af3c704d527590aebd95b83f",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/spr_forge_shard_16x16_strip.png",
+        "sha256": "bce54295e1baab74d9a1612f97bd5c94fb39452baac16f39e48bc211492c5c81",
+        "size_bytes": 1079,
+        "checkpoint_sha256": "bce54295e1baab74d9a1612f97bd5c94fb39452baac16f39e48bc211492c5c81",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding/starfield_320x224.png",
+        "sha256": "5b174555cb12c369af6b9f5d73f1f2cb1303771c5c7667dd53a8ef65dde8ab70",
+        "size_bytes": 949,
+        "checkpoint_sha256": "5b174555cb12c369af6b9f5d73f1f2cb1303771c5c7667dd53a8ef65dde8ab70",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_320x224.png",
+        "sha256": "877cca9e391fce35c5886a9bf1b59ddb4bb26b8a72b2fea4a897797a2f5570c7",
+        "size_bytes": 16436,
+        "checkpoint_sha256": "877cca9e391fce35c5886a9bf1b59ddb4bb26b8a72b2fea4a897797a2f5570c7",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_v005_320x224.png",
+        "sha256": "ef75c6ec1c429e16ad3fa3aae55acf846631d4ff0d5f2a0f3c8b02fe47c39ab0",
+        "size_bytes": 11371,
+        "checkpoint_sha256": "ef75c6ec1c429e16ad3fa3aae55acf846631d4ff0d5f2a0f3c8b02fe47c39ab0",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_v006_320x224.png",
+        "sha256": "bd50ab81a7900806dc9f1e1fcdd0ccba76dad7fcebf8996162f3af46825c069b",
+        "size_bytes": 8770,
+        "checkpoint_sha256": "bd50ab81a7900806dc9f1e1fcdd0ccba76dad7fcebf8996162f3af46825c069b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_v012_320x224.png",
+        "sha256": "af1380658408ebfa0a03fc7d37d36cb4c5fe6169088843ec31963ffa32e9622d",
+        "size_bytes": 5103,
+        "checkpoint_sha256": "af1380658408ebfa0a03fc7d37d36cb4c5fe6169088843ec31963ffa32e9622d",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_v014_320x224.png",
+        "sha256": "65e9b38aa59a5c8318827bcd1398d5d8bae4b037d0d652dccd8175aee6ef06db",
+        "size_bytes": 16613,
+        "checkpoint_sha256": "65e9b38aa59a5c8318827bcd1398d5d8bae4b037d0d652dccd8175aee6ef06db",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_v015_320x224.png",
+        "sha256": "e1f73e699f7a2d4c0f3e6cacb9959e350a613b8aca58da7205d87bfa7793880d",
+        "size_bytes": 13845,
+        "checkpoint_sha256": "e1f73e699f7a2d4c0f3e6cacb9959e350a613b8aca58da7205d87bfa7793880d",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_v016_320x224.png",
+        "sha256": "3b90384ce5fc9ad4e7f8515281371eff423abb7106a2aab66196fc97f4294f4e",
+        "size_bytes": 13177,
+        "checkpoint_sha256": "3b90384ce5fc9ad4e7f8515281371eff423abb7106a2aab66196fc97f4294f4e",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_v018_320x224.png",
+        "sha256": "e1eabc9dee606add3ebacad4b05bdb69686eba749d5720a71cc7c4bb2b1509d2",
+        "size_bytes": 12028,
+        "checkpoint_sha256": "e1eabc9dee606add3ebacad4b05bdb69686eba749d5720a71cc7c4bb2b1509d2",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_backdrop_v3_v019_320x224.png",
+        "sha256": "b8b403f30c170554df647ac1b6b2a54fc83b3e3c76a695765ec4ac0ec313e819",
+        "size_bytes": 7334,
+        "checkpoint_sha256": "b8b403f30c170554df647ac1b6b2a54fc83b3e3c76a695765ec4ac0ec313e819",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_forge_wordmark_v3_192x32.png",
+        "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+        "size_bytes": 1320,
+        "checkpoint_sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_forge_wordmark_v3_192x32.png.normalizebak",
+        "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+        "size_bytes": 1320,
+        "checkpoint_sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+        "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+        "size_bytes": 1794,
+        "checkpoint_sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/branding_v3/splash_sgdk_wordmark_v3_224x48.png.normalizebak",
+        "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+        "size_bytes": 1794,
+        "checkpoint_sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/data/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/data/README.md",
+        "sha256": "0647ef3ddcd31c6525ef0c5a42de1a4f33df18949c501460dba62382d1cfe6bd",
+        "size_bytes": 399,
+        "checkpoint_sha256": "0647ef3ddcd31c6525ef0c5a42de1a4f33df18949c501460dba62382d1cfe6bd",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/data/backup/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/data/branding/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/gfx/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/forge_brand_loop.vgm",
+        "sha256": "692c15dab6300f2cc26561c3704f1368facb517a9420f734ba5e246af4fb9570",
+        "size_bytes": 1465,
+        "checkpoint_sha256": "692c15dab6300f2cc26561c3704f1368facb517a9420f734ba5e246af4fb9570",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/forge_brand_loop.xgc",
+        "sha256": "d86d054f1c531b1674e72c05a1de8e0e1b4505ebd98f67f5144a3761d6655199",
+        "size_bytes": 768,
+        "checkpoint_sha256": "d86d054f1c531b1674e72c05a1de8e0e1b4505ebd98f67f5144a3761d6655199",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/splash_v3_music.vgm",
+        "sha256": "82744b6f00e6d067cca3eafa3ab17a5387fdc31e375063a8855e3d28dac4e5df",
+        "size_bytes": 2530,
+        "checkpoint_sha256": "82744b6f00e6d067cca3eafa3ab17a5387fdc31e375063a8855e3d28dac4e5df",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/splash_v3_sonic_logo_v2.vgm",
+        "sha256": "cd8a6d323b314ff1bc2989071006e4f4d189ce295d5fe1f41a975a627b0adb74",
+        "size_bytes": 1052,
+        "checkpoint_sha256": "cd8a6d323b314ff1bc2989071006e4f4d189ce295d5fe1f41a975a627b0adb74",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/splash_v3_sonic_logo_v3.provenance.json",
+        "sha256": "9c77fc3d91c27f5577a80fea93d73e440c02171e2c2e6470255569f115d209ba",
+        "size_bytes": 980,
+        "checkpoint_sha256": "9c77fc3d91c27f5577a80fea93d73e440c02171e2c2e6470255569f115d209ba",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/splash_v3_sonic_logo_v3.vgm",
+        "sha256": "86a29044d2a280ec1cd4d8d612763202e435ed2856c3ac92932210b17662e739",
+        "size_bytes": 1060,
+        "checkpoint_sha256": "86a29044d2a280ec1cd4d8d612763202e435ed2856c3ac92932210b17662e739",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/splash_v3_sonic_logo_v4.provenance.json",
+        "sha256": "f5d1fda0198fdbfc573195ce16e18fc29aee9f28d8b4409bbfcd009c6735cd5e",
+        "size_bytes": 1585,
+        "checkpoint_sha256": "f5d1fda0198fdbfc573195ce16e18fc29aee9f28d8b4409bbfcd009c6735cd5e",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/music/splash_v3_sonic_logo_v4.vgm",
+        "sha256": "fc9bacd1888d50634077c655c45068fbf07ee2e279a4a4bdcf85fda6f77af7d3",
+        "size_bytes": 1060,
+        "checkpoint_sha256": "fc9bacd1888d50634077c655c45068fbf07ee2e279a4a4bdcf85fda6f77af7d3",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/resources.res",
+        "sha256": "33107328c2641ef03a83e8202b780c2a1fde298eb577671b07e4a55c6a0cde3f",
+        "size_bytes": 5454,
+        "checkpoint_sha256": "33107328c2641ef03a83e8202b780c2a1fde298eb577671b07e4a55c6a0cde3f",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/resources.res.example",
+        "sha256": "e12824c2318f724242e8a7efb4e2d67a70ef1ccf4a2be2e0694dcf7611c1ae32",
+        "size_bytes": 519,
+        "checkpoint_sha256": "e12824c2318f724242e8a7efb4e2d67a70ef1ccf4a2be2e0694dcf7611c1ae32",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/sfx/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/sprites/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/sprites/splash_particle_v3_8x8_strip.png",
+        "sha256": "4baa794092464967dff4f1dd1c1cc169ae0bbd6693215099aef5cbf7aebe2780",
+        "size_bytes": 264,
+        "checkpoint_sha256": "4baa794092464967dff4f1dd1c1cc169ae0bbd6693215099aef5cbf7aebe2780",
+        "matches_build_input": true
+      },
+      {
+        "path": "res/ui/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/boot/rom_head.c",
+        "sha256": "3bfe3b255df08c0289ec628c37a2690f1b9d84a469d023052baa0ed2e369c196",
+        "size_bytes": 998,
+        "checkpoint_sha256": "3bfe3b255df08c0289ec628c37a2690f1b9d84a469d023052baa0ed2e369c196",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/boot/sega.s",
+        "sha256": "0fe266a2c75877ea5589d62ae908ca0eb0de153b16cae409e698f43baa58a419",
+        "size_bytes": 10465,
+        "checkpoint_sha256": "0fe266a2c75877ea5589d62ae908ca0eb0de153b16cae409e698f43baa58a419",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/core/app.c",
+        "sha256": "73954d1926fc077a029effdd8c034a8a80e94a17649372ac93da253ccaaf627c",
+        "size_bytes": 7027,
+        "checkpoint_sha256": "73954d1926fc077a029effdd8c034a8a80e94a17649372ac93da253ccaaf627c",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/entities/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/game_vars.c",
+        "sha256": "a4b414d2a024b3c16784f39a8a2673c47b4f987afc0900aced36eb064dbc0cfe",
+        "size_bytes": 264,
+        "checkpoint_sha256": "a4b414d2a024b3c16784f39a8a2673c47b4f987afc0900aced36eb064dbc0cfe",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/main.c",
+        "sha256": "6fa20095b9ef101fd33c4ce6a6491ff7cb2fba9886d01bf5d9b702c497518d19",
+        "size_bytes": 431,
+        "checkpoint_sha256": "6fa20095b9ef101fd33c4ce6a6491ff7cb2fba9886d01bf5d9b702c497518d19",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/modulos/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/rooms/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_bytes": 1,
+        "checkpoint_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/scenes/scene_boot.c",
+        "sha256": "cbbcad552c835788a988d96bf246a891107f190ae77e479c978e2b953d148349",
+        "size_bytes": 722,
+        "checkpoint_sha256": "cbbcad552c835788a988d96bf246a891107f190ae77e479c978e2b953d148349",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/scenes/scene_branding.c",
+        "sha256": "96c778528b8f1778b1b3d708129a781d78bb757e93c7ed2eeb8158dec2616f32",
+        "size_bytes": 7886,
+        "checkpoint_sha256": "96c778528b8f1778b1b3d708129a781d78bb757e93c7ed2eeb8158dec2616f32",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/scenes/scene_branding_v2.c",
+        "sha256": "3a60c9d35929660a3d32a40e1f2ed52ac3a0b09154753b56620ad6e09b311b2c",
+        "size_bytes": 42225,
+        "checkpoint_sha256": "3a60c9d35929660a3d32a40e1f2ed52ac3a0b09154753b56620ad6e09b311b2c",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/scenes/scene_branding_v3.c",
+        "sha256": "e9fa8d41e266a5b1d7b6de4a3aebfd5f777af131585e0319f324d541163d3dd6",
+        "size_bytes": 37977,
+        "checkpoint_sha256": "e9fa8d41e266a5b1d7b6de4a3aebfd5f777af131585e0319f324d541163d3dd6",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/scenes/scene_branding_v3_audio_preview.c",
+        "sha256": "a4cbb083768ef5e81e91011b929c1a01c44b122caaec2a7ac8cf03441cf1300b",
+        "size_bytes": 3933,
+        "checkpoint_sha256": "a4cbb083768ef5e81e91011b929c1a01c44b122caaec2a7ac8cf03441cf1300b",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/scenes/scene_demo.c",
+        "sha256": "f626ccd33475e84a5f8c117b6227a9a9663b8808a00b82e885942548bd626979",
+        "size_bytes": 5825,
+        "checkpoint_sha256": "f626ccd33475e84a5f8c117b6227a9a9663b8808a00b82e885942548bd626979",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/scenes/scene_menu.c",
+        "sha256": "cc4f805260ed0305fb00b7a19dca78f02e593ad3f76aa78c1336a659bcf0631b",
+        "size_bytes": 4627,
+        "checkpoint_sha256": "cc4f805260ed0305fb00b7a19dca78f02e593ad3f76aa78c1336a659bcf0631b",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/system/audio.c",
+        "sha256": "4152960a03c793286581a6ff738de124cb8d6a62bb0f71795a0af92cc34d8d91",
+        "size_bytes": 6835,
+        "checkpoint_sha256": "4152960a03c793286581a6ff738de124cb8d6a62bb0f71795a0af92cc34d8d91",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/system/input.c",
+        "sha256": "5e8cca4fd8c530928741e2ba4a8c99f60a849ffe456057a4bb62cb6c559e56a6",
+        "size_bytes": 866,
+        "checkpoint_sha256": "5e8cca4fd8c530928741e2ba4a8c99f60a849ffe456057a4bb62cb6c559e56a6",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/system/overlay.c",
+        "sha256": "cf2d6d19bcb2bd0a31e1a4ff2ac7f5092e182a6b61d81f8bdaebcc960c50759b",
+        "size_bytes": 405,
+        "checkpoint_sha256": "cf2d6d19bcb2bd0a31e1a4ff2ac7f5092e182a6b61d81f8bdaebcc960c50759b",
+        "matches_build_input": true
+      },
+      {
+        "path": "src/system/runtime_probe.c",
+        "sha256": "7794643799e907c2f471548a19aeccc2f0f9bd3a4b180b473fdaec586aef7233",
+        "size_bytes": 27285,
+        "checkpoint_sha256": "7794643799e907c2f471548a19aeccc2f0f9bd3a4b180b473fdaec586aef7233",
+        "matches_build_input": true
+      }
+    ],
+    "all_captured_build_inputs_still_match": true,
+    "full_runtime_validation": "pending"
+  },
+  "historical_evidence_scope": {
+    "Q": "241/241 cadence twice, 218 hardware states sampled in ten boots and compared with O; replay clear and handoff observations. Not host FPS or artistic approval.",
+    "R": "Build and read-only native menu blackout observation only; full cadence/VDP/handoff/AV validation and negative control pending.",
+    "emulator": "BlastEm 1.0.0 native diagnostic is supplementary, not complete canonical delivery gate.",
+    "availability": "out is ignored and retained locally. Recovery or new evidence is required after a clone; hashes do not embed the artifacts."
+  },
+  "local_evidence_inventory": [
+    {
+      "path": "out/evidence/splash_v3_menu_blackout_v018_20261016/native_blackout_01/debugger_transcript.txt",
+      "exists_at_checkpoint": true,
+      "sha256": "6bd8d7b6cbeee60d751c486ceb851cf70155423532f58d283c1e8978a9ca3778",
+      "size_bytes": 8513,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_menu_blackout_v018_20261016/native_blackout_01/menu_blackout_report.json",
+      "exists_at_checkpoint": true,
+      "sha256": "7f1d2d9cb67c4ea5ff4a810cb1d0666152c93e6f1772fa158afa5e57c19fed1e",
+      "size_bytes": 18767,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/capture_000.json",
+      "exists_at_checkpoint": true,
+      "sha256": "ac4d209a57defc341c447ba22995ff82aee899ac1b2738209dc336de243b1e66",
+      "size_bytes": 1498,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/capture_001.json",
+      "exists_at_checkpoint": true,
+      "sha256": "5575c94a45af0425742bab01bf85ed9968bb197611f77f71ca32544b018749e5",
+      "size_bytes": 1509,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/capture_002.json",
+      "exists_at_checkpoint": true,
+      "sha256": "fa5714c222f7e15a67b0c21474f5290748803a6ae07e17875cfd1795248e6997",
+      "size_bytes": 1498,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/capture_003.json",
+      "exists_at_checkpoint": true,
+      "sha256": "1d2d2f2cf1af82f19c443c4c0bca2b21fa7415d830c75f546c38696837adde43",
+      "size_bytes": 1492,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/handoff_av_observation.json",
+      "exists_at_checkpoint": true,
+      "sha256": "7c3c49f97500ce3f8ac871fe2866ac6f67c6bc19f363f474b39dc7b974b2b84e",
+      "size_bytes": 13508,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/handoff_replay_video.mp4",
+      "exists_at_checkpoint": true,
+      "sha256": "4c1cb62debe126439030ddf6681c00366474e21515f7577d27400d4bb8386d70",
+      "size_bytes": 2335912,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/save.sram",
+      "exists_at_checkpoint": true,
+      "sha256": "851d4ed5371d2b3640d7c963f5a87aefc134c11be980addfe2df68893af2b903",
+      "size_bytes": 32768,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/session.json",
+      "exists_at_checkpoint": true,
+      "sha256": "84abb22764eb3da719f71830517aafd9ffecef744e40dc95a14d8df269dccb88",
+      "size_bytes": 4581,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/flatpak_sessions/sess-20261016T222420-9df641d4/session_audio.wav",
+      "exists_at_checkpoint": true,
+      "sha256": "92311d33cadfea8d5abbaabbe8adf7a5a261c13b7af404f813f32d9d01e02908",
+      "size_bytes": 7614542,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "9dab6152f7e6cb3fa8dbeb74a700d2cb07e49489bf2278a5649b8e5abe61f6bb",
+      "size_bytes": 449031,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_00/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "079608a0a8cb2d2a0bc308e2023c8e432c26066c462a7b8f67ab4798c7f122a4",
+      "size_bytes": 41274,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_01/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "625a3abc5c16a19badc746c8e420e728888503477dd22c550320a2ded414f8d4",
+      "size_bytes": 58349,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_02/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "7a8677a01bfb4df77a93d39b00d066accfc923220ede648b2a123c6940c7c4d9",
+      "size_bytes": 73809,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_03/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "b57e44d2c7971e08c7d013b4dada42c9db6d98db6ab68e88493d9b3699631715",
+      "size_bytes": 76484,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_04/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "1c72704c61688d8529c1666b9978df9e2b3429f4731351d8a7d3106250112706",
+      "size_bytes": 37674,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_05/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "2d3eae811f9c672f233d52d728566e40ea457b4de4d46599f514384b87e0f0fd",
+      "size_bytes": 34140,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_06/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "78058777f30179de683583933f89e691eed17800ecea934481dc0622d28bcaba",
+      "size_bytes": 36057,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_07/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "c0dffd71e7698ea6b87cbf99186da4d74e5501a4393be7081fd5b5364d6399e3",
+      "size_bytes": 39098,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_08/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "d026c1d837da617910161c42c5cc1fbf70ba008a8e2cfce95c6a7302706e7943",
+      "size_bytes": 34162,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_all_visible_01/take_09/sat_samples.json",
+      "exists_at_checkpoint": true,
+      "sha256": "0acd43096dac71516eedce86f38fdac3ea077bb36fba22a26050ae97289433b6",
+      "size_bytes": 7957,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_cadence_01/cadence_observation.json",
+      "exists_at_checkpoint": true,
+      "sha256": "be0b235efbf271b5788fac5b7e64ebb6ce4f5cf702ccbe99683fd527e0cca356",
+      "size_bytes": 18130,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_cadence_02/cadence_observation.json",
+      "exists_at_checkpoint": true,
+      "sha256": "50759ecde09fd67c5759258604b3b14603ac9d3048ede7748da8c1d4c7baafe0",
+      "size_bytes": 18130,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_handoff_01/handoff_observation.json",
+      "exists_at_checkpoint": true,
+      "sha256": "e9ca57f1e35cbab82abc5be0519eea639b1a4ed7d104954ce77230d800c208f0",
+      "size_bytes": 25647,
+      "included_in_git": false
+    },
+    {
+      "path": "out/evidence/splash_v3_queued_clear_v017_20261016/native_replay_clear_02/replay_clear_report.json",
+      "exists_at_checkpoint": true,
+      "sha256": "994049fce93ba81c2368b771300fda052752b3ca70dc0c429b5ea195f5b95404",
+      "size_bytes": 13980,
+      "included_in_git": false
+    },
+    {
+      "path": "out/logs/evidence_closeout_report.json",
+      "exists_at_checkpoint": true,
+      "sha256": "485a47036b70efd56f834da65b7ad8c5f8c5848b279b26135fa88e29723cad01",
+      "size_bytes": 5460,
+      "included_in_git": false
+    },
+    {
+      "path": "out/logs/splash_v3_menu_blackout_v018_20261016/linux_wine_build_report.json",
+      "exists_at_checkpoint": true,
+      "sha256": "86b802e85f9a63dbd197bfad5e9a319d8a37edc5fbd736c281954a9bfab02d74",
+      "size_bytes": 2808,
+      "included_in_git": false
+    },
+    {
+      "path": "out/logs/splash_v3_menu_palette_target_20261016.json",
+      "exists_at_checkpoint": true,
+      "sha256": "d3167f79f4bb770d922e4786b1f4536bb508841636052d28ea655d5c27ff971c",
+      "size_bytes": 510,
+      "included_in_git": false
+    },
+    {
+      "path": "out/logs/splash_v3_plane_clear_lifetime_20261016.json",
+      "exists_at_checkpoint": true,
+      "sha256": "505017d2bdc93be720faa7232fd1514d92fa4096f23521c3c6fb104727facf09",
+      "size_bytes": 689,
+      "included_in_git": false
+    },
+    {
+      "path": "out/logs/splash_v3_queued_clear_counters_20261016.json",
+      "exists_at_checkpoint": true,
+      "sha256": "d4da4a14b4b21fa5c7f5d587189db1db0e2f6f05e46917b9618e014ffe884ae9",
+      "size_bytes": 688,
+      "included_in_git": false
+    },
+    {
+      "path": "out/logs/splash_v3_queued_clear_equivalence_20261016.json",
+      "exists_at_checkpoint": true,
+      "sha256": "894b0f21ce5638c62767810213e035d32cea20a65b12c49a0909bf3786fa9654",
+      "size_bytes": 16287,
+      "included_in_git": false
+    },
+    {
+      "path": "out/profiling/splash_v3_menu_blackout_v018_20261016/build_input_snapshot_201373c30ca63cdf384377bbe323116e7ccb08ae92ba35d03caf29ea3b75f6f1.json",
+      "exists_at_checkpoint": true,
+      "sha256": "201373c30ca63cdf384377bbe323116e7ccb08ae92ba35d03caf29ea3b75f6f1",
+      "size_bytes": 15977,
+      "included_in_git": false
+    }
+  ],
+  "workspace_dependencies_not_included": [
+    {
+      "workspace_path": "tools/sgdk_wrapper/build_sgdk_wine_bridge.sh",
+      "checkpoint_sha256": "34abfdc4ffb1a3bcddf25b140abc16878287f6d409a623ba5e990a939837f4b7",
+      "present_on_pr_base": true,
+      "pr_base_sha256": "6af1e91943579ef24c62c6626bd845c0d5f858bb629ca2acb516a04c8a229590",
+      "included_in_checkpoint": false
+    },
+    {
+      "workspace_path": "tools/sgdk_wrapper/blastem_native_diagnostic.py",
+      "checkpoint_sha256": "d8fe3c6bc019841b676d142ed216bc0a34143c97eb11ca22903d115f342aee3a",
+      "present_on_pr_base": false,
+      "pr_base_sha256": null,
+      "included_in_checkpoint": false
+    },
+    {
+      "workspace_path": "tools/sgdk_wrapper/runtime_diagnostic_core.py",
+      "checkpoint_sha256": "0cfc44a5cbebb71569c21bb6b9a55ccf080fcd98ee580d133213d20fdfa76236",
+      "present_on_pr_base": false,
+      "pr_base_sha256": null,
+      "included_in_checkpoint": false
+    },
+    {
+      "workspace_path": "tools/sgdk_wrapper/select_sgdk_build_route.py",
+      "checkpoint_sha256": "2c6bfe4fe55eca1488101e283d2942d28829cc6a4ff8eb6348d37dd7c6562afb",
+      "present_on_pr_base": true,
+      "pr_base_sha256": "2c6bfe4fe55eca1488101e283d2942d28829cc6a4ff8eb6348d37dd7c6562afb",
+      "included_in_checkpoint": false
+    },
+    {
+      "workspace_path": "tools/sgdk_wrapper/select_blastem_capture_route.py",
+      "checkpoint_sha256": "f92a778a373a0c5b180742e92351414b325db9aea624861b36145332c95f0647",
+      "present_on_pr_base": true,
+      "pr_base_sha256": "46fef25e1b623e17da9bf98d2282c9582d3fc702af505522609ae447777a8860",
+      "included_in_checkpoint": false
+    },
+    {
+      "workspace_path": "tools/sgdk_wrapper/capture_blastem_evidence_linux.sh",
+      "checkpoint_sha256": "f2d7671c97ba737ca59cced0f0eafb5467bcb67d573009977a165af468cb0754",
+      "present_on_pr_base": true,
+      "pr_base_sha256": "01dc0b8afcd3df62cbeb8dbedd360a46f1673beeba8130c4ece574ca7ea0ad26",
+      "included_in_checkpoint": false
+    }
+  ],
+  "exclusions": [
+    "out (ROM, capture, SRAM, dump, cache, worktree)",
+    ".agent materialization",
+    ".ai-memory.toml local integration marker",
+    "rds local debug marker",
+    "rascunho/temporario recovery mirrors",
+    "compiled host executables",
+    "all files excluded by workspace gitignore"
+  ],
+  "versioned_inventory_excludes": [
+    "this checkpoint JSON (self-reference)"
+  ],
+  "versioned_file_count_excluding_self": 645,
+  "versioned_size_bytes_excluding_self": 101847145,
+  "versioned_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "39bc12915a173af13e549e809be04971a91bca6371d5848b5bbcbdedc6b9045c",
+      "size_bytes": 800
+    },
+    {
+      "path": ".mddev/project.json",
+      "sha256": "d88beba335a63cc67116de068f4400e88a5b5f7bcc0f41300e5eb70b20156bfc",
+      "size_bytes": 1740
+    },
+    {
+      "path": "README.md",
+      "sha256": "0780e367163913dde2a3c1110cd2a29dd9a6c252562da3571b48cc9bbe0c91b6",
+      "size_bytes": 2355
+    },
+    {
+      "path": "build.bat",
+      "sha256": "8f868b2a7b5c7438143498f0f40479df95526c62f3ccbdb817526766a74f3e55",
+      "size_bytes": 922
+    },
+    {
+      "path": "clean.bat",
+      "sha256": "fcac847c6fbe0ebef5310e1a3583187ad1e19ca2d71c75f52f86da9fd68416c9",
+      "size_bytes": 922
+    },
+    {
+      "path": "data/processed/branding_intro/brand_author_logo.png",
+      "sha256": "b3831cb5ee92541baaf77610681cb8a63d8c2890229a2d23141821e754397443",
+      "size_bytes": 578
+    },
+    {
+      "path": "data/processed/branding_intro/brand_engine_logo.png",
+      "sha256": "958782dcfdf2cd892102b2436aabe5b5886b2cf75ef152ecfe424d11737d279f",
+      "size_bytes": 1166
+    },
+    {
+      "path": "data/processed/branding_intro/brand_fx_tiles.png",
+      "sha256": "60a67c72e517275f7aab298976944d3539e20d955d2821bcdd30710a71f8c9a9",
+      "size_bytes": 530
+    },
+    {
+      "path": "data/processed/branding_intro/brand_presents_text.png",
+      "sha256": "bce36b6c56e8ef89993b7936d352b4829c3b433ecdc5a9dc2bff02633af907b5",
+      "size_bytes": 375
+    },
+    {
+      "path": "data/processed/branding_intro/brand_project_logo.png",
+      "sha256": "2bf6726bc8f0bb649a3c505a6f26eba9af15cd36bbfc52c6ecc0f67193328955",
+      "size_bytes": 772
+    },
+    {
+      "path": "data/processed/branding_v2/starfield_v02.png",
+      "sha256": "5b174555cb12c369af6b9f5d73f1f2cb1303771c5c7667dd53a8ef65dde8ab70",
+      "size_bytes": 949
+    },
+    {
+      "path": "data/res/audio/branding/hammer_slam.wav",
+      "sha256": "e6d0700547ada8da00c2ca6ccb7eadb7ea05f8ac1c09284580e3bbf24955f5fc",
+      "size_bytes": 5630
+    },
+    {
+      "path": "data/res/music/forge_brand_loop.vgm",
+      "sha256": "d85126accb8a2ae6f9d0830764b349aa3adb9e667c6a69e615460839aff452d1",
+      "size_bytes": 1465
+    },
+    {
+      "path": "data/source_art/branding_intro/production/author_panel_source.png",
+      "sha256": "a0bb0decb69220b366055589e1e4b76b3a0ff439e6c169ccde83cedfe34f1cea",
+      "size_bytes": 856628
+    },
+    {
+      "path": "data/source_art/branding_intro/production/engine_mark_source.png",
+      "sha256": "411193c97a8091d49bf7d339ca65b6857bcf79f9303c216f6eb75f41b5aaa580",
+      "size_bytes": 936465
+    },
+    {
+      "path": "data/source_art/branding_intro/production/project_crest_source.png",
+      "sha256": "449b359ddd56589556e642baaf1807b7828d4d8bc821b99f2b7d68c79fed9a69",
+      "size_bytes": 1085282
+    },
+    {
+      "path": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "sha256": "34d9bec24708591ed957c7576b04e4ac756cdada3053f87a2369bd5dfb126fde",
+      "size_bytes": 11981
+    },
+    {
+      "path": "data/source_art/branding_v2/assemble_model_sheet.py",
+      "sha256": "2383950e15fef233a2204939081b2fb962af65b4f5f0ab914b93b94caa26f6d2",
+      "size_bytes": 17370
+    },
+    {
+      "path": "data/source_art/branding_v2/asset_lineage_v2.json",
+      "sha256": "bdd6c2d31d50dcb0c2c1d40cb032e4ed705a53e05b86a7220a0c3108abac5f73",
+      "size_bytes": 5310
+    },
+    {
+      "path": "data/source_art/branding_v2/build_forge_brand_vgm.py",
+      "sha256": "535207bd5a53fb1249701751d8deb4b9c43e70bded277c93ec253178c6a58425",
+      "size_bytes": 5780
+    },
+    {
+      "path": "data/source_art/branding_v2/build_hammer_slam_wav.py",
+      "sha256": "3f0ea30c463c5c92315daaf78b22147e0497c7179c12b932ba2690e4ad272620",
+      "size_bytes": 2071
+    },
+    {
+      "path": "data/source_art/branding_v2/compose_bg_b_tiles.py",
+      "sha256": "f6ccc09a5efd0fd0698ab2d432c34016d85494849bf7dff85cb9d69acfb25ab8",
+      "size_bytes": 5854
+    },
+    {
+      "path": "data/source_art/branding_v2/model_sheet_forge_v01.png",
+      "sha256": "0a4febf0f10200aa0f336f83b2c4a2ea0b0cc7326566d3bceb0e1424b569aca0",
+      "size_bytes": 15369
+    },
+    {
+      "path": "data/source_art/branding_v2/model_sheet_forge_v02.png",
+      "sha256": "1c0bbfe9bb7d517e1683adf7960a083ca8078ef2796ba62381e5ed014e158cb0",
+      "size_bytes": 15847
+    },
+    {
+      "path": "data/source_art/branding_v2/model_sheet_lineage.json",
+      "sha256": "24bf151145e0ec15505c2d697a7254085cb072dbb363e08f301e5054db950c69",
+      "size_bytes": 4200
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/ember_settle_v01.jpg",
+      "sha256": "87760e3ed0d159f4b18e22b72738e3b9b4ea7dac50f81be9ab4b82cd94aa2b77",
+      "size_bytes": 156341
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/ember_squash_v01.jpg",
+      "sha256": "2939e0839578de4fe73f49af685243311acb17c4f44e9c5c5d22522691b2f147",
+      "size_bytes": 152189
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/ember_v01.jpg",
+      "sha256": "bc961207163e034700cca2b79d7ff5716a24c1db114af6881a69f9db45996cfd",
+      "size_bytes": 85175
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/ember_v02.jpg",
+      "sha256": "1f505c2ec943de9a48f134fd1c30d8e7530ea5d4e5ba373bd7ad8653ae83896e",
+      "size_bytes": 123381
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/ember_v03.jpg",
+      "sha256": "573f0fe798a451cb22a44ec7c088bcabc9be55be3bda3ac62d098bdde4fd1ff3",
+      "size_bytes": 116875
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/ember_v04.jpg",
+      "sha256": "08a6db2fc26ef1c82a34eb582509d7c04ef28aedf2ba1f1ab95c5cabebd1c3d0",
+      "size_bytes": 146704
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_anvil_iso_v01.jpg",
+      "sha256": "f966f4044ee86a05d0f6e428f734585fd9d4531ca8ddeaf76f5d9dd7e4e007d1",
+      "size_bytes": 141444
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_bg_b_v01.jpg",
+      "sha256": "2d2991416f26a67dd6cba3e390c48c8ee912d84b2755a0f8e3df1d21a7530bdf",
+      "size_bytes": 353735
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_bg_b_v02.jpg",
+      "sha256": "4c532835d54a299ec1fcd234055be4e50d961c675a7783ad953500b2abcd308b",
+      "size_bytes": 298097
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_master_v01.jpg",
+      "sha256": "727ff6d788b8978f928327c54382387853b52fbdb2510ce22a79f3b0eb2b8b54",
+      "size_bytes": 314603
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_scene_v01.jpg",
+      "sha256": "7a9634db1fa840196cd8e7e380222f5c1f3cc25f9dd5ced0b8a47f01aa4d408c",
+      "size_bytes": 284098
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_scene_v02.jpg",
+      "sha256": "d129710d2b2d1d2a33a22aed33e48d27e81f750f82062d978bf2399d96785a49",
+      "size_bytes": 271249
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_scene_v03.jpg",
+      "sha256": "95acf326f862f3e9e7f42a98ac91671ff61e3aa421cff0bafbd1e1ad7e7471d1",
+      "size_bytes": 318561
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_scene_v04.jpg",
+      "sha256": "5a7c34c7ba79a6d522c07c6eabc896ecdf7512d557384a9cbab5939fa7c821b5",
+      "size_bytes": 277539
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_scene_v05.jpg",
+      "sha256": "e4aa7eaa837102f5a76fa8ba223d178300903197dd2278329b121065b2112b06",
+      "size_bytes": 302343
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/forge_scene_v06.jpg",
+      "sha256": "2900e902f2ee04c3a835b68c645ef289d59a39b895e8364ae192e34bab19948c",
+      "size_bytes": 286207
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/glyphs_v01.jpg",
+      "sha256": "66a325572b12b56ca7e8319b93feee0cce1c4c70d3509ad1fe95235550f84b9e",
+      "size_bytes": 126686
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f001.png",
+      "sha256": "c3786d6428351a5da74dc0169fb7d63d1923a6628d60da38606ef8ba7c50a01b",
+      "size_bytes": 101330
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f002.png",
+      "sha256": "6aae46740021a55c9058f30c0651a1bb82a9998bf729f8c3791353f4d5692e1f",
+      "size_bytes": 115590
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f003.png",
+      "sha256": "65dbcd8a69a5fdcdf9904af919a0be67aafe86e7c8b58649f8ef58e9644dcf5e",
+      "size_bytes": 114740
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f004.png",
+      "sha256": "d4f981a16c4bc2ed0a3410099abd3970c953fd72e6c7afd017c80413f6a41ba0",
+      "size_bytes": 125164
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f005.png",
+      "sha256": "e2435cda0b9ffc739b0549061f94e88075d5517b75f7ae5feff4093f23e7f045",
+      "size_bytes": 127826
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f006.png",
+      "sha256": "a1d6c912215b6a5c70d682a755a03ac2ee24290da28b8bbc56e09a28400f191c",
+      "size_bytes": 140449
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f007.png",
+      "sha256": "a19b43d5f5f5febe522ce98504eb05ed77684b6240760c963c682b567599e8b7",
+      "size_bytes": 142234
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f008.png",
+      "sha256": "a4a303dd5c419caa481c5f39460f2719f3d9f6ed7458d4deeb556061b01670e7",
+      "size_bytes": 152373
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f009.png",
+      "sha256": "377130596d8e75ddb2438fd1b327f842fb03fb9c12581c20aa1391ff77a6da7c",
+      "size_bytes": 154761
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f010.png",
+      "sha256": "54d767d0b7b6482aa53b9d3c13f1809e0a81ab77f35b4c0d81a1b166987a2a3e",
+      "size_bytes": 165216
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f011.png",
+      "sha256": "2c098376df2e2b4b95ad4988baf2efa4b4f3742ae0625e45d26eb1465aa8d009",
+      "size_bytes": 168171
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f012.png",
+      "sha256": "7277852f873cd00bc1a8bb9c31c3197268b3d89b380c5c7b469bf456aaeba948",
+      "size_bytes": 177360
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f013.png",
+      "sha256": "e72da34cfd4e9a410600780104b17d660bfee56bf8ad34278b86d39b543ae072",
+      "size_bytes": 182021
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f014.png",
+      "sha256": "8924033e5e6ddeb6597d554694cdc232204ddf089311907b34fc77c8de276790",
+      "size_bytes": 184448
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f015.png",
+      "sha256": "c9655e5cf9364ec132d5081498e2728122ef75852144f9a4e0a5b1d3653a44bd",
+      "size_bytes": 187968
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f016.png",
+      "sha256": "ffe8d1d31efe9360c684f81d232e043d223621487b1afd0d5f616283a6653b21",
+      "size_bytes": 194373
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f017.png",
+      "sha256": "3045bc335c4676cd69d99bf12110005d7b9a963f1e16d3f930873092bdd3c628",
+      "size_bytes": 195014
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f018.png",
+      "sha256": "16c82a64a255d83aeccbd6dbcd6e81b853f046b3e1cbaa9056ecf3c678f1edca",
+      "size_bytes": 196305
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f019.png",
+      "sha256": "1995d0029d18dcb9679a194f2e75cd7f0e78eb14eca1013322fed4eb83f5302c",
+      "size_bytes": 194955
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f020.png",
+      "sha256": "628d959ef5f2a5ecb3a7cc0b994758d73203a9ff3cb0c4444459b62166ac7ade",
+      "size_bytes": 194416
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f021.png",
+      "sha256": "92d350b4b3ea2688a40be1eb4385f04de5a175802afd66b5bc04c4a4cce344fe",
+      "size_bytes": 194716
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f022.png",
+      "sha256": "e7b6d242e3b3288f322d56d6d2e2384050b4df7e48328eb45be5431c8a25c2f2",
+      "size_bytes": 195240
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f023.png",
+      "sha256": "bb574abec35c7031ece57030a26c08337a0104b2c3e79daeeb6de12b5da89531",
+      "size_bytes": 200090
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f024.png",
+      "sha256": "cbc24592c0c11b8694fd732bb3d25d7c849058cd3c970ba5c6c51b632c9731aa",
+      "size_bytes": 206448
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f025.png",
+      "sha256": "a2f02f426a0212e7f8f3d7452d7a75be966e326ecb1e6db440d99908e9e115d0",
+      "size_bytes": 209803
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f026.png",
+      "sha256": "4d577903aa8a91e8d5c01e442653989f6bb9e3413755e265e3243ff405053164",
+      "size_bytes": 227331
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f027.png",
+      "sha256": "ef1b5af561437a62fca2e4ab78d498f85b804da99259a0968314979fc06012a8",
+      "size_bytes": 234471
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f028.png",
+      "sha256": "a6bfb5e469069a236d24c39c8f24456985a5fe79fe758bff4f7f8a1db1c26b94",
+      "size_bytes": 241683
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f029.png",
+      "sha256": "38bc0f5da49f528c0d2eee44cf79facf3c542fefd90b4481a2db658feb607792",
+      "size_bytes": 241804
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f030.png",
+      "sha256": "34d668409daac1a4db57e687e0634bacd644c113be42d2a4e59add69ceed54d0",
+      "size_bytes": 243531
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f031.png",
+      "sha256": "52cdfe2d9f610eca7d366f14a8de746031d9c57f815a6037a5ccc9bd5ff9c48a",
+      "size_bytes": 240386
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f032.png",
+      "sha256": "03c8535e4606cd92c49e1591a98f95b543196e3b321564d23df7a13ab39a41f5",
+      "size_bytes": 232660
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f033.png",
+      "sha256": "9ef724a7ecaa8c10652805a417eab5f260160eb2cfa71a3f8541d37e5b8729bd",
+      "size_bytes": 228500
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f034.png",
+      "sha256": "02ebcdc180af1043f728ca192733631b490fa4e8de9185139d467fd669d603a8",
+      "size_bytes": 237781
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f035.png",
+      "sha256": "40e870ee657b0334941fe612145471b2637ff4f1ec0be505afd5e8e5715e5c28",
+      "size_bytes": 243464
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f036.png",
+      "sha256": "875c6efb145d8398eb3bdef360024d6532caf0ba802f7d248f6c1db818720b9c",
+      "size_bytes": 243541
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f037.png",
+      "sha256": "7dca158db9561ab7005d85ee5dc3e1b0a576b2a72bf07c35c0a5c257d195ec97",
+      "size_bytes": 241399
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f038.png",
+      "sha256": "e4ef90fbdd2301d22f01059847379beeb14fbac5b130a34e69cf3e266adf09f4",
+      "size_bytes": 236911
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f039.png",
+      "sha256": "1f34540f488e8fa0bdbaa2d91ec17bdc1de44649e050e74633b7bb4da0cc4e31",
+      "size_bytes": 230078
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f040.png",
+      "sha256": "d749efa6975a2d70b33042cba3451b45452442399ac0d43b6432f488be03c9f4",
+      "size_bytes": 216771
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f041.png",
+      "sha256": "8af06f9ef01e934d34437bd455f2725c203319b9506b21b233fb0e6e80399ba8",
+      "size_bytes": 208025
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f042.png",
+      "sha256": "5404e58106e4c0e3ba270ae3aa7e7ee8ffc9bfe117be682e44729b3dbecf5d38",
+      "size_bytes": 198738
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f043.png",
+      "sha256": "870533f0b68e01ca2311ceb5027fbcf9c514b3610321abc5768ec5ed798bbb4e",
+      "size_bytes": 196436
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f044.png",
+      "sha256": "9bbd56e846cfe8fe752d43eecc65a0f117d3fa41e76a0102c42889e55c184267",
+      "size_bytes": 193836
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f045.png",
+      "sha256": "91d778daf8694bbc05ddfccef0d802ca8c687bf66c86812f3b9fbdc053b06163",
+      "size_bytes": 193281
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f046.png",
+      "sha256": "cb761782cd53a3e6a8a720a3b16af2a8a6f2df77ced9f4ad68cb2bc363dfc452",
+      "size_bytes": 195097
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f047.png",
+      "sha256": "525cf9f6ed6f440ff14b0317e73dcdcd2a8be41e20933a8b29d4dc7c3b374559",
+      "size_bytes": 198212
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f048.png",
+      "sha256": "a2de18cba5c5f0f7db51ab1ca77cb9a83784f88ea948c6b9faeac661ae54d078",
+      "size_bytes": 199667
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f049.png",
+      "sha256": "3a8626a88165f07cdfeb4b9b94c20e82100f08f9b7fab9f8f7769c71aa867162",
+      "size_bytes": 200773
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f050.png",
+      "sha256": "6b059a48b5ddfc2e6fbdb76a0abb747ad5a632331a8390f073e9fede7ec51aa5",
+      "size_bytes": 196710
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f051.png",
+      "sha256": "291c29fe7f97a9d76cbbd75548724d373ccabb0fb23c8a944fc3942aecaa9312",
+      "size_bytes": 193726
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f052.png",
+      "sha256": "a587a118697f9f6b1938885e3d1f64f4a95847abb6bb45be242172e411ef86f5",
+      "size_bytes": 188681
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f053.png",
+      "sha256": "4b3c265b43c1c92a743a5bb2c8b857aa6b8c26acc1b369e014cde24dc1b5a52f",
+      "size_bytes": 182128
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f054.png",
+      "sha256": "dc7eb493f8b8b21218a22c50c2e66ce14be5bd383c12f88a614ec091de5f67f6",
+      "size_bytes": 180735
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f055.png",
+      "sha256": "ebcec24a5bded2de61ebd255ac475f99ddf5d8f35a0a98a086614cf08e4853e9",
+      "size_bytes": 170830
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f056.png",
+      "sha256": "c432704f0298e60603961881186cb133c4ea0a5ee36f041ebdefd4793f21cf5d",
+      "size_bytes": 171014
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f057.png",
+      "sha256": "322268ee0f4cd28f0f51a954e17cfa9ee4071f9d224dae69bc8f54e1ac444bbd",
+      "size_bytes": 172012
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f058.png",
+      "sha256": "e5484f80248de3c9b6109bfb49afb21768632ae01a67f9fe248aacedfb9e55fd",
+      "size_bytes": 172441
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f059.png",
+      "sha256": "06c828ef52db9b3f6626f4f807000dcd091886451f88138c2c4a92682e8248ef",
+      "size_bytes": 173563
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f060.png",
+      "sha256": "2ca1f9d1a0d2e017b56d1d83dfe698038d0c0f27241e791f333edca3bb6c76a8",
+      "size_bytes": 173938
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f061.png",
+      "sha256": "a22b1b13939704c258712a8d9da898fab96bde9d3885e9a608e3274077774821",
+      "size_bytes": 174146
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f062.png",
+      "sha256": "1f4c135ef39c5696b3d80179f774e50684b1d893c8dc0afb99460dd43977a914",
+      "size_bytes": 174472
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f063.png",
+      "sha256": "a2e9581d744335d5901296cc63f5e2fb849a83b1e4a92ebf6cc218902504d48e",
+      "size_bytes": 175140
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f064.png",
+      "sha256": "844c12e62bc6b4a8fde6d341dee9cc17d9f9c2675d1e2d562603c679219433d2",
+      "size_bytes": 174804
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f065.png",
+      "sha256": "4fd7c2086353fd4961b1c7ed601187b8433d1a00f99dd9c6b7898b9341b437d3",
+      "size_bytes": 175647
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f066.png",
+      "sha256": "d0da6b977bed4c10dfa726cf7857b408f5c89a04b04c1ca8175e535019a18d8a",
+      "size_bytes": 175522
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f067.png",
+      "sha256": "a18ca993ac95b86f4b2a4567fd77e519125a398d07727e1a6463ee73a358ead9",
+      "size_bytes": 175491
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f068.png",
+      "sha256": "6effae281c94acc081f2138e5307285beff4a6c1d90a27a9e49993551370d844",
+      "size_bytes": 175717
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f069.png",
+      "sha256": "eee8a5af0d58167372ac7e01e78724bcb556852ac0349987142119cb2ddee902",
+      "size_bytes": 175954
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f070.png",
+      "sha256": "288ac8226dc6f86af1b54819882843e2ec4de84b3c85b50e4ef2c4ab74039715",
+      "size_bytes": 175520
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f071.png",
+      "sha256": "eed3f95bba19a365f605dae4a8701ab67e276929a6bbd03dfad9383eb1cde873",
+      "size_bytes": 175846
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f072.png",
+      "sha256": "aa7a8727b1b20574a93877885f93e54a86d11366136238a12d1106e26fef5599",
+      "size_bytes": 175701
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_frames/f073.png",
+      "sha256": "a708a2cc53f19eee7b30dbed7d3041cf26ffe0582e7b4fc0d8a13f5a2e58b179",
+      "size_bytes": 175114
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_rest_v01.jpg",
+      "sha256": "22361fd92236c787428c70e94b6078979044dda6fb8ffcbb36e8a78c6d579bcb",
+      "size_bytes": 123413
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_rest_v02.jpg",
+      "sha256": "d2c7b7a50ba97059d9c5d250875fbf8fbecbf40d63ba7039547f6d6cc6c8f285",
+      "size_bytes": 152197
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_smear_v01.jpg",
+      "sha256": "122a1ddd933d2b80bd0ef9ed436d42a4be539a814be0c2b9926eb1dab7367158",
+      "size_bytes": 169953
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_strike_v01.mp4",
+      "sha256": "be83a39b60717bf3fd1edea90b1b95bd5592dbcffeb1983ab8e7e421048a6bac",
+      "size_bytes": 1321676
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/hammer_windup_v01.jpg",
+      "sha256": "10f8133127497001471c70191650d8374f21fd7e8e87e4a55aa0b10923d649a7",
+      "size_bytes": 136186
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/label_4x_v01.jpg",
+      "sha256": "7c77845db1fe35a54a715b1dcfb8ec1c8fa5f85455807e881fd34f8926902b50",
+      "size_bytes": 90206
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/logo_forge_v01.jpg",
+      "sha256": "06be684397c5bedec8d40f4c0b5dbb4896ab732e0a4b87a598111d9a00aca389",
+      "size_bytes": 178512
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/logo_forge_v02.jpg",
+      "sha256": "06d459bd25162d861175005c33eb38066cd5745f1174e64bd3f21122fc875e9d",
+      "size_bytes": 157567
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/logo_master_v01.jpg",
+      "sha256": "7be8be6b7d9785856e91434756daba38db1979f017d3a356114aff36028e8631",
+      "size_bytes": 184845
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/logo_misael_v01.jpg",
+      "sha256": "58cd601ba106839aa7c088f03f839383a0f4916ae973ebbebd23809f9f2894ce",
+      "size_bytes": 163052
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/palette_ramps_v01.jpg",
+      "sha256": "36decb4ae093763dfe457a934c89580e27fb4e096dc899d3584b3c65a358397d",
+      "size_bytes": 255209
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/palette_ramps_v02.jpg",
+      "sha256": "308adae18787b93b9a729ef1bd6dced102c126623e6176ecea9db517f12b6c63",
+      "size_bytes": 236212
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/presents_v01.jpg",
+      "sha256": "3eae13ad6b5e921ae29e6964cae9099effd62ef5059b12e4c5938228e1c4e2f9",
+      "size_bytes": 128611
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/shard_v01.jpg",
+      "sha256": "79c8833f887845a5247754bba4f5fb1715c43a693640abdd21d8b3ff54613055",
+      "size_bytes": 94080
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/shard_v02.jpg",
+      "sha256": "41377486692debcab054ec877891b7da883c2af00df7a4f5d0c1a3ebf204f5ea",
+      "size_bytes": 132605
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/shard_v03.jpg",
+      "sha256": "fa18c882f678061f9c1c051a6468a12d3b4fd13884642145b66947a8880ac7eb",
+      "size_bytes": 136619
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/shard_v04.jpg",
+      "sha256": "a08a7978ab508db70f1a92e51bc6eaede65fc14b1bc891431d90a9192e29b8b5",
+      "size_bytes": 105915
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/shard_v05.jpg",
+      "sha256": "11724b175042b4e6f36dc9c4c852365c8db26531a7765733321939654cbd475a",
+      "size_bytes": 129228
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/silhouette_v01.jpg",
+      "sha256": "8df00445153ef8debe5966bbb3f8deedf453885fc7d62f5b69bc2b47dfea3dd5",
+      "size_bytes": 110229
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/silhouette_v02.jpg",
+      "sha256": "f8b7a8b1dbf00ec053fa3b085160694b29ae85186c112f45c6ac6a7d954538b0",
+      "size_bytes": 107883
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/silhouette_v03.jpg",
+      "sha256": "1c213e6b0f222035fed5ae9060e694aa08c15f7d9b87f1346b500e7c9fbbaa5b",
+      "size_bytes": 111675
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/starfield_v01.jpg",
+      "sha256": "b29d8b2bee4b857ec7736cbcc81fb2140b7b33ad12661c8c3604c82aac115f24",
+      "size_bytes": 105917
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/starfield_v02a.jpg",
+      "sha256": "8c18804ce8197a9c7f046d62b92f897a2a4b9e9a30d8b921e090c06962bdfdb4",
+      "size_bytes": 77176
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/starfield_v02b.jpg",
+      "sha256": "16b6f8fc459f76060c9fe9239838144ea136b754c3170fc8f5bf4217d0aada54",
+      "size_bytes": 120512
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/wordmark_forja_v01.jpg",
+      "sha256": "c09cfb3a775875b0058bab756279f72cc1a9e1edefad225bab3daf52aeff1c5e",
+      "size_bytes": 193371
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/wordmark_forja_v02.jpg",
+      "sha256": "c77ca648512bfebc8082aa180e32337f618ff217acaae064543a00c9cefad94d",
+      "size_bytes": 188351
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/wordmark_forja_v03.jpg",
+      "sha256": "b3bd9f893c1025c4f4ee170161053ac385405acc94bd0f59ae2cd965559e55ad",
+      "size_bytes": 162929
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/wordmark_forja_v04.jpg",
+      "sha256": "4088368ec7fb4835988d233c7d38a715175e43e0cc3b0b1d072b189a0a7ee8e3",
+      "size_bytes": 190939
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/wordmark_forja_v05.jpg",
+      "sha256": "eab63a781d386ee55b6a8d780e72f9867e218910627cdb3db4c57852d1ed36e8",
+      "size_bytes": 180251
+    },
+    {
+      "path": "data/source_art/branding_v2/raw/wordmark_forja_v06.jpg",
+      "sha256": "c020fca67c2e017b97d4b110d8b5c6c6abbb272447718c3a44538d94267a5e40",
+      "size_bytes": 162945
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/ember_settle_v01.png",
+      "sha256": "d55824d2f942c67fd1e2dbfd2105149281633fdb0f0331f6d560a537b9ffe564",
+      "size_bytes": 48632
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/ember_squash_v01.png",
+      "sha256": "dc85f4a9fe6e94836c2416daa36e2686876bc7ba073370a3dd79d41d6815fd4d",
+      "size_bytes": 49987
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/ember_v04.png",
+      "sha256": "30f44730ca96db9a2a0b3d23ae033ad10861f9b6da1deb4af25d26c2dc36fb5d",
+      "size_bytes": 42656
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/forge_anvil_iso_v01.png",
+      "sha256": "1323b06a27bb6ec9616f61b9d0d468785349026f4ac82f30642c77bcf68df0df",
+      "size_bytes": 43967
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/forge_bg_b_v01.png",
+      "sha256": "886de18b99cf9d7bc8ccfb2bfa421c3dfb523ca729595d7ea387ebe263acd7d2",
+      "size_bytes": 205473
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/forge_bg_b_v02.png",
+      "sha256": "c1b3d092bbde86d958898d6e50947b2098e570939475791357f8dba46ffd6548",
+      "size_bytes": 128506
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/forge_scene_v06.png",
+      "sha256": "9d3e4b09c70230e18004156d258f3550c3b8f881d048ec5da8d3c3715cc8077c",
+      "size_bytes": 183070
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/glyphs_v01.png",
+      "sha256": "0f57a87cea80b7c349a93b5ea2f5f662e44d2b4ab5c01d1d1e72a2c5dd4595a8",
+      "size_bytes": 9117
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/hammer_rest_v02.png",
+      "sha256": "1b1c04b4a03a1006a82830d061fe7b2b465dba087fa7472a56770c56688f7fab",
+      "size_bytes": 37287
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/hammer_smear_v01.png",
+      "sha256": "f3af8dc50381c10870e5665c0eb128b7b29af462790fe48996ec236782ce8fcb",
+      "size_bytes": 47390
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/label_4x_v01.png",
+      "sha256": "d87e2dd1acad919ac73b7e544e40b77f6c29acde2352fd6a434caaf9eff008b7",
+      "size_bytes": 7377
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/logo_forge_v02.png",
+      "sha256": "66f54329551ac21ea3fc5d00aa2596b3f2eb6f2d405c598636fc901ca5e0511e",
+      "size_bytes": 49213
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/logo_master_v01.png",
+      "sha256": "3edfb85ba0b33d387c736ea9db46023e0f7fe87efcf60a9c9779e5829112def7",
+      "size_bytes": 66241
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/logo_misael_v01.png",
+      "sha256": "eb5eeeae9a7b67da80442e0bb7e5456c71b580a40d812c20269d42a94368608a",
+      "size_bytes": 47124
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/palette_ramps_v02.png",
+      "sha256": "ab0b4ddddd31d19ff2bd40fb66b39c4301a09b3b1bbf0d00655977452023fb05",
+      "size_bytes": 103093
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/presents_v01.png",
+      "sha256": "2ce76d83f1a420f7e84ec072a82e20ba5d5eac1d20ab2af983e9fb286a36a8fe",
+      "size_bytes": 14339
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/shard_v04.png",
+      "sha256": "600e66afcf86925a1f92c43ad41185fbc7aab30bc0c6ed486e01e2aed52d616a",
+      "size_bytes": 23968
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/shard_v05.png",
+      "sha256": "f31c0ececf9294767918742c68e28130440f1cb808c7a6e478cc4e30dfee7eb8",
+      "size_bytes": 31074
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/silhouette_v03.png",
+      "sha256": "c8b20197bca4fd444a39d64f5bff9953ea1c6e9a17043e8655b480303ddb5131",
+      "size_bytes": 39767
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/starfield_v01.png",
+      "sha256": "446574b1de346464580bc6469c2546afae298ba32909ebe09955bcbda059d192",
+      "size_bytes": 20796
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/wordmark_forja_v05.png",
+      "sha256": "20ac13c5ebac7a597022e7c44daca34696b6a200fa7134ea66dba43a6675f58b",
+      "size_bytes": 52230
+    },
+    {
+      "path": "data/source_art/branding_v2/raw_png/wordmark_forja_v06.png",
+      "sha256": "1605ba6d8612e537745ceb495c1d391b6ddefdd9ddda02579299252f9fd27871",
+      "size_bytes": 39880
+    },
+    {
+      "path": "data/source_art/branding_v2/rebuild_presents_contrast.py",
+      "sha256": "652523b0785da45530b0639ec90f0aa6f8d5dcc17d3c058b6842012b5a1e7570",
+      "size_bytes": 4710
+    },
+    {
+      "path": "data/source_art/branding_v2/rebuild_wordmark_contrast.py",
+      "sha256": "a8f543f5a86f80c7c4494a468b27a297bb409d4d167370fbe429360ccf76c73c",
+      "size_bytes": 1739
+    },
+    {
+      "path": "data/source_art/branding_v2/starfield_v02_lineage.json",
+      "sha256": "1747f76dd5abf9a0403ef27dcc4a4864c091814517ab6bb171dda7fa3ac5031a",
+      "size_bytes": 688
+    },
+    {
+      "path": "data/source_art/branding_v2/translate_starfield_v02.py",
+      "sha256": "d92f7b26dbc4a43bf81b9d3b23dcc71fe0703b6b05d9d7bea6f95c6916a32064",
+      "size_bytes": 5394
+    },
+    {
+      "path": "data/source_art/branding_v3/audit_splash_v3_backdrop_safe_area.py",
+      "sha256": "8b411b4f5c3bc9ddbfe321ee9e3b3e7cbc13a2a797b24d5b53ebfb3ff584a516",
+      "size_bytes": 10261
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v005_wip.py",
+      "sha256": "1b493c63d272a61f33a185e761d4c6e41fdfcb5ad192208e87d6e7aab288fb7c",
+      "size_bytes": 6818
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v006_wip.py",
+      "sha256": "639e51da31c73890d69eea8d351ae53bed62dad310c0ccbbfc824c393e97b697",
+      "size_bytes": 8294
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v007_wip.py",
+      "sha256": "f0e2b135d26c602dcae61955e49a614298e936aad88210fb9168c6ccf84d15f1",
+      "size_bytes": 10799
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v008_wip.py",
+      "sha256": "be8f19164768bb9160717b22c95fa4262fb289e413059b0de2b5a0c2c6575d62",
+      "size_bytes": 10785
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v009_wip.py",
+      "sha256": "597ea4cb60000eb5f67badafb29d69daf3113d7211aa8b413e19f5250a930663",
+      "size_bytes": 10785
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v010_wip.py",
+      "sha256": "35cfcf63f23b13e94b54de0cabf37e463a863b8db32082f1ef59e48090767de3",
+      "size_bytes": 10876
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v011_wip.py",
+      "sha256": "943524f934f92ebd87fbfaf29345cb7b6aecdb7365bc0061266761e694f19c1a",
+      "size_bytes": 10885
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v012_wip.py",
+      "sha256": "e1893575cf4b0a22f283f29f17a6cfdcf2587df7f7d216d3e21d95cc998d9c90",
+      "size_bytes": 10879
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v013_wip.py",
+      "sha256": "2ba493ef4aad4597f8ff1ab484bf3a4cda194ba74309a7aa37e4911e7d656fce",
+      "size_bytes": 10908
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v014_wip.py",
+      "sha256": "89f668917d3e49845622f2d1b01a5c05dd324717ce8976cb5f74c88bcc96c9c1",
+      "size_bytes": 11315
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v015_wip.py",
+      "sha256": "892f527cdb450735520acff32d8b08472fd2c03265a7e3bfb0657cd1fd8052d7",
+      "size_bytes": 15860
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v016_wip.py",
+      "sha256": "a8dbbb308caeebbdb74088ce0566e7fe477305770e4ddf412e89034aa5f9df66",
+      "size_bytes": 10983
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v017_wip.py",
+      "sha256": "814fba0bc6ed60bd585a21f20752245e17495d985a6f816a6e2b58f5883c3c72",
+      "size_bytes": 9568
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v018_wip.py",
+      "sha256": "04807b938fe13231f8feb3dd5041b15e01900481368c9fb78aab7ab11f453024",
+      "size_bytes": 6770
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_backdrop_v019_wip.py",
+      "sha256": "81740b74964c676ff402f12c7959da339d71db5c03bf91acfe35dc5fb0609d81",
+      "size_bytes": 7038
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_lettering_native_probes.py",
+      "sha256": "2531d38258735cfb18c3085eb616b6ab7da72c23b46dc028d29da65a4bdb4632",
+      "size_bytes": 16494
+    },
+    {
+      "path": "data/source_art/branding_v3/build_splash_v3_visual_wip.py",
+      "sha256": "4e8b15199453634731962021ca06c37d0b2659e22c6f49d51651ef11e6104208",
+      "size_bytes": 21789
+    },
+    {
+      "path": "data/source_art/branding_v3/choreograph_splash_v3.py",
+      "sha256": "9e30a84fdd2f867268dc8ea5bdfa561e29c34401730de0fe62be2d22fc5840b6",
+      "size_bytes": 21004
+    },
+    {
+      "path": "data/source_art/branding_v3/measure_splash_v3_scanline.py",
+      "sha256": "a26e619839b72363fb451a08ff4d268b74c39cb774a5bb30d2df6469ab28f873",
+      "size_bytes": 13876
+    },
+    {
+      "path": "data/source_art/branding_v3/premium_source_manifest.json",
+      "sha256": "05d3e4a974806abf6b17145999fea97182bc969648ba510821277b97194e2fe5",
+      "size_bytes": 9397
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v002.png",
+      "sha256": "c06fdcbc9a4ae481bb1652c6fa3260132eaff66c982eb9d19c71d7a827cf9f48",
+      "size_bytes": 1473191
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v003_20261014.generation.json",
+      "sha256": "003a56fd4ce50ca636354b2156c51f8421c4e7e634b20315f7ea7529ce40af4d",
+      "size_bytes": 1983
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v003_20261014.png",
+      "sha256": "562daf793ff038595ab4cec8965ca9cefa8f12ce85160b3f9861945f0fd75721",
+      "size_bytes": 1767249
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v004_20261014.png",
+      "sha256": "dcf271e7c4c21e7d3a2aee275d32fe24a3196ddbc4954ba9309ce659fdcb2efa",
+      "size_bytes": 2085739
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v005_20261014.generation.json",
+      "sha256": "ead64913cbeea0450c4198ff1ea12173d15a6a22b254db3d350268435a71afff",
+      "size_bytes": 1424
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v005_20261014.png",
+      "sha256": "bb32cf3c7e954b99d71fe71ed0197ba10685f1742847ccd1f75e91313016daea",
+      "size_bytes": 1590474
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v006_20261014.generation.json",
+      "sha256": "47dac8febf13b5c52881bccbead59b66567c62cc183b29f33c729c197027bfff",
+      "size_bytes": 3261
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v006_20261014.png",
+      "sha256": "f3e924c1580c8ead73b0df84b9b557cef69af45eeff4e311bf236b7b371829b8",
+      "size_bytes": 1600428
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v007_20261014.generation.json",
+      "sha256": "781193138ecbf7165c957519ceb3ad9dff998781e3d0787f23d72c6ebec7e5a9",
+      "size_bytes": 3347
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v007_20261014.png",
+      "sha256": "3888fb24313aa17a8f246fd769db07e22cfe93ecae6e62ac28b8a323992f04ac",
+      "size_bytes": 2147101
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v008_20261014.generation.json",
+      "sha256": "a018ec56b0714b3f006b6d058fcb33eb617d7e60f83ddd6229c9a950c3dfb876",
+      "size_bytes": 2469
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v008_20261014.png",
+      "sha256": "feb571791d496fc9085d49bcb20ebbfe5caea5b60ef30d18bd1dc3f06ecc19af",
+      "size_bytes": 1313589
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v009_20261014.generation.json",
+      "sha256": "0ad051842d7c31805ae804f94d39e6f30a19bf77896088997b73691e47812312",
+      "size_bytes": 2827
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v009_20261014.png",
+      "sha256": "730df0013734861a5b07d32e1eba1bb41df4a4e9d77e5c5d4d4bf7f841b8a947",
+      "size_bytes": 1375269
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v010_20261014.generation.json",
+      "sha256": "34322dd13a175e43da2744e0b3bb0c394da546dbcf2ebfcf12b907e2849c264e",
+      "size_bytes": 2065
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v010_20261014.png",
+      "sha256": "ef09bf9c38629b14ab5209070c5e5f89dac8d4e25cecdf484b7121b4284328e7",
+      "size_bytes": 1402841
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v011_20261014.generation.json",
+      "sha256": "fe922aa92599f111cf0b7baf5ddb7d200d6432289923318f40f5134e7a3f1fc7",
+      "size_bytes": 1948
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v011_20261014.png",
+      "sha256": "895cfe218f804f354a8dbf18846d72883437f57933bdbb52721ec8383d97db2d",
+      "size_bytes": 1385455
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v012_20261014.generation.json",
+      "sha256": "b16aad258bd22d1582c328c9fa2f965cf879cd0edd4b3c4b4b39c2c45362a902",
+      "size_bytes": 2001
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v012_20261014.png",
+      "sha256": "b8b9c7833f84a14f522c42301f0f660f4358a82b721bf96d32698d4b0cba7a78",
+      "size_bytes": 1320627
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v013_20261014.generation.json",
+      "sha256": "39b192b2a5285eb9c6994ec4fb430fc2f79189580d85aa75634f990d43e92cc3",
+      "size_bytes": 2818
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v013_20261014.png",
+      "sha256": "21282b2204ac942123fa53cfcb7590a7b72b35d5d9e75843bb8332e13874ba46",
+      "size_bytes": 2119099
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v014_20261014.generation.json",
+      "sha256": "2fec2f12ea8217411e56b70a072762650b059ee5b11782e20a7ccf9ac8974f73",
+      "size_bytes": 3045
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v014_20261014.png",
+      "sha256": "70cacd65a63e000a4e9d2c2ed13fd3da32fe54ef3e9824095204f2e7bee47e31",
+      "size_bytes": 1972231
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.generation.json",
+      "sha256": "98662a10c0cd3011a725a9749f319c6923f0869a34016caef0eacdfc414f61fe",
+      "size_bytes": 1136
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png",
+      "sha256": "d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8",
+      "size_bytes": 1328749
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_lettering_plate_ai_v002.png",
+      "sha256": "701f28c87caf80171d2328c433a10dc176d27c60cab8011add0935345b2086c3",
+      "size_bytes": 18155
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_lettering_runtime_context_ai_v001_20261014.generation.json",
+      "sha256": "11141be83d0125cb58295becb2f0f2662d1e3667961517f282909e20eba45444",
+      "size_bytes": 1637
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_lettering_runtime_context_ai_v001_20261014.png",
+      "sha256": "20fa2e32a125d829f26bf33287103339699b4e1fb99a55b32e42ce2341fee7d7",
+      "size_bytes": 1850387
+    },
+    {
+      "path": "data/source_art/branding_v3/sources/source_particle_strip_concept_ai_v001.png",
+      "sha256": "f27219421ce39a62979d46e09a3291e61f2234d80f07a0040052de5f2e325f7c",
+      "size_bytes": 200517
+    },
+    {
+      "path": "data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.generation.json",
+      "sha256": "2d9cab472bc5950d05fb32932af91a06f70df38165d35ed4bbaf1170cfc7d519",
+      "size_bytes": 2207
+    },
+    {
+      "path": "data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.png",
+      "sha256": "87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188",
+      "size_bytes": 1991498
+    },
+    {
+      "path": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.generation.json",
+      "sha256": "addbcbbfa3c9fd8863083af3c89a64832c5570681b2ab9dca935130472ee8f2a",
+      "size_bytes": 5991
+    },
+    {
+      "path": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.png",
+      "sha256": "4bb6bc3cf60fff57dc396eafd9d21bdee86b03349800ba6e9c40eec8ebc38033",
+      "size_bytes": 2218348
+    },
+    {
+      "path": "data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.generation.json",
+      "sha256": "7559e4811997cf9aa9f0bccec3a0cdce332aa42215d561f33a309f30bb8774ae",
+      "size_bytes": 2646
+    },
+    {
+      "path": "data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.png",
+      "sha256": "93ddcafa8e4fcff6cf2e28b206f0a262cf7171aa149c25c9d4ce12b2220c52f0",
+      "size_bytes": 1680548
+    },
+    {
+      "path": "data/source_art/branding_v3/v019/source_backdrop_concept_ai_v019_20261015.generation.json",
+      "sha256": "ab748f5ecfd96d780357a59f0d4c03fb7922878aa0c7b95108a1604f0b1abc15",
+      "size_bytes": 2760
+    },
+    {
+      "path": "data/source_art/branding_v3/v019/source_backdrop_concept_ai_v019_20261015.png",
+      "sha256": "9fc213cc726c3a2fbbfff0ff9e9f9e15023e29f74459398c0a5af9802536840e",
+      "size_bytes": 1474603
+    },
+    {
+      "path": "data/source_art/premium_source_manifest.json",
+      "sha256": "cb0cb78f732e34105acea59f5209bb35498830b05775712274e9af4662347c23",
+      "size_bytes": 312
+    },
+    {
+      "path": "data/source_audio/audit_splash_v3_music_loop.py",
+      "sha256": "6b63ef7d6c331f8b205a3a42f61ddc77f10cae92fb17dcd23b731bcc1362028b",
+      "size_bytes": 7303
+    },
+    {
+      "path": "data/source_audio/build_splash_v3_music_vgm.py",
+      "sha256": "b324b6d54b7e269f70b71ae29c18cc2f8d1cffdcb0867f615d7b582ca6b2b404",
+      "size_bytes": 13429
+    },
+    {
+      "path": "data/source_audio/build_splash_v3_pcm_cues.py",
+      "sha256": "9483c15956401d8d26ed4c80e4cddf45effb1967a36eab940c804d0de9294f0a",
+      "size_bytes": 11067
+    },
+    {
+      "path": "data/source_audio/splash_v3_music_score.json",
+      "sha256": "ce4d2e2fdbabe11b98ff7475395829a3fca6f4398f2098538f119d7465f207d3",
+      "size_bytes": 12028
+    },
+    {
+      "path": "data/source_audio/splash_v3_pcm_cues.json",
+      "sha256": "e6a78930ddb0d99a6c2a47f81929e39db85de8998cd17a0d897389ac7daa3b54",
+      "size_bytes": 1860
+    },
+    {
+      "path": "data/source_audio/splash_v3_pcm_cues_v2.json",
+      "sha256": "024e530986ff130fccffbc9e0f2e4c97bc8da9b2f0aed28fd11b261140a90d04",
+      "size_bytes": 2121
+    },
+    {
+      "path": "data/source_audio/splash_v3_pcm_cues_v3.json",
+      "sha256": "8c3f7d609269e69088aad53051c24828ba7941171e03dc24a09aa5d960dc2497",
+      "size_bytes": 2319
+    },
+    {
+      "path": "data/source_audio/splash_v3_psg_sketch.json",
+      "sha256": "5931425709d00e2d141075c359509cd9f2e823488b2d6c01415351fa1dd3c181",
+      "size_bytes": 3763
+    },
+    {
+      "path": "data/source_audio/splash_v3_sonic_logo_score_v2.json",
+      "sha256": "df0e9571d3530710c7bfa46dfef0fdf0640a34744a31678ef5611f7fffaca01c",
+      "size_bytes": 6225
+    },
+    {
+      "path": "data/source_audio/splash_v3_sonic_logo_score_v3.json",
+      "sha256": "040b3a51cea51ddf3b0e9c87c099f9fa809192c3a5d4221b89d0878587f3aeea",
+      "size_bytes": 10368
+    },
+    {
+      "path": "data/source_audio/splash_v3_sonic_logo_score_v4.json",
+      "sha256": "ec6af8706af37e249a648473e1e741622fd33a7d254d9cbd079748d13c57cfcf",
+      "size_bytes": 10829
+    },
+    {
+      "path": "doc/00-diretrizes-agente.md",
+      "sha256": "fbb7e2549eb557c62e6e46e70c3d30f0b18d97bf80c89119eaf03b153aa4038f",
+      "size_bytes": 10263
+    },
+    {
+      "path": "doc/00-governance/20_autonomy_charter.md",
+      "sha256": "b9257161cb456519c8cadc67acfbd850c70b3bc0123dbe7c8a5f99d952fd21c5",
+      "size_bytes": 1318
+    },
+    {
+      "path": "doc/00-governance/21_stop_escalation.md",
+      "sha256": "5095c3a9e08e8a9fa0bb3171900c78881865e329810143c8e88172bc1f05a2ba",
+      "size_bytes": 1252
+    },
+    {
+      "path": "doc/00-governance/22_definition_of_done.md",
+      "sha256": "c68ee8016f3284188f4b60030ae44ba19a64683f3017b0b8f2c0ee5f2fe309bd",
+      "size_bytes": 1339
+    },
+    {
+      "path": "doc/00-project-brief.md",
+      "sha256": "a0858cc2329480ca447d030777164f03e0c0c12011d446cbbb4d05b58fd5b14e",
+      "size_bytes": 1190
+    },
+    {
+      "path": "doc/01-visao-geral.md",
+      "sha256": "5902ffc4ec1daa3c4c30ddf412687c1e383646592e73f5735a2dc31e248acece",
+      "size_bytes": 352
+    },
+    {
+      "path": "doc/02-build-wrapper.md",
+      "sha256": "0f92edcd582cb55e6659818a1fb71f14c620b24754e0464fd03a55f52621f87f",
+      "size_bytes": 661
+    },
+    {
+      "path": "doc/03-arquitetura.md",
+      "sha256": "7e6a8bf7c8d49684f17c938c9c170d04e356d82ca01978f746b66fe3a1d38fb2",
+      "size_bytes": 649
+    },
+    {
+      "path": "doc/04-recursos-e-pipeline.md",
+      "sha256": "3e13e0441bb63f5174ae77113a6156ff6a15fc84609f1138b660714783477d23",
+      "size_bytes": 985
+    },
+    {
+      "path": "doc/05-guia-de-desenvolvimento.md",
+      "sha256": "1af2b3e16a3437c079e5d297598d0765e598e7e0a2af3b29096eea2aa83405a9",
+      "size_bytes": 753
+    },
+    {
+      "path": "doc/05-guia-de-edicao.md",
+      "sha256": "2f7f5caa4aedaeabf5c7b3a473c510bc836ba3d1869b144bb21b816769fac5ed",
+      "size_bytes": 465
+    },
+    {
+      "path": "doc/06-debug-migracao.md",
+      "sha256": "19bcce92b9ca2172a0c4229f818ddf4aed70c7be4ab1132b9e484d5654efafba",
+      "size_bytes": 879
+    },
+    {
+      "path": "doc/07-budget-vram-dma.md",
+      "sha256": "59fdacaebbcdb5f2ab28b0c39bb0c9cd5aa74ac720d63a78938fe1b87726e6c0",
+      "size_bytes": 1889
+    },
+    {
+      "path": "doc/08-bible-artistica.md",
+      "sha256": "f49a4c3b2de89b67b4250779ac22ddfe29979bf30405ec704c8dc36583a9b5c7",
+      "size_bytes": 1750
+    },
+    {
+      "path": "doc/09-checklist-anti-alucinacao.md",
+      "sha256": "14beab55244cc4291f3fcc14e8e3f5bcfe306a0dd0515722dfd25f3422259f37",
+      "size_bytes": 2920
+    },
+    {
+      "path": "doc/10-memory-bank.md",
+      "sha256": "f41d61debe13a188bcf2ee2f181e5441531d2999e690190c6a46dabc79593ff6",
+      "size_bytes": 86527
+    },
+    {
+      "path": "doc/11-gdd.md",
+      "sha256": "bc6256ef11094dbe812c3b772e30d68e33f39e768b92ac777f435b2a6cc002c8",
+      "size_bytes": 9664
+    },
+    {
+      "path": "doc/12-roteiro.md",
+      "sha256": "f55834269ed9f9d6cedaeb9db6862d2594b6a7acac46a2d18e4dad7983faa907",
+      "size_bytes": 1503
+    },
+    {
+      "path": "doc/13-spec-cenas.md",
+      "sha256": "9c052c240d6b742b2659e700644b43cf35fd02f78ada965e838542d348f1d732",
+      "size_bytes": 21918
+    },
+    {
+      "path": "doc/14-plano-de-provas-qa.md",
+      "sha256": "0c8bf7948335c722f6c5da6d9d9bc13aa5f5e4e3692d728805106ebfeaa7ec2c",
+      "size_bytes": 3984
+    },
+    {
+      "path": "doc/15-prompt-telas-assinatura.md",
+      "sha256": "36ad73e7dcabdfff696444c73ba52089b9aa07a74181d572b7132c6383d7baa1",
+      "size_bytes": 12384
+    },
+    {
+      "path": "doc/15-tdd.md",
+      "sha256": "b890c769d8c53fa36551f942108ec1a1c9b9b32a87aec4637e083f327a8fcfe4",
+      "size_bytes": 29163
+    },
+    {
+      "path": "doc/16-ldd.md",
+      "sha256": "fab902fff1c895c749860b12e5b241a8afc861b02342914f196fa29646f3ed6d",
+      "size_bytes": 950
+    },
+    {
+      "path": "doc/17-audio-design.md",
+      "sha256": "fcea959231023ba6d4cd075208b861dd2f3625210ce2e6d61e1cf849478e647e",
+      "size_bytes": 6865
+    },
+    {
+      "path": "doc/18-asset-register.json",
+      "sha256": "a07972bb7c6ab7cbb99eb6e1ea4ce08d57fe8610677e7c4a64674d27e002a136",
+      "size_bytes": 4271
+    },
+    {
+      "path": "doc/19-roadmap-risk-register.md",
+      "sha256": "60b71858e65efc9395b76e7fe12a19b6c938b6705b3bac01309d5120c49ed1fc",
+      "size_bytes": 965
+    },
+    {
+      "path": "doc/20-release-marketing-legal.md",
+      "sha256": "d79bc8669fd261e67bf7e98c112310d7622683e395992d3d57b711948f1ed48a",
+      "size_bytes": 768
+    },
+    {
+      "path": "doc/21-review-consulting-context.md",
+      "sha256": "a2ec179f819f2e74eabddad51bc79ee11df7aee3ad5a6c6e12508c621a0d3601",
+      "size_bytes": 761
+    },
+    {
+      "path": "doc/README.md",
+      "sha256": "f7e540122c97ceb87efb420db186d4f1f372a626cdc541296914499c61c9ac39",
+      "size_bytes": 1771
+    },
+    {
+      "path": "doc/act3_bisect_brief.md",
+      "sha256": "b54607c9c8d481ca9fe8e8768259bb57779036a744abe04b48b31d284c28e802",
+      "size_bytes": 6484
+    },
+    {
+      "path": "doc/act3_storyboard.md",
+      "sha256": "9731a31dc4cd0f18a68907eb06a6a330c499659fe8a359fe04122ccc388258da",
+      "size_bytes": 6324
+    },
+    {
+      "path": "doc/agent_learning/README.md",
+      "sha256": "43eb997607c33a13dac81d36343001e03ce7a0b2ad5b1445a4a6c85353973a57",
+      "size_bytes": 2270
+    },
+    {
+      "path": "doc/agent_learning/canonical_promotion_review.md",
+      "sha256": "78f946940606eca3856bf1c47cdd754a1639f4f5e197edbec9393a8e8b3e29e8",
+      "size_bytes": 835
+    },
+    {
+      "path": "doc/agent_learning/evidence/splash_v3_wind_sweep_20261015/capture.json",
+      "sha256": "ea56c269023be3b6acbf3ee8761e0730d6cb3d5d1f1c3fcd893f552f1071df5a",
+      "size_bytes": 1578
+    },
+    {
+      "path": "doc/agent_learning/failure_patterns.md",
+      "sha256": "57b1f5f2adabfb686acd0232103210c43e29714370d36e78633573fe5a68bd32",
+      "size_bytes": 5218
+    },
+    {
+      "path": "doc/agent_learning/learning_ledger.json",
+      "sha256": "5dfcfa8b44511fb0eecc149a76c4fa1ec70ff435ff254770e17540d0e16149d5",
+      "size_bytes": 22153
+    },
+    {
+      "path": "doc/agent_learning/skill_promotion_candidates.md",
+      "sha256": "b1b4967b3d0d5237c702defa452b74e281098d4d91c182c74487632611f72d6a",
+      "size_bytes": 2576
+    },
+    {
+      "path": "doc/agent_learning/success_patterns.md",
+      "sha256": "e768d8ec413067e52a10bc1c32de9d7a4d5ba0d29079f901442e24532a957fc1",
+      "size_bytes": 3318
+    },
+    {
+      "path": "doc/art/art_diagnostic_report.json",
+      "sha256": "46bd9692593eff61a6a276ff9671223436550bab1af68ab625d9c66175313957",
+      "size_bytes": 175356
+    },
+    {
+      "path": "doc/art/splash_v3_v015_source_semantics_manifest.json",
+      "sha256": "44549aa91940728db5b01194dc794a7129864a7b8d1bc226945f0b45e46d3c22",
+      "size_bytes": 3027
+    },
+    {
+      "path": "doc/art/splash_v3_v018_source_semantics_manifest.json",
+      "sha256": "28f0de9fb52b7d3b4937c6c6de9a2e9cb9ec6b242f17eb615e840fd84a9c5b0b",
+      "size_bytes": 2932
+    },
+    {
+      "path": "doc/art/splash_v3_v019_source_semantics_manifest.json",
+      "sha256": "1ff1ef3ab6168f53f592e031c6986e114b8d3f2a68efbc6f6d80677c31e340d2",
+      "size_bytes": 2926
+    },
+    {
+      "path": "doc/art/visual_workset_manifest.json",
+      "sha256": "299b43aaedfae7b6f933b002008a9d7ad168ae4221a1cb37460c5244ee3934fc",
+      "size_bytes": 6953
+    },
+    {
+      "path": "doc/art_diagnostic_report.json",
+      "sha256": "2ee6511ef84b153d97f91eed1ba76da3559b76eaaeece405d020e491754e5a34",
+      "size_bytes": 146186
+    },
+    {
+      "path": "doc/art_diagnostic_report_20261014.json",
+      "sha256": "be772355bf92e797f26d083cf013706bdf90bb9ba733df791b40f7491507376c",
+      "size_bytes": 174764
+    },
+    {
+      "path": "doc/art_direction_decision_record.json",
+      "sha256": "491c5db803bccc0258df644fb24e607acb4c016afa2f82d192f3cf20e098cddf",
+      "size_bytes": 15492
+    },
+    {
+      "path": "doc/artifact_registry.json",
+      "sha256": "8d5ced59bcf4abd5d51afe5601242ef2f864ca3be4be07e08feb62c9a9b8b4a8",
+      "size_bytes": 4254
+    },
+    {
+      "path": "doc/asset_production_brief_v2.md",
+      "sha256": "b4881c5b69671e6d19d41e4661578a781f49af4ce052e5f04e480ac4d2171f2c",
+      "size_bytes": 9514
+    },
+    {
+      "path": "doc/asset_provenance_manifest.json",
+      "sha256": "6e7733a06a8c1fa2d5108bba6443e04609b2fee054cbd2ca1ddfe41047cd9951",
+      "size_bytes": 19539
+    },
+    {
+      "path": "doc/audio_architecture_card.json",
+      "sha256": "d045a6b425ae89c822af4ea52609c18cbda1b2be2d07297c0bd43d73b3145cb8",
+      "size_bytes": 3109
+    },
+    {
+      "path": "doc/bg_b_reauthoring_brief.md",
+      "sha256": "f3bf8076cbe22eb2d8950ca7e98b0d743fce0962487f852f4dd5351a57c43bf0",
+      "size_bytes": 3757
+    },
+    {
+      "path": "doc/branding_sequence_contract.json",
+      "sha256": "414316a1f1c308839c945697e01bd0e28145ccd2f2ab4bf3ed2a782c7a16f993",
+      "size_bytes": 38222
+    },
+    {
+      "path": "doc/branding_v2_art_direction.md",
+      "sha256": "a40ff2c955a58632624b02ec3217d31e94da6da2fcf25d9693633466daa60cf4",
+      "size_bytes": 14794
+    },
+    {
+      "path": "doc/branding_v2_dma_queue_contract.json",
+      "sha256": "7dd12c5591c3db18eaa0408393c8c3790b35006eba0773b25ad7ceb8cdc2295c",
+      "size_bytes": 4583
+    },
+    {
+      "path": "doc/branding_v2_scene_conception.md",
+      "sha256": "33a10b20340edd74e4833f28568d525004c569727b61734480bf51812205fa59",
+      "size_bytes": 12646
+    },
+    {
+      "path": "doc/branding_v3_audio_architecture_card.json",
+      "sha256": "15fc7793636fa7c919681220f77a4cda1f6a6731fa91519526621db7499cbd96",
+      "size_bytes": 5605
+    },
+    {
+      "path": "doc/branding_v3_audio_curator_brief.md",
+      "sha256": "232599d2fff97efd92d54b5a04aaa6edd550b2900afa23cd244d465e9d4e693c",
+      "size_bytes": 7385
+    },
+    {
+      "path": "doc/branding_v3_audio_event_matrix.json",
+      "sha256": "70ba44749f1d6b86302e96cdd8bc844eb84bfbbf525c2ccf60f87d13f69c2182",
+      "size_bytes": 2790
+    },
+    {
+      "path": "doc/branding_v3_blastem_audio_proof_plan.json",
+      "sha256": "b211a806d5489a9b0180b17f5b5799d3e42cecb75c68bc68bd7abe5bcc57cb64",
+      "size_bytes": 1332
+    },
+    {
+      "path": "doc/branding_v3_cinematic_storyboard.json",
+      "sha256": "b89a03e86e99c07ee77df8850951fc71557cbb2983f92b2dea3d8e4c6f6ab130",
+      "size_bytes": 45140
+    },
+    {
+      "path": "doc/branding_v3_composition_scope_contract.json",
+      "sha256": "d1e5300284faded54ee30112072ce7f1503dd09052caf6edb322c41f9a32fd56",
+      "size_bytes": 2052
+    },
+    {
+      "path": "doc/branding_v3_context_pack_manifest.json",
+      "sha256": "33398fd4e83847673f786ee76a9861641568a528e0f64b64616a9cf66ce18aa6",
+      "size_bytes": 2545
+    },
+    {
+      "path": "doc/branding_v3_cutscene_runtime_contract.json",
+      "sha256": "efeef33e28fd454caec728b0f7e1c4640db8eafe6f515baf237fb89beadb9682",
+      "size_bytes": 1211
+    },
+    {
+      "path": "doc/branding_v3_development_contract.json",
+      "sha256": "63f1c7e174501156415330ee001258c18ef9d4280febb8944ff697da07cb7796",
+      "size_bytes": 64789
+    },
+    {
+      "path": "doc/branding_v3_frequency_masking_plan.json",
+      "sha256": "c1acfa0db468bc8e921a22b8ebea9b19fc981d8ececcf16d736a1f9cdfbed211",
+      "size_bytes": 2274
+    },
+    {
+      "path": "doc/branding_v3_loop_integrity_plan.json",
+      "sha256": "21fef9981af8d705d8bf9641da09c08493d59543f1ecdab2cd344ce730acb8bd",
+      "size_bytes": 1554
+    },
+    {
+      "path": "doc/branding_v3_resource_loading_model.json",
+      "sha256": "9f75af5c0952f34c0293e80506c350e080e49a58c2690a86dce4e90b8e5324c4",
+      "size_bytes": 1158
+    },
+    {
+      "path": "doc/branding_v3_runtime_decision_log.json",
+      "sha256": "1bb47a8e5920afd2fe43533af45bb0e769927ac50cafc8be345afdd37f27c976",
+      "size_bytes": 19760
+    },
+    {
+      "path": "doc/branding_v3_scene_conception.md",
+      "sha256": "8c190570d94b6153294af4371b09e6cc86d36e2441fbaa184e14dbf3fcb7b7c5",
+      "size_bytes": 4503
+    },
+    {
+      "path": "doc/branding_v3_scene_reset_plan.json",
+      "sha256": "156f5bf884b7da7ccdc47eabb3340b306b377444239cb9d8334a96a9c7d0c51a",
+      "size_bytes": 1611
+    },
+    {
+      "path": "doc/branding_v3_transition_contract.json",
+      "sha256": "a93459ead31abdbec266a84166f62c829d1aa62049a050baa24140e5bfa4e896",
+      "size_bytes": 6336
+    },
+    {
+      "path": "doc/changelog/changelog.md",
+      "sha256": "72268e1363124ca0f7aa0c30ca1d08fc02bad60b1cbe3dc6d72244ba561fcfca",
+      "size_bytes": 85583
+    },
+    {
+      "path": "doc/changelog/roms/build_v001/build_meta.json",
+      "sha256": "0738aacaa75b6801b4bc875c9a4ee710401d75b9a2f0921b26e1cd5f09e8d010",
+      "size_bytes": 3698
+    },
+    {
+      "path": "doc/changelog/roms/build_v002/build_meta.json",
+      "sha256": "a2ca20e0d51879583ad36ae4118f793b77ff55eb9914e99b7667f7c9b640151b",
+      "size_bytes": 4516
+    },
+    {
+      "path": "doc/contracts/art_gameplay_direction_gate.json",
+      "sha256": "8c10548ec2a22e5ba561f1da9b3f047a1c242f28d99c4cf26f79160476b54ab9",
+      "size_bytes": 4615
+    },
+    {
+      "path": "doc/contracts/art_gameplay_direction_gate_v015.json",
+      "sha256": "5ea222873443555574dd39bc0baa407b6ac63dcfff1a9c7d0c1c1db54cfb666d",
+      "size_bytes": 4729
+    },
+    {
+      "path": "doc/contracts/cinematic_storyboard_contract.json",
+      "sha256": "12eda201552b020b0eb0935cc81811935587b03fb26fdfe0a576649b25afb587",
+      "size_bytes": 4935
+    },
+    {
+      "path": "doc/contracts/visual_source_of_truth_branding_splash_v3.json",
+      "sha256": "fdbf8d0f88758523ceedab2f9cfc048cd15edd4129bd61e8ce3adf6a1aa512d7",
+      "size_bytes": 3997
+    },
+    {
+      "path": "doc/curation/layout_recovery_20261014.json",
+      "sha256": "1d05de1c9622cef9f9deccc4bad4163b0dc4bc7a0224f3ca308297fc630cf725",
+      "size_bytes": 1395
+    },
+    {
+      "path": "doc/curation/splash_v3_art_direction_decision_record_20261012.json",
+      "sha256": "7901b3374fe8cf87e298baee8e6dfbfb62a54b7a632e1b6795aefae3e8d2f336",
+      "size_bytes": 1793
+    },
+    {
+      "path": "doc/curation/splash_v3_curator_record_20261012.md",
+      "sha256": "58b5ca93ee37e48ff44ae35264006fc1a6aaafe615a2a95bf387b907bd302d3c",
+      "size_bytes": 4201
+    },
+    {
+      "path": "doc/curation/splash_v3_deadline_experiment_plan_20261016.json",
+      "sha256": "49168dfe096648d9d7cef81d4bb67aaf3fcf8486b54acd7b491c62dde3e0509c",
+      "size_bytes": 3259
+    },
+    {
+      "path": "doc/curation/splash_v3_layer_plan_20261012.json",
+      "sha256": "84a96fd9a4fc473e884c5741dac830a08d1809c97ef4d57071da1fb88dc062a0",
+      "size_bytes": 5155
+    },
+    {
+      "path": "doc/curation/splash_v3_lettering_direction_board_20261014.json",
+      "sha256": "c8118fbfe092ab60744309827318f952519a0e4bb04ae00229144c812ff41ff2",
+      "size_bytes": 7884
+    },
+    {
+      "path": "doc/curation/splash_v3_lettering_route_decision_20261014.json",
+      "sha256": "d6c8dbcbc6838353c5c1ca9cf08d43dc2df86b3074c31847116e3335dd9d9fe7",
+      "size_bytes": 4524
+    },
+    {
+      "path": "doc/curation/splash_v3_master_style_manifest_draft_20261012.json",
+      "sha256": "eaf4d877ef3977abe3cc0891064a453d1dadd617349e3f4ce6e339deb50b323e",
+      "size_bytes": 2017
+    },
+    {
+      "path": "doc/curation/splash_v3_scene_direction_feedback_20261015.md",
+      "sha256": "1f8c7222e489724be31d0cd1ee43519831c9f8154a3a7c244ece2fe78ee14e41",
+      "size_bytes": 6108
+    },
+    {
+      "path": "doc/curation/splash_v3_style_candidate_matrix_20261012.json",
+      "sha256": "22f433b5ae41279cd3def21feee6b111a450b1739a3cd5fb5f01e257281d308f",
+      "size_bytes": 1400
+    },
+    {
+      "path": "doc/curation/splash_v3_user_development_decision_20261013.md",
+      "sha256": "2f19ecc0d596dcf0a838f638deb043767101df1251b38b550883f5528b04edde",
+      "size_bytes": 4095
+    },
+    {
+      "path": "doc/curation/splash_v3_user_development_decision_20261014.md",
+      "sha256": "9e2cd637e3e6a5bbe49555974035b201d19c3511587145c50181435ab8d197de",
+      "size_bytes": 4391
+    },
+    {
+      "path": "doc/curation/splash_v3_v019_art_direction_candidate_20261015.json",
+      "sha256": "34e50853b148c44b7b84094130d89d6ea67fd34b5fbd9cbd3bc86e7d72fa0f6a",
+      "size_bytes": 1727
+    },
+    {
+      "path": "doc/curation/splash_v3_visual_concept_record_20261012.md",
+      "sha256": "cca524d1b47e509f0d43143fca8d7f25c58982386988c2af73565c5e690d2d37",
+      "size_bytes": 2296
+    },
+    {
+      "path": "doc/curation/splash_v3_visual_curation_record_20261013.md",
+      "sha256": "065a5e66b4dfce0d01c17428baa8f81ed9b4d85a076322cbf00223f12a91600c",
+      "size_bytes": 9999
+    },
+    {
+      "path": "doc/curation/splash_v3_visual_curation_record_20261014.md",
+      "sha256": "6940bb83c00d2e84f25f1c9da38f2a801e6e3317e1c214f4ce63c1bb14406f14",
+      "size_bytes": 82967
+    },
+    {
+      "path": "doc/curation/splash_v3_visual_gap_record_20261012.md",
+      "sha256": "a7e4040ec65fcb913e566ba2900702a8ca99fea908f5b940d8ad7699329ee120",
+      "size_bytes": 3983
+    },
+    {
+      "path": "doc/curation/splash_v3_visual_model_sheet_proposal_20261013.json",
+      "sha256": "57248370756ead020e0ecb9d063561d334b77617164b15e1cfdd7a9053cad99b",
+      "size_bytes": 9830
+    },
+    {
+      "path": "doc/curation/splash_v3_wind_dispersal_contract_v004_20261015.json",
+      "sha256": "96a8ea3140fbe9f018eea986dd5b70b1e772f19f896c54db9fac5aa2ae650fca",
+      "size_bytes": 15521
+    },
+    {
+      "path": "doc/curation/splash_v3_wind_dispersal_contract_v005_20261016.json",
+      "sha256": "72c32acc74638b554c443babead4157641bc8f312b61e2d61ffacad74ac00a6b",
+      "size_bytes": 17447
+    },
+    {
+      "path": "doc/curation/splash_v3_wind_lifecycle_motion_contract_v002_20261015.json",
+      "sha256": "6e802a2a4972cf00da354c38d88f37ce894bd7d0f1e49e81ea56869fa242ebc6",
+      "size_bytes": 11181
+    },
+    {
+      "path": "doc/curation/splash_v3_wind_sweep_motion_contract_20261015.json",
+      "sha256": "312c082b4dc386321b00c8fbdfe3d9276ee7a870253d351cb2aba44301064954",
+      "size_bytes": 5389
+    },
+    {
+      "path": "doc/forge_art_pass_brief.md",
+      "sha256": "e5a223102809bf34a8ea420f472dde203f8d4d2eb55e2c193b10cbd359c7a908",
+      "size_bytes": 5108
+    },
+    {
+      "path": "doc/generation_channel_decision.json",
+      "sha256": "0b541dcc565a251edcfe4c40a6ad8a1d03166177665b78ce53cb58893683d6d0",
+      "size_bytes": 722
+    },
+    {
+      "path": "doc/human_approval_record.md",
+      "sha256": "d5985ca5842796bf73220f2cb8c774d81d0583b373c8350d9b6fb1538bbdd11b",
+      "size_bytes": 392
+    },
+    {
+      "path": "doc/integration_ledger.json",
+      "sha256": "73876663b0318b293a49c62fad14207f6a23e997f9f06a17a20406c77df5b890",
+      "size_bytes": 262
+    },
+    {
+      "path": "doc/model_sheet_review_v01.md",
+      "sha256": "5f2f8e8f0828deaca815887c3004f64038f852d6a3bb8652c30994357f1abe87",
+      "size_bytes": 6060
+    },
+    {
+      "path": "doc/model_sheet_review_v02.md",
+      "sha256": "957ba74580ecc3dad44c0b8af7a69892307a86a4b3a3ce1bf8143a5004c89f21",
+      "size_bytes": 5308
+    },
+    {
+      "path": "doc/model_sheet_rework_v02_brief.md",
+      "sha256": "bbf7cf818e0c29a122354e2e9ac381825d3cdde2036a07ed86a79dd558cccad2",
+      "size_bytes": 5415
+    },
+    {
+      "path": "doc/pending/branding_v3_resume_20261024.md",
+      "sha256": "9db507dd8c44c91577fd361ce1ceaf2fe9145e3f2be31a1a9ab59616a02c4ba9",
+      "size_bytes": 7835
+    },
+    {
+      "path": "doc/prd_index.json",
+      "sha256": "b9286b6c280392f33ee1eafdfdc4dfa5f0ce039e1c2fbde413731700ad489a8c",
+      "size_bytes": 865
+    },
+    {
+      "path": "doc/presents_art_pass_brief.md",
+      "sha256": "e16074409230bb9dd613c1bc9149d50538b1c4590d702e5f2f47c986f57cba23",
+      "size_bytes": 3625
+    },
+    {
+      "path": "doc/project_context_manifest.json",
+      "sha256": "088b6e7a196fc504c1727703b5d34a63ceb353d4159aa308f03cd9ded401b31f",
+      "size_bytes": 5194
+    },
+    {
+      "path": "doc/project_hygiene_manifest.json",
+      "sha256": "cf4ff68b86919198e60d9483d14350b465f5e208683b5ea7553998d9c552c178",
+      "size_bytes": 8459
+    },
+    {
+      "path": "doc/project_methodology_manifest.json",
+      "sha256": "1e0264c4f79efe8dff97fb0fe070c6eb6e4450f50b22a9df62d5124fcf24eb65",
+      "size_bytes": 1556
+    },
+    {
+      "path": "doc/runtime_decision_log.json",
+      "sha256": "9ca0c38df722fdc98230e3e80a2b978484b6af04a6ca9c8efea41b92e371a19b",
+      "size_bytes": 9595
+    },
+    {
+      "path": "doc/scene-contracts.json",
+      "sha256": "92b4f8ca235c6cd83e1b8c45fe022b8d4003d1dc4190e9834968755d358201e6",
+      "size_bytes": 392
+    },
+    {
+      "path": "doc/scene-regression.json",
+      "sha256": "7b96a22eaaefdad86c27ae51cb715ad0beb62ed95f0ff44c9621ff3b3f933dd1",
+      "size_bytes": 1234
+    },
+    {
+      "path": "doc/sessions/README.md",
+      "sha256": "745ee9176f5f38896ed0e6b13e11077f3c9603c7829c92132bd87bc86fdb37d0",
+      "size_bytes": 511
+    },
+    {
+      "path": "doc/sfx_bank_manifest.json",
+      "sha256": "7b17a86a50348e9984eab9fa1a2080a4d677d7000a5c7abb4863d878626ba9b5",
+      "size_bytes": 6886
+    },
+    {
+      "path": "doc/splash_v3_visual_measurement_tools_report_20261012.json",
+      "sha256": "6ebbe2c8aa3b7dafeae0e1fd3dad485a5c4f5e3d845094637fcf04a19939175e",
+      "size_bytes": 34077
+    },
+    {
+      "path": "doc/splash_v3_visual_measurement_tools_report_20261013.json",
+      "sha256": "9847b7faa0f651519251b9e2823677c285e1eb66504fb9b43ab1f6bdda266346",
+      "size_bytes": 34799
+    },
+    {
+      "path": "doc/tdd_contract.json",
+      "sha256": "43480d4cfd8a075107df5e1a9a39ce9938d67108a5c3e83900197f0ebd70dd2a",
+      "size_bytes": 16179
+    },
+    {
+      "path": "doc/technique_usage_manifest.json",
+      "sha256": "4e44c7e50db85359dbd12fec11e3d0e02f6053b6d0ed845541bc85e1db045e56",
+      "size_bytes": 11096
+    },
+    {
+      "path": "doc/the_forge_direction.md",
+      "sha256": "e5c5bc8710ae0ff058e1fff9a77734c58377800e1465fe9ccf68d8debaffa4c2",
+      "size_bytes": 1045
+    },
+    {
+      "path": "inc/core/app.h",
+      "sha256": "6e87998900d70d4a940de58c42dcb872327ec8408aae7585125984fce720d2bf",
+      "size_bytes": 1374
+    },
+    {
+      "path": "inc/game_vars.h",
+      "sha256": "aa3942155d667a94617c40faf7a3745d9ad0481f200312afe079b37161ff9288",
+      "size_bytes": 789
+    },
+    {
+      "path": "inc/generated/splash_v3_motion_lut.h",
+      "sha256": "fce3b2d78cca125812573ebe10c24657aa1adfe7bd456d26f35acc30a6b09523",
+      "size_bytes": 61854
+    },
+    {
+      "path": "inc/scenes/branding_v2.h",
+      "sha256": "8b7eeb9190f5f45996c3f975ec14c30a91f29f8397272fef346d0b6b13a3f185",
+      "size_bytes": 4546
+    },
+    {
+      "path": "inc/scenes/branding_v3.h",
+      "sha256": "328989debb57afa16d9f49a851d71b93af9207b40aceedc18d9fc123c88b86d1",
+      "size_bytes": 155
+    },
+    {
+      "path": "inc/scenes/scene_boot.h",
+      "sha256": "b19260cc718025a7d224d0920ba143ca191dc36126f5f0934c5aa7a5a893afb5",
+      "size_bytes": 108
+    },
+    {
+      "path": "inc/scenes/scene_branding.h",
+      "sha256": "c477fa6070168947486306a36a5909d3a20dd920708e0bb98b715dbd83adead8",
+      "size_bytes": 138
+    },
+    {
+      "path": "inc/scenes/scene_branding_v3_audio_preview.h",
+      "sha256": "09559a535461af8ffa2cbd2f6a6c582670e87a142f92a18dd4d65d21fba6387d",
+      "size_bytes": 186
+    },
+    {
+      "path": "inc/scenes/scene_demo.h",
+      "sha256": "6a14cb71262f5762536f69dd4042b2d208d0dc67065a3108c54cb55d1fc3f590",
+      "size_bytes": 108
+    },
+    {
+      "path": "inc/scenes/scene_menu.h",
+      "sha256": "836e8126bb91d012225a7d36cae133155b6f51798db0f799572230606bd81e16",
+      "size_bytes": 108
+    },
+    {
+      "path": "inc/system/audio.h",
+      "sha256": "7173edc7599b67b8875a5a7c0ec2f0dd9ccedd7c402fd6b2081e28d2df45382c",
+      "size_bytes": 814
+    },
+    {
+      "path": "inc/system/input.h",
+      "sha256": "d7cd0ecbbe4f48b6c8d8236c3b94bf40cb4547d91a90925bc38e643e7cba4f5d",
+      "size_bytes": 265
+    },
+    {
+      "path": "inc/system/overlay.h",
+      "sha256": "97978cc3495f143168c6a9ef4aeae0dde96a0abc4a6b58c6c70ece2511a07ad1",
+      "size_bytes": 540
+    },
+    {
+      "path": "inc/system/runtime_probe.h",
+      "sha256": "d5e103f419c21e21eac771787f0a5769ac5249b2d53853e8b652bf5afd899a34",
+      "size_bytes": 2232
+    },
+    {
+      "path": "rascunho/README.md",
+      "sha256": "9caa522490df072a8bdd001af85bc74aeca1c35860354edda59f48ed28027f1a",
+      "size_bytes": 658
+    },
+    {
+      "path": "rascunho/act3_bisect_log.md",
+      "sha256": "36e8b7050652fd03090a7496b080529ce9afdd41f8d2965ebf753d89b1be1f03",
+      "size_bytes": 3544
+    },
+    {
+      "path": "rascunho/baseline_branding_v2/baseline_snapshot_manifest.json",
+      "sha256": "d762cb8bd3ebfac3bc87458111195fc3fa5d500466c21611e89cdb0dcfc12f11",
+      "size_bytes": 736
+    },
+    {
+      "path": "rascunho/baseline_branding_v2/branding_v2_cinematic_storyboard.json",
+      "sha256": "7f3374b8f2810c0ed10d0ac5720af899f7a767ce194226c5b525573cb2f7385f",
+      "size_bytes": 20873
+    },
+    {
+      "path": "rascunho/blastem_v1_0_debug_reference/debug.c",
+      "sha256": "dfc74249bae0ebd1c5dea87adc52d3b33e2470a52b3898fdaf916f34c4a092f8",
+      "size_bytes": 173629
+    },
+    {
+      "path": "rascunho/blastem_v1_0_debug_reference/debug.h",
+      "sha256": "1def451a8abefbfa730f636bb14fe98355837b360c9d69f9bb0d78fa13c10d37",
+      "size_bytes": 5016
+    },
+    {
+      "path": "rascunho/blastem_v1_0_debug_reference/genesis.c",
+      "sha256": "142e8271076752ae602aa7ad70bdc5c91cfc8c0d32777c50cb523416dc148403",
+      "size_bytes": 122179
+    },
+    {
+      "path": "rascunho/blastem_v1_0_debug_reference/source_manifest.json",
+      "sha256": "7136e04e1bd33b3c15ed7fe9cb4f02c78866372f752141715b1ee27a9e16f95c",
+      "size_bytes": 1130
+    },
+    {
+      "path": "rascunho/blastem_v1_0_debug_reference/vdp.c",
+      "sha256": "4c30c5b36a2c82eb056adff31a122196845ffe892a14ea1bc058e8e1e9576144",
+      "size_bytes": 216349
+    },
+    {
+      "path": "rascunho/bounded_sat_sweep_20261016/runtime_probe_reference_g.c",
+      "sha256": "dcfd1bfbe2ffc47d406f38040060c73fa1198e9121f5c53ee60e37f45a98e48f",
+      "size_bytes": 25614
+    },
+    {
+      "path": "rascunho/bounded_sat_sweep_20261016/sat_pressure_self_check.c",
+      "sha256": "9fc40e5bce5375f67eedb675d1362512334aee7193392d889b984a67b950b3b1",
+      "size_bytes": 11531
+    },
+    {
+      "path": "rascunho/bounded_sat_sweep_20261016/scene_branding_v3_reference_g.c",
+      "sha256": "005e99b25dfbaf1239f15b2b3e77cc94e0480b533370a5e2c057342e6042f210",
+      "size_bytes": 29339
+    },
+    {
+      "path": "rascunho/entrada_visual/splash_v3_backdrop_concept_ai_v013_20261014.png",
+      "sha256": "21282b2204ac942123fa53cfcb7590a7b72b35d5d9e75843bb8332e13874ba46",
+      "size_bytes": 2119099
+    },
+    {
+      "path": "rascunho/entrada_visual/splash_v3_backdrop_concept_ai_v014_20261014.png",
+      "sha256": "70cacd65a63e000a4e9d2c2ed13fd3da32fe54ef3e9824095204f2e7bee47e31",
+      "size_bytes": 1972231
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_generation_input_v015_20261015.png",
+      "sha256": "8f74eaaa903e365c3621963d556800bf43d1e350777d2a57b8cba55fc9e2e60d",
+      "size_bytes": 2177990
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_generation_input_v017_20261015.png",
+      "sha256": "4bb6bc3cf60fff57dc396eafd9d21bdee86b03349800ba6e9c40eec8ebc38033",
+      "size_bytes": 2218348
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_generation_input_v017_intermediate_20261015.png",
+      "sha256": "28dc2e4d5faa579a46c77eac94d5edb434f1db1c8e17ee850369dc8239ce2e0c",
+      "size_bytes": 2305388
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_generation_input_v018_20261015.png",
+      "sha256": "93ddcafa8e4fcff6cf2e28b206f0a262cf7171aa149c25c9d4ce12b2220c52f0",
+      "size_bytes": 1680548
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_generation_input_v019_20261015.png",
+      "sha256": "9fc213cc726c3a2fbbfff0ff9e9f9e15023e29f74459398c0a5af9802536840e",
+      "size_bytes": 1474603
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_source_inventory_v013_20261014.json",
+      "sha256": "73ecd8a2c13d70acfdf4307796ff8c257e0eb7f8ea5744146f78f5a5bd1df64e",
+      "size_bytes": 636
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_source_inventory_v014_20261014.json",
+      "sha256": "792e398f8305089ea548b5a14eed8e3848a3a65d256e6a1b80b8fba935887204",
+      "size_bytes": 833
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_source_inventory_v015_20261015.json",
+      "sha256": "d1923f5e59a6c9cb601a75dd2dd1bd72941e37523f4a4c0c4f863919ea2792fe",
+      "size_bytes": 628
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_source_inventory_v017_20261015.json",
+      "sha256": "46369fa55d5650aa238d05d790e86543fff3f8c9ed81995c9b5dfe28d1cecdbb",
+      "size_bytes": 1053
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_source_inventory_v018_20261015.json",
+      "sha256": "9f8c005d1605c60618e85a3fe02571b2687110cf2153ce56a29e09f18e8d7b5f",
+      "size_bytes": 617
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_source_inventory_v019_20261015.json",
+      "sha256": "9b7c5f5f70396a79f6ad23c3ccd56386a16e83e0593e37d07fe263f815f7cc52",
+      "size_bytes": 617
+    },
+    {
+      "path": "rascunho/manual_position_path_20261016/position_differential.c",
+      "sha256": "c54c99e5b3db6c0778bbc6708c85b37accb4b9d9d7aa4a342ec8be88e17a88ef",
+      "size_bytes": 2507
+    },
+    {
+      "path": "rascunho/manual_tile_path_20261016/manual_tile_differential.c",
+      "sha256": "22615da92fe7d5883df7f9075893e2a8cedd168f9322a3f0c790a5ac06f79c57",
+      "size_bytes": 6128
+    },
+    {
+      "path": "rascunho/manual_tile_path_20261016/scene_branding_v3_rejected_r1.c",
+      "sha256": "cf6be1ecd39b382a19df8977c1f692154cd0e94d415f48a9d496860ff1099523",
+      "size_bytes": 30097
+    },
+    {
+      "path": "rascunho/manual_tile_path_20261016/scene_branding_v3_rejected_r2.c",
+      "sha256": "c438ad80e91a7b9ab1051a3e4f2a66ff6fb7a4cd2c2ccbdc904dc1dcdd7c19e6",
+      "size_bytes": 30389
+    },
+    {
+      "path": "rascunho/menu_blackout_20261016/menu_palette_target.c",
+      "sha256": "4e03d21d94964a6d51cb9178d02d5fab392fda61ba116b056492e4699a897f0b",
+      "size_bytes": 1805
+    },
+    {
+      "path": "rascunho/menu_blackout_20261016/scene_menu_reference_q.c",
+      "sha256": "6ffb8358c9327c6894dcddad7ba4235d0b7ce7a3bcbecdc9c5e8e7a6dda0864e",
+      "size_bytes": 3777
+    },
+    {
+      "path": "rascunho/motion_lut_reference/eade116573a7b434/reference.c",
+      "sha256": "b9a5e5b0f9ec7f12f77844a3454b1bb1a7e843c98a76d66dc19fc3a189d7f8d8",
+      "size_bytes": 6620
+    },
+    {
+      "path": "rascunho/motion_lut_reference/eade116573a7b434/reference_positions.txt",
+      "sha256": "f065e8e15f7bbee91151b0944d44640ae4b76878e8f7810a7b53b2995678c8af",
+      "size_bytes": 48157
+    },
+    {
+      "path": "rascunho/prepared_logo_map_20261016/logo_map_differential.c",
+      "sha256": "ac16c24b2d0f6085205dd602f9aef0288dfa5274de40511327f25a61d8aa2872",
+      "size_bytes": 2550
+    },
+    {
+      "path": "rascunho/queued_plane_clear_20261016/plane_clear_lifetime.c",
+      "sha256": "57aa080f27901f185b9e129945f5c9889e1c4a9a154c96970a66a19243d4a2d0",
+      "size_bytes": 3613
+    },
+    {
+      "path": "rascunho/queued_plane_clear_20261016/scene_branding_v3_reference_o.c",
+      "sha256": "d830ac879744b4c376007568ba3af1c462deb90efabf6805fb4ca75f4e565d9c",
+      "size_bytes": 36628
+    },
+    {
+      "path": "rascunho/quiet_beat_export_20261016/export_schedule.c",
+      "sha256": "2aaabdc5fcf5efa3f8250c5e6f2375744b04b17b115f044f6fe4b23f74743c5c",
+      "size_bytes": 2277
+    },
+    {
+      "path": "rascunho/readme_template_inherited_20261024.md",
+      "sha256": "430d8337fc1704143685c3d8dffdf41231fd231e1a79d5c94fd47b642200d274",
+      "size_bytes": 4983
+    },
+    {
+      "path": "rascunho/sat_pressure_probe_20261016/runtime_probe_reference.c",
+      "sha256": "21b2548660f840afc0b216f7b8467cd66c36d41707b676dfbdaf64e2c54815a0",
+      "size_bytes": 23043
+    },
+    {
+      "path": "rascunho/sat_pressure_probe_20261016/sat_pressure_self_check.c",
+      "sha256": "169a1ef19091523e673763d8b92d292ada41ce496eb9e988dc5460169699f618",
+      "size_bytes": 11028
+    },
+    {
+      "path": "rascunho/scanline_probe_linear_20261016/runtime_probe_before.c",
+      "sha256": "21b2548660f840afc0b216f7b8467cd66c36d41707b676dfbdaf64e2c54815a0",
+      "size_bytes": 23043
+    },
+    {
+      "path": "rascunho/scanline_probe_linear_20261016/scanline_differential.c",
+      "sha256": "1a56c3449d67cd972f4aef659895fe879ee39c1966ef7249a3840af48af063e9",
+      "size_bytes": 7108
+    },
+    {
+      "path": "rascunho/visible_deadline_20261016/scene_branding_v3_reference_n.c",
+      "sha256": "bddb607af9addfb8d0676b9e8b2a07239c53cd768589dd6a48b635e52d5d25d0",
+      "size_bytes": 33692
+    },
+    {
+      "path": "rascunho/visible_deadline_20261016/scene_branding_v3_rejected_p.c",
+      "sha256": "daba82f56df984530083ba1d9a8be587fd42ebfa7f2960a4b32bcf3833ef6a33",
+      "size_bytes": 36978
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_backdrop_concept_20261012.png",
+      "sha256": "d1e719488a7e21f0122c9a8a0680995988b887155a8c64c9992089a21ea94063",
+      "size_bytes": 1660475
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_backdrop_concept_320x224_preview.png",
+      "sha256": "ff7bce2608e4d37bdaf7e7685b70e73d5d672fe27c377e7b9825e4c034e00946",
+      "size_bytes": 114633
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_backdrop_concept_ai_v002_20261013.png",
+      "sha256": "c06fdcbc9a4ae481bb1652c6fa3260132eaff66c982eb9d19c71d7a827cf9f48",
+      "size_bytes": 1473191
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_backdrop_concept_ai_v003_20261014.png",
+      "sha256": "562daf793ff038595ab4cec8965ca9cefa8f12ce85160b3f9861945f0fd75721",
+      "size_bytes": 1767249
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_backdrop_lettering_composite_preview_20261012.png",
+      "sha256": "d560047b688758b2d4d75686bf0749b4e5c957d370842e9230b10e6164e18220",
+      "size_bytes": 117509
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_composition_concept_ai_v003_20261013.png",
+      "sha256": "bbae39df46cc432043f1c9853fa2bb691ad0c8f8fab1fd5cb78bb220df4ba90a",
+      "size_bytes": 1505794
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_lettering_plate_preview_ai_v001.png",
+      "sha256": "1621b672ae36d07a7dfd560eb6e007e68adf8905f81e3787b48c7b95faa39e5f",
+      "size_bytes": 19058
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_lettering_plate_preview_ai_v002.png",
+      "sha256": "701f28c87caf80171d2328c433a10dc176d27c60cab8011add0935345b2086c3",
+      "size_bytes": 18155
+    },
+    {
+      "path": "rascunho/visual_lab/branding_v3_particle_strip_concept_20261013.png",
+      "sha256": "f27219421ce39a62979d46e09a3291e61f2234d80f07a0040052de5f2e325f7c",
+      "size_bytes": 200517
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v005_20261014.png",
+      "sha256": "bb32cf3c7e954b99d71fe71ed0197ba10685f1742847ccd1f75e91313016daea",
+      "size_bytes": 1590474
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v007_20261014.png",
+      "sha256": "3888fb24313aa17a8f246fd769db07e22cfe93ecae6e62ac28b8a323992f04ac",
+      "size_bytes": 2147101
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v008_20261014.png",
+      "sha256": "feb571791d496fc9085d49bcb20ebbfe5caea5b60ef30d18bd1dc3f06ecc19af",
+      "size_bytes": 1313589
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v009_20261014.png",
+      "sha256": "730df0013734861a5b07d32e1eba1bb41df4a4e9d77e5c5d4d4bf7f841b8a947",
+      "size_bytes": 1375269
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v010_20261014.generation.json",
+      "sha256": "34322dd13a175e43da2744e0b3bb0c394da546dbcf2ebfcf12b907e2849c264e",
+      "size_bytes": 2065
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v010_20261014.png",
+      "sha256": "ef09bf9c38629b14ab5209070c5e5f89dac8d4e25cecdf484b7121b4284328e7",
+      "size_bytes": 1402841
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v011_20261014.generation.json",
+      "sha256": "fe922aa92599f111cf0b7baf5ddb7d200d6432289923318f40f5134e7a3f1fc7",
+      "size_bytes": 1948
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v011_20261014.png",
+      "sha256": "895cfe218f804f354a8dbf18846d72883437f57933bdbb52721ec8383d97db2d",
+      "size_bytes": 1385455
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v012_20261014.generation.json",
+      "sha256": "b16aad258bd22d1582c328c9fa2f965cf879cd0edd4b3c4b4b39c2c45362a902",
+      "size_bytes": 2001
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_concept_ai_v012_20261014.png",
+      "sha256": "b8b9c7833f84a14f522c42301f0f660f4358a82b721bf96d32698d4b0cba7a78",
+      "size_bytes": 1320627
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_tilemap_wip_v001_20261014.json",
+      "sha256": "a5417043e28288de27e0f547b0b4176539245dfaa0a7f81e747af150b3d205e2",
+      "size_bytes": 20212
+    },
+    {
+      "path": "rascunho/visual_lab/source_backdrop_tilemap_wip_v002_20261014.json",
+      "sha256": "e2ab117b24e08f06b6522a68466e84e1ebdfb8dcc1a509aa88a877f0ea2497fb",
+      "size_bytes": 49831
+    },
+    {
+      "path": "rascunho/visual_lab/source_lettering_model_sheet_ai_v003_20261014.png",
+      "sha256": "d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8",
+      "size_bytes": 1328749
+    },
+    {
+      "path": "rascunho/visual_lab/source_lettering_runtime_context_ai_v001_20261014.png",
+      "sha256": "20fa2e32a125d829f26bf33287103339699b4e1fb99a55b32e42ce2341fee7d7",
+      "size_bytes": 1850387
+    },
+    {
+      "path": "rascunho/visual_lab/splash_backdrop_v3_40tile_control_20261013.png",
+      "sha256": "d8cbbdbf7d8ea1e946a341d203fed57b0fbb69fe017810acbea88f4f61dd270b",
+      "size_bytes": 7283
+    },
+    {
+      "path": "rascunho/visual_lab/splash_backdrop_v3_40tile_control_20261014.png",
+      "sha256": "d8cbbdbf7d8ea1e946a341d203fed57b0fbb69fe017810acbea88f4f61dd270b",
+      "size_bytes": 7283
+    },
+    {
+      "path": "rascunho/visual_lab/splash_backdrop_v3_40tile_control_20261014_101605.png",
+      "sha256": "20cf20b57225e6be9828ab728a9a6ec106a57524b0e08766f9c8170b8e3adfe9",
+      "size_bytes": 11122
+    },
+    {
+      "path": "rascunho/visual_lab/splash_backdrop_v3_40tile_control_20261014_103731.png",
+      "sha256": "20cf20b57225e6be9828ab728a9a6ec106a57524b0e08766f9c8170b8e3adfe9",
+      "size_bytes": 11122
+    },
+    {
+      "path": "rascunho/visual_lab/splash_backdrop_v3_40tile_control_20261014_103917.png",
+      "sha256": "20cf20b57225e6be9828ab728a9a6ec106a57524b0e08766f9c8170b8e3adfe9",
+      "size_bytes": 11122
+    },
+    {
+      "path": "rascunho/visual_lab/splash_backdrop_v3_40tile_control_20261014_104426.png",
+      "sha256": "20cf20b57225e6be9828ab728a9a6ec106a57524b0e08766f9c8170b8e3adfe9",
+      "size_bytes": 11122
+    },
+    {
+      "path": "rascunho/visual_lab/splash_backdrop_v3_40tile_control_20261014_105454.png",
+      "sha256": "6377558f0e0c2058219556a7b6879a221db67aac45660e232455bfcadb612e59",
+      "size_bytes": 8635
+    },
+    {
+      "path": "rascunho/visual_lab/splash_backdrop_v3_v006_320x224.png",
+      "sha256": "bd50ab81a7900806dc9f1e1fcdd0ccba76dad7fcebf8996162f3af46825c069b",
+      "size_bytes": 8770
+    },
+    {
+      "path": "rascunho/visual_lab/splash_forge_wordmark_v3_baseline_pre_b_20261014_192x32.png",
+      "sha256": "77b38bcbb7e50ff902565e87c1df3273dda88ce7dd0e07722b8ea8bab21ac178",
+      "size_bytes": 990
+    },
+    {
+      "path": "rascunho/visual_lab/splash_sgdk_wordmark_v3_baseline_pre_b_20261014_224x48.png",
+      "sha256": "9f54b33d35178804321243029c0ab65eeea9a24e7f29ef63a447d36ef68b2c85",
+      "size_bytes": 1386
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v005_vs_v006_320x224.png",
+      "sha256": "709a9113ed13770416da570e24f8fc24f151e04e615bc0acf0e519f06e638750",
+      "size_bytes": 130792
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v007_basic_320x224.png",
+      "sha256": "8b32aeee1e05dfe0ec6b450ad789083443f50429965305a2d5e26b4df6a233ed",
+      "size_bytes": 11044
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v007_comparison_wip_20261014.png",
+      "sha256": "2eccfeaa5161e66dbb56b01af1a3e920fedcd01c64f72d0593339dd4e1789f66",
+      "size_bytes": 172791
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v007_comparison_wip_v002_20261014.png",
+      "sha256": "8fc377d91ea22ddb759f5acc02fb56814c461217e0dff0c33a49014272194c8c",
+      "size_bytes": 192112
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v007_elite_320x224.png",
+      "sha256": "9130d52b8a556be6a99d7cb0b328f59d018c9a2275706ba53bbb48ee4b53be0a",
+      "size_bytes": 14926
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v008_basic_320x224.png",
+      "sha256": "da00b3cadba9e5277d8a9dbd44ca487df30f4f173d2e001b7ede78f0f2c4a154",
+      "size_bytes": 4734
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v008_comparison_wip_v002_20261014.png",
+      "sha256": "504600757dc9e6067bd3d238c9f179d1e5ff3f6a72955de7648565fb96059564",
+      "size_bytes": 118893
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v008_elite_320x224.png",
+      "sha256": "425e08519042e98b297c4485eecb9b9e1df30d68eb6714d9cbec5411e3c3deeb",
+      "size_bytes": 5784
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v009_basic_320x224.png",
+      "sha256": "521a78c7738d8966f5a9ba5a40f3d298677a63fb28c66547193052797e543ad0",
+      "size_bytes": 5263
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v009_comparison_wip_v002_20261014.png",
+      "sha256": "0bf30b8ed6e70efb46d0679e6a1f1ca062e6d47cd54d46c2bdfca36f5d45e647",
+      "size_bytes": 118799
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v009_elite_320x224.png",
+      "sha256": "8f98b3cef4b04a1fb7c67c4ca64033f6d2d455609a19930071dc3d305b77f2e7",
+      "size_bytes": 6352
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v010_basic_320x224.png",
+      "sha256": "804f91e60bb6e79edc2492f57640dea67ee1bd9625f41f4dee1a10bbf4e8a67b",
+      "size_bytes": 5409
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v010_comparison_wip_v002_20261014.png",
+      "sha256": "44758599e1b1a193c6f49c23b9b025a3b0431277f3da60d9273ea3f7109e520c",
+      "size_bytes": 129677
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v010_elite_320x224.png",
+      "sha256": "86346d1d48c12893678c6d23209a4e5950ae940924a14bf558567bf08498dc29",
+      "size_bytes": 7242
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v011_basic_320x224.png",
+      "sha256": "b9a14cf7156d2157b9a742b1db28c3c475b1e60838fec6e2fa37a635e81208e9",
+      "size_bytes": 5529
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v011_comparison_wip_v002_20261014.png",
+      "sha256": "e2afcc9828a1c50bb513a8ac9ef16a7d39b734bdcb0d3d75f9c57c424700cbd6",
+      "size_bytes": 128699
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v011_elite_320x224.png",
+      "sha256": "e790eaed07a8d460b9b59af733062abb5679516fb948b60031f10728cd0bb0cb",
+      "size_bytes": 6880
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v012_basic_320x224.png",
+      "sha256": "ac5cc294820fbc619dd70ca72f6992bdc3fd075e4b6745893457916ca5825410",
+      "size_bytes": 3701
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v012_comparison_wip_v002_20261014.png",
+      "sha256": "d20c07a7d463876acbe42ecd8a39704c30678d0f982693084f933939b34a47a2",
+      "size_bytes": 116608
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v012_elite_320x224.png",
+      "sha256": "af1380658408ebfa0a03fc7d37d36cb4c5fe6169088843ec31963ffa32e9622d",
+      "size_bytes": 5103
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v013_basic_320x224.png",
+      "sha256": "bed29f9767458698f958cee6fc8e2b573c19a740637212f546e292ef2aaee0d2",
+      "size_bytes": 13142
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v013_comparison_wip_v002_20261014.png",
+      "sha256": "02370acf16f6f3235e19d8144fe61ab315225e56cd72ea9a3c6b1aaa7d230bbc",
+      "size_bytes": 218180
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v013_elite_320x224.png",
+      "sha256": "ba34cd9abab55e57b9a73e73f4b4d4f7c04448225042f11be1bb292268db4a36",
+      "size_bytes": 16516
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v014_basic_320x224.png",
+      "sha256": "ec72d4d7ab27c68a46e980ac7f493ceddf169ebbe5fdea24852b3657042b9c68",
+      "size_bytes": 12789
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v014_comparison_wip_v002_20261014.png",
+      "sha256": "350308f6a9792fae969623808ed3bf8dfd81441ddf2ee5ea35524afbd04e6384",
+      "size_bytes": 243267
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v014_elite_320x224.png",
+      "sha256": "65e9b38aa59a5c8318827bcd1398d5d8bae4b037d0d652dccd8175aee6ef06db",
+      "size_bytes": 16613
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v015_basic_320x224.png",
+      "sha256": "6bf5489148532d25e2c97fe8978c3fdf58059bc5da87e392220c5b6dabdf906f",
+      "size_bytes": 9807
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v015_comparison_wip_v001_20261015.png",
+      "sha256": "4fb87f88086e3b4dcda1e48d3309ad2b5ff557a2fcd14706a3318af47f7135d4",
+      "size_bytes": 217628
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v015_curated_320x224.png",
+      "sha256": "e1f73e699f7a2d4c0f3e6cacb9959e350a613b8aca58da7205d87bfa7793880d",
+      "size_bytes": 13845
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v016_curated_320x224.png",
+      "sha256": "3b90384ce5fc9ad4e7f8515281371eff423abb7106a2aab66196fc97f4294f4e",
+      "size_bytes": 13177
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v017_curated_320x224.png",
+      "sha256": "1dd7b6b6189d63322af1a6b39494935da5260c1e84f8956607d3f20cceacea2b",
+      "size_bytes": 20150
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v018_curated_320x224.png",
+      "sha256": "e1eabc9dee606add3ebacad4b05bdb69686eba749d5720a71cc7c4bb2b1509d2",
+      "size_bytes": 12028
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v019_curated_320x224.png",
+      "sha256": "b8b403f30c170554df647ac1b6b2a54fc83b3e3c76a695765ec4ac0ec313e819",
+      "size_bytes": 7334
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v019_curated_v002_320x224.png",
+      "sha256": "d7d2fd2e593b6e8f0851c899e43669b8c5fef085a63573c56a81199d953ceb91",
+      "size_bytes": 8873
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_backdrop_v019_curated_v003_320x224.png",
+      "sha256": "a1fa60ec2a55fc36088ded4e183bc6f898e554181f1972f2cb0c310208910f85",
+      "size_bytes": 7273
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_lettering_current_runtime_baseline_320x224.png",
+      "sha256": "01730317d09a27b71b6645f09b37e81dc24c3041421cb5575934e35cc6e7bff5",
+      "size_bytes": 21632
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_lettering_current_vs_variants_native_v001_1280x224.png",
+      "sha256": "596df8462b6d90be5a54f788a673c2e70f60415aa35d75d923352cf9d4e117d5",
+      "size_bytes": 40933
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_lettering_probe_a_v001_320x224.png",
+      "sha256": "3745240bce1c7bfbcb91158abfb99a5e307a629e681e32525adffd1d55bcf618",
+      "size_bytes": 22451
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_lettering_probe_b_v001_320x224.png",
+      "sha256": "15e97ea38a63f48b45d7a97a35ad7cb47d85b3161ed967e452243cc4964d1745",
+      "size_bytes": 22995
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_lettering_probe_c_v001_320x224.png",
+      "sha256": "8fd089a9f3ce9811731337fa493c03fcd8203a2e12af26d75e1c9c09df1fc282",
+      "size_bytes": 22845
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_lettering_variants_native_v001_960x224.png",
+      "sha256": "bee7c1c00bdafa665b635b7501a4e98cd3e6726cc6ef2d39766fce6038a66ad3",
+      "size_bytes": 35986
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_pixel_candidate_wip_20261013.png",
+      "sha256": "e6ef6f9ba2e3c4fca8bb7fd73ab1653ce0614d3793187f8352a226da0a840834",
+      "size_bytes": 143030
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_pixel_candidate_wip_20261014.png",
+      "sha256": "e6ef6f9ba2e3c4fca8bb7fd73ab1653ce0614d3793187f8352a226da0a840834",
+      "size_bytes": 143030
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_pixel_candidate_wip_20261014_101605.png",
+      "sha256": "9edda073b1b155398bbacf4bccfcbdd13070a8eaf5a2e50de067f54f77b68952",
+      "size_bytes": 182065
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_pixel_candidate_wip_20261014_103731.png",
+      "sha256": "9edda073b1b155398bbacf4bccfcbdd13070a8eaf5a2e50de067f54f77b68952",
+      "size_bytes": 182065
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_pixel_candidate_wip_20261014_103917.png",
+      "sha256": "9edda073b1b155398bbacf4bccfcbdd13070a8eaf5a2e50de067f54f77b68952",
+      "size_bytes": 182065
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_pixel_candidate_wip_20261014_104426.png",
+      "sha256": "9edda073b1b155398bbacf4bccfcbdd13070a8eaf5a2e50de067f54f77b68952",
+      "size_bytes": 182065
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_pixel_candidate_wip_20261014_105454.png",
+      "sha256": "4c95ae2d0237786fadce43c6cd5db5eae854b873e135eb625ce7b366e01ec478",
+      "size_bytes": 179257
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_tilemap_candidate_wip_20261014.png",
+      "sha256": "bc07e7085e5eb22cd119cfd73146ace6b52d26b104953ec7dbd705c7fc8e09ac",
+      "size_bytes": 3491
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_tilemap_candidate_wip_v002_20261014.png",
+      "sha256": "1cc1d3f575d3b9939f7b1fb7be30cc272bd63a9bc6a4763c6fc59aa8ebe17aef",
+      "size_bytes": 3944
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_tilemap_lockup_contact_wip_20261014.png",
+      "sha256": "87970d0bfdc3df13ac6028de0908563a7ad434a02a3c06d6cacf2f5f618aeb2b",
+      "size_bytes": 7957
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_native_tilemap_lockup_contact_wip_v002_20261014.png",
+      "sha256": "334ef1961b8cd3f2348d0ccedecd574434e89dbf896ab64217c59f80db064250",
+      "size_bytes": 10279
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_palette_outline_mockup_20261014.png",
+      "sha256": "69e698e7d313551d85170cbfa0f1bc2ba0b8ee27390efab66392638307528780",
+      "size_bytes": 34486
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_tile_audit_v014_input_wip_20261014/candidate_identity.json",
+      "sha256": "4b1ae6ddc247064e636460e2ba51633d59d0e36abb01b16382367725f7bd4f99",
+      "size_bytes": 1257
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_tile_audit_v014_input_wip_20261014/doc/branding_v3_cinematic_storyboard.json",
+      "sha256": "c893c5cf152aba732854eca7a58a81b85bcb3fbbaa7b47ca85296498974a1b0c",
+      "size_bytes": 44030
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_tile_audit_v014_input_wip_20261014/res/branding_v3/splash_backdrop_v3_v014_320x224.png",
+      "sha256": "65e9b38aa59a5c8318827bcd1398d5d8bae4b037d0d652dccd8175aee6ef06db",
+      "size_bytes": 16613
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_tile_audit_v014_input_wip_20261014/res/branding_v3/splash_forge_wordmark_v3_192x32.png",
+      "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+      "size_bytes": 1320
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_tile_audit_v014_input_wip_20261014/res/branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+      "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+      "size_bytes": 1794
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_tile_audit_v014_input_wip_20261014/res/resources.res",
+      "sha256": "63cf82aadf2de7b263d6603d813de99447471bf63e04f0f98e417a665721a23d",
+      "size_bytes": 333
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_tile_audit_v014_input_wip_20261014/res/sprites/splash_particle_v3_8x8_strip.png",
+      "sha256": "4baa794092464967dff4f1dd1c1cc169ae0bbd6693215099aef5cbf7aebe2780",
+      "size_bytes": 264
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_v005/40_tile_control/splash_backdrop_v3_320x224.png",
+      "sha256": "57b472c1489a723c3ebfeaa25ee4add5ea295db12da6a4ac66c2c3c77ab80312",
+      "size_bytes": 7737
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_v005/full_detail/splash_backdrop_v3_320x224.png",
+      "sha256": "ef75c6ec1c429e16ad3fa3aae55acf846631d4ff0d5f2a0f3c8b02fe47c39ab0",
+      "size_bytes": 11371
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_forge_probe_a_v001_192x32.png",
+      "sha256": "a4ac16f05437d808bccf0afd4753c4f1df5be357ff61f2585ef515d96a379799",
+      "size_bytes": 1209
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_forge_probe_a_v001_192x32.png.normalizebak",
+      "sha256": "e19017fd75dee279def10cb1395ee1667aee3ca01317cdc76bdfbc0067833b41",
+      "size_bytes": 1792
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_forge_probe_b_v001_192x32.png",
+      "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+      "size_bytes": 1320
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_forge_probe_b_v001_192x32.png.normalizebak",
+      "sha256": "633f82f997e8369b1f7f1895d3b2caafa38c89c6698f0ed4dc48fcf4a51ae395",
+      "size_bytes": 1939
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_forge_probe_c_v001_192x32.png",
+      "sha256": "7a43fab1c4bfc8b088aa9ab013a931ffa4c5c858a014947cbea132d1c30f34d7",
+      "size_bytes": 1198
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_forge_probe_c_v001_192x32.png.normalizebak",
+      "sha256": "69358c526319b431488680b327d5d8bb58e203087202e8ba77fd89c0fd0ea921",
+      "size_bytes": 1746
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_sgdk_probe_a_v001_224x48.png",
+      "sha256": "d9e7d6d059db34ebf03e8787e8f4ba75399eb1c7a5642da16dbb0a9dc962ab6c",
+      "size_bytes": 1610
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_sgdk_probe_a_v001_224x48.png.normalizebak",
+      "sha256": "19e1408fe963fae1a565aaa0732625b110361031bf947e3231a3cc0126e66c1a",
+      "size_bytes": 2094
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_sgdk_probe_b_v001_224x48.png",
+      "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+      "size_bytes": 1794
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_sgdk_probe_b_v001_224x48.png.normalizebak",
+      "sha256": "1a4e3a1a360ef97d560f4032e62c408754b554bda4e6607c781c742cfe45f616",
+      "size_bytes": 2269
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_sgdk_probe_c_v001_224x48.png",
+      "sha256": "409a981ff9a7f2a564bb01e10b4f071b26c9837330d3bd5005540ba243ef63e3",
+      "size_bytes": 1577
+    },
+    {
+      "path": "rascunho/visual_lab/splash_v3_wordmark_sgdk_probe_c_v001_224x48.png.normalizebak",
+      "sha256": "2eabea3ea65d7f924c5fccc49d75dc1135268fbbeba8907798461e3149286e6a",
+      "size_bytes": 1988
+    },
+    {
+      "path": "rebuild.bat",
+      "sha256": "ce5d09fd56baa3e96f3c6b9da3b78676db589c0de6ad6fc1618b0b705dc4974b",
+      "size_bytes": 938
+    },
+    {
+      "path": "res/README.md",
+      "sha256": "a09ce1e9e2cbb01312884bc7471185a2423a5bbc7fac77fee67bffe7d3b7d023",
+      "size_bytes": 320
+    },
+    {
+      "path": "res/audio/branding/bell_forge.wav",
+      "sha256": "57476e9a49af4d0ad70c7eacd89d8f2f9bec45eef13cece54acc67b91b6b396d",
+      "size_bytes": 7360
+    },
+    {
+      "path": "res/audio/branding/bell_terminal.wav",
+      "sha256": "bb65229169c1aeb8a8e0a0a507d3fda0e6552f76c7872b45f03fedf3f8cbda61",
+      "size_bytes": 6694
+    },
+    {
+      "path": "res/audio/branding/hammer_slam.wav",
+      "sha256": "e6d0700547ada8da00c2ca6ccb7eadb7ea05f8ac1c09284580e3bbf24955f5fc",
+      "size_bytes": 5630
+    },
+    {
+      "path": "res/audio/branding/reverb_tail.wav",
+      "sha256": "f5076a46f312fd82da64fd8d1843f0667b35f38995d3995fada9e619d1e0cd75",
+      "size_bytes": 10019
+    },
+    {
+      "path": "res/audio/branding/stamp_whoosh.wav",
+      "sha256": "b808db020ebc5a369d14f858e2ebeb473d5be5c3b05fbf3bf381d342ea759309",
+      "size_bytes": 6428
+    },
+    {
+      "path": "res/audio/branding/typewriter_click.wav",
+      "sha256": "887a40719ffe130fc59150785968ddec671eea3077e1488465ca62b1399ad112",
+      "size_bytes": 410
+    },
+    {
+      "path": "res/audio/branding_splash_v3/splash_energy_rise_v3.provenance.json",
+      "sha256": "d5fd83c5a1b244380994c579ff744ee6f9bc8a22e59a2e81826371eed3c8ec17",
+      "size_bytes": 898
+    },
+    {
+      "path": "res/audio/branding_splash_v3/splash_energy_rise_v3.wav",
+      "sha256": "24df43a3701d718a1d8fb1f73d61031f4ec809f03c198aa33ad1e99879d75aba",
+      "size_bytes": 52964
+    },
+    {
+      "path": "res/audio/branding_splash_v3/splash_mark_lock_v3.provenance.json",
+      "sha256": "ac3e9266d78b3323b75de138c044b2b184933c3bdba610e8e4495b595154b2d6",
+      "size_bytes": 893
+    },
+    {
+      "path": "res/audio/branding_splash_v3/splash_mark_lock_v3.wav",
+      "sha256": "1bf18040fa9034a93b9ede0bd65a5d29774283aadc7d0f0fdd8f0683bfe096db",
+      "size_bytes": 17684
+    },
+    {
+      "path": "res/audio/branding_splash_v3/splash_sweep_pass_v3.provenance.json",
+      "sha256": "b5f7dc54b04b66c74aed2b32adf0d9804ff267ba2ece844230de2c1a456355a1",
+      "size_bytes": 901
+    },
+    {
+      "path": "res/audio/branding_splash_v3/splash_sweep_pass_v3.wav",
+      "sha256": "3050ce16e5775f63e79b82a20b0e6eedb858bb361eeb519eef31d1cbe716fa24",
+      "size_bytes": 38264
+    },
+    {
+      "path": "res/audio/branding_splash_v3/splash_tail_v3.provenance.json",
+      "sha256": "428fcdefe3a38ecabeb8708d1cc6b880e109e205086b3d4db049f8583d7a6b63",
+      "size_bytes": 884
+    },
+    {
+      "path": "res/audio/branding_splash_v3/splash_tail_v3.wav",
+      "sha256": "b6806c8fe7befaf5cdb9be16bbb81bd569bddefc50f85b8600750aa74023666d",
+      "size_bytes": 35324
+    },
+    {
+      "path": "res/audio/branding_v3/splash_energy_rise.wav",
+      "sha256": "f596ad4f1dbfca0564676409a4d781a91a4c9184b25aed2bc48a3a2233908fff",
+      "size_bytes": 67664
+    },
+    {
+      "path": "res/audio/branding_v3/splash_mark_lock.wav",
+      "sha256": "4ccac96b02a6c8939af9b850408cde583dd5815f6e08e2116e94927222c1e622",
+      "size_bytes": 17684
+    },
+    {
+      "path": "res/audio/branding_v3/splash_sweep_pass.wav",
+      "sha256": "2ffe0f4639f4444d3ae7cef5a1938b2fb22064aaea4a0d7f99463fed93b2a621",
+      "size_bytes": 38264
+    },
+    {
+      "path": "res/audio/branding_v3/splash_tail.wav",
+      "sha256": "43715d751348a0e6725a1ca4f2773a1d767c4b02edac0737b59a4b788d630af8",
+      "size_bytes": 35324
+    },
+    {
+      "path": "res/audio/branding_v3_v2/splash_energy_rise_v2.wav",
+      "sha256": "dbd98d2bf0ac62f5fc1c4d53983351b80c66093933ad249f83912297baa56764",
+      "size_bytes": 52964
+    },
+    {
+      "path": "res/audio/branding_v3_v2/splash_mark_lock_v2.wav",
+      "sha256": "91786d6f7829bf705f52c001f085b2f814a447f22174836f0fb7d05c90878e77",
+      "size_bytes": 17684
+    },
+    {
+      "path": "res/audio/branding_v3_v2/splash_sweep_pass_v2.wav",
+      "sha256": "253a5ae669b60a96009ea3b139c9234ffb5063fb9018b7c94b85afe9d06bbdee",
+      "size_bytes": 38264
+    },
+    {
+      "path": "res/audio/branding_v3_v2/splash_tail_v2.wav",
+      "sha256": "717bd0a61b2158c146dd975e1c920b438720cd155bfd0e257ae4bbe9327561de",
+      "size_bytes": 35324
+    },
+    {
+      "path": "res/bgs/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/branding/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/branding/brand_author_logo.png",
+      "sha256": "b3831cb5ee92541baaf77610681cb8a63d8c2890229a2d23141821e754397443",
+      "size_bytes": 578
+    },
+    {
+      "path": "res/branding/brand_engine_logo.png",
+      "sha256": "958782dcfdf2cd892102b2436aabe5b5886b2cf75ef152ecfe424d11737d279f",
+      "size_bytes": 1166
+    },
+    {
+      "path": "res/branding/brand_fx_tiles.png",
+      "sha256": "60a67c72e517275f7aab298976944d3539e20d955d2821bcdd30710a71f8c9a9",
+      "size_bytes": 530
+    },
+    {
+      "path": "res/branding/brand_presents_text.png",
+      "sha256": "bce36b6c56e8ef89993b7936d352b4829c3b433ecdc5a9dc2bff02633af907b5",
+      "size_bytes": 375
+    },
+    {
+      "path": "res/branding/brand_project_logo.png",
+      "sha256": "2bf6726bc8f0bb649a3c505a6f26eba9af15cd36bbfc52c6ecc0f67193328955",
+      "size_bytes": 772
+    },
+    {
+      "path": "res/branding/forge_bg_a_props_320x224.png",
+      "sha256": "b20fd153c4f0c4d34f8817470e656b834c56e1a577ebf6738643d03e8b76f20a",
+      "size_bytes": 5165
+    },
+    {
+      "path": "res/branding/forge_bg_b_320x224.png",
+      "sha256": "03a9cd073b6a0be5aefd98b979590b323d60be4efee1776db444ed15766a1f1a",
+      "size_bytes": 9896
+    },
+    {
+      "path": "res/branding/logo_author_192x32.png",
+      "sha256": "07055a970a2b8753e74daf89f056095420530693e28830163e6fa8c45632e2b9",
+      "size_bytes": 1606
+    },
+    {
+      "path": "res/branding/logo_engine_224x64.png",
+      "sha256": "7a5e900ab31ad50cf6aa352a4cb4f41764036aecec7a068ca29d07f7335f844c",
+      "size_bytes": 2756
+    },
+    {
+      "path": "res/branding/logo_project_224x48.png",
+      "sha256": "63e4efbbccf025a81f808f898de4d3aa49f405125282de29398a08b8387a3d49",
+      "size_bytes": 2716
+    },
+    {
+      "path": "res/branding/presents_bar_8x8.png",
+      "sha256": "c8ff01b3e712e85699359659762132013c953edd12688b9d60a924f0a52ff4fc",
+      "size_bytes": 147
+    },
+    {
+      "path": "res/branding/presents_text_96x16.png",
+      "sha256": "9e7ac21a94347e38bbcc50575caf060167c23b4c3b45a0af6f8912a4e4d1bab3",
+      "size_bytes": 505
+    },
+    {
+      "path": "res/branding/spr_forge_ember_16x16_strip.png",
+      "sha256": "1d1f972c7a7378a24609d0fab42ff1271831f0c003c41324f22fa0cde8f16b9d",
+      "size_bytes": 1335
+    },
+    {
+      "path": "res/branding/spr_forge_hammer_48x48_strip.png",
+      "sha256": "72d0f0e1730b13f35aaae3947159ea066453ba73af3c704d527590aebd95b83f",
+      "size_bytes": 3450
+    },
+    {
+      "path": "res/branding/spr_forge_shard_16x16_strip.png",
+      "sha256": "bce54295e1baab74d9a1612f97bd5c94fb39452baac16f39e48bc211492c5c81",
+      "size_bytes": 1079
+    },
+    {
+      "path": "res/branding/starfield_320x224.png",
+      "sha256": "5b174555cb12c369af6b9f5d73f1f2cb1303771c5c7667dd53a8ef65dde8ab70",
+      "size_bytes": 949
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_320x224.png",
+      "sha256": "877cca9e391fce35c5886a9bf1b59ddb4bb26b8a72b2fea4a897797a2f5570c7",
+      "size_bytes": 16436
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_v005_320x224.png",
+      "sha256": "ef75c6ec1c429e16ad3fa3aae55acf846631d4ff0d5f2a0f3c8b02fe47c39ab0",
+      "size_bytes": 11371
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_v006_320x224.png",
+      "sha256": "bd50ab81a7900806dc9f1e1fcdd0ccba76dad7fcebf8996162f3af46825c069b",
+      "size_bytes": 8770
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_v012_320x224.png",
+      "sha256": "af1380658408ebfa0a03fc7d37d36cb4c5fe6169088843ec31963ffa32e9622d",
+      "size_bytes": 5103
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_v014_320x224.png",
+      "sha256": "65e9b38aa59a5c8318827bcd1398d5d8bae4b037d0d652dccd8175aee6ef06db",
+      "size_bytes": 16613
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_v015_320x224.png",
+      "sha256": "e1f73e699f7a2d4c0f3e6cacb9959e350a613b8aca58da7205d87bfa7793880d",
+      "size_bytes": 13845
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_v016_320x224.png",
+      "sha256": "3b90384ce5fc9ad4e7f8515281371eff423abb7106a2aab66196fc97f4294f4e",
+      "size_bytes": 13177
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_v018_320x224.png",
+      "sha256": "e1eabc9dee606add3ebacad4b05bdb69686eba749d5720a71cc7c4bb2b1509d2",
+      "size_bytes": 12028
+    },
+    {
+      "path": "res/branding_v3/splash_backdrop_v3_v019_320x224.png",
+      "sha256": "b8b403f30c170554df647ac1b6b2a54fc83b3e3c76a695765ec4ac0ec313e819",
+      "size_bytes": 7334
+    },
+    {
+      "path": "res/branding_v3/splash_forge_wordmark_v3_192x32.png",
+      "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+      "size_bytes": 1320
+    },
+    {
+      "path": "res/branding_v3/splash_forge_wordmark_v3_192x32.png.normalizebak",
+      "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c",
+      "size_bytes": 1320
+    },
+    {
+      "path": "res/branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+      "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+      "size_bytes": 1794
+    },
+    {
+      "path": "res/branding_v3/splash_sgdk_wordmark_v3_224x48.png.normalizebak",
+      "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9",
+      "size_bytes": 1794
+    },
+    {
+      "path": "res/data/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/data/README.md",
+      "sha256": "0647ef3ddcd31c6525ef0c5a42de1a4f33df18949c501460dba62382d1cfe6bd",
+      "size_bytes": 399
+    },
+    {
+      "path": "res/data/backup/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/data/branding/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/gfx/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/music/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/music/forge_brand_loop.vgm",
+      "sha256": "692c15dab6300f2cc26561c3704f1368facb517a9420f734ba5e246af4fb9570",
+      "size_bytes": 1465
+    },
+    {
+      "path": "res/music/forge_brand_loop.xgc",
+      "sha256": "d86d054f1c531b1674e72c05a1de8e0e1b4505ebd98f67f5144a3761d6655199",
+      "size_bytes": 768
+    },
+    {
+      "path": "res/music/splash_v3_music.vgm",
+      "sha256": "82744b6f00e6d067cca3eafa3ab17a5387fdc31e375063a8855e3d28dac4e5df",
+      "size_bytes": 2530
+    },
+    {
+      "path": "res/music/splash_v3_sonic_logo_v2.vgm",
+      "sha256": "cd8a6d323b314ff1bc2989071006e4f4d189ce295d5fe1f41a975a627b0adb74",
+      "size_bytes": 1052
+    },
+    {
+      "path": "res/music/splash_v3_sonic_logo_v3.provenance.json",
+      "sha256": "9c77fc3d91c27f5577a80fea93d73e440c02171e2c2e6470255569f115d209ba",
+      "size_bytes": 980
+    },
+    {
+      "path": "res/music/splash_v3_sonic_logo_v3.vgm",
+      "sha256": "86a29044d2a280ec1cd4d8d612763202e435ed2856c3ac92932210b17662e739",
+      "size_bytes": 1060
+    },
+    {
+      "path": "res/music/splash_v3_sonic_logo_v4.provenance.json",
+      "sha256": "f5d1fda0198fdbfc573195ce16e18fc29aee9f28d8b4409bbfcd009c6735cd5e",
+      "size_bytes": 1585
+    },
+    {
+      "path": "res/music/splash_v3_sonic_logo_v4.vgm",
+      "sha256": "fc9bacd1888d50634077c655c45068fbf07ee2e279a4a4bdcf85fda6f77af7d3",
+      "size_bytes": 1060
+    },
+    {
+      "path": "res/resources.h",
+      "sha256": "779c68a0250d0c2695f024a72ff972e331632945db0a82d21ba354ef8982f9ee",
+      "size_bytes": 1840
+    },
+    {
+      "path": "res/resources.res",
+      "sha256": "33107328c2641ef03a83e8202b780c2a1fde298eb577671b07e4a55c6a0cde3f",
+      "size_bytes": 5454
+    },
+    {
+      "path": "res/resources.res.example",
+      "sha256": "e12824c2318f724242e8a7efb4e2d67a70ef1ccf4a2be2e0694dcf7611c1ae32",
+      "size_bytes": 519
+    },
+    {
+      "path": "res/sfx/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/sprites/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "res/sprites/splash_particle_v3_8x8_strip.png",
+      "sha256": "4baa794092464967dff4f1dd1c1cc169ae0bbd6693215099aef5cbf7aebe2780",
+      "size_bytes": 264
+    },
+    {
+      "path": "res/ui/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "resolve_wrapper.bat",
+      "sha256": "b9db978beeb84fd382b21c82c8b5741d5341781c747245e26e1e56f2a7bd0ec7",
+      "size_bytes": 287
+    },
+    {
+      "path": "run.bat",
+      "sha256": "7b99dcafaa7781f2995cf99da5a069ab2356647d7844ea893492ae6df10f1ee9",
+      "size_bytes": 906
+    },
+    {
+      "path": "sgdk_wrapper_env.bat",
+      "sha256": "4bb5a10759f83a3b6f1e721c071c26ba3f3a716f5ee3551e020db42cc988339a",
+      "size_bytes": 71
+    },
+    {
+      "path": "src/boot/rom_head.c",
+      "sha256": "3bfe3b255df08c0289ec628c37a2690f1b9d84a469d023052baa0ed2e369c196",
+      "size_bytes": 998
+    },
+    {
+      "path": "src/boot/sega.s",
+      "sha256": "0fe266a2c75877ea5589d62ae908ca0eb0de153b16cae409e698f43baa58a419",
+      "size_bytes": 10465
+    },
+    {
+      "path": "src/core/app.c",
+      "sha256": "73954d1926fc077a029effdd8c034a8a80e94a17649372ac93da253ccaaf627c",
+      "size_bytes": 7027
+    },
+    {
+      "path": "src/entities/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "src/game_vars.c",
+      "sha256": "a4b414d2a024b3c16784f39a8a2673c47b4f987afc0900aced36eb064dbc0cfe",
+      "size_bytes": 264
+    },
+    {
+      "path": "src/main.c",
+      "sha256": "6fa20095b9ef101fd33c4ce6a6491ff7cb2fba9886d01bf5d9b702c497518d19",
+      "size_bytes": 431
+    },
+    {
+      "path": "src/modulos/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "src/rooms/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_bytes": 1
+    },
+    {
+      "path": "src/scenes/scene_boot.c",
+      "sha256": "cbbcad552c835788a988d96bf246a891107f190ae77e479c978e2b953d148349",
+      "size_bytes": 722
+    },
+    {
+      "path": "src/scenes/scene_branding.c",
+      "sha256": "96c778528b8f1778b1b3d708129a781d78bb757e93c7ed2eeb8158dec2616f32",
+      "size_bytes": 7886
+    },
+    {
+      "path": "src/scenes/scene_branding_v2.c",
+      "sha256": "3a60c9d35929660a3d32a40e1f2ed52ac3a0b09154753b56620ad6e09b311b2c",
+      "size_bytes": 42225
+    },
+    {
+      "path": "src/scenes/scene_branding_v3.c",
+      "sha256": "e9fa8d41e266a5b1d7b6de4a3aebfd5f777af131585e0319f324d541163d3dd6",
+      "size_bytes": 37977
+    },
+    {
+      "path": "src/scenes/scene_branding_v3_audio_preview.c",
+      "sha256": "a4cbb083768ef5e81e91011b929c1a01c44b122caaec2a7ac8cf03441cf1300b",
+      "size_bytes": 3933
+    },
+    {
+      "path": "src/scenes/scene_demo.c",
+      "sha256": "f626ccd33475e84a5f8c117b6227a9a9663b8808a00b82e885942548bd626979",
+      "size_bytes": 5825
+    },
+    {
+      "path": "src/scenes/scene_menu.c",
+      "sha256": "cc4f805260ed0305fb00b7a19dca78f02e593ad3f76aa78c1336a659bcf0631b",
+      "size_bytes": 4627
+    },
+    {
+      "path": "src/system/audio.c",
+      "sha256": "4152960a03c793286581a6ff738de124cb8d6a62bb0f71795a0af92cc34d8d91",
+      "size_bytes": 6835
+    },
+    {
+      "path": "src/system/input.c",
+      "sha256": "5e8cca4fd8c530928741e2ba4a8c99f60a849ffe456057a4bb62cb6c559e56a6",
+      "size_bytes": 866
+    },
+    {
+      "path": "src/system/overlay.c",
+      "sha256": "cf2d6d19bcb2bd0a31e1a4ff2ac7f5092e182a6b61d81f8bdaebcc960c50759b",
+      "size_bytes": 405
+    },
+    {
+      "path": "src/system/runtime_probe.c",
+      "sha256": "7794643799e907c2f471548a19aeccc2f0f9bd3a4b180b473fdaec586aef7233",
+      "size_bytes": 27285
+    },
+    {
+      "path": "tools/build_splash_v3_motion_lut.py",
+      "sha256": "b8ad5ca23470746ee0403bb4da7cb6cfb848369686228e12f26a5cdedc1b6755",
+      "size_bytes": 5188
+    },
+    {
+      "path": "tools/capture_splash_v3_cadence.py",
+      "sha256": "a37f70f1a7583f71aee1c3e6f307f368c939cb75397a662020d10cfaeb4170a9",
+      "size_bytes": 5588
+    },
+    {
+      "path": "tools/capture_splash_v3_cpu_profile.py",
+      "sha256": "7828a01955c8c655f1a56ee4557f2bf7af0e520dcd4a8fb668865f1e3f8e92e1",
+      "size_bytes": 9938
+    },
+    {
+      "path": "tools/capture_splash_v3_handoff.py",
+      "sha256": "42e4c95ae049e0267b8d8646b3ea5385d75be245ba2116c188cd756f7f7fcda0",
+      "size_bytes": 9385
+    },
+    {
+      "path": "tools/capture_splash_v3_handoff_av.py",
+      "sha256": "a0c92f7e7606e16d4576c9179d0c4ce1fb190007875731aae1d45bd0647f51ab",
+      "size_bytes": 4907
+    },
+    {
+      "path": "tools/capture_splash_v3_menu_blackout.py",
+      "sha256": "555b3a7b4781ecc8a349b88dd43118ff5f79ba9b17fe3c982a54b4c4a4bb9a1d",
+      "size_bytes": 5885
+    },
+    {
+      "path": "tools/capture_splash_v3_replay_clear.py",
+      "sha256": "1395817ad1beaf1cde3a130bb8bfdb612a1b690ec5e9125214c0d2b71cb59608",
+      "size_bytes": 6417
+    },
+    {
+      "path": "tools/capture_splash_v3_sat_samples.py",
+      "sha256": "ec110fbe44973e39b955f29c09bdb6bd247ac3c11abc7cf5c548271297b6e674",
+      "size_bytes": 11702
+    },
+    {
+      "path": "tools/measure_splash_v3_wind_sweep.py",
+      "sha256": "cdbd51e913a5e9ba215b99a1308c60b75d9ab4dcea7dae0261050394f3355543",
+      "size_bytes": 12414
+    },
+    {
+      "path": "tools/validate_splash_v3_export_schedule.py",
+      "sha256": "26c7d26d85b82afc7101fb59431ce3a34a8ed6ca7b4a98ed0e328bc06eed5424",
+      "size_bytes": 3266
+    },
+    {
+      "path": "tools/validate_splash_v3_logo_map.py",
+      "sha256": "7f1bbc71a9537f02fe11e5634b8cef8cbfe2b3d93052f9035db025e838d6608d",
+      "size_bytes": 3179
+    },
+    {
+      "path": "tools/validate_splash_v3_manual_tile_path.py",
+      "sha256": "1beb0ece89a5edd10ff6727a3a43b8d528fe065051b3e6a3de12cca74cd44e78",
+      "size_bytes": 5131
+    },
+    {
+      "path": "tools/validate_splash_v3_menu_palette.py",
+      "sha256": "46c14503c2b5065b2f0dbabbbd06a5eb61573a7731b6f5ea1e93e1de967f67b6",
+      "size_bytes": 2787
+    },
+    {
+      "path": "tools/validate_splash_v3_plane_clear.py",
+      "sha256": "5ead9e3857b08e3ac1890b067e9d598d87a21baad317f210d695924391d39b7e",
+      "size_bytes": 4730
+    },
+    {
+      "path": "tools/validate_splash_v3_position_path.py",
+      "sha256": "258e9e195a89472a772ee32a695efd5f1a911599407010aa4cb6b98be6ea6b35",
+      "size_bytes": 3713
+    },
+    {
+      "path": "tools/validate_splash_v3_sat_pressure_probe.py",
+      "sha256": "588d9664d52b621fc7b5689db9f9f3cc963290e1285d57ec889640fa32cd11df",
+      "size_bytes": 7075
+    },
+    {
+      "path": "tools/validate_splash_v3_scanline_probe.py",
+      "sha256": "57d6b545d4edf30e718715c16dc3ea7739caf08297c4cf8e46fc540fd9bd7777",
+      "size_bytes": 4774
+    }
+  ],
+  "versioned_files_sha256_basis": "Source worktree bytes, with canonical Git newline normalization overrides listed below.",
+  "git_text_normalization": [
+    {
+      "path": "inc/system/overlay.h",
+      "source_worktree_sha256": "97978cc3495f143168c6a9ef4aeae0dde96a0abc4a6b58c6c70ece2511a07ad1",
+      "git_blob_sha256": "6f9f72035399b586fc7b48c0d8b2cf8e2b908d681fca992ade7d0abdb06903b4",
+      "git_blob_size_bytes": 523,
+      "reason": "Existing canonical text=auto eol=lf; CRLF normalized to LF. No runtime semantics change; a rebuild still requires new evidence."
+    },
+    {
+      "path": "src/system/overlay.c",
+      "source_worktree_sha256": "cf2d6d19bcb2bd0a31e1a4ff2ac7f5092e182a6b61d81f8bdaebcc960c50759b",
+      "git_blob_sha256": "3ed947a6f7e23585b96eb814135281c35d553aef519867a68d45bfd8b0878d3b",
+      "git_blob_size_bytes": 383,
+      "reason": "Existing canonical text=auto eol=lf; CRLF normalized to LF. No runtime semantics change; a rebuild still requires new evidence."
+    }
+  ],
+  "staged_source_review": {
+    "files_compared_excluding_self": 645,
+    "unexpected_content_changes": 0,
+    "outside_owner_paths": 0,
+    "implementation_review_for_delivery": "pending; draft preservation only",
+    "new_implementation_tests_run": false
+  }
+}

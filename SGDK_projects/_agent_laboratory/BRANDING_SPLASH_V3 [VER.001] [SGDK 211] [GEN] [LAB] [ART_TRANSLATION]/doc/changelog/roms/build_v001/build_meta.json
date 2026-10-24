@@ -1,0 +1,102 @@
+{
+  "build_version": "build_v001",
+  "rom_sha256": "51a34305826e4120afa3c6ec63b750bf83d47b3125d087d01c5f3516323ae3f9",
+  "size_bytes": 262144,
+  "timestamp": "2026-10-12T05:29:04.6669713-03:00",
+  "source_commit_when_available": "0d88ec3ea7b54a1150dbe9a9276d873ed0aaf859",
+  "validation_summary": null,
+  "emulator_evidence_status": "preview_observed_unsealed",
+  "status_panel_snapshot": null,
+  "qa_axes_snapshot": null,
+  "linked_asset_versions": [
+    {
+      "asset_id": "img_brand_fx_tiles",
+      "version": "v001",
+      "source_path": "/res/branding/brand_fx_tiles.png"
+    },
+    {
+      "asset_id": "img_brand_engine_logo",
+      "version": "v001",
+      "source_path": "/res/branding/brand_engine_logo.png"
+    },
+    {
+      "asset_id": "img_brand_author_logo",
+      "version": "v001",
+      "source_path": "/res/branding/brand_author_logo.png"
+    },
+    {
+      "asset_id": "img_brand_project_logo",
+      "version": "v001",
+      "source_path": "/res/branding/brand_project_logo.png"
+    },
+    {
+      "asset_id": "img_brand_presents_text",
+      "version": "v001",
+      "source_path": "/res/branding/brand_presents_text.png"
+    },
+    {
+      "asset_id": "img_starfield_v2",
+      "version": "v001",
+      "source_path": "/res/branding/starfield_320x224.png"
+    },
+    {
+      "asset_id": "img_forge_bg_b",
+      "version": "v001",
+      "source_path": "/res/branding/forge_bg_b_320x224.png"
+    },
+    {
+      "asset_id": "img_forge_bg_a_props",
+      "version": "v001",
+      "source_path": "/res/branding/forge_bg_a_props_320x224.png"
+    },
+    {
+      "asset_id": "spr_forge_ember",
+      "version": "v001",
+      "source_path": "/res/branding/spr_forge_ember_16x16_strip.png"
+    },
+    {
+      "asset_id": "spr_forge_shard",
+      "version": "v001",
+      "source_path": "/res/branding/spr_forge_shard_16x16_strip.png"
+    },
+    {
+      "asset_id": "spr_forge_hammer",
+      "version": "v001",
+      "source_path": "/res/branding/spr_forge_hammer_48x48_strip.png"
+    },
+    {
+      "asset_id": "img_logo_engine_v2",
+      "version": "v001",
+      "source_path": "/res/branding/logo_engine_224x64.png"
+    },
+    {
+      "asset_id": "img_logo_author_v2",
+      "version": "v001",
+      "source_path": "/res/branding/logo_author_192x32.png"
+    },
+    {
+      "asset_id": "img_logo_project_v2",
+      "version": "v001",
+      "source_path": "/res/branding/logo_project_224x48.png"
+    },
+    {
+      "asset_id": "img_presents_text_v2",
+      "version": "v001",
+      "source_path": "/res/branding/presents_text_96x16.png"
+    },
+    {
+      "asset_id": "img_presents_bar_v2",
+      "version": "v001",
+      "source_path": "/res/branding/presents_bar_8x8.png"
+    }
+  ],
+  "notes": "Linux bridge build succeeded for the existing A FORJA v2 dispatch; ROM SHA-256 51a34305826e4120afa3c6ec63b750bf83d47b3125d087d01c5f3516323ae3f9, 262144 bytes. Replaced only the lab ROM header placeholder. Preview opened in installed BlastEm Flatpak 1.0 and reached the menu; screenshot and hash are in out/blastem_preview and out/logs/blastem_manual_preview_report.json. Canonical capture remains blocked because the 0.6.2 pinned commit request returned 404. No SRAM/VDP dump, gameplay, audio, or sustained performance claim.",
+  "preview_evidence": {
+    "report_path": "out/logs/blastem_manual_preview_report.json",
+    "report_sha256": "893d959a5f939a3943e0f1d8c9db6a8e08a9a8fbeead5ed8959ec7c5b90498b9",
+    "screenshot_path": "out/blastem_preview/manual_preview_screenshot.png",
+    "screenshot_sha256": "0312bf877de2458be229ad990fba00bb3e6b308a4ef481878d1500c441f95b4d",
+    "canonical_capture_status": "blocked_before_launch",
+    "claim_scope": "boot_and_visible_menu_only"
+  }
+}

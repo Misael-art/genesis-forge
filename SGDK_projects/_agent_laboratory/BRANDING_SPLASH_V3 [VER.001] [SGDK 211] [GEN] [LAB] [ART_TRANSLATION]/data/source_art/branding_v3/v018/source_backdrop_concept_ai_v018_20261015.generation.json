@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "ai_generated",
+  "acceptance_status": "placeholder",
+  "generator": "Codex image_gen built-in",
+  "generated_at": "2026-10-15",
+  "generation_mode": "edit_reference",
+  "source_path": "data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.png",
+  "source_sha256": "93ddcafa8e4fcff6cf2e28b206f0a262cf7171aa149c25c9d4ce12b2220c52f0",
+  "canvas_px": [
+    1499,
+    1049
+  ],
+  "mode": "RGB",
+  "reference_path": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.png",
+  "reference_sha256": "4bb6bc3cf60fff57dc396eafd9d21bdee86b03349800ba6e9c40eec8ebc38033",
+  "prompt": "Create a simplified art-direction revision of this blue crystal-cavern background concept for a 320x224 16-bit console scene. Preserve the broad composition: one strong tall crystal mass at the upper-left, a few separated shards upper-right, a large cluster lower-right, and an irregular lower edge. Keep a calm central title-safe region with subtle broad midnight-blue crystal facets so it does not become a blank black oval and does not compete with large lettering. SIMPLIFY HARD: replace the dense tiny faceted texture with a small number of broad, clean geometric planes and large readable silhouettes. Each main crystal should have only a few large facets; remove glitter, tiny chips, fine grain, speckling, hairline filaments, and dense repeated texture. Think large clusters that can be translated into reusable 8x8 tiles, not photographic detail. In the lower third, create a broken jagged crystalline shelf with a few short diagonal blue energy seams pointing toward one small bottom-center glint. No water, lake, horizon, reflection, or long horizontal line across the image. Use a restrained palette of deep indigo, cobalt, and selected icy cyan edges; no broad white glow. Keep the logo safe zone around x=15%..85%, y=31%..73% low contrast and unobstructed by bright hard shapes. Balanced asymmetry, energetic but clean, premium game-company splash identity. No text, logo, symbol, border, UI, character, or watermark. High-resolution concept art for later manual Mega Drive pixel translation, not finished pixel art.",
+  "review": "V018 replaces most fine source detail with broad angular planes and an irregular broken lower shelf. At concept scale the title center has visible indigo facets and the lower field has no dominant straight waterline. The 320x224 translation, wordmark contrast, 8x8 reuse, ROM appearance, CRT reading and human approval remain pending.",
+  "external_input_registry": "rascunho/entrada_visual/visual_source_inventory_v018_20261015.json"
+}

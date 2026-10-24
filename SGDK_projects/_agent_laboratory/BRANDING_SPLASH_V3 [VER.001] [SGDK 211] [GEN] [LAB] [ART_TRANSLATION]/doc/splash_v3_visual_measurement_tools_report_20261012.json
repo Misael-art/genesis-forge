@@ -1,0 +1,657 @@
+{
+  "schema_version": "1.0.0",
+  "tool": "validate_measurement_tools",
+  "generated_at": "2026-10-12T13:44:58Z",
+  "rule_ref": "SGDK_GLOBAL.md secao 34",
+  "tools_checked": 6,
+  "passed": 6,
+  "results": [
+    {
+      "tool": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "exit_code": 0,
+      "output": "vdp_scanline_simulator self-check passed (geometry cells + both limits + headroom + h32)",
+      "status": "passed"
+    },
+    {
+      "tool": "tools/sgdk_wrapper/audit_tile_residency.py",
+      "exit_code": 0,
+      "output": "audit_tile_residency self-check passed (passa, estoura teto, sinaliza dedup baixo)",
+      "status": "passed"
+    },
+    {
+      "tool": "tools/sgdk_wrapper/audit_luma_floor.py",
+      "exit_code": 0,
+      "output": "audit_luma_floor self-check passed (contraste 0 reprova, +170 passa, contorno preto passa, sem massa de realce reprova, fundo vazio recusa)",
+      "status": "passed"
+    },
+    {
+      "tool": "tools/sgdk_wrapper/audit_stage_occupancy.py",
+      "exit_code": 0,
+      "output": "audit_stage_occupancy self-check passed (empilhamento 4x, sucessao limpa, deriva de runtime, saida ausente)",
+      "status": "passed"
+    },
+    {
+      "tool": "tools/sgdk_wrapper/audit_procedural_asset_provenance.py",
+      "exit_code": 0,
+      "output": "audit_procedural_asset_provenance self-check passed (promocao, placeholder, schema, tabela logica x pixel)",
+      "status": "passed"
+    },
+    {
+      "tool": "tools/sgdk_wrapper/validate_brand_comprehension_gate.py",
+      "exit_code": 0,
+      "output": "validate_brand_comprehension_gate self-check passed (passa, reprova, vazio)",
+      "status": "passed"
+    }
+  ],
+  "local_copies": [
+    {
+      "copy": "SGDK_projects/FORGE_REFERENCE [VER.001] [SGDK 211] [GEN] [LAB] [TECHDEMO]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": false,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/HAMOOPIG [VER.001] [SGDK 211] [GEN] [ENGINE] [FIGHTING]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": false,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/KIRBY_FAN GAME CLOUDE [VER.001] [SGDK 211] [GEN] [GAME] [ACTION_PLATFORMER]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": false,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": false,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r1/workspace/tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r2/workspace_control/tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_queue_20261009_r1/workspace/tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": false,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_entrydrop_policy_r1_20261012/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_02/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_03/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_04/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_05/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_06/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_07/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_08/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_09/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/attempt_10/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/out/profiling/openbor_town1_spawn_r1_20261011/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/amaz_archetype_candidate_20261005/project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/continuation_20261003/framebound_probe/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/continuation_20261003/framebound_probe_r2/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/continuation_20261003/framebound_probe_r3/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/continuation_20261003/framebound_probe_r4/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/continuation_20261003/framebound_probe_r5/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/continuation_20261003/framebound_probe_r6/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/continuation_20261003/framebound_probe_r7/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/continuation_20261003/framebound_probe_r8/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_02/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_03/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_04/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_05/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_06/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_07/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_08/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_09/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_10/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_11/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_12/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_13/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_14/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_15/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_16/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_17/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_18/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_19/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_20/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_21/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_av_marker_probe_20261009/attempt_22/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_f728_f737_frame_readback_20261009/attempt_23_reinit/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_f728_f737_frame_readback_20261009/attempt_24_preserve_ring/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_f737_display_gate_20261009/attempt_25_reinit_vdp_default/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_host_input_recovery_20261009/attempt_27_human_input_vdp_default/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/m3r13_vdp_default_fullwindow_20261009/attempt_26_reinit_vdp_default_fullwindow/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/openbor_archetype_registry_r21_20261005/project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/openbor_gal_town_mixed_r22_20261005/project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/openbor_m3_recovery_combined_20261008/attempt_01/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/temporario/openbor_m3r16_n4_osta_otrc_route_20261010/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/temporario/openbor_m3r16_trace_footprint_20261011_r1/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/temporario/openbor_m3r16_trace_footprint_20261011_r2/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/temporario/openbor_text_intro_mask_r2_20261011/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/temporario/openbor_text_intro_owner_r1_20261011/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/rascunho/temporario/openbor_town1_spawn_r1_20261011/candidate_project/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/REINA_CHAN_PORT [VER.001] [SGDK 211] [GEN] [GAME] [ACTION_PLATFORMER]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": false,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/TAIKETSU ULTRA HERO GENESIS [VER.001] [SGDK 211] [GEN] [ENGINE] [FIGHTING]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": false,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/_agent_laboratory/BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": false,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/_agent_training/HYBRIDO_MUAY_THAI [VER.001] [SGDK 211] [GEN] [ESTUDO] [LUTA]/rascunho/local_agent_physical_backup_v002/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": false,
+      "local_version": "1.0.0",
+      "canonical_version": "1.2.0"
+    },
+    {
+      "copy": "archives/2026-09-23/SGDK_projects/GOTHAM_OVERDRIVE [VER.001] [SGDK 211] [GEN] [LAB] [TECHDEMO]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "archives/2026-09-23/SGDK_projects/KIRBY_FAN GAME GROK BUILD [VER.001] [SGDK 211] [GEN] [GAME] [ACTION_PLATFORMER]/.agent/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "archives/2026-09-23/SGDK_projects/KIRBY_FAN GAME GROK BUILD [VER.001] [SGDK 211] [GEN] [GAME] [ACTION_PLATFORMER]/.agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "archives/2026-09-23/root_loose/out/agent_context_cleanup/20260905_141437/manual_snapshot/agent/scripts/vdp_scanline_simulator.py",
+      "canonical": "tools/sgdk_wrapper/.agent/scripts/vdp_scanline_simulator.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r1/workspace/tools/sgdk_wrapper/audit_tile_residency.py",
+      "canonical": "tools/sgdk_wrapper/audit_tile_residency.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r2/workspace_control/tools/sgdk_wrapper/audit_tile_residency.py",
+      "canonical": "tools/sgdk_wrapper/audit_tile_residency.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_queue_20261009_r1/workspace/tools/sgdk_wrapper/audit_tile_residency.py",
+      "canonical": "tools/sgdk_wrapper/audit_tile_residency.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r1/workspace/tools/sgdk_wrapper/audit_luma_floor.py",
+      "canonical": "tools/sgdk_wrapper/audit_luma_floor.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r2/workspace_control/tools/sgdk_wrapper/audit_luma_floor.py",
+      "canonical": "tools/sgdk_wrapper/audit_luma_floor.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_queue_20261009_r1/workspace/tools/sgdk_wrapper/audit_luma_floor.py",
+      "canonical": "tools/sgdk_wrapper/audit_luma_floor.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r1/workspace/tools/sgdk_wrapper/audit_stage_occupancy.py",
+      "canonical": "tools/sgdk_wrapper/audit_stage_occupancy.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r2/workspace_control/tools/sgdk_wrapper/audit_stage_occupancy.py",
+      "canonical": "tools/sgdk_wrapper/audit_stage_occupancy.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_queue_20261009_r1/workspace/tools/sgdk_wrapper/audit_stage_occupancy.py",
+      "canonical": "tools/sgdk_wrapper/audit_stage_occupancy.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r1/workspace/tools/sgdk_wrapper/audit_procedural_asset_provenance.py",
+      "canonical": "tools/sgdk_wrapper/audit_procedural_asset_provenance.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r2/workspace_control/tools/sgdk_wrapper/audit_procedural_asset_provenance.py",
+      "canonical": "tools/sgdk_wrapper/audit_procedural_asset_provenance.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_queue_20261009_r1/workspace/tools/sgdk_wrapper/audit_procedural_asset_provenance.py",
+      "canonical": "tools/sgdk_wrapper/audit_procedural_asset_provenance.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r1/workspace/tools/sgdk_wrapper/validate_brand_comprehension_gate.py",
+      "canonical": "tools/sgdk_wrapper/validate_brand_comprehension_gate.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_contact_calltrace_20261010_r2/workspace_control/tools/sgdk_wrapper/validate_brand_comprehension_gate.py",
+      "canonical": "tools/sgdk_wrapper/validate_brand_comprehension_gate.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    },
+    {
+      "copy": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/rascunho/temporario/tileset_dma_queue_20261009_r1/workspace/tools/sgdk_wrapper/validate_brand_comprehension_gate.py",
+      "canonical": "tools/sgdk_wrapper/validate_brand_comprehension_gate.py",
+      "kind": "tool",
+      "archived": true,
+      "in_sync": true
+    }
+  ],
+  "stale_copies": 0,
+  "archived_stale_copies": 1,
+  "limitation": "Garante que o self-check existe, roda e passa. Nao julga se o self-check cobre o que deveria: isso continua sendo leitura humana.",
+  "blocking": false,
+  "blocking_statuses": []
+}

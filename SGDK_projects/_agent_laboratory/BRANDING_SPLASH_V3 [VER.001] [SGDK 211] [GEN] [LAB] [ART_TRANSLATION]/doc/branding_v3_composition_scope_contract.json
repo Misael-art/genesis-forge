@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "contract_id": "branding_v3_sonic_logo_composition_v3",
+  "scene_id": "branding_sequence_v3",
+  "track_id": "splash_v3_sonic_logo_v3",
+  "scope": "micro_sketch_1m",
+  "intended_use": "laboratory",
+  "status_ceiling": "prototype_only",
+  "identity_note": "V015 preserves the positively received V012 C-major eight-note contour but adds syncopated short attacks, a genuine breath for mark-lock, a rising answer, faster FM releases, punctuated bass/harmony, and three additive E6/G6/C7 crystal pings. All authored music ends before the sweep and tail cues. V013 and V014 were rejected by the user for continuous, monotonous sound without the agreed energy. No FORJA V2 musical material or third-party melody is reused.",
+  "sfx_protection": {
+    "frequency_masking_plan_path": "doc/branding_v3_frequency_masking_plan.json",
+    "critical_sfx": [
+      "splash_energy_rise",
+      "splash_mark_lock",
+      "splash_sweep_pass",
+      "splash_tail"
+    ],
+    "masking_strategy": "Music starts after the 36-frame rise cue. Keep all three crystal flashes outside cue windows; PSG is silent in V014. Brass may carry the answer through the sweep cue, with short articulation and no continuous pad."
+  },
+  "promotion_criteria": [
+    "Authored score, FM patch definitions, VGM, XGM2, and conversion lineage are stored in the lab.",
+    "VGM/XGM2 loop and PCM payloads pass format and provenance audits.",
+    "The 180-frame 6/8 score passes structural loop checks and receives a two-cycle audible review.",
+    "All four PCM cues remain distinct and correctly timed in the hash-bound V015 ROM.",
+    "PCM peaks, concurrent channel use, memory footprint, and scene teardown are reviewed.",
+    "The user listens to the exact V015 ROM and accepts its rhythmic separation, energy, crystal color, cadence, and cue balance."
+  ],
+  "blockers": [
+    "production_scene_audio_integration_pending",
+    "dac_budget_not_measured",
+    "human_music_and_loop_audition_pending_v015",
+    "canonical_hash_bound_rom_evidence_pending"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "authored_pcm_cue_render",
+  "id": "splash_tail_v3",
+  "source_kind": "procedural_composed_from_authored",
+  "acceptance_status": "lab",
+  "source_path": "data/source_audio/splash_v3_pcm_cues_v3.json",
+  "source_sha256": "8c3f7d609269e69088aad53051c24828ba7941171e03dc24a09aa5d960dc2497",
+  "builder_path": "data/source_audio/build_splash_v3_pcm_cues.py",
+  "builder_sha256": "9483c15956401d8d26ed4c80e4cddf45effb1967a36eab940c804d0de9294f0a",
+  "wav_path": "out/audio/splash_v3_pcm_v3/splash_tail_v3.wav",
+  "wav_sha256": "b6806c8fe7befaf5cdb9be16bbb81bd569bddefc50f85b8600750aa74023666d",
+  "sample_rate_hz": 44100,
+  "xgm2_sample_rate_hz": 13300,
+  "duration_frames": 24,
+  "duration_seconds": 0.4,
+  "pcm_samples": 17640,
+  "peak": 0.42,
+  "rms": 0.108266,
+  "clip_free_source": true,
+  "runtime_or_human_audio_approval": false
+}

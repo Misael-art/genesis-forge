@@ -1,0 +1,422 @@
+{
+  "schema_version": "1.0.0",
+  "track_id": "splash_v3_sonic_logo_v4",
+  "region": "ntsc",
+  "tempo_bpm": 120,
+  "meter": "6/8",
+  "grouping_eighths": [
+    3,
+    3
+  ],
+  "eighth_note_frames": 15,
+  "bar_frames": 90,
+  "bar_count": 2,
+  "frames": 180,
+  "loop_frame": 0,
+  "tonal_center": "C major",
+  "motif": [
+    "C5",
+    "G5",
+    "E5",
+    "F5"
+  ],
+  "answer": [
+    "D5",
+    "G5",
+    "B5",
+    "C6"
+  ],
+  "identity": "V016 stereo refinement of the eight-note C-major syncopated call and answer. The brass signature stays centered for mono-TV readability; short bass accents sit left, while inner harmony and brief high FM crystal pings sit right. Rhythm, note contour, pauses, cue openings and the 180-frame NTSC loop remain from V015.",
+  "harmonic_progression": [
+    "C",
+    "F",
+    "G",
+    "C"
+  ],
+  "scene_alignment": {
+    "scene_music_start_frame": 60,
+    "scene_music_stop_frame": 240,
+    "mark_lock_scene_frame": 118,
+    "sweep_scene_frame": 178,
+    "tail_scene_frame": 210,
+    "final_chord_score_frame": 102
+  },
+  "mix_notes": [
+    "V014 was rejected after listening because the result still felt continuous and monotonous. V015 directly removes the sustained quality: every FM patch has a faster key-off release, the accompaniment is reduced to short stabs, and the lead occupies only 52 of 180 score frames.",
+    "Keep the positively received V012 eight-note contour, but phrase it as three quick attacks, a separated F accent, a full breath, then a rising D-G-B-C answer. Syncopated pickups create motion instead of evenly spaced sustained notes.",
+    "The mark-lock PCM cue occupies scene frames 118-129 (score 58-69) inside the deliberate musical breath. The answer resumes at score frame 72, two frames after that cue ends.",
+    "Bass attacks only at score frames 0, 42, 72 and 102. Chord support is four short independent stabs at those same harmonic points; there is no pad or continuous low voice.",
+    "Three additive FM crystal pings use E6/G6/C7 at score frames 26, 88 and 106, each 3-4 frames. They are short high-register color, not a sustained line.",
+    "Finish the C-major landing by score frame 114. Keep score frames 118-144 clear for the sweep cue and frames 150-174 clear for the tail cue; PSG remains silent.",
+    "Music starts at scene frame 60 after the 36-frame energy-rise cue and the stream ends at scene frame 240. Its 180-frame loop retains exact NTSC timing; the composed notes end well before the final PCM tail.",
+    "V016 addresses the measured dual-mono V015 capture: center the brass signature (pan=3), place short bass pulses left (pan=1), and place chord stabs plus brief crystal accents right (pan=2). The main motif remains in both channels for mono-speaker compatibility; audit the captured stereo difference and listen to the mono fold-down before approval."
+  ],
+  "fm_patches": [
+    {
+      "id": "splash_fm_pulse_bass_v4",
+      "channel": 0,
+      "algorithm": 4,
+      "feedback": 2,
+      "pan": 1,
+      "operators": [
+        {
+          "detune": 0,
+          "multiple": 1,
+          "total_level": 36,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 10,
+          "decay2": 8,
+          "sustain_level": 7,
+          "release": 10,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 2,
+          "total_level": 8,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 12,
+          "decay2": 8,
+          "sustain_level": 7,
+          "release": 10,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 1,
+          "total_level": 40,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 10,
+          "decay2": 8,
+          "sustain_level": 7,
+          "release": 10,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 1,
+          "total_level": 2,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 12,
+          "decay2": 8,
+          "sustain_level": 7,
+          "release": 10,
+          "ssg_eg": 0
+        }
+      ]
+    },
+    {
+      "id": "splash_fm_brass_signature_v4",
+      "channel": 1,
+      "algorithm": 5,
+      "feedback": 3,
+      "pan": 3,
+      "operators": [
+        {
+          "detune": 0,
+          "multiple": 1,
+          "total_level": 20,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 11,
+          "decay2": 8,
+          "sustain_level": 7,
+          "release": 11,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 1,
+          "total_level": 2,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 13,
+          "decay2": 8,
+          "sustain_level": 7,
+          "release": 11,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 2,
+          "total_level": 12,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 12,
+          "decay2": 8,
+          "sustain_level": 7,
+          "release": 11,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 3,
+          "total_level": 22,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 10,
+          "decay2": 8,
+          "sustain_level": 7,
+          "release": 11,
+          "ssg_eg": 0
+        }
+      ]
+    },
+    {
+      "id": "splash_fm_glass_harmony_v4",
+      "channel": 2,
+      "algorithm": 7,
+      "feedback": 0,
+      "pan": 2,
+      "operators": [
+        {
+          "detune": 0,
+          "multiple": 1,
+          "total_level": 10,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 8,
+          "decay2": 9,
+          "sustain_level": 9,
+          "release": 11,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 2,
+          "total_level": 18,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 8,
+          "decay2": 9,
+          "sustain_level": 9,
+          "release": 11,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 3,
+          "total_level": 28,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 7,
+          "decay2": 9,
+          "sustain_level": 9,
+          "release": 11,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 5,
+          "total_level": 40,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 7,
+          "decay2": 9,
+          "sustain_level": 9,
+          "release": 11,
+          "ssg_eg": 0
+        }
+      ]
+    },
+    {
+      "id": "splash_fm_crystal_accents_v4",
+      "channel": 3,
+      "algorithm": 7,
+      "feedback": 0,
+      "pan": 2,
+      "operators": [
+        {
+          "detune": 0,
+          "multiple": 1,
+          "total_level": 24,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 15,
+          "decay2": 11,
+          "sustain_level": 12,
+          "release": 9,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 1,
+          "multiple": 2,
+          "total_level": 26,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 15,
+          "decay2": 11,
+          "sustain_level": 12,
+          "release": 9,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 0,
+          "multiple": 3,
+          "total_level": 34,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 15,
+          "decay2": 11,
+          "sustain_level": 12,
+          "release": 9,
+          "ssg_eg": 0
+        },
+        {
+          "detune": 2,
+          "multiple": 5,
+          "total_level": 43,
+          "rate_scale": 0,
+          "attack": 31,
+          "am_enable": 0,
+          "decay1": 15,
+          "decay2": 11,
+          "sustain_level": 12,
+          "release": 9,
+          "ssg_eg": 0
+        }
+      ]
+    }
+  ],
+  "fm_notes": [
+    {
+      "instrument": "splash_fm_pulse_bass_v4",
+      "frame": 0,
+      "duration": 6,
+      "midi": 48
+    },
+    {
+      "instrument": "splash_fm_pulse_bass_v4",
+      "frame": 42,
+      "duration": 5,
+      "midi": 41
+    },
+    {
+      "instrument": "splash_fm_pulse_bass_v4",
+      "frame": 72,
+      "duration": 5,
+      "midi": 43
+    },
+    {
+      "instrument": "splash_fm_pulse_bass_v4",
+      "frame": 102,
+      "duration": 9,
+      "midi": 48
+    },
+    {
+      "instrument": "splash_fm_brass_signature_v4",
+      "frame": 0,
+      "duration": 6,
+      "midi": 72
+    },
+    {
+      "instrument": "splash_fm_brass_signature_v4",
+      "frame": 8,
+      "duration": 5,
+      "midi": 79
+    },
+    {
+      "instrument": "splash_fm_brass_signature_v4",
+      "frame": 16,
+      "duration": 8,
+      "midi": 76
+    },
+    {
+      "instrument": "splash_fm_brass_signature_v4",
+      "frame": 42,
+      "duration": 6,
+      "midi": 77
+    },
+    {
+      "instrument": "splash_fm_brass_signature_v4",
+      "frame": 72,
+      "duration": 5,
+      "midi": 74
+    },
+    {
+      "instrument": "splash_fm_brass_signature_v4",
+      "frame": 81,
+      "duration": 5,
+      "midi": 79
+    },
+    {
+      "instrument": "splash_fm_brass_signature_v4",
+      "frame": 90,
+      "duration": 5,
+      "midi": 83
+    },
+    {
+      "instrument": "splash_fm_brass_signature_v4",
+      "frame": 102,
+      "duration": 12,
+      "midi": 84
+    },
+    {
+      "instrument": "splash_fm_glass_harmony_v4",
+      "frame": 0,
+      "duration": 4,
+      "midi": 64
+    },
+    {
+      "instrument": "splash_fm_glass_harmony_v4",
+      "frame": 42,
+      "duration": 4,
+      "midi": 69
+    },
+    {
+      "instrument": "splash_fm_glass_harmony_v4",
+      "frame": 72,
+      "duration": 4,
+      "midi": 59
+    },
+    {
+      "instrument": "splash_fm_glass_harmony_v4",
+      "frame": 102,
+      "duration": 6,
+      "midi": 64
+    },
+    {
+      "instrument": "splash_fm_crystal_accents_v4",
+      "frame": 26,
+      "duration": 3,
+      "midi": 88
+    },
+    {
+      "instrument": "splash_fm_crystal_accents_v4",
+      "frame": 88,
+      "duration": 3,
+      "midi": 91
+    },
+    {
+      "instrument": "splash_fm_crystal_accents_v4",
+      "frame": 106,
+      "duration": 4,
+      "midi": 96
+    }
+  ],
+  "psg_notes": [],
+  "parent_score": {
+    "path": "data/source_audio/splash_v3_sonic_logo_score_v3.json",
+    "sha256": "040b3a51cea51ddf3b0e9c87c099f9fa809192c3a5d4221b89d0878587f3aeea",
+    "revision": "V015"
+  }
+}
