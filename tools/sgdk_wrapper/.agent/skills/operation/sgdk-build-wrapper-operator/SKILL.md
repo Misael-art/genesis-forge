@@ -279,3 +279,10 @@ em `sdk_content_identity.json`, mantem staging por workspace e serializa builds.
 Feche o descritor do lock nos processos Flatpak: servicos Wine sobreviventes
 nao podem herdar o lock. Mudanca de SDK/bridge invalida biblioteca e staging;
 nenhuma ROM historica e recertificada por essa invalidacao.
+
+## Novo host ou migracao
+
+Antes de diagnosticar jogo em maquina sem dependencias ou transferir trabalho
+local, ler [instalacao e continuidade portavel](../../../references/portable_host_continuity.md).
+Clonar Git e instalar ferramentas nao recuperam fontes/inputs/evidencias locais;
+instalacao portavel nao prova runtime nem substitui a rota de build por host.

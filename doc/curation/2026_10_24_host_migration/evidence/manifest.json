@@ -1,0 +1,40 @@
+{
+  "scope": "infra-only, no ROM/assets/input/session credentials",
+  "files": [
+    {
+      "path": "doc/curation/2026_10_24_host_migration/evidence/quality_review_request_r4.json",
+      "sha256": "f4b16e4ce97dc5a510f8747a73f76cbe972b1ff5f08a011bb2d4d9caeb674811",
+      "bytes": 1495
+    },
+    {
+      "path": "doc/curation/2026_10_24_host_migration/evidence/quality_review_plan_r4.json",
+      "sha256": "bf06da98d6a90731159cf5c79180e1f7edf185db07bf22c661e160a60495cd08",
+      "bytes": 1151
+    },
+    {
+      "path": "doc/curation/2026_10_24_host_migration/evidence/independent_quality_review_r4.json",
+      "sha256": "4a9c6b474e1c5f828499080038052c1c7038036a47b2a176b15d4483fcbdc660",
+      "bytes": 2574
+    },
+    {
+      "path": "doc/curation/2026_10_24_host_migration/evidence/portable_idempotence_report_final.json",
+      "sha256": "3ef2aad652ea2d81cd779f62412243b439caa3658bc6debdf25b6525120fbdfc",
+      "bytes": 2864
+    },
+    {
+      "path": "doc/curation/2026_10_24_host_migration/evidence/fuse_publication_preflight_report.json",
+      "sha256": "2fecb5eb3ac63cb93efec94f697314551eaf4f28050609605ad076fadbab1b71",
+      "bytes": 516
+    },
+    {
+      "path": "doc/curation/2026_10_24_host_migration/evidence/migration_tests_final.xml",
+      "sha256": "98772dd7c2ca639467ad43f5b3992093723afa96598d2c58b5ddfc5d3b25f766",
+      "bytes": 5723
+    },
+    {
+      "path": "doc/curation/2026_10_24_host_migration/evidence/host_diagnosis.json",
+      "sha256": "4e8b7db42a5cb42e1529a263cc8570b5ed68a256ba11ffb2ef6f7792e6dc709b",
+      "bytes": 998
+    }
+  ]
+}

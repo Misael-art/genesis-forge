@@ -1,0 +1,19 @@
+{
+  "schema": "forge_host_bootstrap_report.v1",
+  "profile": "portable",
+  "claim_ceiling": "host_dependencies_only",
+  "game_qa": "not_executed",
+  "steps": [],
+  "diagnosis": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "python": "3.14.7",
+    "free_bytes": 172444454912,
+    "commands": {
+      "7z": "/usr/sbin/7z"
+    },
+    "blockers": []
+  },
+  "status": "blocked",
+  "error": "filesystem_lacks_atomic_directory_publish: use a native Linux workspace filesystem; keep the SD/FUSE archive as source"
+}

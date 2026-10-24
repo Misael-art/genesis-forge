@@ -1,0 +1,103 @@
+{
+  "schema": "forge_host_bootstrap.v1",
+  "supported": {
+    "system": "Linux",
+    "machine": [
+      "x86_64",
+      "amd64"
+    ],
+    "python_min": [
+      3,
+      11
+    ]
+  },
+  "apt_packages": [
+    "ca-certificates",
+    "curl",
+    "git",
+    "python3",
+    "python3-venv",
+    "python3-pip",
+    "build-essential",
+    "pkg-config",
+    "p7zip-full",
+    "flatpak",
+    "dbus-user-session",
+    "xvfb",
+    "xauth",
+    "x11-utils",
+    "xdotool",
+    "imagemagick",
+    "ffmpeg",
+    "libgl1-mesa-dri",
+    "libegl1",
+    "libicu-dev",
+    "libssl-dev",
+    "zlib1g",
+    "ripgrep"
+  ],
+  "downloads": {
+    "sdk": {
+      "version": "2.11",
+      "url": "https://github.com/Stephane-D/SGDK/releases/download/v2.11/sgdk211.7z",
+      "sha256": "5cc704b7e3a15183c33e721a1d7f84c067cf78808754556d03bb14764df51437",
+      "format": "7z",
+      "target": "sdk/sgdk-2.11",
+      "required": [
+        "makefile.gen",
+        "makelib.gen",
+        "bin/gcc.exe",
+        "bin/rescomp.jar",
+        "lib/libmd.a",
+        "inc/genesis.h"
+      ]
+    },
+    "powershell": {
+      "version": "7.6.2",
+      "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.2/powershell-7.6.2-linux-x64.tar.gz",
+      "sha256": "6cbcfbf20e376aa62ffd91c973493c41a7a52ddfd5a5db3ff9bc12f0d0fe9292",
+      "format": "tar",
+      "target": "out/host_tools/powershell/7.6.2",
+      "required": [
+        "pwsh"
+      ]
+    },
+    "java": {
+      "version": "21.0.11+10",
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.11_10.tar.gz",
+      "sha256": "e5038aae3ca9ff670bc696496b0728dbd23d280026bad30291cb919221ecfdcb",
+      "format": "tar_strip_root",
+      "target": "out/host_tools/java/21.0.11+10",
+      "required": [
+        "bin/java"
+      ]
+    },
+    "rtk": {
+      "version": "1.0.1",
+      "url": "https://github.com/rtk-ai/rtk/releases/download/v1.0.1/rtk-x86_64-unknown-linux-musl.tar.gz",
+      "sha256": "5b919c3bccb799b67a61866d0e617410a4fcdf173e2614440e59de2fa2003436",
+      "format": "tar",
+      "target": "out/host_tools/rtk",
+      "required": [
+        "rtk"
+      ]
+    }
+  },
+  "flatpaks": [
+    {
+      "ref": "app/org.winehq.Wine/x86_64/wow64-24.08",
+      "commit": "3fd85461279aceaf0c8c0580410cab01ee143cd5a2db5dca9b6c5df4c52174fe"
+    },
+    {
+      "ref": "app/com.retrodev.blastem/x86_64/stable",
+      "commit": "855ff0ece6f336f5150e6cff5cd126e2fa48a825d711ed35ce74f25b58184469",
+      "version": "1.0",
+      "qualification": "observed_installation_only_game_capture_requalification_pending"
+    }
+  ],
+  "minimum_free_gib": 8,
+  "default_workers": 1,
+  "default_emulator_sessions": 1,
+  "claim_ceiling": "host_dependencies_only",
+  "minimum_portable_free_gib": 2
+}

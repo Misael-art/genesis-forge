@@ -1,0 +1,21 @@
+{
+  "schema": "forge_observed_host_diagnosis.v1",
+  "date": "2026-10-24",
+  "blastem_legacy_catalog_commit": "c1f3f4435e9d009fa001322e26e73e785fe443fcedfae1f3187836685c602221",
+  "legacy_commit_remote_check": "HTTP404",
+  "observed_blastem_commit": "855ff0ece6f336f5150e6cff5cd126e2fa48a825d711ed35ce74f25b58184469",
+  "observed_blastem_version": "1.0",
+  "observed_commit_remote_check": "available",
+  "wine_commit": "3fd85461279aceaf0c8c0580410cab01ee143cd5a2db5dca9b6c5df4c52174fe",
+  "wine_commit_remote_check": "available",
+  "wine_required_runtime": "org.freedesktop.Platform/x86_64/24.08",
+  "wine_runtime_installed": false,
+  "legacy_capture_metadata": "needs_identity_audit_do_not_relabel_existing_evidence",
+  "private_blastem_bundle": {
+    "path": "out/curation/2026_10_24_host_migration/blastem_1_0_observed.flatpak",
+    "sha256": "e4d88d1940938b61959b73dbbc9700d4b6e27c2da1074f69ae9a8be476efbcce",
+    "size": 2055720,
+    "runtime_bundled": false
+  },
+  "game_qa": "not_executed"
+}

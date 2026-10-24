@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "quality_review_request",
+  "review_id": "host_migration_20261024_r4",
+  "review_stage": "release_candidate",
+  "project_context": "consulting",
+  "project_root": ".",
+  "as_of": "2026-10-24",
+  "current_claim_ceiling": "host_dependencies_only",
+  "changed_domains": [
+    "code"
+  ],
+  "domain_scope": [
+    "code"
+  ],
+  "risk_flags": [
+    "runtime_risk"
+  ],
+  "requested_domains": [
+    "code"
+  ],
+  "commercial_intent": false,
+  "narrative_weight": "none",
+  "audio_weight": "none",
+  "producer_ids": [
+    "root"
+  ],
+  "artifacts": [
+    {
+      "path": "tools/sgdk_wrapper/bootstrap_host.py",
+      "sha256": "c864a9139eaa7e8be59c2d0da42184a875c481d885c48adbb4fead4b730be38a",
+      "role": "code_diff"
+    },
+    {
+      "path": "tools/sgdk_wrapper/bootstrap_host.sh",
+      "sha256": "7817c32e008e7505e94f996075057c29e3003ed536901def4a02d78f4b213fa6",
+      "role": "code_diff"
+    },
+    {
+      "path": "tools/sgdk_wrapper/bootstrap_host.json",
+      "sha256": "442f97bc5c1663f81e969bbb15eb8b83d5d0c80e54f60b1699d3468838781164",
+      "role": "code_diff"
+    },
+    {
+      "path": "tools/sgdk_wrapper/host_transfer.py",
+      "sha256": "0d074bdd8fd2cbc6374c769b1e7ac83c76d18d82e793fe8f557a9b2db8bb4cbf",
+      "role": "code_diff"
+    },
+    {
+      "path": "tools/sgdk_wrapper/tests/test_host_migration.py",
+      "sha256": "62e9cd87e612f711c2f97f07ff5f35f30c7b602102746b0cf213415141528cce",
+      "role": "code_diff"
+    }
+  ]
+}
