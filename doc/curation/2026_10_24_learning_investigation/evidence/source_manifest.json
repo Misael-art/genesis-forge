@@ -1,0 +1,57 @@
+{
+  "base": "workspace",
+  "owner": "workspace_curator",
+  "scope": "read-only investigation plus reports; no canonical patch or engine resume",
+  "files": [
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/doc/engine_handoff_m5.md",
+      "sha256": "6dd68abd300ea99bbd009c7b4acccaccb023c62899f729b2c0b64a42f990d697",
+      "bytes": 12249
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/doc/engine_current_state.json",
+      "sha256": "439629c3753b44c10840df43059a9ccfb2cc0d40fc5614ef31c85da07e517ba7",
+      "bytes": 11768
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/doc/agent_learning/evidence/engine_resilience_m5_20261024/lesson_inventory.json",
+      "sha256": "70037bcc7e5e639528f216cb806e0af872bface0340331305ae1403869d26f9a",
+      "bytes": 58391
+    },
+    {
+      "path": "SGDK_projects/OpenBOR_Demo [VER.001] [SGDK 211] [GEN] [GAME] [BEAT_EM_UP]/doc/openbor/display_fit_transfer_20261022.json",
+      "sha256": "72feab02bdf2576f2a14924d9bf598c64df3578eb84e67ead51d6dd2dae748e5",
+      "bytes": 10636
+    },
+    {
+      "path": "doc/curation/2026_10_23_senior_production/README.md",
+      "sha256": "85c348c6f595a02ecb8111a28c447fd264cbd4fafcaf1c49fceebb7635b06a46",
+      "bytes": 9939
+    },
+    {
+      "path": "doc/curation/2026_10_23_senior_production/decisions.json",
+      "sha256": "c61116bc3f095a80771ded7150ac28f5c5b6af7d69231bcbf61e6c407c9ca466",
+      "bytes": 5072
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/references/agent_production_discipline.md",
+      "sha256": "96608a63ccee90e3be6e0d7fa21033c0e35a67b99faa170ddcd7427849c9b9cf",
+      "bytes": 25811
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/references/runtime_optimization_decisions.md",
+      "sha256": "4b7662f9e5120afa656381bb41b0cbd5e1f10db3ddb21004d1aa11b379cc80b2",
+      "bytes": 6613
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/references/mugen2sgdk_fidelity_matrix.md",
+      "sha256": "87d411a6d2734db47fdb82461e427277db83947ff5988b8417f9dbf52fb4463f",
+      "bytes": 8140
+    },
+    {
+      "path": "tools/sgdk_wrapper/.agent/references/mugen2sgdk_fidelity_matrix.json",
+      "sha256": "cc9df3aeb373bb4ba4a78affa0f00db4afce5e2dd8bab39d6d060b25c7065c85",
+      "bytes": 34450
+    }
+  ]
+}

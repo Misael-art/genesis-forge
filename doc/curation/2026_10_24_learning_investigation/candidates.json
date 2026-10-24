@@ -1,0 +1,587 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-10-24",
+  "mode": "curation_investigation_only",
+  "owner": "workspace_curator",
+  "path_base": "workspace",
+  "source_snapshot": "doc/curation/2026_10_24_learning_investigation/evidence/source_manifest.json",
+  "sources_sha_audit": "doc/curation/2026_10_24_learning_investigation/evidence/evidence_binding_audit.json",
+  "scope": "MUGEN M5 all39bindings, OpenBORdisplaytransfer22/10 and selected15/10 followups, dedup against21/10+23/10 canonical methods",
+  "canonical_promotion_performed": false,
+  "new_skill_required": false,
+  "runtime_or_rom_modified": false,
+  "user_pause_preserved": true,
+  "candidates": [
+    {
+      "id": "curation_01",
+      "priority": "P1",
+      "title": "Stack de boot, BSS e limites da sonda",
+      "lessons": [
+        "m5_12",
+        "m5_13"
+      ],
+      "owners": [
+        "code/sgdk-runtime-coder",
+        "hardware/megadrive-vdp-budget-analyst",
+        "operation/emulator-vdp-evidence-curator"
+      ],
+      "assessment": "qualified_method_candidate",
+      "delta": "Inventariar grandes buffers automaticos e frames reais do target antes de pintar canary; quando mover para BSS, contratar lifetime, reentrancia e transferencia sincronica. Canary e piso observado, nao teto seguro.",
+      "evidence": "Fonte atual usa buffer static3072 e CPU upload; particionamento65536/heap conferido; reports watch/repeticoes rehashados, nao reexecutados.",
+      "acceptance": "Fixture antiga cruza o limite/sentinela; reparo preserva bitmap/fallback; ELF e BSS/frame real conferidos; manter IRQ/transientes/lifetime explicitamente pendentes.",
+      "not_universal": "3072B/2048B sao do caso; static nao e solucao universal para buffer reentrante ou DMA retido."
+    },
+    {
+      "id": "curation_02",
+      "priority": "P1",
+      "title": "Medicao de janela completa e publicacao do protocolo",
+      "lessons": [
+        "m5_18",
+        "m5_19",
+        "m5_20"
+      ],
+      "owners": [
+        "operation/emulator-vdp-evidence-curator",
+        "hardware/megadrive-vdp-budget-analyst"
+      ],
+      "assessment": "qualified_method_candidate",
+      "delta": "Validar ordem/continuidade dos labels e DMA fresco inclusive em frames sem overflow; negar coleta parcial; publicar commit somente apos payload e invariantes completos.",
+      "evidence": "25 casos do SWNW passaram nesta rodada; self-check passou; SRAM real reparseada1200labels/21eventos sem perdas, hashesROM/SRAM conferidos.",
+      "acceptance": "Negativos missing/stale DMA em frame normal, duplicate/reorder/missing labels, truncamento e escrita parcial rejeitados ate exit code integrado.",
+      "not_universal": "Nao promover parser SWNW especifico a core generico sem adaptador/contrato; contadores nao provam transferencia fisica e observador nao qualifica performance."
+    },
+    {
+      "id": "curation_03",
+      "priority": "P1",
+      "title": "Teardown assincrono e admissao transacional",
+      "lessons": [
+        "m5_06",
+        "m5_07",
+        "m5_08",
+        "m5_09"
+      ],
+      "owners": [
+        "architecture/game-state-transition-architect",
+        "hardware/vram-streaming-dma-queue",
+        "code/sgdk-runtime-coder"
+      ],
+      "assessment": "refinement_candidate_existing_rule",
+      "delta": "Completar a regra drain existente com protocolo explicito pending/retry/completed: conservar owner/presentation/audio/font enquanto fim retorna pendente; computar unidades efetivas/jobs/arena com somas largas e preservar estado de IRQ.",
+      "evidence": "Backlog/review finais rehashados; casos locais/segundo consumidor registrados, sem nova execucao SDK ou ROM nesta rodada.",
+      "acceptance": "Segundo consumidor respeita pendente, drena SPR/fila/VBlank e finaliza uma vez; falha parcial de HUD reverte novos recursos e reexecuta sem consumir evento.",
+      "not_universal": "Nao impor MG_fightEnd, leaseBG_B/PAL0,7200unidades ou contagem29/30jobs a todo jogo; API depende do owner."
+    },
+    {
+      "id": "curation_04",
+      "priority": "P1",
+      "title": "Identidade semantica de paleta e namespace gerado",
+      "lessons": [
+        "m5_02",
+        "m5_03"
+      ],
+      "owners": [
+        "art/art-conversion-pipeline",
+        "code/sgdk-code-reviewer"
+      ],
+      "assessment": "qualified_method_candidate",
+      "delta": "RGB igual nao significa paleta compartilhada; preservar IDs/links. Nomes reservados precisam passar pela mesma normalizacao em todos entrypoints antes de publicar.",
+      "evidence": "58 testes SFFv2 e10 de ID reservado passaram nesta rodada;7 testes paleta local SFFv1 tambem passaram, com limites distintos. Oraculo C/CRAM/wheel e report herdado rehashado.",
+      "acceptance": "Paletas inicialmente byte-iguais independentes divergem corretamente apos troca; mutante no C/CRAM reprova; recipe+convert preserva sentinelas em ID reservado; requalificar wheel final.",
+      "not_universal": "Grupo1,1 e IDROSTER sao contratos MUGEN locais; SFFv1 conserva fallback declarado, nao inventar identidade que nao existe na fonte."
+    },
+    {
+      "id": "curation_05",
+      "priority": "P2",
+      "title": "Reserva maxima do SDK e transiente de metasprite",
+      "lessons": [
+        "m5_16",
+        "m5_21",
+        "m5_22",
+        "m5_23",
+        "m5_24"
+      ],
+      "owners": [
+        "hardware/megadrive-vdp-budget-analyst",
+        "art/sprite-animation"
+      ],
+      "assessment": "method_candidate_product_solution_pending",
+      "delta": "Separar cortes por AnimationFrame, reserva maxima da SpriteDefinition, SAT vivo, scanline e pico transitorio de troca; medir ordem de desalocacao/alocacao e custo DMA no mesmo frame.",
+      "evidence": "Pack/joint reports rehashados; ALL21 offline no host nao e prova de allocator ou budget integrado.",
+      "acceptance": "Reconstrucao pixels/paleta/eixo/timing nos4flips; simbolos/reservas reaisSDK; janela inteira da ROM apos pack e falhas/transientes simulados.",
+      "not_universal": "16partes/80SAT e estrategia porframe dependem da API e SDK; nao criar ABI ou promover pack needs_review."
+    },
+    {
+      "id": "curation_06",
+      "priority": "P2",
+      "title": "Origem de display e escala sem dupla conversao",
+      "lessons": [
+        "mcp_display_fit_cps2_h40_20261022",
+        "openbor_ob60_ob66"
+      ],
+      "owners": [
+        "art/art-conversion-pipeline",
+        "art/character-design",
+        "code/collision-system-architect"
+      ],
+      "assessment": "cross_project_method_candidate",
+      "delta": "Distinguir framebuffer/pixel aspect, canvas de empacotamento e celula; aplicar identidade quando ja nativo, negar origem desconhecida e segunda passagem; ancora/offset/caixas acompanham adaptacao autorizada.",
+      "evidence": "Contrato OpenBOR22/10 lido;14 testes display_origin/emit_slice passaram agora, sem nova ROM; comparar digests diferentes do par MUGEN exige reconhecer mudanca de geometria.",
+      "acceptance": "Fonte nativa permanece1:1; desconhecida nao ganha ratio; segunda passagem negada; preservar flip/pivo e separar fullframe fitter.",
+      "not_universal": "384x224 sozinho nao obriga5/6; escala depende de objetivo/aspect/design. Nao transportar ratio, ganho CPU ou parametros do MUGEN ao OpenBOR."
+    },
+    {
+      "id": "curation_07",
+      "priority": "P2",
+      "title": "Geradores de especializacao com gramatica limitada",
+      "lessons": [
+        "m5_29",
+        "m5_30"
+      ],
+      "owners": [
+        "code/sgdk-code-reviewer",
+        "code/sgdk-runtime-coder"
+      ],
+      "assessment": "method_candidate_requires_frozen_witness_review",
+      "delta": "Se ler C gerado por texto, reconhecer formato pinned e falhar fechado fora dele; comentarios/strings/splices/digraph/trigraph/sizeof nao provam binding por regex.",
+      "evidence": "V5 report e testemunhas referenciadas tem identidade conferida; corpora executaveis nao foram reproduzidos integralmente nesta rodada.",
+      "acceptance": "Reproduzir negativos V1-V5 em fontes congeladas; bindings unicos/tipos/counts e casos desambiguantes; preservar fallback.",
+      "not_universal": "Nao anunciar parserC universal ou seguranca geral; especializacao ativada nao prova ganho68000."
+    },
+    {
+      "id": "curation_08",
+      "priority": "P2",
+      "title": "Audio: formato, continuidade e janelas de duck",
+      "lessons": [
+        "m5_15",
+        "m5_32",
+        "openbor_r3_window_duck"
+      ],
+      "owners": [
+        "code/xgm2-audio-director",
+        "operation/emulator-vdp-evidence-curator"
+      ],
+      "assessment": "mixed_method_candidate_and_pending_instrument",
+      "delta": "Declarar F32LE/canais/rate antes de medir; atividade por canal/fronteira distingue stereoDC. Duck exige janela inteira, nao somente instante do impacto. Cobertura deriva do estado do writer.",
+      "evidence": "MUGEN self-check/report de atividade rehashado; OpenBOR tem prova estatica R3 de janela, sem escuta. ALCP2 continua isolado/parcial.",
+      "acceptance": "DCestereo constante negativo, mudanca entre janelas positiva, NaN/truncamento falham; controle de tom conhecido e audição propria para qualidade; ALCP2 exige review/target.",
+      "not_universal": "Atividade digital nao e audio correto/continuo, mix, stopACK, loop ou qualidade percebida."
+    },
+    {
+      "id": "curation_09",
+      "priority": "P2",
+      "title": "Instrumentos com invariantes fisicas, nao so checksum",
+      "lessons": [
+        "m5_14",
+        "m5_15"
+      ],
+      "owners": [
+        "operation/emulator-vdp-evidence-curator",
+        "hardware/megadrive-vdp-budget-analyst"
+      ],
+      "assessment": "negative_witness_candidate_repair_not_qualified",
+      "delta": "Checar intervalos/unidades/alinhamento/particao e cobertura tambem no reader; payload resealed ainda pode ser impossivel.",
+      "evidence": "Contraexemplo8193 e report de review rehashados; R2 em staging e incompleto.",
+      "acceptance": "Witness original rejeitado, todos failuremodes e commitprefix testados; SDK/ROM propria depois da revisao.",
+      "not_universal": "Paridade/alinhamento de contadores derivam do contrato real; nao dizer que ALCP2 ou allocator ja estao qualificados."
+    },
+    {
+      "id": "curation_10",
+      "priority": "P2",
+      "title": "Pacote instalado e suite congelada como identidades separadas",
+      "lessons": [
+        "m5_34",
+        "m5_35",
+        "m5_37"
+      ],
+      "owners": [
+        "operation/sgdk-build-wrapper-operator",
+        "operation/harness-orchestration",
+        "governance/project-learning-loop"
+      ],
+      "assessment": "refinement_candidate_existing_rule",
+      "delta": "Qualificar wheel final fora do checkout; comparar hashes modulos/ABI/runtime e upgrade ancestral. Registrar suites de snapshots distintos separadamente; normalizar base de paths antes do dispatch.",
+      "evidence": "Suite antiga1007 com2skips documentada e nao repetida;115 testes desta investigacao em4runs separados nao equivalem a suite final. Wheel final permanece pendente.",
+      "acceptance": "Instalar pacote novo em ambiente independente, executar recipe->convert->install/update preservando conflito; verificar envelopes/plano na mesma base.",
+      "not_universal": "Nao somar execucoes para fabricar suite unica, nao reclassificar needs_review e nao tratar numero de versao igual como conteudo igual."
+    }
+  ],
+  "mugen39_adjudication": [
+    {
+      "id": "m5_01",
+      "title": "Rejeicao strict nao implementa a semantica ausente",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_02",
+      "title": "Paleta independente nao e identificada por igualdade RGB",
+      "disposition": "priority_method_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/art/art-conversion-pipeline/SKILL.md",
+      "groups": [
+        "curation_04"
+      ]
+    },
+    {
+      "id": "m5_03",
+      "title": "Namespace reservado deve ser validado em todas as entradas",
+      "disposition": "priority_method_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/sgdk-code-reviewer/SKILL.md",
+      "groups": [
+        "curation_04"
+      ]
+    },
+    {
+      "id": "m5_04",
+      "title": "Resultados modais precisam teardown dos banners",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/architecture/scene-state-architect/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_05",
+      "title": "Impacto depende da postura antes do contato",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/collision-system-architect/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_06",
+      "title": "Mensagem HUD deve falhar inteira e tentar novamente",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md",
+      "groups": [
+        "curation_03"
+      ]
+    },
+    {
+      "id": "m5_07",
+      "title": "Admissao DMA usa unidades efetivas e limite finito",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/vram-streaming-dma-queue/SKILL.md",
+      "groups": [
+        "curation_03"
+      ]
+    },
+    {
+      "id": "m5_08",
+      "title": "Fonte DMA e interrupcoes fazem parte do contrato de fila",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/vram-streaming-dma-queue/SKILL.md",
+      "groups": [
+        "curation_03"
+      ]
+    },
+    {
+      "id": "m5_09",
+      "title": "Fim de luta e protocolo assincrono de ownership",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/architecture/game-state-transition-architect/SKILL.md",
+      "groups": [
+        "curation_03"
+      ]
+    },
+    {
+      "id": "m5_10",
+      "title": "Biblioteca e compilador LTO precisam mesma proveniencia",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/sgdk-build-wrapper-operator/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_11",
+      "title": "Candidata precisa capsula de fonte fisica",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/sgdk-build-wrapper-operator/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_12",
+      "title": "Buffer de fonte pode estourar stack antes da sonda",
+      "disposition": "priority_method_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "groups": [
+        "curation_01"
+      ]
+    },
+    {
+      "id": "m5_13",
+      "title": "Canary mede piso de uso e nao teto seguro",
+      "disposition": "priority_method_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "groups": [
+        "curation_01"
+      ]
+    },
+    {
+      "id": "m5_14",
+      "title": "Medidor deve rejeitar memoria fisicamente impossivel",
+      "disposition": "retain_negative_repair_pending",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "groups": [
+        "curation_09"
+      ]
+    },
+    {
+      "id": "m5_15",
+      "title": "Cobertura de audio deve derivar dos estados do writer",
+      "disposition": "retain_negative_repair_pending",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "groups": [
+        "curation_08",
+        "curation_09"
+      ]
+    },
+    {
+      "id": "m5_16",
+      "title": "SDK limita cortes por AnimationFrame alem do VDP",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "groups": [
+        "curation_05"
+      ]
+    },
+    {
+      "id": "m5_17",
+      "title": "H40 exige sprites e pixels porlinha ao mesmo tempo",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_18",
+      "title": "Snapshot apenas de novo pico perde contraexemplos",
+      "disposition": "priority_method_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "groups": [
+        "curation_02"
+      ]
+    },
+    {
+      "id": "m5_19",
+      "title": "Checksum nao substitui semantica temporal do coletor",
+      "disposition": "priority_method_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "groups": [
+        "curation_02"
+      ]
+    },
+    {
+      "id": "m5_20",
+      "title": "DMA fresco e obrigatorio em frames sem overflow tambem",
+      "disposition": "priority_method_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "groups": [
+        "curation_02"
+      ]
+    },
+    {
+      "id": "m5_21",
+      "title": "Preservar pixel implica quatroflips, eixo e paleta",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/art/art-conversion-pipeline/SKILL.md",
+      "groups": [
+        "curation_05"
+      ]
+    },
+    {
+      "id": "m5_22",
+      "title": "Maximos de definicao reservam mais que frame atual",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "groups": [
+        "curation_05"
+      ]
+    },
+    {
+      "id": "m5_23",
+      "title": "Pico DMA de outro frame nao admite subtracao de tiles",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/vram-streaming-dma-queue/SKILL.md",
+      "groups": [
+        "curation_05"
+      ]
+    },
+    {
+      "id": "m5_24",
+      "title": "Busca limitada nao prova impossibilidade global",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "groups": [
+        "curation_05"
+      ]
+    },
+    {
+      "id": "m5_25",
+      "title": "Paridade de input precisa estado completo e CPU/humano",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/input-system-sgdk/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_26",
+      "title": "Melhora minuscula ou regressao permanece defaultoff",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_27",
+      "title": "Nome da flag nao prova ativacao do mecanismo",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_28",
+      "title": "Especializacao nativa pode ficar mais lenta no68000",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/sgdk-runtime-coder/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_29",
+      "title": "Gerador por texto deve provar binding e recusar sintaxe desconhecida",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/sgdk-code-reviewer/SKILL.md",
+      "groups": [
+        "curation_07"
+      ]
+    },
+    {
+      "id": "m5_30",
+      "title": "C preprocessing e sizeof podem burlar guarda aparentemente forte",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/sgdk-code-reviewer/SKILL.md",
+      "groups": [
+        "curation_07"
+      ]
+    },
+    {
+      "id": "m5_31",
+      "title": "Input do emulador precisa preflight e observacao",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/emulator-vdp-evidence-curator/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_32",
+      "title": "Audio F32LE nao e int16 e atividade nao e qualidade",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/xgm2-audio-director/SKILL.md",
+      "groups": [
+        "curation_08"
+      ]
+    },
+    {
+      "id": "m5_33",
+      "title": "Instrumentacao e maxima de campos nao se combinam livremente",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/hardware/megadrive-vdp-budget-analyst/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_34",
+      "title": "Suitede fonte congelada e skips explicitos sao o resultado",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/code/sgdk-code-reviewer/SKILL.md",
+      "groups": [
+        "curation_10"
+      ]
+    },
+    {
+      "id": "m5_35",
+      "title": "Pacote real fora do checkout descobre dependencia oculta",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/sgdk-build-wrapper-operator/SKILL.md",
+      "groups": [
+        "curation_10"
+      ]
+    },
+    {
+      "id": "m5_36",
+      "title": "Pausa para continuar nao deve deixar ROM principal congelada",
+      "disposition": "local_authorized_action_not_universal",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/rom-mastering/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_37",
+      "title": "Protocolode artefatos deve usar mesma base de paths",
+      "disposition": "bounded_refinement_candidate",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/harness-orchestration/SKILL.md",
+      "groups": [
+        "curation_10"
+      ]
+    },
+    {
+      "id": "m5_38",
+      "title": "Erro de storage nao se resolve apagando evidencia",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/operation/sgdk-build-wrapper-operator/SKILL.md",
+      "groups": []
+    },
+    {
+      "id": "m5_39",
+      "title": "Capturalocal precisa ledger e indice conferidos",
+      "disposition": "deduplicate_existing_method_or_local_result",
+      "apply_status": "not_applied",
+      "original_owner": "tools/sgdk_wrapper/.agent/skills/governance/project-learning-loop/SKILL.md",
+      "groups": []
+    }
+  ],
+  "disposition_counts": {
+    "deduplicate_existing_method_or_local_result": 15,
+    "priority_method_candidate": 7,
+    "bounded_refinement_candidate": 14,
+    "retain_negative_repair_pending": 2,
+    "local_authorized_action_not_universal": 1
+  },
+  "guardrails": [
+    "m5_36 promotion requested in that session is not a general duty to replace principal on pause",
+    "Historical proposal fidelity matrix is source_commit-bound; preserve it and route current coverage separately, do not rewrite history as new evidence",
+    "No repair of NTFS/EIO or stale lock based only on narrative",
+    "No invocation of expensive full suite or emulator because current task is investigation",
+    "No new commit/push requested in this investigation"
+  ],
+  "tests": "doc/curation/2026_10_24_learning_investigation/evidence/focused_test_summary.json",
+  "publication_scope": "investigation only; proposals not applied to canonical skills"
+}

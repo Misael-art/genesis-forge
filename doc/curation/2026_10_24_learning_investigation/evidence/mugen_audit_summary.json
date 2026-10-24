@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "mode": "audit",
+  "status": "learning_context_present",
+  "capture_status": "not_captured",
+  "lesson_count": 459,
+  "candidate_count": 338,
+  "warnings": [],
+  "missing_files": [],
+  "canonical_promotion_performed": false,
+  "original_report_sha256": "882a5607f35c81347fa2feeba3435ad2a65778dd8744f2dd0e136be0bbf039ef",
+  "scope": "summary of read-only audit; raw candidate index retained locally"
+}

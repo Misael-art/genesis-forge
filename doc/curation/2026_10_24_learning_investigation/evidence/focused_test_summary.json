@@ -1,0 +1,34 @@
+{
+  "runs": [
+    {
+      "file": "focused_tests.xml",
+      "tests": 42,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "file": "openbor_display_tests.xml",
+      "tests": 14,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "file": "overlay_tests.xml",
+      "tests": 1,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "file": "sff_v2_tests.xml",
+      "tests": 58,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    }
+  ],
+  "total_distinct_scoped_cases": 115,
+  "qualification": "host contract tests only, not full engine suite or ROM acceptance"
+}

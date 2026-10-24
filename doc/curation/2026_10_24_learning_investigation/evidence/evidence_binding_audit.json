@@ -1,0 +1,476 @@
+{
+  "scope": "identity check of all39 lesson bindings; file hash is not semantic or runtime validation",
+  "lesson_count": 39,
+  "reference_count": 52,
+  "unique_files": 32,
+  "status_counts": {
+    "matches": 32
+  },
+  "inventory_sha256": "70037bcc7e5e639528f216cb806e0af872bface0340331305ae1403869d26f9a",
+  "files": [
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/release_guard_integration_r16/root_review.json",
+      "sha256": "69c0d5e446a61583f86f206c49e0298aef55825fb4b24d185e516ece5b0942f9",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_01",
+          "expected": "69c0d5e446a61583f86f206c49e0298aef55825fb4b24d185e516ece5b0942f9"
+        }
+      ],
+      "bytes": 850
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/release_guard_integrated_tests_r16.xml",
+      "sha256": "0d62f9b9c06e1c09171417d3833137917bf082934d2f3fee05479148d7b4323e",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_01",
+          "expected": "0d62f9b9c06e1c09171417d3833137917bf082934d2f3fee05479148d7b4323e"
+        }
+      ],
+      "bytes": 14990
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_aux_review/result_r3.json",
+      "sha256": "af1212dbb0a69adccb5e6e28a3fc00e91a69bad1333f57b76e10066ca9856fe7",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_02",
+          "expected": "af1212dbb0a69adccb5e6e28a3fc00e91a69bad1333f57b76e10066ca9856fe7"
+        }
+      ],
+      "bytes": 350191
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_stack_review/result.json",
+      "sha256": "1e1864356fbbc70985752ac213c92be3e3d38c317448da1fad60f8b4de5742fa",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_03",
+          "expected": "1e1864356fbbc70985752ac213c92be3e3d38c317448da1fad60f8b4de5742fa"
+        }
+      ],
+      "bytes": 6071
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/verification_m4_20261024/code_review_report.json",
+      "sha256": "57abab9f694ad44c4737334be632756c88d1e5151f9bcc28978d714e59931da5",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_04",
+          "expected": "57abab9f694ad44c4737334be632756c88d1e5151f9bcc28978d714e59931da5"
+        }
+      ],
+      "bytes": 6489
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/backlog.json",
+      "sha256": "887da796fc5d564c06fd83a1621f18e08f7523ec11af0f83bf7be07d9593fb66",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_05",
+          "expected": "887da796fc5d564c06fd83a1621f18e08f7523ec11af0f83bf7be07d9593fb66"
+        },
+        {
+          "id": "m5_06",
+          "expected": "887da796fc5d564c06fd83a1621f18e08f7523ec11af0f83bf7be07d9593fb66"
+        },
+        {
+          "id": "m5_07",
+          "expected": "887da796fc5d564c06fd83a1621f18e08f7523ec11af0f83bf7be07d9593fb66"
+        },
+        {
+          "id": "m5_08",
+          "expected": "887da796fc5d564c06fd83a1621f18e08f7523ec11af0f83bf7be07d9593fb66"
+        },
+        {
+          "id": "m5_09",
+          "expected": "887da796fc5d564c06fd83a1621f18e08f7523ec11af0f83bf7be07d9593fb66"
+        },
+        {
+          "id": "m5_35",
+          "expected": "887da796fc5d564c06fd83a1621f18e08f7523ec11af0f83bf7be07d9593fb66"
+        },
+        {
+          "id": "m5_38",
+          "expected": "887da796fc5d564c06fd83a1621f18e08f7523ec11af0f83bf7be07d9593fb66"
+        }
+      ],
+      "bytes": 164949
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_final_review/result.json",
+      "sha256": "fe01101d7cc07c6235016e28054b026d159e2c64826436cfc14453a12f9a47b9",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_07",
+          "expected": "fe01101d7cc07c6235016e28054b026d159e2c64826436cfc14453a12f9a47b9"
+        },
+        {
+          "id": "m5_25",
+          "expected": "fe01101d7cc07c6235016e28054b026d159e2c64826436cfc14453a12f9a47b9"
+        }
+      ],
+      "bytes": 144695
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/build_normal_font_r17/linux_wine_build_report.json",
+      "sha256": "88f87056dc878711636b5b8f948c968f81945d281b2ca644c9c527a407e2060f",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_10",
+          "expected": "88f87056dc878711636b5b8f948c968f81945d281b2ca644c9c527a407e2060f"
+        }
+      ],
+      "bytes": 2298
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/frozen_normal_font_r17/manifest.json",
+      "sha256": "8b528eb51cad379c4a90be2c1dbfa6acdd04132f618f754f6cde471ce9a17d48",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_11",
+          "expected": "8b528eb51cad379c4a90be2c1dbfa6acdd04132f618f754f6cde471ce9a17d48"
+        }
+      ],
+      "bytes": 72363
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/font_stack_root_cause.json",
+      "sha256": "c91fc36730b89c1832f8cdc015a4720d182a6a2527da4933966fc597162d8c61",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_12",
+          "expected": "c91fc36730b89c1832f8cdc015a4720d182a6a2527da4933966fc597162d8c61"
+        }
+      ],
+      "bytes": 1596
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/font_repair_qualification_r14.json",
+      "sha256": "cca824de3f066813819a653248807314fb0cdf9a9eb584c3a1db194494be3205",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_12",
+          "expected": "cca824de3f066813819a653248807314fb0cdf9a9eb584c3a1db194494be3205"
+        },
+        {
+          "id": "m5_13",
+          "expected": "cca824de3f066813819a653248807314fb0cdf9a9eb584c3a1db194494be3205"
+        },
+        {
+          "id": "m5_26",
+          "expected": "cca824de3f066813819a653248807314fb0cdf9a9eb584c3a1db194494be3205"
+        },
+        {
+          "id": "m5_33",
+          "expected": "cca824de3f066813819a653248807314fb0cdf9a9eb584c3a1db194494be3205"
+        }
+      ],
+      "bytes": 1796
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/resource_budget_measured_r14.json",
+      "sha256": "59b253268f66123765688f845a0ae9d8ea0d2d800f9e8685e4f6848d12e90394",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_13",
+          "expected": "59b253268f66123765688f845a0ae9d8ea0d2d800f9e8685e4f6848d12e90394"
+        }
+      ],
+      "bytes": 4503
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_allocator_probe_review/result.json",
+      "sha256": "4591f68353eacc00267bdda3ad81a135b92bb3a294bb597ff8c1bcfcd44104d0",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_14",
+          "expected": "4591f68353eacc00267bdda3ad81a135b92bb3a294bb597ff8c1bcfcd44104d0"
+        },
+        {
+          "id": "m5_15",
+          "expected": "4591f68353eacc00267bdda3ad81a135b92bb3a294bb597ff8c1bcfcd44104d0"
+        }
+      ],
+      "bytes": 16464
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_allocator_probe_r2/result.json",
+      "sha256": "868f827f856b770b0056feb2215cd07c72d29e0551d48fadcda94ee63a36b52d",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_15",
+          "expected": "868f827f856b770b0056feb2215cd07c72d29e0551d48fadcda94ee63a36b52d"
+        }
+      ],
+      "bytes": 6410
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/cut_integration_r15/target_resource_gate.json",
+      "sha256": "c95afa29c80293afe5e583efbb3db2e73f8993434fd60b8ed1785e635086664e",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_16",
+          "expected": "c95afa29c80293afe5e583efbb3db2e73f8993434fd60b8ed1785e635086664e"
+        }
+      ],
+      "bytes": 1264
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/measurements_cut_r15_initial.json",
+      "sha256": "2aa739099b789e15be0312cec0dfea1db1a510a1816770af23988df1473582ce",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_17",
+          "expected": "2aa739099b789e15be0312cec0dfea1db1a510a1816770af23988df1473582ce"
+        }
+      ],
+      "bytes": 25817
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/measurements_sat_window_r17.json",
+      "sha256": "cc89c4f518e242670af502f5cee863624b177875e44c0bf879dc12416bb417ae",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_18",
+          "expected": "cc89c4f518e242670af502f5cee863624b177875e44c0bf879dc12416bb417ae"
+        },
+        {
+          "id": "m5_23",
+          "expected": "cc89c4f518e242670af502f5cee863624b177875e44c0bf879dc12416bb417ae"
+        },
+        {
+          "id": "m5_33",
+          "expected": "cc89c4f518e242670af502f5cee863624b177875e44c0bf879dc12416bb417ae"
+        }
+      ],
+      "bytes": 433370
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/sat_window_integration_r17/root_review.json",
+      "sha256": "e20e006e9625cb56f467975ca77a097a8e9d3059c7c274a98013b15f44ebb607",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_18",
+          "expected": "e20e006e9625cb56f467975ca77a097a8e9d3059c7c274a98013b15f44ebb607"
+        },
+        {
+          "id": "m5_19",
+          "expected": "e20e006e9625cb56f467975ca77a097a8e9d3059c7c274a98013b15f44ebb607"
+        },
+        {
+          "id": "m5_20",
+          "expected": "e20e006e9625cb56f467975ca77a097a8e9d3059c7c274a98013b15f44ebb607"
+        }
+      ],
+      "bytes": 1239
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_scanline_joint_r2/result.json",
+      "sha256": "bbfcf97bb4dad670e0baf138cf5e91e6794ca90dc937ee257350fd5beb0ee02b",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_21",
+          "expected": "bbfcf97bb4dad670e0baf138cf5e91e6794ca90dc937ee257350fd5beb0ee02b"
+        },
+        {
+          "id": "m5_22",
+          "expected": "bbfcf97bb4dad670e0baf138cf5e91e6794ca90dc937ee257350fd5beb0ee02b"
+        },
+        {
+          "id": "m5_24",
+          "expected": "bbfcf97bb4dad670e0baf138cf5e91e6794ca90dc937ee257350fd5beb0ee02b"
+        }
+      ],
+      "bytes": 12845
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_native_pack/result.json",
+      "sha256": "bda13ba210a4a5a0c47f3909a48d1e6c71972c6c0310b71ef7e30bb43a8946ec",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_22",
+          "expected": "bda13ba210a4a5a0c47f3909a48d1e6c71972c6c0310b71ef7e30bb43a8946ec"
+        },
+        {
+          "id": "m5_37",
+          "expected": "bda13ba210a4a5a0c47f3909a48d1e6c71972c6c0310b71ef7e30bb43a8946ec"
+        }
+      ],
+      "bytes": 36360
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/measurements_input_r16_initial.json",
+      "sha256": "6830f99bd16ceecf82bcbf75193a162d2ff9e857d56005c2d11ffa8994648bbd",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_26",
+          "expected": "6830f99bd16ceecf82bcbf75193a162d2ff9e857d56005c2d11ffa8994648bbd"
+        }
+      ],
+      "bytes": 13145
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/native_input_integration_r18/target_activation_gate.json",
+      "sha256": "82d7e287142bb220ca5084e6d98771447fd7d9d0bc42cec7e804b2ca5f38e360",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_27",
+          "expected": "82d7e287142bb220ca5084e6d98771447fd7d9d0bc42cec7e804b2ca5f38e360"
+        }
+      ],
+      "bytes": 4984
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/measurements_native_input_r18_initial.json",
+      "sha256": "1d9c76892057677f47168e64e26917fd56d6bd56e8ff1c63e10775a525165c1b",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_27",
+          "expected": "1d9c76892057677f47168e64e26917fd56d6bd56e8ff1c63e10775a525165c1b"
+        },
+        {
+          "id": "m5_28",
+          "expected": "1d9c76892057677f47168e64e26917fd56d6bd56e8ff1c63e10775a525165c1b"
+        }
+      ],
+      "bytes": 10175
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/native_input_integration_r18/native_input_r18_decoder.json",
+      "sha256": "d26e98b1109ed33acfd44ce5ac7ef4ed43fba6a23c1d3b0aefed74b3bc575b5d",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_28",
+          "expected": "d26e98b1109ed33acfd44ce5ac7ef4ed43fba6a23c1d3b0aefed74b3bc575b5d"
+        }
+      ],
+      "bytes": 5087
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_native_input_byte_review/result.json",
+      "sha256": "156060bcfed98e6d8924cdfc5e83f21530b5cd79d8f985ae7b5a71f17b5dbfa1",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_28",
+          "expected": "156060bcfed98e6d8924cdfc5e83f21530b5cd79d8f985ae7b5a71f17b5dbfa1"
+        }
+      ],
+      "bytes": 164810
+    },
+    {
+      "path": "tools/mugen2sgdk_forge/out/reviews/resilience_m5_native_input_guard_v5_review/result.json",
+      "sha256": "56969d636d2810021102159702a14e732c9ef5502a5a2dbf5f092705ce854965",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_29",
+          "expected": "56969d636d2810021102159702a14e732c9ef5502a5a2dbf5f092705ce854965"
+        },
+        {
+          "id": "m5_30",
+          "expected": "56969d636d2810021102159702a14e732c9ef5502a5a2dbf5f092705ce854965"
+        }
+      ],
+      "bytes": 32582
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/normal_font_r17/observed_frontend_report.json",
+      "sha256": "2d7d85846c0ca91c5417deb8852b9f154f7257b9742f449f5032e5f97c0336e2",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_31",
+          "expected": "2d7d85846c0ca91c5417deb8852b9f154f7257b9742f449f5032e5f97c0336e2"
+        }
+      ],
+      "bytes": 1891
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/audio_activity_current_r18.json",
+      "sha256": "a16a8f70f4a35dac0c939c45b048d3cf7bb879b6838cdd3c3c72a8a99ac672f3",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_32",
+          "expected": "a16a8f70f4a35dac0c939c45b048d3cf7bb879b6838cdd3c3c72a8a99ac672f3"
+        }
+      ],
+      "bytes": 5154
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/suite_frozen_r3/summary.json",
+      "sha256": "13f319642ec7711fa06b7a1c9369774462ae581ec771f5082be2aee789faafb4",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_34",
+          "expected": "13f319642ec7711fa06b7a1c9369774462ae581ec771f5082be2aee789faafb4"
+        }
+      ],
+      "bytes": 2855
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/pause_closeout/canonical_promotion_receipt.json",
+      "sha256": "8c7a89e1d721f10d0ec20f41013e968bfdd3819407eb8925d89ae572e5be4f72",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_36",
+          "expected": "8c7a89e1d721f10d0ec20f41013e968bfdd3819407eb8925d89ae572e5be4f72"
+        }
+      ],
+      "bytes": 1675
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/pause_closeout/qa_emulator_report.json",
+      "sha256": "cfe8d8ec4b68be557f95683ef9df354e413c7e2bdd3ba1e0e5c5b44007c5c3c4",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_36",
+          "expected": "cfe8d8ec4b68be557f95683ef9df354e413c7e2bdd3ba1e0e5c5b44007c5c3c4"
+        }
+      ],
+      "bytes": 1554
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/reviews/engine_resilience_m5_20261024/pause_closeout/continuation_manifest.json",
+      "sha256": "f1068db4361ee450d25f04b4795b1aceb76ca47ed5d74aac1f32b661f7cf8bdf",
+      "status": "matches",
+      "lessons": [
+        {
+          "id": "m5_39",
+          "expected": "f1068db4361ee450d25f04b4795b1aceb76ca47ed5d74aac1f32b661f7cf8bdf"
+        }
+      ],
+      "bytes": 5697
+    }
+  ]
+}
