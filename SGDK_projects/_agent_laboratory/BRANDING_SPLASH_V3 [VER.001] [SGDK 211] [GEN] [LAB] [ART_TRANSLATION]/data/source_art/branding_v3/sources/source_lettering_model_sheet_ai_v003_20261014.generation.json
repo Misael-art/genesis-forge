@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "ai_image_generation_record",
+  "generated_at": "2026-10-14T12:03:41+00:00",
+  "output_path": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png",
+  "output_sha256": "d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8",
+  "output_size_px": [
+    1672,
+    941
+  ],
+  "source_kind": "ai_generated",
+  "acceptance_status": "visual_lab_control",
+  "tool": "built_in_image_gen",
+  "reference_input": {
+    "path": "data/source_art/branding_v3/sources/source_lettering_plate_ai_v002.png",
+    "sha256": "701f28c87caf80171d2328c433a10dc176d27c60cab8011add0935345b2086c3",
+    "role": "loose_glyph_construction_reference_only"
+  },
+  "prompt_brief": "Three distinct Mega Drive-era SGDK/FORGE typographic directions on a dark navy board: heroic ice, faceted crystal, and energetic forward-leaning. Exact spelling, SGDK dominant, FORGE subordinate. Concept study only.",
+  "review": {
+    "exact_text_observed": [
+      "SGDK",
+      "FORGE"
+    ],
+    "variants_count": 3,
+    "human_approval": false,
+    "runtime_use_authorized": false
+  }
+}

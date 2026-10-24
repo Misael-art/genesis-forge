@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "authored_music_render",
+  "track_id": "splash_v3_sonic_logo_v4",
+  "source_kind": "procedural_composed_from_authored",
+  "acceptance_status": "lab",
+  "score_path": "data/source_audio/splash_v3_sonic_logo_score_v4.json",
+  "score_sha256": "ec6af8706af37e249a648473e1e741622fd33a7d254d9cbd079748d13c57cfcf",
+  "builder_path": "data/source_audio/build_splash_v3_music_vgm.py",
+  "builder_sha256": "b324b6d54b7e269f70b71ae29c18cc2f8d1cffdcb0867f615d7b582ca6b2b404",
+  "vgm_path": "res/music/splash_v3_sonic_logo_v4.vgm",
+  "vgm_sha256": "fc9bacd1888d50634077c655c45068fbf07ee2e279a4a4bdcf85fda6f77af7d3",
+  "vgm_bytes": 1060,
+  "region": "ntsc",
+  "frames": 180,
+  "loop_frames": 180,
+  "loop_seconds": 3.0,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "scope": "FM channels 0-3; V016 stereo layout keeps the brass lead centered, bass left, chord support and crystal pings right; PSG silent and no PCM in the score. VGM input is compiled to XGM2 by ResComp for the ROM. No human audition or final approval.",
+  "parent_score": {
+    "path": "data/source_audio/splash_v3_sonic_logo_score_v3.json",
+    "sha256": "040b3a51cea51ddf3b0e9c87c099f9fa809192c3a5d4221b89d0878587f3aeea",
+    "revision": "V015"
+  },
+  "voice_pan": {
+    "splash_fm_pulse_bass_v4": {
+      "channel": 0,
+      "pan": 1
+    },
+    "splash_fm_brass_signature_v4": {
+      "channel": 1,
+      "pan": 3
+    },
+    "splash_fm_glass_harmony_v4": {
+      "channel": 2,
+      "pan": 2
+    },
+    "splash_fm_crystal_accents_v4": {
+      "channel": 3,
+      "pan": 2
+    }
+  }
+}

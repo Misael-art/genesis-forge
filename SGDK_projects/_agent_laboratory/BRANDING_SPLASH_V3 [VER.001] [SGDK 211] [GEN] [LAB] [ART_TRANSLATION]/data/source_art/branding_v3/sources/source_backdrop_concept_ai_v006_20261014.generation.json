@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-14T12:49:30Z",
+  "generation_channel": "built_in_image_gen",
+  "asset_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v006_20261014.png",
+  "asset_sha256": "f3e924c1580c8ead73b0df84b9b557cef69af45eeff4e311bf236b7b371829b8",
+  "canvas_px": [
+    1447,
+    1087
+  ],
+  "edit_target": {
+    "path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v005_20261014.png",
+    "sha256": "bb32cf3c7e954b99d71fe71ed0197ba10685f1742847ccd1f75e91313016daea"
+  },
+  "brief": "A V005-derived concept revision that opens the central logo-safe area, reduces side-crystal clutter, and lowers the convergence point so it no longer competes with FORGE.",
+  "prompt_constraints": [
+    "Preserve the deep-blue crystalline cavern identity and wide composition.",
+    "Keep a broad dark center clear for separate SGDK and FORGE wordmark plates.",
+    "Reduce side crystal clutter by about one third; prefer fewer, larger, separated clusters.",
+    "Move the bright convergence point to bottom-center near the lower edge and keep its white/cyan footprint small.",
+    "Keep floor perspective lines restrained and low in frame.",
+    "Use hard-edged facets, near-black indigo, cobalt, vivid cyan, and sparse ice-white highlights.",
+    "No lettering, logos, symbols, UI, particles, blur, watermark, or photorealistic texture."
+  ],
+  "acceptance_status": "development_only",
+  "translation_gate": [
+    "Translate to 320x224, indexed 4bpp, no more than 15 visible colors, and the Mega Drive 9-bit color grid.",
+    "Review the logo-safe zone, lower convergence, edge-crystal density, and white highlight footprint at native size and in BlastEm.",
+    "Keep V005 as a comparison candidate and preserve all original source files.",
+    "Do not promote this source or its translated pixels to final without future human curation."
+  ],
+  "human_approval": false,
+  "prompt": "Edit the supplied image as a non-final art-direction concept for the Mega Drive Splash V3 backdrop. Preserve the original deep-blue crystalline cavern idea, wide composition, and overall visual identity, but improve logo readability and reduce visual competition. Keep a broad, very dark navy negative-space opening centered across roughly 70% of the width and the middle 55% of the height, suitable for separate SGDK and FORGE wordmark plates; no crystal points or bright facets may intrude into that logo safe area. Move the bright convergence point to the bottom-center near the lower edge, well below the future FORGE line, and reduce its white/cyan footprint so it does not wash out the logo. Reduce side-crystal clutter by about one third: use fewer, larger, clearly separated crystal clusters along the far left and right borders, with strong asymmetry but balanced weight. Keep the floor perspective lines restrained and low in the frame. Palette mood: near-black indigo, cobalt, vivid cyan, and sparse ice-white highlights. Hard-edged faceted illustration with clean readable planes, no blur, no text, no logos, no UI, no particles, no watermark. This is a high-resolution concept source only; it will be translated to a 320x224 indexed Mega Drive image, so favor large coherent shapes over tiny detail."
+}

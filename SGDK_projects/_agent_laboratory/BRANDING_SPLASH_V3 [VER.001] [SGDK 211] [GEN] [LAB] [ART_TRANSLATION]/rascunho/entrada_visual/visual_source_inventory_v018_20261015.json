@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "inventory_id": "splash_v3_external_visual_input_v018_20261015",
+  "purpose": "Project-local copy and hash record for the generated V018 background source.",
+  "files": [
+    {
+      "path": "rascunho/entrada_visual/visual_generation_input_v018_20261015.png",
+      "sha256": "93ddcafa8e4fcff6cf2e28b206f0a262cf7171aa149c25c9d4ce12b2220c52f0",
+      "size_bytes": 1680548,
+      "authoritative_translation_copy": "data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder"
+    }
+  ]
+}

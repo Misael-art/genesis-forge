@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "ai_generated",
+  "acceptance_status": "placeholder",
+  "generator": "Codex image_gen built-in",
+  "generated_at": "2026-10-14",
+  "generation_mode": "edit_reference",
+  "source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v014_20261014.png",
+  "source_sha256": "70cacd65a63e000a4e9d2c2ed13fd3da32fe54ef3e9824095204f2e7bee47e31",
+  "canvas_px": [
+    1500,
+    1049
+  ],
+  "mode": "RGB",
+  "reference_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v013_20261014.png",
+  "reference_sha256": "21282b2204ac942123fa53cfcb7590a7b72b35d5d9e75843bb8332e13874ba46",
+  "prompt": "Use case: stylized-concept. Asset type: V014 WIP background concept for a 320x224 Mega Drive brand splash; source image is a concept reference, not final pixel art. Primary request: Make one targeted composition correction to the supplied image: widen and protect the dark center so a large SGDK wordmark and smaller FORGE wordmark can both sit there without crystals behind them. The current open center is too narrow at the screen's logo scale. Scene/backdrop: Keep the midnight navy crystal-energy scene and its inward motion. Expand the dark, clean logo-safe opening to roughly 72% of the canvas width and 44% of its height, centered slightly below the vertical midpoint. It must cover the full intended lockup area: from about 14% to 86% of image width and 30% to 74% of image height. Keep this opening deep navy with no crystal tips, bright streaks, sparks, white facets, or sharp high-contrast detail. Its outer contour should blend into the scene with an irregular organic shape, not look like a rectangular UI panel. Subject and style: Preserve the current angular hard-edged blue crystal language, cobalt/cyan/ice-blue facets, asymmetrical perimeter clusters, and sense of discovery. Keep a few strong large shards around the edges with clear gaps between them; simplify crowded micro-shards only where needed to maintain clean silhouettes at 320x224. Composition/framing: Preserve the current wide console-screen framing and directional inward movement. Keep the top and bottom perimeter alive while leaving the central logo zone quiet; keep the lower center clear for FORGE. Lighting/mood: Bright, energetic edge glints and short directional accents, no continuous glow wash. Constraints: Change only the logo-safe negative-space opening and the edge shards that intrude into it. Preserve the overall palette, asymmetrical framing, and crystal material. No text, letters, logos, icons, interface, border, characters, or watermark. Do not introduce gradients or fog. The result remains a concept source for later Mega Drive translation.",
+  "review": "Targeted V013 edit widening the central logo-safe field while preserving the crystalline edge framing. Source concept only; native-size contrast, tile economy, ROM appearance, and human approval remain pending.",
+  "external_input_registry": "rascunho/entrada_visual/visual_source_inventory_v014_20261014.json"
+}

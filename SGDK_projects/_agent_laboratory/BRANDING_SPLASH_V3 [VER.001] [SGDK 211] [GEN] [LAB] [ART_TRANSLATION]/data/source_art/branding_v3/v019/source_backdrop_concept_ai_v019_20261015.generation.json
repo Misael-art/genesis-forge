@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "ai_generated",
+  "acceptance_status": "placeholder",
+  "generator": "Codex image_gen built-in",
+  "generated_at": "2026-10-15",
+  "generation_mode": "edit_reference",
+  "source_path": "data/source_art/branding_v3/v019/source_backdrop_concept_ai_v019_20261015.png",
+  "source_sha256": "9fc213cc726c3a2fbbfff0ff9e9f9e15023e29f74459398c0a5af9802536840e",
+  "canvas_px": [
+    1499,
+    1049
+  ],
+  "mode": "RGB",
+  "reference_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v006_20261014.png",
+  "reference_sha256": "f3e924c1580c8ead73b0df84b9b557cef69af45eeff4e311bf236b7b371829b8",
+  "prompt": "Create a new isolated WIP background concept for a 320x224 Mega Drive company splash, using the attached V006 image only as the authorized conceptual source. Preserve the confident deep-blue crystal identity and asymmetric chamber framing, but improve its conversion to native 8x8 clusters. Compose a horizontal 10:7 frame (roughly 1.43:1), not a poster. Leave the broad title-safe center from about x=18% to 82%, y=30% to 72% as dark midnight indigo with at most a few broad, very low-contrast planes; no bright facets, shards, lines or glow behind the future lettering. Create only five to seven major crystal masses: a bold tall group at upper-left, sparse small suspended shards at upper-right, and distinct lower-side groups with clear gaps. Keep the left and right sides intentionally asymmetric. Use large readable crystal silhouettes with only a few broad facets each, designed to survive a 320x224 nearest-scale read. Place one small sharp cyan ignition at bottom-center near y=88%, with a few short broken diagonal energy seams pointing toward it. Completely remove the long horizontal horizon/waterline and perspective floor grid; leave visible dark gaps between the lower crystal shelf fragments. Keep crystals and energy subordinate to a bright future wordmark. Use deep navy, indigo, cobalt and cyan with icy highlights only on a few edges; avoid broad white glare, photographic shine, tiny chips, speckles, hairline filaments, dense repeated texture, particles, lettering, logo, symbols, UI, characters, border and watermark. This is high-resolution concept art for later manual Mega Drive pixel translation, not final pixel art. Do not add text.",
+  "review": "V019 retains the deep-blue crystal frame and asymmetry, breaks the continuous horizon/floor grid, limits the title-safe field to dark broad planes, and reduces small interior shards. It is a concept source only; 320x224 conversion, wordmark contrast, CRT reading, VDP budget, ROM and human approval remain pending.",
+  "external_input_registry": "rascunho/entrada_visual/visual_source_inventory_v019_20261015.json"
+}

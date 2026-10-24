@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "ai_generated",
+  "acceptance_status": "placeholder",
+  "generator": "Codex image_gen",
+  "generated_at": "2026-10-14",
+  "source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v012_20261014.png",
+  "source_sha256": "b8b9c7833f84a14f522c42301f0f660f4358a82b721bf96d32698d4b0cba7a78",
+  "canvas_px": [
+    1500,
+    1049
+  ],
+  "reference_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v011_20261014.png",
+  "reference_sha256": "895cfe218f804f354a8dbf18846d72883437f57933bdbb52721ec8383d97db2d",
+  "prompt": "Create a revised Mega Drive splash background plate from the reference, preserving the deep navy field, asymmetric faceted cyan crystal identity and energetic edge flow. No text, letters, logo, symbol, UI or wordmark. There is a strict central safe rectangle for the future SGDK and FORGE logos: from 15% to 85% of canvas width and 30% to 72% of canvas height. Keep that rectangle uniformly deep navy with no bright pixels, no crystal facets, no streaks, no sparks and no high-contrast detail. The current upper-left crystal mass is too close to the logo: move it farther into the top-left corner so every bright facet ends before 13% of canvas width or above 27% of canvas height. Let its narrow energy streaks travel along the top edge and stop before the safe rectangle. Keep the lower-right crystal cluster fully outside the safe rectangle, with only a few small accents at the extreme lower-left edge. Preserve diagonal movement around the perimeter, with the brightest focal point outside the central safe zone. Large crisp polygon facets, saturated cobalt and cyan with sparse pale-ice highlights, dark navy shadows. No fog, bloom, gradients, tiny texture, starfield, repeated pattern or symmetry. Keep the central field broad and quiet while the border clusters still feel charged and premium.",
+  "review": "Concept source only; translated/native pixels and ROM review remain pending."
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "style_candidate_matrix",
+  "scene_id": "branding_sequence_v3",
+  "status": "draft_for_human_review",
+  "catalog_ref": "tools/sgdk_wrapper/.agent/references/art_style_catalog.json",
+  "catalog_sha256": "640c50c883d97a7de2d2851415e6c4329d7585b2f3e0ba7749a8c20c14e4057e",
+  "candidates": [
+    {
+      "style_id": "vibrant_16bit_pixel",
+      "compatibility": "native",
+      "fit": "high",
+      "use": "crisp wordmark edges and energetic blue/cyan FX clusters",
+      "risk": "a narrow blue-only ramp may flatten foreground/background separation",
+      "decision": "recommended_draft"
+    },
+    {
+      "style_id": "comic_pop_toon_halftone",
+      "compatibility": "stylized",
+      "fit": "medium",
+      "use": "punctuation and graphic impact",
+      "risk": "busy halftone can shimmer and compete with the logo at 320x224",
+      "decision": "not_selected_for_base"
+    },
+    {
+      "style_id": "pre_rendered_sgi_16bit",
+      "compatibility": "stylized",
+      "fit": "medium",
+      "use": "technical material accents only",
+      "risk": "high palette/VRAM pressure and gradient mush after VDP translation",
+      "decision": "not_selected_for_base"
+    }
+  ],
+  "selection_rule": "Use catalog entries as technical references only; do not copy named titles, silhouettes, palettes, compositions, or pixels.",
+  "human_approval": "pending"
+}

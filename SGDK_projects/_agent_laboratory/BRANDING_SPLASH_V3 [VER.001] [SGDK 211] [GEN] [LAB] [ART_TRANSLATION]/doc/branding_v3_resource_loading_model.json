@@ -1,0 +1,32 @@
+{
+  "schema_version": "resource_loading_model.v1",
+  "status": "implemented_uncompiled",
+  "scene": "APP_SCENE_BRANDING",
+  "load_owner": "scene_branding_v3_resource_preload",
+  "handoff_contract_ref": "doc/branding_v3_transition_contract.json",
+  "splash_assets": [
+    "img_splash_backdrop_v3_v006",
+    "img_splash_sgdk_v3",
+    "img_splash_forge_v3",
+    "spr_splash_particle_v3"
+  ],
+  "preload_policy": {
+    "start_frame": 0,
+    "visible_stage": "black until frame 24",
+    "max_tile_chunk_per_update": 180,
+    "dma_method": "DMA_QUEUE/DMA_QUEUE_COPY through global VBlank dispatcher",
+    "loading_failure": "Continue nominal timeline and deliver to menu; visual quality may be degraded; diagnostic flag remains."
+  },
+  "handoff_policy": {
+    "wait_for_palette_fade_idle": true,
+    "wait_for_dma_queue_size_zero": true,
+    "manual_dma_flush": false,
+    "menu_resources": "inherited menu loader; menu enter redraws after old scene teardown"
+  },
+  "known_measurement_gaps": [
+    "complete VBlank byte budget",
+    "total VRAM including C-loaded tiles/maps/fonts/SAT",
+    "worst-frame queue envelope",
+    "sustained CPU/FPS with audio"
+  ]
+}

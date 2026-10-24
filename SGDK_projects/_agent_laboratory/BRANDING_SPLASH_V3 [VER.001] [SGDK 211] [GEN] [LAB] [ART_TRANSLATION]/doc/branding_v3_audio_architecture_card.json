@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "scene_id": "branding_sequence_v3",
+  "audio_role": "cutscene",
+  "xgm2_mode": "standard_with_pcm",
+  "channel_ownership_map": {
+    "FM_CH1": {
+      "owner": "SPLASH_FM_SHORT_BASS",
+      "stealable": false,
+      "notes": "Five short C3/G2/F2/G2/C3 bass accents; no continuous low bed."
+    },
+    "FM_CH2": {
+      "owner": "SPLASH_FM_BRASS_LEAD",
+      "stealable": false,
+      "notes": "V012-positive contour C5-G5-E5-F5 | D5-G5-B5-C6, rearticulated with short 6/8 attacks and two intentional phrase breaths."
+    },
+    "FM_CH3": {
+      "owner": "SPLASH_FM_BELL_HARMONY",
+      "stealable": false,
+      "notes": "Four independent chord tones E4/A4/D4/E4; short lower support, no sustained harmonic bed."
+    },
+    "FM_CH4": {
+      "owner": "SPLASH_FM_CRYSTAL_ACCENTS",
+      "stealable": false,
+      "notes": "Quiet additive FM7 crystal voice: 5-frame C6/E6/G6 flashes at score frames 0/30/105; rests through all PCM windows."
+    },
+    "FM_CH5": {
+      "owner": "SPLASH_FM_RESERVED",
+      "stealable": true,
+      "notes": "Livre; fallback para reduzir densidade do arranjo."
+    },
+    "FM_CH6_DAC": {
+      "owner": "XGM2_PCM_DRIVER",
+      "stealable": false,
+      "notes": "Ownership do driver PCM."
+    },
+    "PSG_CH1": {
+      "owner": "SPLASH_PSG_RESERVED_SILENT_V015",
+      "stealable": true,
+      "notes": "No PSG glints in V015; retain only named event fallbacks."
+    },
+    "PSG_CH2": {
+      "owner": "SPLASH_PSG_RESERVED_SILENT_V015",
+      "stealable": true,
+      "notes": "No PSG final fifth in V015; retain only named event fallbacks."
+    },
+    "PSG_CH3": {
+      "owner": "SPLASH_CUE_FALLBACK",
+      "stealable": true,
+      "notes": "Fallback nomeado para cues quando PCM nao estiver disponivel."
+    },
+    "PSG_NOISE": {
+      "owner": "SPLASH_NOISE_FALLBACK",
+      "stealable": true,
+      "notes": "Fizz curto sincronizado; nunca uma cama continua."
+    }
+  },
+  "sfx_priority_table": [
+    {
+      "event": "splash_energy_rise",
+      "priority": 9,
+      "channel": "PCM_CH2",
+      "steals_lower_priority": true
+    },
+    {
+      "event": "splash_mark_lock",
+      "priority": 13,
+      "channel": "PCM_CH3",
+      "steals_lower_priority": true
+    },
+    {
+      "event": "splash_sweep_pass",
+      "priority": 11,
+      "channel": "PCM_CH2",
+      "steals_lower_priority": true
+    },
+    {
+      "event": "splash_tail",
+      "priority": 8,
+      "channel": "PCM_CH3",
+      "steals_lower_priority": true
+    }
+  ],
+  "dac_budget": {
+    "dac_used": true,
+    "sample_rate_hz": 13300,
+    "max_concurrent_pcm": 2,
+    "clipping_policy": "Unsigned 8-bit source centred at 128; reject 0x00/0xFF clipping and audit the signed XGM2 payload after conversion."
+  },
+  "sound_chip_identity_plan": {
+    "target_sound_school": "mega_drive_fm_psg_dac",
+    "fm_patch_palette": [
+      {
+        "role": "bass",
+        "timbre_goal": "precise electronic pulse with a short, controlled low end",
+        "channel_owner": "FM_CH1",
+        "patch_notes": "Algorithm 4 paired output paths; very short C/G/F/G/C root accents and controlled release."
+      },
+      {
+        "role": "lead",
+        "timbre_goal": "bright FM brass-like melody with fast attack and a clear upper-mid register",
+        "channel_owner": "FM_CH2",
+        "patch_notes": "Algorithm 5 with three audible carriers, modest feedback, quick attack and short note gates; V012 contour retained with deliberate rests."
+      },
+      {
+        "role": "bell_harmony",
+        "timbre_goal": "soft digital bell tone carrying chord notes below the brass lead",
+        "channel_owner": "FM_CH3",
+        "patch_notes": "Algorithm 7 with a stepped harmonic spectrum, quick onset and four short chord-tone responses."
+      },
+      {
+        "role": "crystal_accents",
+        "timbre_goal": "thin, bright upper sparkle with a fast attack and short decay",
+        "channel_owner": "FM_CH4",
+        "patch_notes": "Algorithm 7 additive partials with restrained detune; only five-frame C6/E6/G6 sparks, never a sustained line."
+      }
+    ],
+    "psg_usage": {
+      "role": "Silent in the V015 arrangement; PSG is reserved for named fallbacks if PCM cannot start.",
+      "noise_use": "Reserve noise for a short cue fallback; no continuous noise bed.",
+      "fallback": "Use a short named PSG contour only if PCM is unavailable; no musical PSG glints in V015."
+    },
+    "dac_pcm_usage": {
+      "used": true,
+      "purpose": "Four short energy, lock, sweep, and tail textures; no PCM music bed.",
+      "channel_tradeoff_acknowledged": true,
+      "sample_budget_policy": "13.3 kHz mono; cues use PCM CH2/CH3, at most two simultaneously; convert WAV sources with sample_convert.py and preserve lineage."
+    },
+    "reference_translation_policy": "Translate the blue digital reveal and the user's general 16-bit sonic-logo qualities into an original C-major YM2612/PSG phrase with short DAC punctuation; no copied melody, logo, recording, sample bed, or native SNES echo.",
+    "forbidden_assumptions": [
+      "native_snes_echo",
+      "unbounded_sample_ram",
+      "dac_without_channel_tradeoff"
+    ]
+  },
+  "fallback_plan": "If a PCM cue cannot start, play its named short PSG contour at reduced priority. If the music is not playing, do not restart any legacy FORJA V2 track.",
+  "approval_status": "needs_review",
+  "blockers": [
+    "human_audio_review_pending_v015",
+    "production_scene_audio_integration_pending",
+    "dac_budget_not_measured",
+    "loop_integrity_not_auditioned",
+    "canonical_hash_bound_blastem_audio_proof_pending"
+  ]
+}

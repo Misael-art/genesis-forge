@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "ai_generated",
+  "acceptance_status": "placeholder",
+  "generator": "Codex image_gen",
+  "generated_at": "2026-10-14",
+  "source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v010_20261014.png",
+  "source_sha256": "ef09bf9c38629b14ab5209070c5e5f89dac8d4e25cecdf484b7121b4284328e7",
+  "canvas_px": [
+    1500,
+    1049
+  ],
+  "reference_path": "rascunho/visual_lab/splash_v3_backdrop_v009_elite_320x224.png",
+  "reference_sha256": "8f98b3cef4b04a1fb7c67c4ca64033f6d2d455609a19930071dc3d305b77f2e7",
+  "prompt": "Create a new original landscape background concept for a Sega Mega Drive startup splash, using the reference only for its deep-navy and faceted-cyan crystal language. Background plate only: absolutely no text, letters, logos, symbols, typography, UI, or wordmark. Preserve a broad, calm, nearly black negative-space area across the center for a large future logo, especially the central 60 percent of the canvas. Improve the composition by moving the luminous focal point off the exact center: use an energetic diagonal current that travels from the lower-left edge toward the upper-right perimeter, with its brightest crystalline flare kept beside the logo safe area, never behind the center of the future logo. Build asymmetrical, bold crystal clusters along the outer edges: a strong upper-left facet cluster, a shorter lower-right cluster, and sparse accents near the opposite corners. Keep most rays and shards outside the central safe area; only a few fine cyan guide streaks may point inward and fade before reaching the logo area. Large readable polygon facets, crisp hard edges, saturated electric blue/cyan with restrained pale-cyan highlights, dark navy shadows, no fog, no soft bloom, no starfield, no tiny noise, no gradients, no mirror symmetry. Designed to translate cleanly to 320x224 tile-based 16-bit pixel art, with distinct silhouette groups and room for parallax.",
+  "review": "Concept source only; translated/native pixels and ROM review remain pending."
+}

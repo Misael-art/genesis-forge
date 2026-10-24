@@ -1,0 +1,34 @@
+{
+  "scope": "offline_candidate_tile_audit_input_only",
+  "source_plan_sha256": "5dd87e291645a0ecb57de190587ee05e593111bfc43f742811f4b625f0c693f4",
+  "candidate_rom_sha256": "cd3946fcd7de61709b590f77fec16f0066e3e30b3fe283fd5dad0f20a72cba5c",
+  "asset_inputs": [
+    {
+      "symbol": "img_splash_backdrop_v3_v014",
+      "path": "branding_v3/splash_backdrop_v3_v014_320x224.png",
+      "sha256": "65e9b38aa59a5c8318827bcd1398d5d8bae4b037d0d652dccd8175aee6ef06db"
+    },
+    {
+      "symbol": "img_splash_sgdk_v3",
+      "path": "branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+      "sha256": "f43440eb16fd5f3560fda61a9ce8109674113d5cf07439d432627e59400b4be9"
+    },
+    {
+      "symbol": "img_splash_forge_v3",
+      "path": "branding_v3/splash_forge_wordmark_v3_192x32.png",
+      "sha256": "0bcb75cbf646b36ba00c44d7ec11b826715d033cd87374c91af594643e2e674c"
+    },
+    {
+      "symbol": "spr_splash_particle_v3",
+      "path": "sprites/splash_particle_v3_8x8_strip.png",
+      "sha256": "4baa794092464967dff4f1dd1c1cc169ae0bbd6693215099aef5cbf7aebe2780"
+    }
+  ],
+  "res_symbols": [
+    "img_splash_backdrop_v3_v014",
+    "img_splash_sgdk_v3",
+    "img_splash_forge_v3",
+    "spr_splash_particle_v3"
+  ],
+  "baseline_v006_replaced_in_copy_only": true
+}

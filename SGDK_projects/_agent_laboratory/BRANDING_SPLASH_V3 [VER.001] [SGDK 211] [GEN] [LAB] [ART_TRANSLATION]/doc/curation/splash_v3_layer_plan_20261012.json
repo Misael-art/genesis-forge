@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "multi_plane_composition_seed",
+  "scene_id": "APP_SCENE_BRANDING",
+  "status": "visual_lab_concept_only",
+  "claim_scope": "composition_plan_not_art_approval_or_hardware_budget",
+  "viewport": {
+    "width": 320,
+    "height": 224,
+    "display_mode": "h40",
+    "grid_px": 8
+  },
+  "route_decision_record": {
+    "status": "provisional_pending_art_gate",
+    "selected_route": "paired_bg_a_bg_b_with_sprite_fx",
+    "reason": "The storyboard gives the mark a structural stage, while blue energy belongs to depth and moving FX. This preserves a clean center and lets energy move independently.",
+    "alternatives_to_compare_after_measurement": [
+      "compare_flat_visual_lab_control"
+    ],
+    "visual_direction": "original geometric 16-bit tech identity; dark navy stage, cobalt/cyan energy, crisp high-contrast clusters"
+  },
+  "depth_role_map": [
+    {
+      "surface": "BG_B",
+      "role": "distant atmosphere and subdued energy field",
+      "state_range": "energy through hold_fade",
+      "candidate_content": "near-black indigo with a sparse outer arc; no wordmarks",
+      "status": "concept_only"
+    },
+    {
+      "surface": "BG_A",
+      "role": "structural mark stage",
+      "state_range": "energy through hold_fade",
+      "candidate_content": "clear central stage, then SGDK and FORGE plates at storyboard reservations",
+      "status": "anchors_provisional"
+    },
+    {
+      "surface": "SPRITES",
+      "role": "foreground energy motion",
+      "state_range": "energy through outline, then sweep",
+      "candidate_content": "particles expand and converge; seven sweep segments cross in the sweep state",
+      "status": "geometry_not_approved"
+    },
+    {
+      "surface": "WINDOW",
+      "role": "unused",
+      "state_range": "all",
+      "candidate_content": "none",
+      "status": "locked_out_by_storyboard"
+    }
+  ],
+  "composition_schema": {
+    "energy_origin_px": [
+      160,
+      112
+    ],
+    "logo_stage_rect_px": [
+      48,
+      72,
+      224,
+      88
+    ],
+    "sgdk_plate_candidate_px": [
+      48,
+      72,
+      224,
+      48
+    ],
+    "forge_plate_candidate_px": [
+      64,
+      128,
+      192,
+      32
+    ],
+    "spatial_hierarchy": [
+      "energy frames the mark",
+      "SGDK owns the primary read",
+      "FORGE completes the studio lockup",
+      "sweep is the final directional accent"
+    ],
+    "anchor_status": "storyboard reservations only; require human model-sheet review"
+  },
+  "layer_plan": {
+    "shared_canvas": "320x224 H40; all planes share pixel origin and frame time",
+    "BG_B": "dark navy/cobalt low-frequency forms; subdued so center remains legible",
+    "BG_A": "mark-stage silhouette and imported logo plates; no code-drawn product pixels",
+    "SPRITES": "independent birth/expand/converge phases; teardown particles before sweep; sweep owns seven segments only during its state",
+    "palette_domains": "PAL0 environment, PAL1 energy, PAL2 SGDK, PAL3 FORGE; exact CRAM words not selected",
+    "fallback": "static dark field and mark hold; pending visual review and budget"
+  },
+  "source_reference": {
+    "path": "rascunho/visual_lab/branding_v3_backdrop_concept_20261012.png",
+    "sha256": "d1e719488a7e21f0122c9a8a0680995988b887155a8c64c9992089a21ea94063",
+    "status": "visual_lab_control_only"
+  },
+  "composition_preview": {
+    "path": "rascunho/visual_lab/branding_v3_backdrop_lettering_composite_preview_20261012.png",
+    "sha256": "d560047b688758b2d4d75686bf0749b4e5c957d370842e9230b10e6164e18220",
+    "status": "visual_lab_control_only; uses unapproved lettering preview"
+  },
+  "resource_topology_plan": {
+    "source_extent_px": [
+      320,
+      224
+    ],
+    "visible_window_px": [
+      320,
+      224
+    ],
+    "motion_path": "particle expansion then convergence; separate left-to-right sweep",
+    "resident_window": "BG_A, BG_B and final logo plates; particle pool resident through outline; sweep pool reused only after particles teardown",
+    "streaming_boundary": "none planned; scene-local preload, not yet measured",
+    "detail_priority": [
+      "SGDK/FORGE legibility",
+      "crystal particle silhouettes",
+      "sweep edge",
+      "background texture"
+    ],
+    "measurement_status": "blocked_global_gate"
+  },
+  "hardware_budget_review": {
+    "status": "not_validated",
+    "blocking_ref": "out/logs/measurement_gate_report_workspace_20261012.json",
+    "scanline_attempt_ref": "out/logs/splash_v3_scanline_matrix_20261012.json",
+    "scanline_attempt_validity": "invalidated_global_measurement_gate_blocked",
+    "tile_residency": "not_measured_for_v3_assets",
+    "vram_dma_cpu": "not_measured",
+    "rom_performance": "not_measured"
+  },
+  "delivery_findings": [
+    "Production lettering route remains a human choice.",
+    "No approved model sheet or production source exists.",
+    "The generated backdrop concept is RGB/high-resolution and cannot be imported as a final VDP asset.",
+    "The workspace measurement gate is blocking; the 990-frame scanline attempt is explicitly invalid.",
+    "No visual V3 runtime has been implemented or observed in BlastEm."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-14T15:59:47Z",
+  "generation_channel": "built_in_image_gen_edit",
+  "asset_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v009_20261014.png",
+  "asset_sha256": "730df0013734861a5b07d32e1eba1bb41df4a4e9d77e5c5d4d4bf7f841b8a947",
+  "canvas_px": [
+    1446,
+    1087
+  ],
+  "parent_source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v008_20261014.png",
+  "parent_source_sha256": "feb571791d496fc9085d49bcb20ebbfe5caea5b60ef30d18bd1dc3f06ecc19af",
+  "brief": "Asymmetric, directional large-facet alternative. Native review must reject if diagonal energy intrudes into lockup safe area; V006 remains active ROM baseline.",
+  "prompt_constraints": [
+    "Asymmetric large crystal group on upper-left and lower-left; only separated narrow shards at right.",
+    "Central 60 percent dark and logo-safe.",
+    "Three broad diagonal energy streaks toward a compact lower ignition.",
+    "Large forms only; no microtexture, bloom, haze, gradients or checkerboard.",
+    "No text, logos, particles, characters, UI, watermark or copied IP."
+  ],
+  "acceptance_status": "development_only",
+  "translation_gate": [
+    "Translate to native 320x224 indexed 4bpp on the Mega Drive 9-bit grid.",
+    "Inspect whether diagonal streaks intrude on the SGDK/FORGE safe area at native size.",
+    "Compare basic and curated palette against V006 and V008; measure H/V tiles.",
+    "Do not promote to /res or ROM without later human curation."
+  ],
+  "human_approval": false,
+  "prompt": "Revise this clean Mega Drive splash background concept to feel directional and asymmetric, while keeping its very dark central logo window and low detail density. This is only a BACKGROUND source, with no logos, no text, no particles, no interface. Do not mirror the crystal groups: place one stronger angular cluster entering from the upper-left edge and a smaller cluster near lower-left; on the right use only two or three narrower separated crystal shards, with more open gaps. Keep the middle 60 percent nearly black navy and empty for a large centered SGDK/FORGE lockup. Create a clear forward-motion direction with only three broad hard-edged blue/cyan energy streaks running diagonally from upper-left toward a compact ignition slightly right of bottom-center. Keep the ignition small and distinct; no broad glowing floor, no horizon glow. Preserve large coherent facets and unmistakable silhouettes at low resolution; no microtexture, no tiny sparkles, no haze, no bloom, no gradients, no checker patterns, no photographic finish. Use only deep navy, cobalt, royal blue, cyan and a few ice-blue highlights. Restrained 16-bit console art direction, native pixel translation friendly. The result must read clearly in a small 320x224 4:3 frame."
+}

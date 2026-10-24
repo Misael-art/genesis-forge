@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "branding_v3_loop_integrity",
+  "scene_id": "branding_sequence_v3",
+  "track_id": "splash_v3_sonic_logo_v3",
+  "region": "NTSC",
+  "video_frames_per_second": 60,
+  "vgm_samples_per_video_frame": 735,
+  "loop_video_frames": 180,
+  "loop_duration_seconds": 3,
+  "boundary": {
+    "start_frame": 0,
+    "end_frame_exclusive": 180,
+    "start_state": "VGM initializes all four FM patches and starts the 6/8 call immediately; PSG remains silent.",
+    "end_state": "All notes release by frame 159; the final 21 frames contain no new music events before the loop restarts."
+  },
+  "checks": [
+    "Parse VGM duration and loop offset; confirm both represent 180 NTSC frames (two bars of 6/8 at 120 BPM).",
+    "Convert using the official SGDK XGM2 path and inspect compiler output for warnings.",
+    "Compare two consecutive 180-frame cycles for event timing and register-state continuity; the V015 audio probe starts music at scene frame 60, completes all authored notes by scene frame 174, and stops the stream at frame 240.",
+    "Listen across the loop boundary in context; numeric continuity alone does not approve the loop.",
+    "Re-enter the branding scene and confirm no stale volume, note, cue timer, or PCM channel remains."
+  ],
+  "report_path": "out/logs/splash_v3_sonic_logo_v3_v015_loop_report.json",
+  "status": "structure_checked_pending_human_audition",
+  "blockers": [
+    "human_two_cycle_audition_pending_v015",
+    "hash_bound_blastem_rom_audio_pending_v015",
+    "scene_reentry_pending"
+  ]
+}

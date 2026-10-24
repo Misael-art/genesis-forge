@@ -1,0 +1,152 @@
+{
+  "build_version": "build_v002",
+  "rom_sha256": "22c6e3962c253b2588cd07d0b9d4fa2d890d4366b8e4de71a87b59e1b755baf4",
+  "size_bytes": 393216,
+  "timestamp": "2026-10-14T10:47:01.3484369-03:00",
+  "source_commit_when_available": "0d88ec3ea7b54a1150dbe9a9276d873ed0aaf859",
+  "validation_summary": {
+    "errors": 2,
+    "warnings": 19,
+    "blocking_statuses": [
+      "orphan_project_root_entry",
+      "noncanonical_project_entry_name",
+      "workflow_root_ownership_violation",
+      "gdd_substantial_insufficient",
+      "agent_context_degraded",
+      "visual_gate_blocked",
+      "visual_delivery_gate_missing",
+      "audio_validation_stale",
+      "code_loaded_tiles_unmeasured",
+      "scene_tilemap_conversion_report_missing",
+      "tilemap_flag_report_missing",
+      "per_tile_palette_conflict_report_missing",
+      "freshness_audit_stale",
+      "scene_closeout_gate_stale"
+    ]
+  },
+  "emulator_evidence_status": "ok",
+  "status_panel_snapshot": {
+    "visual_lab_aprovado": false,
+    "gameplay_rom_aprovada": false,
+    "ready_for_aaa": false
+  },
+  "qa_axes_snapshot": {
+    "gameplay_basico": "nao_testado",
+    "performance": "unproven",
+    "audio": "nao_testado",
+    "hardware_real": "nao_testado"
+  },
+  "linked_asset_versions": [
+    {
+      "asset_id": "img_brand_fx_tiles",
+      "version": "v001",
+      "source_path": "/res/branding/brand_fx_tiles.png"
+    },
+    {
+      "asset_id": "img_brand_engine_logo",
+      "version": "v001",
+      "source_path": "/res/branding/brand_engine_logo.png"
+    },
+    {
+      "asset_id": "img_brand_author_logo",
+      "version": "v001",
+      "source_path": "/res/branding/brand_author_logo.png"
+    },
+    {
+      "asset_id": "img_brand_project_logo",
+      "version": "v001",
+      "source_path": "/res/branding/brand_project_logo.png"
+    },
+    {
+      "asset_id": "img_brand_presents_text",
+      "version": "v001",
+      "source_path": "/res/branding/brand_presents_text.png"
+    },
+    {
+      "asset_id": "img_starfield_v2",
+      "version": "v001",
+      "source_path": "/res/branding/starfield_320x224.png"
+    },
+    {
+      "asset_id": "img_forge_bg_b",
+      "version": "v001",
+      "source_path": "/res/branding/forge_bg_b_320x224.png"
+    },
+    {
+      "asset_id": "img_forge_bg_a_props",
+      "version": "v001",
+      "source_path": "/res/branding/forge_bg_a_props_320x224.png"
+    },
+    {
+      "asset_id": "spr_forge_ember",
+      "version": "v001",
+      "source_path": "/res/branding/spr_forge_ember_16x16_strip.png"
+    },
+    {
+      "asset_id": "spr_forge_shard",
+      "version": "v001",
+      "source_path": "/res/branding/spr_forge_shard_16x16_strip.png"
+    },
+    {
+      "asset_id": "spr_forge_hammer",
+      "version": "v001",
+      "source_path": "/res/branding/spr_forge_hammer_48x48_strip.png"
+    },
+    {
+      "asset_id": "img_logo_engine_v2",
+      "version": "v001",
+      "source_path": "/res/branding/logo_engine_224x64.png"
+    },
+    {
+      "asset_id": "img_logo_author_v2",
+      "version": "v001",
+      "source_path": "/res/branding/logo_author_192x32.png"
+    },
+    {
+      "asset_id": "img_logo_project_v2",
+      "version": "v001",
+      "source_path": "/res/branding/logo_project_224x48.png"
+    },
+    {
+      "asset_id": "img_presents_text_v2",
+      "version": "v001",
+      "source_path": "/res/branding/presents_text_96x16.png"
+    },
+    {
+      "asset_id": "img_presents_bar_v2",
+      "version": "v001",
+      "source_path": "/res/branding/presents_bar_8x8.png"
+    },
+    {
+      "asset_id": "img_splash_backdrop_v3",
+      "version": "v001",
+      "source_path": "/res/branding_v3/splash_backdrop_v3_320x224.png"
+    },
+    {
+      "asset_id": "img_splash_backdrop_v3_v005",
+      "version": "v001",
+      "source_path": "/res/branding_v3/splash_backdrop_v3_v005_320x224.png"
+    },
+    {
+      "asset_id": "img_splash_backdrop_v3_v006",
+      "version": "v001",
+      "source_path": "/res/branding_v3/splash_backdrop_v3_v006_320x224.png"
+    },
+    {
+      "asset_id": "img_splash_sgdk_v3",
+      "version": "v001",
+      "source_path": "/res/branding_v3/splash_sgdk_wordmark_v3_224x48.png"
+    },
+    {
+      "asset_id": "img_splash_forge_v3",
+      "version": "v001",
+      "source_path": "/res/branding_v3/splash_forge_wordmark_v3_192x32.png"
+    },
+    {
+      "asset_id": "spr_splash_particle_v3",
+      "version": "v001",
+      "source_path": "/res/sprites/splash_particle_v3_8x8_strip.png"
+    }
+  ],
+  "notes": "Snapshot canonico criado por update_project_changelog.ps1"
+}

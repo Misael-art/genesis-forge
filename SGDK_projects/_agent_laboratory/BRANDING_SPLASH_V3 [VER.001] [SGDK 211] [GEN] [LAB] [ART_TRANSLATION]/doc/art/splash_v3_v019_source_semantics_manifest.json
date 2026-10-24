@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "splash_v3_v019_backdrop_source_semantics",
+  "source_image": "../../data/source_art/branding_v3/v019/source_backdrop_concept_ai_v019_20261015.png",
+  "source_sha256": "9fc213cc726c3a2fbbfff0ff9e9f9e15023e29f74459398c0a5af9802536840e",
+  "scene_truth_kind": "agent_parsed_candidate_needs_human_review",
+  "layout_complexity": "low",
+  "reports_dir": "out/logs/splash_v3_v019_semantic_review_20261015",
+  "source_inventory": {
+    "includes": [
+      "scene_plane_bg_b",
+      "broad_logo_safe_negative_space",
+      "dominant_upper_left_crystal_mass",
+      "sparse_upper_right_shards",
+      "separated_lower_side_crystal_groups",
+      "small_bottom_center_ignition",
+      "broken_diagonal_energy_seams"
+    ],
+    "notes": [
+      "One full-frame environment plate; future wordmarks and particles remain separate runtime assets.",
+      "The title-safe region is a low-contrast compositional region within one BG_B plate, not another hardware plane.",
+      "No continuous horizon, waterline, reflection, or perspective floor grid is intended.",
+      "This semantic parse is provisional and not a human visual approval."
+    ]
+  },
+  "drop_policy": {
+    "drop_classes": [
+      "text_or_logo_if_generated",
+      "UI",
+      "characters",
+      "watermarks",
+      "dense_microshards",
+      "photographic_specularity"
+    ],
+    "notes": [
+      "Keep the source as one complete BG_B plate; do not crop artificial hardware planes."
+    ]
+  },
+  "composition_schema": {
+    "kind": "single_background_plate",
+    "roles": [
+      {
+        "region_id": "crystal_energy_chamber",
+        "composition_role": "scene_plane_bg_b",
+        "order": 0
+      }
+    ]
+  },
+  "semantic_parse_report": {
+    "source_layout_type": "single_frame",
+    "semantic_regions": [
+      {
+        "id": "crystal_energy_chamber",
+        "classification": "scene_plane_bg_b",
+        "bbox": [
+          0,
+          0,
+          1499,
+          1049
+        ],
+        "notes": "Asymmetric side crystal masses and sparse lower energy seams frame a broad dark title-safe center."
+      }
+    ],
+    "auxiliary_regions": [],
+    "drop_regions": [],
+    "animation_ranges": [],
+    "final_scene_hypothesis": {
+      "summary": "Use as one BG_B plate. Preserve dark logo-safe center; separate text and animated shards belong to runtime assets.",
+      "reference_image": ""
+    },
+    "notes_on_why": [
+      "The output is one continuous environment source and does not encode separable BG_A/B planes.",
+      "This candidate derives from the V006 source authorized in visual_source_of_truth; V018 pixels were not used as a generation source."
+    ]
+  },
+  "training_labels": {
+    "goal": "Identify one BG_B crystalline energy chamber with a low-contrast title-safe center, broken lower crystal seams, and an asymmetric bottom-center ignition.",
+    "status": "candidate_needs_human_review"
+  }
+}

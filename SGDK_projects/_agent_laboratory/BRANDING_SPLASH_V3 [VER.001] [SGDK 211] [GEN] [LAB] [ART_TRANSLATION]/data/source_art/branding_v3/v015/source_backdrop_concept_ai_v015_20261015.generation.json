@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "ai_generated",
+  "acceptance_status": "placeholder",
+  "generator": "Codex image_gen built-in",
+  "generated_at": "2026-10-15",
+  "generation_mode": "edit_reference",
+  "source_path": "data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.png",
+  "source_sha256": "87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188",
+  "canvas_px": [
+    1500,
+    1049
+  ],
+  "mode": "RGB",
+  "reference_path": "rascunho/entrada_visual/visual_generation_input_v015_20261015.png",
+  "reference_sha256": "8f74eaaa903e365c3621963d556800bf43d1e350777d2a57b8cba55fc9e2e60d",
+  "prompt": "Edit this background concept with one targeted composition pass. Preserve the deep midnight-indigo central title window, crystalline blue material, high-quality faceted rendering, and wide console framing. Make the perimeter clearly asymmetric: keep the dominant tall crystal cluster on the upper-left, simplify the upper-right to a few separated shards, and shift the strongest right-side crystal mass lower. Remove the long bright horizontal waterline/reflection across the bottom; replace it with a few broken, short angular energy paths that converge to a much smaller glint below the title-safe area. Reduce the bottom-center brightness substantially so it cannot compete with the smaller FORGE wordmark. Keep the central 58% dark, quiet and free of sharp details or streaks. No text, logos, symbols, borders, UI, characters or watermarks. Do not add elements; only rebalance asymmetry and reduce the lower flare/reflection. It remains high-resolution concept art for later manual Mega Drive VDP translation, not final pixel art.",
+  "review": "V015 keeps an expanded dark title field, a dominant upper-left crystal group and a lighter upper-right edge; the strongest right-side cluster sits lower than in its reference. The lower reflection is reduced but still visible, so this composition remains needs_review. Source concept only: native 320x224 readability, manual 8x8 translation, tile reuse, ROM appearance and human approval remain pending.",
+  "external_input_registry": "rascunho/entrada_visual/visual_source_inventory_v015_20261015.json"
+}

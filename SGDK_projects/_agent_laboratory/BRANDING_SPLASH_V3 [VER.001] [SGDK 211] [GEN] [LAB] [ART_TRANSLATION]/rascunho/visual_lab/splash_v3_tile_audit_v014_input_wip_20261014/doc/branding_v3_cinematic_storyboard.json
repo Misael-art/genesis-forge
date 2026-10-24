@@ -1,0 +1,1058 @@
+{
+  "schema_version": "1.0.0",
+  "contract_id": "branding_v3_cinematic_storyboard",
+  "development_contract_ref": "doc/branding_v3_development_contract.json",
+  "scene_id": "branding_sequence_v3",
+  "runtime_scene_id": "APP_SCENE_BRANDING",
+  "scene_role": "cutscene",
+  "status_ceiling": "lab_only",
+  "ready_for_aaa": false,
+  "human_doc": "doc/branding_v3_scene_conception.md",
+  "source_authority": {
+    "roteiro_ref": "doc/12-roteiro.md",
+    "spec_ref": "doc/13-spec-cenas.md",
+    "context_pack_manifest_ref": "doc/branding_v3_context_pack_manifest.json",
+    "reference_profile": [
+      {
+        "game": "Xemu startup identity (emulator reference, not a game)",
+        "inheritance": "Blue energy emergence and central lockup timing only; no source pixels.",
+        "reference_kind": "user_supplied_motion_direction"
+      },
+      {
+        "game": "Real Bout Fatal Fury Genesis",
+        "inheritance": "Legal VDP density as a workmanship pointer; no sprites, stages, or characters.",
+        "reference_kind": "craft_reference"
+      },
+      {
+        "game": "KOF Mega Drive",
+        "inheritance": "Original native pixel clusters and deliberate palette roles; no art or IP copying.",
+        "reference_kind": "craft_reference"
+      }
+    ]
+  },
+  "cinematic_direction": {
+    "intention": "Uma massa de energia azul se re\u00fane e revela a assinatura SGDK Forge em uma tomada cont\u00ednua de quatro segundos.",
+    "narrative_structure": "Uma tomada cont\u00ednua de quatro segundos: escurid\u00e3o/sil\u00eancio, campo azul articulado, converg\u00eancia leg\u00edvel, reveal SGDK em dois beats, FORGE subordinado, sweep direcional, hold e fade. O preview isolado termina em A: REVER; o perfil de handoff entra no menu ap\u00f3s fade e drenagem DMA.",
+    "cinematic_language_methods": [
+      "Tomada continua; BG_B permanece atras das placas BG_A durante a animacao.",
+      "64 particulas 8x8 nascem escalonadas e convergem para celulas 8x8 visivelmente ocupadas pela mascara WIP atual do SGDK.",
+      "A marca SGDK revela em dois beats de paleta: contorno azul entre F84-119; preenchimento claro entre F120-137.",
+      "FORGE entra abaixo de SGDK por fade-in e permanece subordinada.",
+      "Sete instancias 8x8 reutilizadas atravessam o lockup em uma diagonal curta.",
+      "O perfil preview reduz a lumin\u00e2ncia do fundo, preserva SGDK/FORGE, mostra A: REVER e espera BUTTON_A; o perfil handoff mant\u00e9m input travado, espera fade/DMA e transfere ownership ao menu."
+    ],
+    "selected_fake_cinema_tools": [
+      "sprite_staging",
+      "hold_frame",
+      "lighting_as_narrative",
+      "sound_as_primary_force",
+      "strong_static_composition"
+    ],
+    "signature_moment": "F118: cue de lock; F120: o campo de particulas se oculta e comeca o preenchimento claro; F138: o lockup SGDK completa a revelacao."
+  },
+  "timeline_semantics": {
+    "display": "NTSC",
+    "total_frames": 240,
+    "ranges": "Global frame ranges are left-inclusive and right-exclusive.",
+    "input_policy": "Nenhum skip durante os 240 quadros. Preview isolado: A: REVER reinicia ap\u00f3s o hold. Perfil handoff: sem replay; espera conclus\u00e3o do fade/DMA ap\u00f3s F240 e entrega ao menu com input bloqueado por 12 quadros.",
+    "post_timeline_handoff": "O segmento visual continua nominalmente [0,240); drenagem de DMA/fade pode estender o hold antes do menu. A dura\u00e7\u00e3o efetiva precisa ser medida em ROM."
+  },
+  "layout": {
+    "viewport": {
+      "width": 320,
+      "height": 224,
+      "display_mode": "h40"
+    },
+    "energy_origin": {
+      "x": 160,
+      "y": 112
+    },
+    "particle_radius_candidate_px": 88,
+    "sgdk_plate": {
+      "x": 48,
+      "y": 72,
+      "width": 224,
+      "height": 48
+    },
+    "forge_plate": {
+      "x": 64,
+      "y": 128,
+      "width": 192,
+      "height": 32
+    },
+    "sweep_band": {
+      "segment_count": 7,
+      "segment_width": 8,
+      "segment_height": 8,
+      "segment_y": [
+        76,
+        84,
+        92,
+        100,
+        108,
+        116,
+        124
+      ],
+      "x_start": -16,
+      "x_end": 274,
+      "x_step_per_frame": 10,
+      "asset_reuse": "spr_splash_particle_v3"
+    },
+    "note": "Composition reservations remain candidates, not approved pixel anchors. The 64x8x8 profile is a measured sprite-pressure candidate only; its model sheet and final art remain pending human review.",
+    "particle_profile_candidate": {
+      "count": 64,
+      "frame_size_px": [
+        8,
+        8
+      ],
+      "max_sprites_per_scanline": 13,
+      "max_sprite_pixels_per_scanline": 104,
+      "max_hardware_sprite_links": 64,
+      "worst_frame": 106,
+      "status": "local_geometry_passed_visual_review_pending",
+      "measurement_ref": "out/logs/splash_v3_scanline_glyph_anchor_v002_20261014.json",
+      "note": "The current WIP choreography measures 13 sprites/104 pixels at the worst H40 scanline (frame 106), with 64 total sprite links. This is only local sprite geometry; the workspace measurement gate, total VRAM, DMA, CPU, DAC, sustained FPS and final art remain open."
+    },
+    "rejected_pressure_candidates": [
+      {
+        "count": 80,
+        "frame_size_px": [
+          8,
+          8
+        ],
+        "max_sprites_per_scanline": 23,
+        "status": "rejected_scanline_overflow",
+        "measurement_ref": "out/logs/splash_v3_scanline_matrix_scoped_20261013_r3.json"
+      },
+      {
+        "count": 48,
+        "frame_size_px": [
+          16,
+          16
+        ],
+        "max_sprites_per_scanline": 22,
+        "max_sprite_pixels_per_scanline": 352,
+        "status": "rejected_scanline_overflow",
+        "measurement_ref": "out/logs/splash_v3_scanline_matrix_scoped_20261013_r3.json"
+      },
+      {
+        "count": 64,
+        "frame_size_px": [
+          16,
+          16
+        ],
+        "max_sprites_per_scanline": 27,
+        "max_sprite_pixels_per_scanline": 432,
+        "status": "rejected_scanline_overflow",
+        "measurement_ref": "out/logs/splash_v3_scanline_matrix_scoped_20261013_r3.json"
+      }
+    ],
+    "headroom_justification": "Selected V006/B WIP art residency is 823/1740 tiles (47.3%); the V006 background is 583 H/V-unique tiles. V005 remains comparison-only. The 20-40 tile target is open only if deliberate re-authoring preserves facets; the mechanical 40-tile control remains rejected."
+  },
+  "state_machine": {
+    "runtime_model": "scripted_step_table",
+    "states": [
+      {
+        "state_id": "black_silence",
+        "narrative_purpose": "Give the viewer a full beat of darkness and silence before energy exists.",
+        "shot_type": "establishing",
+        "entry_load": {
+          "global_frame": 0,
+          "load_asset_symbols": [
+            "img_splash_backdrop_v3_v006",
+            "img_splash_sgdk_v3",
+            "img_splash_forge_v3",
+            "spr_splash_particle_v3"
+          ],
+          "input_locked": true,
+          "load_status": "Incremental placeholder tile preload begins at frame 0 in chunks of at most 180 tiles per update; the visible stage remains black."
+        },
+        "render_surfaces": {
+          "BG_A": "black",
+          "BG_B": "black",
+          "SPRITES": "none",
+          "WINDOW": "unused"
+        },
+        "palette_domains": [
+          {
+            "slot": "PAL0",
+            "owner": "branding_v3_palette_controller",
+            "state": "black"
+          }
+        ],
+        "text_block": {
+          "enabled": false,
+          "content": "none",
+          "rendering": "no font renderer"
+        },
+        "advance_trigger": "WAIT_FRAMES",
+        "duration_frames": 24,
+        "dynamic_fx": [],
+        "motion_beats": [
+          {
+            "beat_type": "stillness_justification",
+            "start_frame": 0,
+            "duration_frames": 24,
+            "purpose": "Silence gives the later energy a clear contrast."
+          }
+        ],
+        "animation_link": {
+          "global_frame_range_exclusive": [
+            0,
+            24
+          ]
+        },
+        "audio_cue": {
+          "cue_id": "silence",
+          "owner": "branding_v3_audio_director"
+        },
+        "exit_teardown": "Keep the planes blank and enter the energy state without a scene cut."
+      },
+      {
+        "state_id": "energy",
+        "narrative_purpose": "Blue particles emerge in waves, expand from the center, then begin drawing inward.",
+        "shot_type": "object_insert",
+        "entry_load": {
+          "global_frame": 24,
+          "load_asset_symbols": [
+            "img_splash_backdrop_v3_v006",
+            "spr_splash_particle_v3"
+          ],
+          "load_status": "The three image tilesets are queued in image chunks and the eight particle-frame tilesets are queued one per update; preload completes by the end of frame 15. The visible stage remains black until the energy beat at frame 24; the BG_B map and palettes are queued before the energy beat at frame 24. Runtime VDP dump and total VBlank envelope remain pending."
+        },
+        "render_surfaces": {
+          "BG_A": "empty mark stage",
+          "BG_B": "backdrop plate",
+          "SPRITES": "particle pool",
+          "WINDOW": "unused"
+        },
+        "palette_domains": [
+          {
+            "slot": "PAL0",
+            "owner": "branding_v3_palette_controller",
+            "role": "backdrop environment"
+          },
+          {
+            "slot": "PAL3",
+            "owner": "branding_v3_palette_controller",
+            "role": "particle energy"
+          }
+        ],
+        "text_block": {
+          "enabled": false,
+          "content": "none"
+        },
+        "advance_trigger": "WAIT_FRAMES",
+        "duration_frames": 60,
+        "dynamic_fx": [
+          "16-sector fixed-point radial particle motion",
+          "64 staggered births over frames 24-83",
+          "8-frame indexed crystal sprite animation",
+          "short energy cue at frame 24; XGM2 music starts at frame 60"
+        ],
+        "motion_beats": [
+          {
+            "beat_type": "impact_motion",
+            "start_frame": 24,
+            "duration_frames": 60,
+            "purpose": "Grow the field around the origin, then make its contraction readable."
+          }
+        ],
+        "animation_link": {
+          "global_frame_range_exclusive": [
+            24,
+            84
+          ],
+          "choreography_ref": "out/logs/choreography_inputs_splash_v3_glyph_anchor_v001_20261014_r2/manifest.json",
+          "scanline_measurement_ref": "out/logs/splash_v3_scanline_glyph_anchor_v002_20261014.json",
+          "sprite_profile_candidate": "64x8x8"
+        },
+        "audio_cue": {
+          "cue_id": "splash_energy_rise",
+          "music_loop": "SPLASH_V3_SONIC_LOGO_V3",
+          "owner": "branding_v3_audio_director"
+        },
+        "exit_teardown": "Retain the backdrop and particle pool; do not clear either plane."
+      },
+      {
+        "state_id": "outline",
+        "narrative_purpose": "Let the crystalline blue contour of SGDK form before the pale interior fill appears.",
+        "shot_type": "reaction",
+        "entry_load": {
+          "global_frame": 84,
+          "load_asset_symbols": [
+            "img_splash_sgdk_v3"
+          ],
+          "load_status": "The SGDK tilemap is queued at frame 84. A palette pass reveals contour colors 1-9 while fill colors 10-15 remain black; particles converge during the reveal."
+        },
+        "render_surfaces": {
+          "BG_A": "SGDK blue contour at x48 y72; fill colors 10-15 remain black during this first palette beat.",
+          "BG_B": "backdrop plate",
+          "SPRITES": "contracting particle pool",
+          "WINDOW": "unused"
+        },
+        "palette_domains": [
+          {
+            "slot": "PAL0",
+            "owner": "branding_v3_palette_controller",
+            "role": "backdrop"
+          },
+          {
+            "slot": "PAL1",
+            "owner": "branding_v3_palette_controller",
+            "role": "SGDK wordmark"
+          },
+          {
+            "slot": "PAL3",
+            "owner": "branding_v3_palette_controller",
+            "role": "particle FX"
+          }
+        ],
+        "text_block": {
+          "enabled": false,
+          "content": "none"
+        },
+        "advance_trigger": "WAIT_FRAMES",
+        "duration_frames": 36,
+        "dynamic_fx": [
+          "particle contraction to 64 centers of visible 8x8 SGDK cells from the current WIP wordmark mask",
+          "36-frame palette reveal of the existing SGDK plate",
+          "64x8x8 measured sprite-pressure candidate; visual anchors remain provisional"
+        ],
+        "motion_beats": [
+          {
+            "beat_type": "impact_motion",
+            "start_frame": 84,
+            "duration_frames": 36,
+            "purpose": "Let the energy appear to resolve into the wordmark without inventing unapproved glyph anchors."
+          }
+        ],
+        "animation_link": {
+          "global_frame_range_exclusive": [
+            84,
+            120
+          ],
+          "glyph_anchor_map": "out/logs/choreography_inputs_splash_v3_glyph_anchor_v001_20261014_r2/particle_glyph_anchor_contract.json",
+          "choreography_ref": "out/logs/choreography_inputs_splash_v3_glyph_anchor_v001_20261014_r2/manifest.json",
+          "target_model": "Centers of current WIP 8x8 SGDK cells with at least 24 visible source pixels; provisional mask-derived anchors, not an approved glyph model sheet.",
+          "scanline_measurement_ref": "out/logs/splash_v3_scanline_glyph_anchor_v002_20261014.json",
+          "sprite_profile_candidate": "64x8x8"
+        },
+        "audio_cue": {
+          "cue_id": "splash_mark_lock",
+          "trigger_frame": 118,
+          "owner": "branding_v3_audio_director"
+        },
+        "exit_teardown": "Remove particle sprites at the state boundary; keep the SGDK plate resident.",
+        "palette_script": "PAL_fadeIn over frames 84-119 uses the source colors for indices 1-9 and black for indices 10-15."
+      },
+      {
+        "state_id": "fill",
+        "narrative_purpose": "The blue contour gains a bright interior fill in a separate, readable beat.",
+        "shot_type": "reaction",
+        "entry_load": {
+          "global_frame": 120,
+          "load_asset_symbols": [],
+          "load_status": "At frame 120 the contour holds and SGDK fill colors 10-15 fade in over 18 frames, completing at frame 138."
+        },
+        "render_surfaces": {
+          "BG_A": "Full-color SGDK image plate at x48 y72; pale fill indices 10-15 reveal over 18 frames from frame 120.",
+          "BG_B": "backdrop plate",
+          "SPRITES": "none",
+          "WINDOW": "unused"
+        },
+        "palette_domains": [
+          {
+            "slot": "PAL0",
+            "owner": "branding_v3_palette_controller",
+            "role": "backdrop"
+          },
+          {
+            "slot": "PAL1",
+            "owner": "branding_v3_palette_controller",
+            "role": "SGDK full palette"
+          }
+        ],
+        "text_block": {
+          "enabled": false,
+          "content": "none"
+        },
+        "advance_trigger": "WAIT_FRAMES",
+        "duration_frames": 30,
+        "dynamic_fx": [
+          "Hold the full SGDK palette and wordmark; no second plate or tile upload is added in this state."
+        ],
+        "motion_beats": [
+          {
+            "beat_type": "hold",
+            "start_frame": 120,
+            "duration_frames": 30,
+            "purpose": "Hold the mark in place while its palette changes from outline to fill."
+          }
+        ],
+        "animation_link": {
+          "global_frame_range_exclusive": [
+            120,
+            150
+          ],
+          "palette_script": "PAL_fadeIn over frames 84-119; PAL1 is set to the source palette at frame 120."
+        },
+        "audio_cue": {
+          "cue_id": "none",
+          "music_loop": "SPLASH_V3_SONIC_LOGO_V3",
+          "owner": "branding_v3_audio_director"
+        },
+        "exit_teardown": "Keep the filled SGDK plate resident; CRAM remains owned by the splash.",
+        "palette_script": "At frame 120, PAL_fadeIn fades CRAM entries 26-31 from black to SGDK palette indices 10-15 over 18 frames."
+      },
+      {
+        "state_id": "forge",
+        "narrative_purpose": "Add FORGE below SGDK to complete the compact studio signature.",
+        "shot_type": "panel_hold",
+        "entry_load": {
+          "global_frame": 150,
+          "load_asset_symbols": [
+            "img_splash_forge_v3"
+          ],
+          "load_status": "FORGE map is queued at frame 150 and fades in over 12 frames."
+        },
+        "render_surfaces": {
+          "BG_A": "SGDK at x48 y72 and FORGE at x64 y128",
+          "BG_B": "backdrop plate",
+          "SPRITES": "none",
+          "WINDOW": "unused"
+        },
+        "palette_domains": [
+          {
+            "slot": "PAL0",
+            "owner": "branding_v3_palette_controller",
+            "role": "backdrop"
+          },
+          {
+            "slot": "PAL1",
+            "owner": "branding_v3_palette_controller",
+            "role": "SGDK"
+          },
+          {
+            "slot": "PAL2",
+            "owner": "branding_v3_palette_controller",
+            "role": "FORGE"
+          },
+          {
+            "slot": "PAL3",
+            "owner": "branding_v3_palette_controller",
+            "role": "particle sprite palette"
+          }
+        ],
+        "text_block": {
+          "enabled": false,
+          "content": "none"
+        },
+        "advance_trigger": "WAIT_FRAMES",
+        "duration_frames": 30,
+        "dynamic_fx": [
+          "FORGE 192x32 image plate fades in over 12 frames below SGDK; 22-frame readable hold follows."
+        ],
+        "motion_beats": [
+          {
+            "beat_type": "impact_motion",
+            "start_frame": 150,
+            "duration_frames": 8,
+            "purpose": "Reveal the second plate without pushing SGDK from its reserved stage."
+          },
+          {
+            "beat_type": "hold",
+            "start_frame": 158,
+            "duration_frames": 22,
+            "purpose": "Give the completed lockup time to read."
+          }
+        ],
+        "animation_link": {
+          "global_frame_range_exclusive": [
+            150,
+            180
+          ]
+        },
+        "audio_cue": {
+          "cue_id": "none",
+          "music_loop": "SPLASH_V3_SONIC_LOGO_V3",
+          "owner": "branding_v3_audio_director"
+        },
+        "exit_teardown": "Keep both wordmark plates and both palette domains resident."
+      },
+      {
+        "state_id": "sweep",
+        "narrative_purpose": "Seven shared crystal sprites cross the completed lockup in a brief diagonal trail.",
+        "shot_type": "pan",
+        "entry_load": {
+          "global_frame": 180,
+          "load_asset_symbols": [
+            "spr_splash_particle_v3"
+          ],
+          "load_status": "Reuses seven already-loaded 8x8 frames from the 64-sprite pool; no separate 16x32 sweep asset exists."
+        },
+        "render_surfaces": {
+          "BG_A": "SGDK and FORGE plates",
+          "BG_B": "backdrop plate",
+          "SPRITES": "seven 8x8 crystal sprites reused from the energy pool",
+          "WINDOW": "unused"
+        },
+        "palette_domains": [
+          {
+            "slot": "PAL0",
+            "owner": "branding_v3_palette_controller",
+            "role": "backdrop"
+          },
+          {
+            "slot": "PAL1",
+            "owner": "branding_v3_palette_controller",
+            "role": "SGDK"
+          },
+          {
+            "slot": "PAL2",
+            "owner": "branding_v3_palette_controller",
+            "role": "FORGE"
+          },
+          {
+            "slot": "PAL3",
+            "owner": "branding_v3_palette_controller",
+            "role": "sweep FX"
+          }
+        ],
+        "text_block": {
+          "enabled": false,
+          "content": "none"
+        },
+        "advance_trigger": "WAIT_FRAMES",
+        "duration_frames": 30,
+        "dynamic_fx": [
+          "30-frame diagonal crystal-trail pass",
+          "per-frame crystal-frame animation"
+        ],
+        "motion_beats": [
+          {
+            "beat_type": "pan_or_scroll",
+            "start_frame": 180,
+            "duration_frames": 30,
+            "purpose": "Move a narrow crystalline accent over the wordmark from left to right without hiding its letterforms."
+          }
+        ],
+        "animation_link": {
+          "global_frame_range_exclusive": [
+            180,
+            210
+          ],
+          "choreography_ref": "out/logs/choreography_inputs_splash_v3_glyph_anchor_v001_20261014_r2/manifest.json",
+          "scanline_measurement_ref": "out/logs/splash_v3_scanline_glyph_anchor_v002_20261014.json",
+          "sprite_profile_candidate": "sweep_7x8x8"
+        },
+        "audio_cue": {
+          "cue_id": "splash_sweep_pass",
+          "trigger_frame": 178,
+          "owner": "branding_v3_audio_director"
+        },
+        "exit_teardown": "Hide the seven borrowed particle sprites at frame 210; retain both wordmark plates."
+      },
+      {
+        "state_id": "hold_fade",
+        "narrative_purpose": "Settle the crystal field while retaining the luminous SGDK/FORGE lockup and a clear laboratory replay prompt.",
+        "shot_type": "transition",
+        "entry_load": {
+          "global_frame": 210,
+          "load_asset_symbols": [],
+          "load_status": "No new art tiles are loaded in this state; the V006 PAL0 field settles without fading the SGDK/FORGE palettes to black."
+        },
+        "render_surfaces": {
+          "BG_A": "SGDK and FORGE lockup remain visible; A: REVER is drawn in the open gap below FORGE.",
+          "BG_B": "V006 crystal field remains visible at a cooler lower-luminance PAL0 hold palette.",
+          "SPRITES": "none after the sweep teardown.",
+          "WINDOW": "unused"
+        },
+        "palette_domains": [
+          {
+            "slot": "PAL0",
+            "owner": "branding_v3_palette_controller",
+            "role": "V006 backdrop fades to sBackdropReviewPalette over the final 30 frames; index 0 stays black."
+          },
+          {
+            "slot": "PAL1",
+            "owner": "branding_v3_palette_controller",
+            "role": "SGDK identity remains at its full wordmark palette during the preview hold."
+          },
+          {
+            "slot": "PAL2",
+            "owner": "branding_v3_palette_controller",
+            "role": "FORGE identity remains at its full wordmark palette during the preview hold."
+          },
+          {
+            "slot": "PAL3",
+            "owner": "branding_v3_palette_controller",
+            "role": "Replay hint text color at palette index 15."
+          }
+        ],
+        "text_block": {
+          "enabled": true,
+          "content": "A: REVER",
+          "rendering": "SGDK built-in VDP font, lab preview only, PAL3 index 15, tile column 16 and row 21; centered below FORGE with clearance from the lower flare."
+        },
+        "advance_trigger": "WAIT_FRAMES",
+        "duration_frames": 30,
+        "dynamic_fx": [
+          "30-frame PAL0 transition from the V006 source palette to the cool lower-luminance preview hold palette.",
+          "At frame 240 stop audio, draw A: REVER at tile column 16,row 21 and wait for BUTTON_A."
+        ],
+        "motion_beats": [
+          {
+            "beat_type": "hold",
+            "start_frame": 210,
+            "duration_frames": 8,
+            "purpose": "Allow a final read of the full lockup."
+          },
+          {
+            "beat_type": "stillness_justification",
+            "start_frame": 218,
+            "duration_frames": 22,
+            "purpose": "Complete the selected V006 field fade, retain the lockup, then hold the replay hint for human review."
+          }
+        ],
+        "animation_link": {
+          "global_frame_range_exclusive": [
+            210,
+            240
+          ]
+        },
+        "audio_cue": {
+          "cue_id": "splash_tail",
+          "trigger_frame": 210,
+          "owner": "branding_v3_audio_director"
+        },
+        "exit_teardown": "At frame 240 stop audio and hide particles, draw the static replay hint while retaining both wordmarks and the V006 field; BUTTON_A re-enters APP_SCENE_BRANDING. Input replay remains to be captured.",
+        "load_status": "In the visual preview, fade PAL0 only from frames 210-239; PAL1/PAL2 hold the wordmarks. The prompt A: REVER appears at frame 240; A replays the preview.",
+        "state_teardown": "The isolated preview keeps the logo plates resident through the replay prompt; BUTTON_A re-enters APP_SCENE_BRANDING. A diagnostic host-A replay was visually sampled, but ROM-side input telemetry remains pending. The production handoff/fade remains a separate future gate."
+      }
+    ]
+  },
+  "cutscene_resource_plan": {
+    "measurement_status": "post_ResComp_tile_residency_and_sprite_scanline_geometry_measured_locally; total_VDP_DMA_CPU_DAC_FPS_unmeasured",
+    "measurement_gate_ref": "out/logs/measurement_gate_report_workspace_20261012.json",
+    "states": [
+      {
+        "state_id": "black_silence",
+        "vram_resident_set": {
+          "resident": [
+            "img_splash_backdrop_v3_v006",
+            "img_splash_sgdk_v3",
+            "img_splash_forge_v3",
+            "spr_splash_particle_v3"
+          ],
+          "unique_tiles_8x8": 823,
+          "measurement_status": "local V006 WIP asset residency audit: 823 H/V-unique art tiles; full scene VDP/runtime budget and code-loaded tiles remain pending"
+        },
+        "load_time_dma_cost": {
+          "bytes": 26336,
+          "measurement_status": "V006_asset_tile_payload_measured; per_frame_VBlank_envelope_not_measured",
+          "note": "823 selected-scene post-ResComp H/V-deduplicated tiles x 32 bytes. Loader queues up to 180 tiles (5760 bytes) per update; map/CRAM transfers, runtime code-loaded tiles and total VBlank envelope are not included."
+        },
+        "per_frame_dma_cost": {
+          "bytes": null,
+          "measurement_status": "runtime_VBlank_envelope_not_measured",
+          "target": "No tile uploads after the initial preload. Tilemaps and CRAM changes use queued calls; total queued bytes per VBlank remain unmeasured."
+        },
+        "palette_domains": [
+          "PAL0",
+          "PAL1",
+          "PAL2",
+          "PAL3"
+        ],
+        "glyph_cache": {
+          "required": false,
+          "reason": "No text renderer; no wordmark is visible."
+        },
+        "sprite_pressure": {
+          "planned_sprites": 0,
+          "measurement_status": "no_visible_sprites_in_state"
+        },
+        "state_teardown": "All WIP tiles remain resident through frame 240; replay calls APP_changeScene which resets the SGDK sprite list. No menu handoff in this preview.",
+        "budget_decision": "needs_review",
+        "id": "black_silence",
+        "resident": [
+          "img_splash_backdrop_v3_v014",
+          "img_splash_sgdk_v3",
+          "img_splash_forge_v3",
+          "spr_splash_particle_v3"
+        ]
+      },
+      {
+        "state_id": "energy",
+        "vram_resident_set": {
+          "resident": [
+            "img_splash_backdrop_v3_v006",
+            "img_splash_sgdk_v3",
+            "img_splash_forge_v3",
+            "spr_splash_particle_v3"
+          ],
+          "unique_tiles_8x8": 823,
+          "measurement_status": "local V006 WIP asset residency audit: 823 H/V-unique art tiles; full scene VDP/runtime budget and code-loaded tiles remain pending"
+        },
+        "load_time_dma_cost": {
+          "bytes": 26336,
+          "measurement_status": "V006_asset_tile_payload_measured; per_frame_VBlank_envelope_not_measured",
+          "note": "823 selected-scene post-ResComp H/V-deduplicated tiles x 32 bytes. Loader queues up to 180 tiles (5760 bytes) per update; map/CRAM transfers, runtime code-loaded tiles and total VBlank envelope are not included."
+        },
+        "per_frame_dma_cost": {
+          "bytes": null,
+          "measurement_status": "runtime_VBlank_envelope_not_measured",
+          "target": "No tile uploads after the initial preload. Tilemaps and CRAM changes use queued calls; total queued bytes per VBlank remain unmeasured."
+        },
+        "palette_domains": [
+          "PAL0",
+          "PAL3"
+        ],
+        "glyph_cache": {
+          "required": false,
+          "reason": "No text renderer."
+        },
+        "sprite_pressure": {
+          "candidate_sprites": 64,
+          "cell_px": [
+            8,
+            8
+          ],
+          "measurement_status": "local_scanline_geometry_passed_visual_review_and_runtime_budget_pending",
+          "scanline_report": "out/logs/splash_v3_scanline_glyph_anchor_v002_20261014.json"
+        },
+        "state_teardown": "All WIP tiles remain resident through frame 240; replay calls APP_changeScene which resets the SGDK sprite list. No menu handoff in this preview.",
+        "budget_decision": "needs_review",
+        "id": "energy",
+        "resident": [
+          "img_splash_backdrop_v3_v014",
+          "img_splash_sgdk_v3",
+          "img_splash_forge_v3",
+          "spr_splash_particle_v3"
+        ]
+      },
+      {
+        "state_id": "outline",
+        "vram_resident_set": {
+          "resident": [
+            "img_splash_backdrop_v3_v006",
+            "img_splash_sgdk_v3",
+            "img_splash_forge_v3",
+            "spr_splash_particle_v3"
+          ],
+          "unique_tiles_8x8": 823,
+          "measurement_status": "local V006 WIP asset residency audit: 823 H/V-unique art tiles; full scene VDP/runtime budget and code-loaded tiles remain pending"
+        },
+        "load_time_dma_cost": {
+          "bytes": 26336,
+          "measurement_status": "V006_asset_tile_payload_measured; per_frame_VBlank_envelope_not_measured",
+          "note": "823 selected-scene post-ResComp H/V-deduplicated tiles x 32 bytes. Loader queues up to 180 tiles (5760 bytes) per update; map/CRAM transfers, runtime code-loaded tiles and total VBlank envelope are not included."
+        },
+        "per_frame_dma_cost": {
+          "bytes": null,
+          "measurement_status": "runtime_VBlank_envelope_not_measured",
+          "target": "No tile uploads after the initial preload. Tilemaps and CRAM changes use queued calls; total queued bytes per VBlank remain unmeasured."
+        },
+        "palette_domains": [
+          "PAL0",
+          "PAL1",
+          "PAL3"
+        ],
+        "glyph_cache": {
+          "required": false,
+          "reason": "The wordmark is an imported image plate, not rendered text."
+        },
+        "sprite_pressure": {
+          "candidate_sprites": 64,
+          "cell_px": [
+            8,
+            8
+          ],
+          "measurement_status": "local_scanline_geometry_passed_visual_review_and_runtime_budget_pending",
+          "scanline_report": "out/logs/splash_v3_scanline_glyph_anchor_v002_20261014.json"
+        },
+        "state_teardown": "All WIP tiles remain resident through frame 240; replay calls APP_changeScene which resets the SGDK sprite list. No menu handoff in this preview.",
+        "budget_decision": "needs_review",
+        "id": "outline",
+        "resident": [
+          "img_splash_backdrop_v3_v014",
+          "img_splash_sgdk_v3",
+          "img_splash_forge_v3",
+          "spr_splash_particle_v3"
+        ]
+      },
+      {
+        "state_id": "fill",
+        "vram_resident_set": {
+          "resident": [
+            "img_splash_backdrop_v3_v006",
+            "img_splash_sgdk_v3",
+            "img_splash_forge_v3",
+            "spr_splash_particle_v3"
+          ],
+          "unique_tiles_8x8": 823,
+          "measurement_status": "local V006 WIP asset residency audit: 823 H/V-unique art tiles; full scene VDP/runtime budget and code-loaded tiles remain pending"
+        },
+        "load_time_dma_cost": {
+          "bytes": 26336,
+          "measurement_status": "V006_asset_tile_payload_measured; per_frame_VBlank_envelope_not_measured",
+          "note": "823 selected-scene post-ResComp H/V-deduplicated tiles x 32 bytes. Loader queues up to 180 tiles (5760 bytes) per update; map/CRAM transfers, runtime code-loaded tiles and total VBlank envelope are not included."
+        },
+        "per_frame_dma_cost": {
+          "bytes": null,
+          "measurement_status": "runtime_VBlank_envelope_not_measured",
+          "target": "No tile uploads after the initial preload. Tilemaps and CRAM changes use queued calls; total queued bytes per VBlank remain unmeasured."
+        },
+        "palette_domains": [
+          "PAL0",
+          "PAL1"
+        ],
+        "glyph_cache": {
+          "required": false,
+          "reason": "The wordmark is an imported image plate."
+        },
+        "sprite_pressure": {
+          "planned_sprites": 0,
+          "measurement_status": "no_visible_sprites_in_state"
+        },
+        "state_teardown": "All WIP tiles remain resident through frame 240; replay calls APP_changeScene which resets the SGDK sprite list. No menu handoff in this preview.",
+        "budget_decision": "needs_review",
+        "id": "fill",
+        "resident": [
+          "img_splash_backdrop_v3_v014",
+          "img_splash_sgdk_v3",
+          "img_splash_forge_v3",
+          "spr_splash_particle_v3"
+        ]
+      },
+      {
+        "state_id": "forge",
+        "vram_resident_set": {
+          "resident": [
+            "img_splash_backdrop_v3_v006",
+            "img_splash_sgdk_v3",
+            "img_splash_forge_v3",
+            "spr_splash_particle_v3"
+          ],
+          "unique_tiles_8x8": 823,
+          "measurement_status": "local V006 WIP asset residency audit: 823 H/V-unique art tiles; full scene VDP/runtime budget and code-loaded tiles remain pending"
+        },
+        "load_time_dma_cost": {
+          "bytes": 26336,
+          "measurement_status": "V006_asset_tile_payload_measured; per_frame_VBlank_envelope_not_measured",
+          "note": "823 selected-scene post-ResComp H/V-deduplicated tiles x 32 bytes. Loader queues up to 180 tiles (5760 bytes) per update; map/CRAM transfers, runtime code-loaded tiles and total VBlank envelope are not included."
+        },
+        "per_frame_dma_cost": {
+          "bytes": null,
+          "measurement_status": "runtime_VBlank_envelope_not_measured",
+          "target": "No tile uploads after the initial preload. Tilemaps and CRAM changes use queued calls; total queued bytes per VBlank remain unmeasured."
+        },
+        "palette_domains": [
+          "PAL0",
+          "PAL1",
+          "PAL2",
+          "PAL3"
+        ],
+        "glyph_cache": {
+          "required": false,
+          "reason": "Both wordmarks are imported image plates."
+        },
+        "sprite_pressure": {
+          "planned_sprites": 0,
+          "measurement_status": "no_visible_sprites_in_state"
+        },
+        "state_teardown": "All WIP tiles remain resident through frame 240; replay calls APP_changeScene which resets the SGDK sprite list. No menu handoff in this preview.",
+        "budget_decision": "needs_review",
+        "id": "forge",
+        "resident": [
+          "img_splash_backdrop_v3_v014",
+          "img_splash_sgdk_v3",
+          "img_splash_forge_v3",
+          "spr_splash_particle_v3"
+        ]
+      },
+      {
+        "state_id": "sweep",
+        "vram_resident_set": {
+          "resident": [
+            "img_splash_backdrop_v3_v006",
+            "img_splash_sgdk_v3",
+            "img_splash_forge_v3",
+            "spr_splash_particle_v3"
+          ],
+          "unique_tiles_8x8": 823,
+          "measurement_status": "local V006 WIP asset residency audit: 823 H/V-unique art tiles; full scene VDP/runtime budget and code-loaded tiles remain pending"
+        },
+        "load_time_dma_cost": {
+          "bytes": 26336,
+          "measurement_status": "V006_asset_tile_payload_measured; per_frame_VBlank_envelope_not_measured",
+          "note": "823 selected-scene post-ResComp H/V-deduplicated tiles x 32 bytes. Loader queues up to 180 tiles (5760 bytes) per update; map/CRAM transfers, runtime code-loaded tiles and total VBlank envelope are not included."
+        },
+        "per_frame_dma_cost": {
+          "bytes": null,
+          "measurement_status": "runtime_VBlank_envelope_not_measured",
+          "target": "No tile uploads after the initial preload. Tilemaps and CRAM changes use queued calls; total queued bytes per VBlank remain unmeasured."
+        },
+        "palette_domains": [
+          "PAL0",
+          "PAL1",
+          "PAL2",
+          "PAL3"
+        ],
+        "glyph_cache": {
+          "required": false,
+          "reason": "No text renderer."
+        },
+        "sprite_pressure": {
+          "candidate_sprites": 7,
+          "cell_px": [
+            8,
+            8
+          ],
+          "measurement_status": "local_scanline_geometry_passed_visual_review_pending",
+          "scanline_report": "out/logs/splash_v3_scanline_glyph_anchor_v002_20261014.json"
+        },
+        "state_teardown": "All WIP tiles remain resident through frame 240; replay calls APP_changeScene which resets the SGDK sprite list. No menu handoff in this preview.",
+        "budget_decision": "needs_review",
+        "id": "sweep",
+        "resident": [
+          "img_splash_backdrop_v3_v014",
+          "img_splash_sgdk_v3",
+          "img_splash_forge_v3",
+          "spr_splash_particle_v3"
+        ]
+      },
+      {
+        "state_id": "hold_fade",
+        "vram_resident_set": {
+          "resident": [
+            "img_splash_backdrop_v3_v006",
+            "img_splash_sgdk_v3",
+            "img_splash_forge_v3",
+            "spr_splash_particle_v3"
+          ],
+          "unique_tiles_8x8": 823,
+          "measurement_status": "local V006 WIP asset residency audit: 823 H/V-unique art tiles; full scene VDP/runtime budget and code-loaded tiles remain pending"
+        },
+        "load_time_dma_cost": {
+          "bytes": 26336,
+          "measurement_status": "V006_asset_tile_payload_measured; per_frame_VBlank_envelope_not_measured",
+          "note": "823 selected-scene post-ResComp H/V-deduplicated tiles x 32 bytes. Loader queues up to 180 tiles (5760 bytes) per update; map/CRAM transfers, runtime code-loaded tiles and total VBlank envelope are not included."
+        },
+        "per_frame_dma_cost": {
+          "bytes": null,
+          "measurement_status": "runtime_VBlank_envelope_not_measured",
+          "target": "No tile uploads after the initial preload. Tilemaps and CRAM changes use queued calls; total queued bytes per VBlank remain unmeasured."
+        },
+        "palette_domains": [
+          "PAL0",
+          "PAL1",
+          "PAL2",
+          "PAL3"
+        ],
+        "glyph_cache": {
+          "required": false,
+          "reason": "No text renderer."
+        },
+        "sprite_pressure": {
+          "planned_sprites": 0,
+          "measurement_status": "no_visible_sprites_in_state"
+        },
+        "state_teardown": "All WIP tiles remain resident through frame 240; replay calls APP_changeScene which resets the SGDK sprite list. No menu handoff in this preview.",
+        "budget_decision": "needs_review",
+        "id": "hold_fade",
+        "resident": [
+          "img_splash_backdrop_v3_v014",
+          "img_splash_sgdk_v3",
+          "img_splash_forge_v3",
+          "spr_splash_particle_v3"
+        ]
+      }
+    ],
+    "tile_residency_report_ref": "out/logs/splash_v3_tile_residency_v006_lettering_b_20261014.json"
+  },
+  "hardware_ownership": {
+    "window_owner": "none; WINDOW stays disabled during branding_v3",
+    "cram_owner": "branding_v3_palette_controller; PAL0 backdrop, PAL1 SGDK, PAL2 FORGE, PAL3 particles/replay hint",
+    "scroll_owner": "none; both planes are static",
+    "audio_owner": "branding_v3_audio_director; music begins at frame 60; four cues at frames 24, 118, 178 and 210",
+    "h_int": {
+      "in_use": false,
+      "reason": "No raster or mid-frame palette effect is selected."
+    },
+    "dma_owner": "scene-local queued preload/maps/palettes; runtime VBlank envelope not measured",
+    "sprite_update_owner": "main.c calls SPR_update once after APP_update; the scene no longer calls SPR_update. Sustained performance remains unmeasured."
+  },
+  "text_timing_map": {
+    "glyph_manifest_ref": "not_applicable; logo marks are image plates and the replay hint uses the SGDK built-in font",
+    "font_surface_owner": "SGDK built-in VDP font, PAL3 index 15, for static lab replay hint A: REVER at tile column 16,row 21 after frame 240.",
+    "base_frames_per_glyph": 1,
+    "punctuation_pauses": {
+      "comma": 0,
+      "period": 0,
+      "ellipsis": 0,
+      "line_break": 0
+    },
+    "advance_controls": {
+      "accelerate_button": "not_applicable",
+      "advance_button": "BUTTON_A only after frame 240 in the lab preview",
+      "skip_policy": "No skip during the 240-frame timed sequence; BUTTON_A is intended to replay the lab preview after the end prompt, but this interaction has not yet been captured with an input trace."
+    }
+  },
+  "visual_source_gate": {
+    "production_source_ready": false,
+    "source_contract_ref": "doc/contracts/visual_source_of_truth_branding_splash_v3.json",
+    "source_contract_status": "needs_review_direction_only",
+    "premium_source_manifest_ref": "data/source_art/branding_v3/premium_source_manifest.json",
+    "human_approval_record_ref": "doc/curation/splash_v3_user_development_decision_20261014.md",
+    "blocked_statuses": [
+      "human_model_sheet_approval_pending",
+      "final_visual_review_pending",
+      "583_tile_backdrop_still_above_curatorial_20_40_target",
+      "runtime_VRAM_DMA_CPU_DAC_FPS_budget_pending",
+      "workspace_measurement_gate_project_source_mirror_stale"
+    ]
+  },
+  "evidence_plan": {
+    "blastem_required": true,
+    "screenshot_required": true,
+    "runtime_metrics_scene_id": "APP_SCENE_BRANDING",
+    "visual_vdp_dump_required": true,
+    "save_sram_required": true,
+    "baseline_comparison_required": true,
+    "freshness_audit_required": true,
+    "current_preview_report": "out/logs/splash_v3_v017_visual_review_report_20261014.json",
+    "current_preview_status": "V017 ROM SHA 5d47ef1636c6c63cabc235c86f1ec7601c8cecab431ee1532e5ef7a6ded93cf2 was built and observed in a direct unsealed BlastEm diagnostic with 16 wall-clock samples. The sequence and A: REVER hold are visible; exact frame markers, ROM-side input confirmation, canonical evidence seal, full hardware budgets, sustained FPS, and human visual/audio approval remain pending."
+  },
+  "approval": {
+    "human_approval_required": true,
+    "approval_status": "development_wip_only_final_review_pending",
+    "approval_record_ref": "doc/curation/splash_v3_user_development_decision_20261014.md"
+  },
+  "palette_roles": {
+    "backdrop_index0_rgb": [
+      0,
+      0,
+      0
+    ],
+    "transparent_asset_sentinel": "Index 0 remains transparent; keep the ResComp magenta key on mark and sprite assets.",
+    "palette_note": "PAL0 backdrop index 0 stores valid black; the wordmark and sprite transparency sentinels retain their ResComp key."
+  },
+  "narrative_structure": "fade do fundo para prompt de replay do laboratorio com SGDK/FORGE preservados",
+  "signature_moment": "F118: cue de lock; F120: particulas se ocultam e comeca o preenchimento claro; F138: o lockup SGDK completa a revelacao.",
+  "runtime_profiles": {
+    "isolated_preview": {
+      "macro": "SPLASH_V3_VISUAL_PREVIEW",
+      "end_behavior": "A: REVER espera BUTTON_A para reiniciar Splash V3",
+      "status": "observed_unsealed_on_V017"
+    },
+    "menu_handoff_candidate": {
+      "macro": "SPLASH_V3_MENU_HANDOFF",
+      "backdrop_macro": "SPLASH_V3_BACKDROP_V006",
+      "end_behavior": "Ap\u00f3s a timeline nominal de 240 quadros, espera fade e DMA drain, entra no menu, fade-in de 12 quadros e destrava input",
+      "status": "implemented_uncompiled",
+      "contract_ref": "doc/branding_v3_transition_contract.json",
+      "build_attempt_ref": "out/logs/splash_v3_handoff_build_attempt_20261014.json"
+    }
+  }
+}

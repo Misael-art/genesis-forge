@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "inventory_id": "splash_v3_external_visual_input_v013_20261014",
+  "purpose": "Project-local registration of the generated WIP background concept before translation.",
+  "files": [
+    {
+      "path": "rascunho/entrada_visual/splash_v3_backdrop_concept_ai_v013_20261014.png",
+      "sha256": "21282b2204ac942123fa53cfcb7590a7b72b35d5d9e75843bb8332e13874ba46",
+      "size_bytes": 2119099,
+      "authoritative_translation_copy": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v013_20261014.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder"
+    }
+  ]
+}

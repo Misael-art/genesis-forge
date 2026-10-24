@@ -1,0 +1,76 @@
+{
+  "case_id": "splash_v3_v018_backdrop_source_semantics",
+  "source_image": "../../data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.png",
+  "source_sha256": "93ddcafa8e4fcff6cf2e28b206f0a262cf7171aa149c25c9d4ce12b2220c52f0",
+  "scene_truth_kind": "human_reviewed_source_semantics",
+  "layout_complexity": "low",
+  "reports_dir": "out/logs/splash_v3_v018_semantic_review_20261015",
+  "source_inventory": {
+    "includes": [
+      "scene_plane_bg_b",
+      "logo_safe_negative_space",
+      "upper_left_crystal_mass",
+      "sparse_upper_right_shards",
+      "lower_right_crystal_group",
+      "broken_lower_crystal_shelf"
+    ],
+    "notes": [
+      "The full 1499x1049 canvas is one generated background concept, not a storyboard, mockup, or sprite sheet.",
+      "The logo-safe region is an internal compositional area of this single BG_B plate; wordmarks and particles remain separate runtime resources.",
+      "The lower crystal shelf is irregular and broken, with no independent water or horizon plane."
+    ]
+  },
+  "drop_policy": {
+    "drop_classes": [
+      "mockup_preview",
+      "author_credits",
+      "avatar_or_icon",
+      "unrelated_reference"
+    ],
+    "notes": [
+      "No editorial or unrelated region is present. Do not crop artificial hardware planes from the full-frame concept."
+    ]
+  },
+  "composition_schema": {
+    "kind": "single_background_plate",
+    "roles": [
+      {
+        "region_id": "full_crystal_energy_plate",
+        "composition_role": "scene_plane_bg_b",
+        "order": 0
+      }
+    ]
+  },
+  "semantic_parse_report": {
+    "source_layout_type": "single_frame",
+    "semantic_regions": [
+      {
+        "id": "full_crystal_energy_plate",
+        "classification": "scene_plane_bg_b",
+        "bbox": [
+          0,
+          0,
+          1499,
+          1049
+        ],
+        "notes": "One full-frame crystalline chamber: broad faceted center for the separate wordmarks, dominant upper-left cluster, sparse upper-right shards, lower-right cluster and broken diagonal lower shelf."
+      }
+    ],
+    "auxiliary_regions": [],
+    "drop_regions": [],
+    "animation_ranges": [],
+    "final_scene_hypothesis": {
+      "summary": "Translate as one BG_B plate. Keep the current logo-safe center low contrast; particles and sweep remain separate sprites.",
+      "reference_image": ""
+    },
+    "notes_on_why": [
+      "The source is one continuous environment and does not contain separable authored BG_A/B plates.",
+      "The title-safe center is a compositional region within BG_B, not another hardware plane.",
+      "The native translation is still a placeholder and requires visual review; this semantic classification is not art approval."
+    ]
+  },
+  "training_labels": {
+    "goal": "Classify a simplified full-frame background concept as one BG_B plate and separate logo-safe negative space from hardware layers.",
+    "reference_images": []
+  }
+}

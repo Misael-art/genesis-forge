@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "gate_id": "splash_v3_backdrop_v014_direction_gate",
+  "project_id": "branding_splash_v3_lab",
+  "asset_id": "splash_v3_backdrop_v014",
+  "asset_kind": "background_plate",
+  "evaluated_at": "2026-10-14",
+  "measurement_level": "planned_contract",
+  "art_director_review": {
+    "status": "needs_review",
+    "reviewer": "visual-excellence-standards",
+    "art_direction_decision_record": "doc/curation/splash_v3_visual_curation_record_20261014.md",
+    "findings": [
+      "The V014 edit widens the dark center to protect the actual SGDK and FORGE lockup area while retaining asymmetrical crystal energy at the perimeter.",
+      "The translated V014 PNG is installed in res only as a placeholder for an opt-in isolated preview ROM; this does not approve the asset or replace the V006 default.",
+      "The source still contains high-resolution edge detail; native 320x224 tile readability and tile reuse must be measured before a final asset decision.",
+      "Do not promote this source to final production or the template until exact ROM review, tile/VDP budget, and human visual review."
+    ]
+  },
+  "game_design_context": {
+    "status": "passed",
+    "gdd_ref": "doc/11-gdd.md",
+    "scene_spec_ref": "doc/13-spec-cenas.md",
+    "scene_direction_record": "doc/branding_v3_cinematic_storyboard.json",
+    "gameplay_role": "Four-second front-end brand reveal before the menu; the lab preview can replay on A after the hold.",
+    "camera_perspective": "front_end_or_ui",
+    "interaction_context": [
+      "No world navigation or gameplay interaction occurs during the reveal.",
+      "The 240-frame sequence builds a crystal energy field, converges into the SGDK/FORGE lockup, sweeps, holds, and fades.",
+      "The lab preview displays A: REVER after the hold; the handoff profile transitions to the menu after fade and DMA drain."
+    ]
+  },
+  "identity_continuity_lock": {
+    "must_preserve": [
+      {
+        "id": "splash_center_negative_space",
+        "kind": "background_landmark",
+        "expected": "Keep a broad dark central field free of high-contrast crystal detail so SGDK and FORGE remain dominant.",
+        "status": "locked"
+      },
+      {
+        "id": "splash_asymmetric_crystal_frame",
+        "kind": "asymmetry",
+        "expected": "Use angular, varied crystal clusters around the perimeter with directional inward energy; avoid a symmetric static ring.",
+        "status": "locked"
+      },
+      {
+        "id": "splash_blue_technology_palette",
+        "kind": "palette",
+        "expected": "Midnight navy, cobalt, cyan and ice-blue highlights with sparse near-white points; retain clear value separation.",
+        "status": "locked"
+      },
+      {
+        "id": "splash_crystal_material",
+        "kind": "material",
+        "expected": "Faceted hard-edged crystal shapes read as discrete forms at 320x224 rather than continuous haze, gradients or noise.",
+        "status": "locked"
+      }
+    ]
+  },
+  "motion_personality_contract": {
+    "status": "needs_review",
+    "secondary_motion": [
+      "Edge shards and short streaks imply inward movement; runtime particles provide the actual staged motion."
+    ],
+    "expression_requirements": [
+      "Discovery and energetic anticipation; short accents instead of a sustained glow wash."
+    ],
+    "state_fantasy_checks": [
+      "The logo reveal feels like a premium technology boot sequence.",
+      "SGDK stays primary and FORGE remains secondary through reveal, sweep, and hold."
+    ]
+  },
+  "background_scene_context": {
+    "depth_role_map": "BG_B carries the energy field; BG_A carries the separately authored SGDK/FORGE plates; sprites provide converging particles and the brief sweep.",
+    "layer_plan": "Keep high-contrast detail at the perimeter, protect the center, and preserve the existing single-screen 320x224 H40 composition.",
+    "sprite_readability_policy": "Backdrop crystal facets must not camouflage the 8x8 particle silhouettes or the lettering plates.",
+    "interactive_elements": []
+  },
+  "decision": {
+    "production_allowed": false,
+    "ready_for_generation": true,
+    "ready_for_conversion": true,
+    "ready_for_res_promotion": false,
+    "ready_for_aaa": false,
+    "next_required_route": [
+      "build_isolated_v014_preview_for_user_visual_review",
+      "bind_capture_and_runtime_metrics_to_exact_preview_rom_hash",
+      "review_native_crt_safe_area_and_crystal_readability",
+      "record_future_human_visual_decision",
+      "keep_res_promotion_and_template_promotion_blocked"
+    ]
+  },
+  "blockers": [
+    "director_gate_unapproved"
+  ]
+}

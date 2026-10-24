@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-14T15:39:57Z",
+  "generation_channel": "built_in_image_gen",
+  "asset_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v007_20261014.png",
+  "asset_sha256": "3888fb24313aa17a8f246fd769db07e22cfe93ecae6e62ac28b8a323992f04ac",
+  "canvas_px": [1499, 1049],
+  "brief": "Independent, asymmetrical crystal-energy backdrop concept with a protected dark logo window and directional diagonal streaks. Development source only; V006 remains the active ROM comparison until the V007 translation is reviewed.",
+  "prompt_constraints": [
+    "Keep the middle 56 percent dark and clear for SGDK/FORGE lettering.",
+    "Use asymmetric crystal clusters: denser on the left, sparse on the right.",
+    "Show forward motion through sharp diagonal energy streaks converging below center.",
+    "Keep the convergence compact and avoid a glowing floor or horizon.",
+    "Prefer broad facets and clean silhouettes; limit microtexture and bloom.",
+    "Use cobalt, royal blue, cyan, ice blue, and small white accents.",
+    "No text, logos, characters, interface, watermark, checkerboard, or copied IP."
+  ],
+  "acceptance_status": "development_only",
+  "translation_gate": [
+    "Create basic and curated 320x224 indexed 4bpp comparisons on the Mega Drive 9-bit grid.",
+    "Review the logo-safe zone, asymmetry, edge density, diagonal motion, and highlight footprint at native 320x224.",
+    "Count H/V-reusable tiles and measure full selected-art residency separately from total runtime VRAM/DMA.",
+    "Only compile as an isolated WIP preview if the native comparison preserves silhouette and hierarchy.",
+    "Do not promote this source or its translated pixels to final without future human curation."
+  ],
+  "human_approval": false,
+  "prompt": "Create one premium concept-art BACKDROP for a retro game-engine splash screen, intended as source material for later hand-authored Mega Drive pixel translation. Horizontal landscape composition close to a 10:7 screen ratio. Image is background only: absolutely no text, logos, letters, interface, characters, or watermark. Make the scene feel energetic and technologically crystalline, with sharp forward motion rather than a static cave. Keep a broad, nearly black midnight-navy negative-space window across the central 56% of the image, especially the middle third, so a centered wordmark remains perfectly readable. Use an asymmetrical composition: a tall cluster of large angular cobalt crystal facets enters from the upper-left and left edge; the right side has fewer, thinner shards and open gaps. Several crisp electric-blue and cyan energy streaks sweep diagonally from the outer edges toward a small, controlled ignition point below center, around 72% image height; show direction and acceleration without a glowing floor, horizon, or broad wash. Render distinct broad facets and clear silhouettes, limited microtexture, restrained bloom, deep shadow separation, cobalt, royal blue, cyan, ice blue, and only small white pinpoints. Sophisticated 1990s 16-bit adventure identity with original geometry; no mirrored symmetry, no repetitive checkerboard, no crystal wall filling the logo window, no large central flare, no fog, no photographic realism. This is a source concept, not pixel art and not a finished logo composition."
+}

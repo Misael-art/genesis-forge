@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "name": "BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]"
+  },
+  "policy": {
+    "all_project_assets_inside_project": true,
+    "source_inputs_copied_to_rascunho": true,
+    "placeholder_never_promotes_to_aaa": true,
+    "visual_art_requires_artistic_gate": true
+  },
+  "assets": [
+    {
+      "asset_id": "splash_v3_backdrop_v005",
+      "role": "comparison_backdrop_wip",
+      "source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v005_20261014.png",
+      "runtime_path": "res/branding_v3/splash_backdrop_v3_v005_320x224.png",
+      "owner": "SCENE_branding_v3",
+      "status": "comparison_only_superseded",
+      "promotion_allowed": false,
+      "technique_tags": [
+        "tile_dedup_hvflip_hashing",
+        "palette_remastering_slot_audit"
+      ],
+      "evidence": [
+        "out/logs/splash_v3_tile_residency_v005_lettering_b_20261014.json"
+      ]
+    },
+    {
+      "asset_id": "splash_v3_backdrop_v006",
+      "role": "selected_runtime_backdrop_wip_candidate",
+      "source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v006_20261014.png",
+      "runtime_path": "res/branding_v3/splash_backdrop_v3_v006_320x224.png",
+      "owner": "SCENE_branding_v3",
+      "status": "placeholder_wip_review_required",
+      "promotion_allowed": false,
+      "technique_tags": [
+        "tile_dedup_hvflip_hashing",
+        "palette_remastering_slot_audit"
+      ],
+      "evidence": [
+        "out/logs/splash_v3_backdrop_v006_translation_20261014.json"
+      ]
+    },
+    {
+      "asset_id": "splash_v3_backdrop_v004_comparison",
+      "role": "comparison_only",
+      "source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v004_20261014.png",
+      "runtime_path": "res/branding_v3/splash_backdrop_v3_320x224.png",
+      "owner": "SCENE_branding_v3",
+      "status": "comparison_only",
+      "promotion_allowed": false,
+      "technique_tags": [
+        "palette_remastering_slot_audit",
+        "tile_dedup_hvflip_hashing"
+      ],
+      "evidence": [
+        "out/logs/splash_v3_tile_residency_v005_lettering_b_20261014.json"
+      ]
+    },
+    {
+      "asset_id": "splash_v3_wordmark_sgdk_b",
+      "role": "primary_wordmark_wip",
+      "source_path": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png",
+      "runtime_path": "res/branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+      "owner": "SCENE_branding_v3",
+      "status": "placeholder_wip_curator_candidate",
+      "promotion_allowed": false,
+      "technique_tags": [
+        "palette_remastering_slot_audit"
+      ],
+      "evidence": [
+        "out/logs/splash_v3_lettering_native_probe_20261014.json",
+        "doc/curation/splash_v3_lettering_route_decision_20261014.json",
+        "out/logs/splash_v3_lettering_b_build_block_20261014.json"
+      ]
+    },
+    {
+      "asset_id": "splash_v3_wordmark_forge_b",
+      "role": "secondary_wordmark_wip",
+      "source_path": "data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png",
+      "runtime_path": "res/branding_v3/splash_forge_wordmark_v3_192x32.png",
+      "owner": "SCENE_branding_v3",
+      "status": "placeholder_wip_curator_candidate",
+      "promotion_allowed": false,
+      "technique_tags": [
+        "palette_remastering_slot_audit"
+      ],
+      "evidence": [
+        "out/logs/splash_v3_lettering_native_probe_20261014.json",
+        "doc/curation/splash_v3_lettering_route_decision_20261014.json",
+        "out/logs/splash_v3_lettering_b_build_block_20261014.json"
+      ]
+    },
+    {
+      "asset_id": "splash_v3_particle_strip",
+      "role": "energy_particle_wip",
+      "source_path": "data/source_art/branding_v3/sources/source_particle_strip_concept_ai_v001.png",
+      "runtime_path": "res/sprites/splash_particle_v3_8x8_strip.png",
+      "owner": "SCENE_branding_v3",
+      "status": "placeholder_wip_review_required",
+      "promotion_allowed": false,
+      "technique_tags": [
+        "tile_dedup_hvflip_hashing"
+      ],
+      "evidence": [
+        "out/logs/splash_v3_scanline_visual_runtime_20261013.json",
+        "out/logs/splash_v3_tile_residency_v005_lettering_b_20261014.json"
+      ]
+    }
+  ]
+}

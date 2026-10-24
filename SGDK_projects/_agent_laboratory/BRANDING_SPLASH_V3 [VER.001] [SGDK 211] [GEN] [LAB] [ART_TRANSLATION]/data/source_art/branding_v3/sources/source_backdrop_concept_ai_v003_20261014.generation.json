@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "generated_concept_source_record",
+  "source_id": "splash_v3_backdrop_energy_v003_20261014",
+  "status": "development_only_candidate",
+  "source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v003_20261014.png",
+  "source_sha256": "562daf793ff038595ab4cec8965ca9cefa8f12ce85160b3f9861945f0fd75721",
+  "source_dimensions_px": [1499, 1049],
+  "generated_at": "2026-10-14",
+  "generator": "Codex image_gen imagegen tool",
+  "generation_source_policy": "text_only_from_approved_development_direction; no existing asset pixels or BlastEm captures were supplied as references",
+  "direction_inputs": [
+    "doc/curation/splash_v3_visual_model_sheet_proposal_20261013.json",
+    "doc/branding_v3_cinematic_storyboard.json",
+    "doc/curation/splash_v3_user_development_decision_20261013.md"
+  ],
+  "prompt": "Original Mega Drive splash background concept, landscape 10:7 for a 320x224 screen, no text/logo/UI. Positive heroic adventure energy and crystalline technology. Asymmetrical blue crystal shards and angular energy streaks converge toward a dark central wordmark-safe area. Larger clusters at upper-left and lower-right, smaller echoes opposite, sparse sharp cyan-white glints. Dynamic acceleration, not an icy cave or static symmetrical frame; crisp hard pixel clusters, near-black navy/cobalt/electric-blue/cyan/ice-blue/white palette, no blur, gradients, antialiasing or photographic texture. Concept only, not a finished game asset.",
+  "curation": {
+    "human_approval": false,
+    "model_sheet_approval": false,
+    "production_source_ready": false,
+    "allowed_use": ["development_translation_candidate", "comparison_only"],
+    "blocked_use": ["final_art", "template_promotion", "generation_source_for_later_pixels_without_new_review"],
+    "visual_hypothesis": "Directional asymmetric shards add energy and motion to the crystal field while keeping the SGDK/FORGE center dark and readable."
+  }
+}

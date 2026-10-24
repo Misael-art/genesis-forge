@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "methodology_version": "2026.06.04",
+  "project": {
+    "name": "BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]",
+    "lifecycle": "new",
+    "project_root_policy": "all_project_material_inside_project"
+  },
+  "active_workflow": "production-loop",
+  "required_skills": [
+    "governance/truth-hierarchy-guard",
+    "governance/doc-sync-audit",
+    "operation/sgdk-build-wrapper-operator",
+    "art/cutscene-cinematic-direction",
+    "art/art-translation-to-vdp",
+    "art/megadrive-pixel-strict-rules",
+    "hardware/megadrive-vdp-budget-analyst",
+    "architecture/game-state-transition-architect",
+    "code/sgdk-runtime-coder",
+    "code/megadrive-music-composition",
+    "code/xgm2-audio-director",
+    "operation/sgdk-build-wrapper-operator",
+    "operation/emulator-vdp-evidence-curator"
+  ],
+  "required_validations": [
+    "preflight_host",
+    "validate_resources",
+    "scene_closeout_gate",
+    "freshness_audit",
+    "project_hygiene",
+    "project_context"
+  ],
+  "claims": {
+    "critical_motion": {
+      "applicability": "not_applicable",
+      "rationale": "A splash de marca nao e movimento critico de gameplay nem promessa de acao de personagem."
+    },
+    "road_physics": {
+      "applicability": "not_applicable",
+      "rationale": "Nao ha estrada ou fisica de pista no escopo desta demonstracao."
+    },
+    "modular_boss": {
+      "applicability": "not_applicable",
+      "rationale": "Nao ha boss nem sistema de partes articuladas no escopo desta demonstracao."
+    }
+  }
+}

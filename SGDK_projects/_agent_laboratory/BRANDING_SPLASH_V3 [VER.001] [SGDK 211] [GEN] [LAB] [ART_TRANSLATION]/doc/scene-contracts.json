@@ -1,0 +1,15 @@
+﻿{
+  "schema_version": "1.0.0",
+  "project_profile": "lab",
+  "compiled_at": "2026-10-16T01:15:49.2266324Z",
+  "compiled_from": "doc/13-spec-cenas.md",
+  "scenes": [
+    {
+      "scene_id": "branding_sequence_v3",
+      "scene_role": "menu",
+      "boot_mode": "unsupported",
+      "compile_origin": "canonical_block",
+      "source_heading": "### Cena 0 - branding_sequence_v3"
+    }
+  ]
+}

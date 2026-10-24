@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "authored_music_render",
+  "track_id": "splash_v3_sonic_logo_v3",
+  "source_kind": "procedural_composed_from_authored",
+  "acceptance_status": "lab",
+  "score_path": "data/source_audio/splash_v3_sonic_logo_score_v3.json",
+  "score_sha256": "040b3a51cea51ddf3b0e9c87c099f9fa809192c3a5d4221b89d0878587f3aeea",
+  "builder_path": "data/source_audio/build_splash_v3_music_vgm.py",
+  "builder_sha256": "b324b6d54b7e269f70b71ae29c18cc2f8d1cffdcb0867f615d7b582ca6b2b404",
+  "vgm_path": "res/music/splash_v3_sonic_logo_v3.vgm",
+  "vgm_sha256": "86a29044d2a280ec1cd4d8d612763202e435ed2856c3ac92932210b17662e739",
+  "vgm_bytes": 1060,
+  "region": "ntsc",
+  "frames": 180,
+  "loop_frames": 180,
+  "loop_seconds": 3.0,
+  "meter": "6/8",
+  "tempo_bpm": 120,
+  "scope": "V015 accepted for development; four FM voices with short gates and faster releases, no musical PSG. Final human quality review is deferred until visual-scene integration."
+}

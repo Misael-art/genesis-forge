@@ -1,0 +1,37 @@
+{
+  "schema_version": "cutscene_runtime_contract.v1",
+  "status": "implemented_uncompiled",
+  "scene_id": "APP_SCENE_BRANDING",
+  "role": "short_brand_signature_cutscene",
+  "format": {
+    "region": "NTSC",
+    "width": 320,
+    "height": 224,
+    "mode": "H40",
+    "nominal_frames": 240
+  },
+  "timeline": [
+    "black_silence[0,24)",
+    "energy[24,84)",
+    "outline[84,120)",
+    "fill[120,150)",
+    "forge[150,180)",
+    "sweep[180,210)",
+    "hold_fade[210,240)"
+  ],
+  "input_policy": {
+    "skip_during_splash": false,
+    "preview_end": "A: REVER, BUTTON_A restarts",
+    "handoff_end": "No replay prompt; wait for fade/DMA drain then menu; lock for 12 frames"
+  },
+  "visual_owner": "scene_branding_v3",
+  "palette_owner": "branding_v3_palette_controller",
+  "audio_owner": "branding_v3_audio_director",
+  "transition_owner": "application_scene_manager",
+  "profiles": {
+    "preview": "SPLASH_V3_VISUAL_PREVIEW",
+    "handoff_candidate": "SPLASH_V3_MENU_HANDOFF"
+  },
+  "audio_status": "V016/VGM4 unapproved; listen to at least two complete integrated cycles and preserve all user feedback.",
+  "evidence_status": "V017 is last compiled; current handoff candidate build blocked before compile."
+}

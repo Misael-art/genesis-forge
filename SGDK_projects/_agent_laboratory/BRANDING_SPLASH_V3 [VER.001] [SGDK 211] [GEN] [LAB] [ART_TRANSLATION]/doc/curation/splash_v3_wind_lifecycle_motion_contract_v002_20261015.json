@@ -1,0 +1,358 @@
+{
+  "schema_version": "splash_v3_wind_lifecycle_motion_contract.v2",
+  "artifact_kind": "cutscene_motion_beat_map",
+  "scene_id": "branding_sequence_v3",
+  "status": "geometry_measured_runtime_review_pending_human_approval",
+  "owner": "scene_branding_v3",
+  "user_direction": {
+    "date": "2026-10-15",
+    "summary": "Six bright sparks drift from the left under soft wind: individual curved paths, varied timing, weak gravity, low-amplitude turbulence, a bright phase, direction-aware trails, flicker on some sparks, and a gradual cool-down.",
+    "quality_feedback": "The previous result was not as expected. The scene director did not demonstrate the competence to carry each scene element with excellence. The pass read as a continuous, monotonous sweep and did not realize the requested animation and energy.",
+    "skill_feedback": "The cutscene/art-direction handoff translated the description into positional variation but omitted particle life phases, per-instance visual treatment, trail behavior, restrained glow, and a reviewable acceptance bar. Record this as a local skill deficiency and candidate for revision; do not edit the shared skill automatically."
+  },
+  "rejected_previous_iteration": {
+    "contract_ref": "doc/curation/splash_v3_wind_sweep_motion_contract_20261015.json",
+    "rom_sha256": "9d34b114b86311e6b7924205d7317af7472f5624e2848ed214a328dc44272006",
+    "user_acceptance": false,
+    "observed_runtime": "The sweep executed, but read as monotonous and did not meet the agreed wind-carried energy.",
+    "implementation_gap": "Seven single sprites used separate quadratic positions but cycled sprite-sheet frames by global frame/index. There was no birth/active/fade profile, separate core and trail, per-instance flicker, or authored shrink/cooling phase."
+  },
+  "visual_role": "A short, airy glint across SGDK/FORGE that adds motion without becoming a solid bar or reducing wordmark readability.",
+  "timeline": {
+    "start_frame": 180,
+    "end_frame_exclusive": 210,
+    "audio_sweep_cue_frame": 178,
+    "display_mode": "h40",
+    "viewport_px": [
+      320,
+      224
+    ],
+    "sprite_cell_px": [
+      8,
+      8
+    ]
+  },
+  "trajectory_model": {
+    "kind": "cubic_bezier_with_q8_smoothstep_and_discrete_low_frequency_wind_noise",
+    "position_units": "sprite top-left pixels",
+    "progress_q8": "age * 256 / (lifetime_frames - 1)",
+    "easing": "smoothstep(t) = t*t*(3 - 2*t), with t in Q8; eases into the wind and slows at the tail",
+    "path": "Each spark has four authored x/y control points and follows a cubic Bezier curve. Control points create different rising, dipping, and altitude-losing arcs; there is no heavy gravity term.",
+    "noise": {
+      "units": "integer pixels",
+      "table_px": [
+        -1,
+        -1,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "sample": "index = (floor(age / noise_period_frames) + noise_phase) modulo 16; x uses index + 6",
+      "maximum_offset_px": 1,
+      "start_and_tail_policy": "Noise is suppressed in the first two and final two frames to avoid a positional pop."
+    },
+    "runtime_policy": "Integer-only and deterministic. No gravity acceleration, heap, random state, alpha blend, hardware scaling, H-Int, per-frame tile upload, or sprite multiplexing. Reuse preloaded indexed sprite frames."
+  },
+  "particle_lifecycle": {
+    "logical_particle_count": 6,
+    "sprite_links_per_particle": 2,
+    "maximum_visible_sprites": 12,
+    "birth_frames": 4,
+    "birth_core_frame_sequence": [
+      0,
+      5,
+      6,
+      4
+    ],
+    "active_core_frame": 4,
+    "flicker": {
+      "base_core_frame": 4,
+      "alternate_core_frame": 1,
+      "alternate_luma_ratio_approx": 0.84,
+      "policy": "Single-frame lower-luma flares on per-spark periods. Two sparks stay steady; no global synchronized pulse."
+    },
+    "fade_out": {
+      "core_frames_by_remaining_life": {
+        "4": 6,
+        "3": 5,
+        "2": 0,
+        "1": "hidden"
+      },
+      "trail_frames_by_remaining_life": {
+        "4": 5,
+        "3": 0,
+        "2": "hidden",
+        "1": "hidden"
+      },
+      "apparent_shrink": "Indexed sprite coverage reduces to a small dim core before the link is hidden. This is a discrete 8x8 pixel approximation; the VDP does not scale sprites."
+    },
+    "directional_trail": {
+      "source": "Existing sprite strip frames 2/3/4, selected from horizontal/rising/falling path direction.",
+      "lag_px": "Per-particle 4-5px behind the core along the local trajectory tangent.",
+      "appears_after_age_frames": 3,
+      "depth": "Trail links are explicitly behind their core links."
+    },
+    "glow": "Use existing indexed bloom shapes and bright palette ramp. This is discrete pixel glow, not real blur or alpha."
+  },
+  "sparks": [
+    {
+      "id": "spark_0",
+      "start_frame": 180,
+      "lifetime_frames": 30,
+      "control_points_px": [
+        [
+          22,
+          132
+        ],
+        [
+          28,
+          124
+        ],
+        [
+          274,
+          145
+        ],
+        [
+          294,
+          112
+        ]
+      ],
+      "noise_phase": 0,
+      "noise_period_frames": 2,
+      "flicker": {
+        "period_frames": 8,
+        "phase": 0
+      },
+      "trail_lag_px": 5
+    },
+    {
+      "id": "spark_1",
+      "start_frame": 181,
+      "lifetime_frames": 29,
+      "control_points_px": [
+        [
+          18,
+          126
+        ],
+        [
+          34,
+          106
+        ],
+        [
+          260,
+          97
+        ],
+        [
+          286,
+          118
+        ]
+      ],
+      "noise_phase": 4,
+      "noise_period_frames": 2,
+      "flicker": {
+        "period_frames": 0,
+        "phase": 0
+      },
+      "trail_lag_px": 4
+    },
+    {
+      "id": "spark_2",
+      "start_frame": 182,
+      "lifetime_frames": 28,
+      "control_points_px": [
+        [
+          32,
+          138
+        ],
+        [
+          39,
+          141
+        ],
+        [
+          280,
+          108
+        ],
+        [
+          300,
+          116
+        ]
+      ],
+      "noise_phase": 8,
+      "noise_period_frames": 3,
+      "flicker": {
+        "period_frames": 9,
+        "phase": 3
+      },
+      "trail_lag_px": 5
+    },
+    {
+      "id": "spark_3",
+      "start_frame": 183,
+      "lifetime_frames": 27,
+      "control_points_px": [
+        [
+          40,
+          116
+        ],
+        [
+          52,
+          98
+        ],
+        [
+          262,
+          132
+        ],
+        [
+          284,
+          105
+        ]
+      ],
+      "noise_phase": 11,
+      "noise_period_frames": 2,
+      "flicker": {
+        "period_frames": 0,
+        "phase": 0
+      },
+      "trail_lag_px": 4
+    },
+    {
+      "id": "spark_4",
+      "start_frame": 184,
+      "lifetime_frames": 26,
+      "control_points_px": [
+        [
+          26,
+          129
+        ],
+        [
+          33,
+          145
+        ],
+        [
+          273,
+          101
+        ],
+        [
+          297,
+          115
+        ]
+      ],
+      "noise_phase": 3,
+      "noise_period_frames": 3,
+      "flicker": {
+        "period_frames": 7,
+        "phase": 5
+      },
+      "trail_lag_px": 5
+    },
+    {
+      "id": "spark_5",
+      "start_frame": 185,
+      "lifetime_frames": 25,
+      "control_points_px": [
+        [
+          24,
+          110
+        ],
+        [
+          38,
+          121
+        ],
+        [
+          263,
+          100
+        ],
+        [
+          288,
+          130
+        ]
+      ],
+      "noise_phase": 14,
+      "noise_period_frames": 2,
+      "flicker": {
+        "period_frames": 8,
+        "phase": 2
+      },
+      "trail_lag_px": 4
+    }
+  ],
+  "budget_contract": {
+    "h40_sprites_per_scanline_max": 20,
+    "h40_sprite_pixels_per_scanline_max": 320,
+    "total_sprite_links_limit": 80,
+    "allocated_scene_sprite_links": 64,
+    "measurement_required": "Measure all 30 sweep frames using six 8x8 core links and up to six 8x8 trail links, including trail offsets and individual lifetimes.",
+    "measurement_ref": "out/logs/splash_v3_wind_lifecycle_scanline_v002_20261015.json",
+    "measurement_status": "measured_geometry_only",
+    "headroom_justification": "Six sparks are the authored direction target; paired trails use more links to make motion readable. Keep the mark dominant and judge pressure from measured paths.",
+    "measured_frames": 30,
+    "max_visible_sparks_per_frame": 6,
+    "max_visible_sprite_links_per_frame": 12,
+    "measured_peak_sprites_per_scanline": 10,
+    "measured_peak_sprite_pixels_per_scanline": 80,
+    "worst_frames": [
+      202,
+      203,
+      204
+    ],
+    "measured_top_left_envelope_px": {
+      "x": [
+        14,
+        300
+      ],
+      "y": [
+        105,
+        139
+      ]
+    },
+    "over_limit_frames": []
+  },
+  "acceptance": {
+    "user_visual_approval": false,
+    "scene_direction_skill_feedback_recorded": true,
+    "human_visual_review_required": true,
+    "template_promotion_authorized": false,
+    "acceptance_checks": [
+      "The six lights read as separate wind-carried sparks, not one continuous bar.",
+      "Launch positions, timing, arcs, and speeds remain visibly asynchronous.",
+      "Each life starts softly, has a readable bright phase, and cools down while slowing and shrinking.",
+      "Trails follow local direction without covering the SGDK/FORGE lettering.",
+      "The frame sequence is clear on 320x224 BlastEm output and H40 geometry remains legal."
+    ]
+  },
+  "evidence": {
+    "old_rom_sha256_rejected": "9d34b114b86311e6b7924205d7317af7472f5624e2848ed214a328dc44272006",
+    "particle_strip_sha256": "4baa794092464967dff4f1dd1c1cc169ae0bbd6693215099aef5cbf7aebe2780",
+    "candidate_rom": {
+      "path": "out/profiling/splash_v3_wind_lifecycle_preview_v003_20261015/rom.bin",
+      "sha256": "558fee0aabbee64ea98582a47fd9284866c649f02f2add179b6d0085a9e151ae",
+      "size_bytes": 524288,
+      "build_report": "out/logs/splash_v3_wind_lifecycle_build_v003_20261015/linux_wine_build_report.json",
+      "build_status": "buildado"
+    },
+    "blastem_runtime_capture": {
+      "emulator": "BlastEm Flatpak com.retrodev.blastem",
+      "capture_method": "ffmpeg x11grab of the visible emulator window",
+      "video_path": "out/evidence/splash_v3_wind_lifecycle_preview_v003_20261015/wind_lifecycle_runtime_review_v003.mp4",
+      "video_sha256": "f791fdf0348c0ac5d264d76662bfe1cee6bcfd071ab2678bd51df94fc1db0262",
+      "video_duration_seconds": 5.53,
+      "nominal_capture_fps": 30,
+      "contact_sheet_path": "out/evidence/splash_v3_wind_lifecycle_preview_v003_20261015/runtime_contact_sheet.png",
+      "motion_sample_path": "out/evidence/splash_v3_wind_lifecycle_preview_v003_20261015/video_frames_4fps/frame_17.png",
+      "capture_status": "runtime_observed_supplementary",
+      "human_visual_approval": false,
+      "limitations": "The capture shows the timed Splash V3 and spark passage, but is not frame-marked ROM-side and does not establish sustained FPS, audio quality, whole-scene VDP budget, or final visual acceptance."
+    }
+  }
+}

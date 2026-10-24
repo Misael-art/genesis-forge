@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0.0",
+  "project_name": "modelo",
+  "declared_at": "2026-10-15T08:15:51Z",
+  "entries": [
+    {
+      "res_symbol": "img_brand_fx_tiles",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/brand_fx_tiles.png",
+      "source_kind": "procedural_primitive",
+      "acceptance_status": "placeholder",
+      "generated_by": "tools/image-tools/build_branding_intro_assets.py",
+      "notes": "Desenhado por primitiva (build_fx_tiles). Nunca pode ser final. Re-autorar como arte externa antes de qualquer claim de entrega visual."
+    },
+    {
+      "res_symbol": "img_brand_engine_logo",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/brand_engine_logo.png",
+      "source_kind": "procedural_primitive",
+      "acceptance_status": "placeholder",
+      "generated_by": "tools/image-tools/build_branding_intro_assets.py",
+      "notes": "Desenhado por primitiva (build_engine). Nunca pode ser final."
+    },
+    {
+      "res_symbol": "img_brand_author_logo",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/brand_author_logo.png",
+      "source_kind": "procedural_primitive",
+      "acceptance_status": "placeholder",
+      "generated_by": "tools/image-tools/build_branding_intro_assets.py",
+      "notes": "Desenhado por primitiva (build_author). Nunca pode ser final."
+    },
+    {
+      "res_symbol": "img_brand_project_logo",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/brand_project_logo.png",
+      "source_kind": "procedural_primitive",
+      "acceptance_status": "placeholder",
+      "generated_by": "tools/image-tools/build_branding_intro_assets.py",
+      "notes": "Desenhado por primitiva (build_project). Nunca pode ser final."
+    },
+    {
+      "res_symbol": "img_brand_presents_text",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/brand_presents_text.png",
+      "source_kind": "procedural_primitive",
+      "acceptance_status": "placeholder",
+      "generated_by": "tools/image-tools/build_branding_intro_assets.py",
+      "notes": "Desenhado por primitiva (build_presents). Nunca pode ser final."
+    },
+    {
+      "res_symbol": "img_starfield_v2",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/starfield_320x224.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/translate_starfield_v02.py",
+      "authored_source": "data/source_art/branding_v2/raw/starfield_v02b.jpg",
+      "authored_source_hash": "16b6f8fc459f76060c9fe9239838144ea136b754c3170fc8f5bf4217d0aada54",
+      "notes": "Act I plate translated from native image_gen concept B. Navy field, pulse on PAL0[1]/[2], 24px heat hem. 4-bit indexed, unique tiles 30. Not final; awaits human review."
+    },
+    {
+      "res_symbol": "img_forge_bg_b",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/forge_bg_b_320x224.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/forge_bg_b_v02.jpg",
+      "authored_source_hash": "4c532835d54a299ec1fcd234055be4e50d961c675a7783ad953500b2abcd308b",
+      "notes": "Re-autoria modular v02 + compose de crops 8x8 autorados. unique_with_flip=642 no alvo 644. Aguarda BlastEm; nao e final."
+    },
+    {
+      "res_symbol": "img_forge_bg_a_props",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/forge_bg_a_props_320x224.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/forge_anvil_iso_v01.jpg",
+      "authored_source_hash": "f966f4044ee86a05d0f6e428f734585fd9d4531ca8ddeaf76f5d9dd7e4e007d1",
+      "notes": "Bigorna registrada com face em (128,104) e 32x16 limpos para a cicatriz. Sem martelo. Aguarda revisao humana."
+    },
+    {
+      "res_symbol": "spr_forge_ember",
+      "res_kind": "SPRITE",
+      "asset_path": "branding/spr_forge_ember_16x16_strip.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/ember_v04.jpg",
+      "authored_source_hash": "08a6db2fc26ef1c82a34eb582509d7c04ef28aedf2ba1f1ab95c5cabebd1c3d0",
+      "notes": "6 quadros: rotacao 0/35/100/195, esmagamento, assentamento."
+    },
+    {
+      "res_symbol": "spr_forge_shard",
+      "res_kind": "SPRITE",
+      "asset_path": "branding/spr_forge_shard_16x16_strip.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/shard_v05.jpg",
+      "authored_source_hash": "11724b175042b4e6f36dc9c4c852365c8db26531a7765733321939654cbd475a",
+      "notes": "4 angulos 0/28/81/157 para flip H/V somar orientacao."
+    },
+    {
+      "res_symbol": "spr_forge_hammer",
+      "res_kind": "SPRITE",
+      "asset_path": "branding/spr_forge_hammer_48x48_strip.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/hammer_smear_v01.jpg",
+      "authored_source_hash": "122a1ddd933d2b80bd0ef9ed436d42a4be539a814be0c2b9926eb1dab7367158",
+      "notes": "7 quadros 48x48. Quadro 4 e smear desenhado, nao blur. Fonte primaria do smear; demais poses no lineage."
+    },
+    {
+      "res_symbol": "img_logo_engine_v2",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/logo_engine_224x64.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/logo_forge_v02.jpg",
+      "authored_source_hash": "06d459bd25162d861175005c33eb38066cd5745f1174e64bd3f21122fc875e9d",
+      "notes": "FORGE em PAL1. Degrau de luz em [13] (~4.5% dos pixels visiveis), [14] reservado. Canal max <= 0xCC. Mossa no R."
+    },
+    {
+      "res_symbol": "img_logo_author_v2",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/logo_author_192x32.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/logo_misael_v01.jpg",
+      "authored_source_hash": "58cd601ba106839aa7c088f03f839383a0f4916ae973ebbebd23809f9f2894ce",
+      "notes": "MISAEL em PAL2. Aguarda revisao humana."
+    },
+    {
+      "res_symbol": "img_logo_project_v2",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/logo_project_224x48.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/logo_master_v01.jpg",
+      "authored_source_hash": "7be8be6b7d9785856e91434756daba38db1979f017d3a356114aff36028e8631",
+      "notes": "MASTER em PAL2. Aguarda revisao humana."
+    },
+    {
+      "res_symbol": "img_presents_text_v2",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/presents_text_96x16.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/assemble_branding_v2_assets.py",
+      "authored_source": "data/source_art/branding_v2/raw/presents_v01.jpg",
+      "authored_source_hash": "3eae13ad6b5e921ae29e6964cae9099effd62ef5059b12e4c5938228e1c4e2f9",
+      "notes": "PRESENTS: corpo em PAL2[9/12] (luma>=100), contorno 1px do ink autorado. Placeholder ate revisao humana."
+    },
+    {
+      "res_symbol": "img_presents_bar_v2",
+      "res_kind": "IMAGE",
+      "asset_path": "branding/presents_bar_8x8.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v2/rebuild_presents_contrast.py",
+      "authored_source": "res/branding/forge_bg_b_320x224.png",
+      "authored_source_hash": "03a9cd073b6a0be5aefd98b979590b323d60be4efee1776db444ed15766a1f1a",
+      "notes": "Tile opaco da barra WINDOW, crop de fuligem autorada do bg_b. Nao e primitiva."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_320x224.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_visual_wip.py",
+      "authored_source": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v004_20261014.png",
+      "authored_source_hash": "dcf271e7c4c21e7d3a2aee275d32fe24a3196ddbc4954ba9309ce659fdcb2efa",
+      "notes": "Traducao WIP 320x224 de conceito AI com centro escuro amplo, cristais facetados nas bordas e convergencia luminosa inferior. SHA do PNG runtime 877cca9e391fce35c5886a9bf1b59ddb4bb26b8a72b2fea4a897797a2f5570c7; 918 tiles brutos / 916 apos H/V, 15 cores visiveis, index 0 black para backdrop. Variantes automaticas de 40/80/120/160 tiles foram rejeitadas por fragmentacao e ruido; reautoria nativa continua pendente. Sem aprovacao visual final."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3_v005",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_v005_320x224.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "built_in_image_gen and data/source_art/branding_v3/build_splash_v3_backdrop_v005_wip.py",
+      "notes": "Alternative development WIP translated from data/source_art/branding_v3/sources/source_backdrop_concept_ai_v005_20261014.png (SHA bb32cf3c7e954b99d71fe71ed0197ba10685f1742847ccd1f75e91313016daea). Runtime PNG SHA ef75c6ec1c429e16ad3fa3aae55acf846631d4ff0d5f2a0f3c8b02fe47c39ab0; 320x224, 4bpp, 15 visible colors, 755 unique tiles / 744 H-V unique. It preserves the broader center safe zone and uses larger facets; no final visual approval."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3_v006",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_v006_320x224.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "built_in_image_gen and data/source_art/branding_v3/build_splash_v3_backdrop_v006_wip.py",
+      "notes": "V006 development translation of source_backdrop_concept_ai_v006_20261014.png (SHA f3e924c1580c8ead73b0df84b9b557cef69af45eeff4e311bf236b7b371829b8), edited from the preserved V005 source concept. Runtime metrics and SHA are recorded in out/logs/splash_v3_backdrop_v006_translation_20261014.json. Candidate only; no human visual approval."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3_v012",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_v012_320x224.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "built_in_image_gen and data/source_art/branding_v3/build_splash_v3_backdrop_v012_wip.py",
+      "notes": "Experimental ROM-preview translation only. Source data/source_art/branding_v3/sources/source_backdrop_concept_ai_v012_20261014.png SHA b8b9c7833f84a14f522c42301f0f660f4358a82b721bf96d32698d4b0cba7a78; PNG SHA af1380658408ebfa0a03fc7d37d36cb4c5fe6169088843ec31963ffa32e9622d. Technical candidate passed forge_art validate with transparent index 0, 320x224, 4bpp and 15 visible colors. 272 unique H/V tiles. No human visual selection or final approval; V006 remains the curatorial baseline."
+    },
+    {
+      "res_symbol": "img_splash_sgdk_v3",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_sgdk_wordmark_v3_224x48.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_lettering_native_probes.py --activate-b-preview",
+      "notes": "Direcao B faceted_crystal ativa como WIP de laboratorio. Traduzida da fonte AI data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png (SHA d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8), 224x48, 4bpp, index 0 transparente, 15 cores 9-bit, 143 tiles brutos/141 H-V unicos. Indices 1-9 sao contorno e 10-15 preenchimento. Baseline pre-B preservada em rascunho/visual_lab/splash_sgdk_wordmark_v3_baseline_pre_b_20261014_224x48.png (SHA 9f54b33d35178804321243029c0ab65eeea9a24e7f29ef63a447d36ef68b2c85). Sem model sheet ou aprovacao final humana."
+    },
+    {
+      "res_symbol": "img_splash_forge_v3",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_forge_wordmark_v3_192x32.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_lettering_native_probes.py --activate-b-preview",
+      "notes": "Direcao B faceted_crystal ativa como WIP de laboratorio, subordinada a SGDK. Traduzida da fonte AI data/source_art/branding_v3/sources/source_lettering_model_sheet_ai_v003_20261014.png (SHA d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8), 192x32, 4bpp, index 0 transparente, 14 cores 9-bit, 92 tiles brutos/91 H-V unicos. Indices 1-9 sao contorno e 10-15 preenchimento. Baseline pre-B preservada em rascunho/visual_lab/splash_forge_wordmark_v3_baseline_pre_b_20261014_192x32.png (SHA 77b38bcbb7e50ff902565e87c1df3273dda88ce7dd0e07722b8ea8bab21ac178). Sem model sheet ou aprovacao final humana."
+    },
+    {
+      "res_symbol": "spr_splash_particle_v3",
+      "res_kind": "SPRITE",
+      "asset_path": "sprites/splash_particle_v3_8x8_strip.png",
+      "source_kind": "procedural_composed_from_authored",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_visual_wip.py",
+      "authored_source": "data/source_art/branding_v3/sources/source_particle_strip_concept_ai_v001.png",
+      "authored_source_hash": "f27219421ce39a62979d46e09a3291e61f2234d80f07a0040052de5f2e325f7c",
+      "notes": "Strip WIP de oito quadros 8x8, index 0 transparente, nove cores visiveis. Geometry/animation budget must be remeasured in the runtime scene."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3_v014",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_v014_320x224.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_backdrop_v014_wip.py",
+      "notes": "Isolated WIP preview only. Source data/source_art/branding_v3/sources/source_backdrop_concept_ai_v014_20261014.png SHA 70cacd65a63e000a4e9d2c2ed13fd3da32fe54ef3e9824095204f2e7bee47e31; runtime PNG SHA 65e9b38aa59a5c8318827bcd1398d5d8bae4b037d0d652dccd8175aee6ef06db. 320x224, 4bpp, 15 visible colors, 870 exact tiles / 856 H-V unique. Not selected or approved; V006 remains the default."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3_v015",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_v015_320x224.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_backdrop_v015_wip.py",
+      "notes": "Isolated opt-in WIP preview using SPLASH_V3_BACKDROP_V015. Derived from data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.png SHA 87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188; runtime PNG SHA e1f73e699f7a2d4c0f3e6cacb9959e350a613b8aca58da7205d87bfa7793880d. 320x224 indexed 4bpp, index 0 backdrop black, all 15 visible palette entries used, 1120 raw tiles / 708 unique with H/V flips; tile cap not applied. Single BG_B plate. Automated source-layout inference was rejected after a false stage_board parse; semantic review and manual native redraw remain incomplete. Not selected or approved; V006 remains the default and future review is required."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3_v016",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_v016_320x224.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_backdrop_v016_wip.py",
+      "notes": "Isolated opt-in WIP comparison using SPLASH_V3_BACKDROP_V016. Derived from V015 concept data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.png SHA 87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188; runtime PNG SHA 3b90384ce5fc9ad4e7f8515281371eff423abb7106a2aab66196fc97f4294f4e. 320x224 indexed 4bpp, index 0 backdrop black, 15 visible palette entries, 1120 raw tiles / 652 unique with H/V flips. Replaces V015's hard rectangular clamp with a feathered oval logo field; still a palette translation, not a manual native redraw. Not selected or approved; V006 remains the default and future review is required."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3_v018",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_v018_320x224.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_backdrop_v018_wip.py",
+      "notes": "Opt-in WIP translation for SPLASH_V3_BACKDROP_V018. Source data/source_art/branding_v3/v018/source_backdrop_concept_ai_v018_20261015.png SHA 93ddcafa8e4fcff6cf2e28b206f0a262cf7171aa149c25c9d4ce12b2220c52f0; curated runtime PNG SHA e1eabc9dee606add3ebacad4b05bdb69686eba749d5720a71cc7c4bb2b1509d2. 320x224 indexed 4bpp, index 0 opaque VDP black, 14 visible colors, 1120 raw tiles / 901 unique with H/V flips. Nearest-sampled concept translation, not manual native 8x8 final art. 901+141+91+8=1141 active splash art tiles is an offline estimate against the 1740 art-tile ceiling, not full runtime VRAM validation. V006 remains default; human visual approval=false and promotion=false."
+    },
+    {
+      "res_symbol": "img_splash_backdrop_v3_v019",
+      "res_kind": "IMAGE",
+      "asset_path": "branding_v3/splash_backdrop_v3_v019_320x224.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder",
+      "generated_by": "data/source_art/branding_v3/build_splash_v3_backdrop_v019_wip.py",
+      "notes": "Opt-in isolated WIP preview selected only by SPLASH_V3_BACKDROP_V019. Source data/source_art/branding_v3/v019/source_backdrop_concept_ai_v019_20261015.png SHA 9fc213cc726c3a2fbbfff0ff9e9f9e15023e29f74459398c0a5af9802536840e; translated file SHA b8b403f30c170554df647ac1b6b2a54fc83b3e3c76a695765ec4ac0ec313e819. 320x224 indexed 4bpp, PLTE 16, 15 visible indices plus transparent-zero convention; pixel contract technical_candidate with zero blockers at out/logs/splash_v3_v019_pixel_compliance_res_20261015.json. 552 unique H/V tiles; no human visual approval and no final promotion. V006 remains the project default."
+    }
+  ]
+}

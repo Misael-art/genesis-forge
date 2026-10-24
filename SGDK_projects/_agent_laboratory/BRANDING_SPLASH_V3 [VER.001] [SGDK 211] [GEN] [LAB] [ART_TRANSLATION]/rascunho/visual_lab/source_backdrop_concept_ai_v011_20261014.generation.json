@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "ai_generated",
+  "acceptance_status": "placeholder",
+  "generator": "Codex image_gen",
+  "generated_at": "2026-10-14",
+  "source_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v011_20261014.png",
+  "source_sha256": "895cfe218f804f354a8dbf18846d72883437f57933bdbb52721ec8383d97db2d",
+  "canvas_px": [
+    1499,
+    1049
+  ],
+  "reference_path": "data/source_art/branding_v3/sources/source_backdrop_concept_ai_v010_20261014.png",
+  "reference_sha256": "ef09bf9c38629b14ab5209070c5e5f89dac8d4e25cecdf484b7121b4284328e7",
+  "prompt": "Edit the reference into a cleaner Mega Drive splash background plate, keeping its deep navy, electric-cyan faceted crystal style and asymmetrical diagonal energy. No text, logo, letters, symbols, UI, or wordmark. Protect a large central logo safe zone covering roughly 15% to 85% of the canvas width and 30% to 72% of the canvas height: this rectangle must stay almost uniformly deep navy, with no bright shards, no thin rays, no streaks, no glow, and no high-contrast texture behind the future SGDK and FORGE lettering. Keep the energetic diagonal current along the outer perimeter only: a strong asymmetric crystal ignition clustered in the upper-left corner, with narrow blue streaks traveling along the top border toward the upper-right edge; a separate shorter cluster at the lower-right and sparse lower-left accents. Make every streak stop before entering the central safe zone. Keep facets large, angular and sharply separated; use cobalt shadow, saturated blue/cyan facets and only a few pale ice highlights. No fog, soft bloom, gradients, stars, tiny noise, mechanical repetition or bilateral symmetry. Preserve the lively premium crystal identity while making the logo area much cleaner than the reference. Landscape 320x224 composition.",
+  "review": "Concept source only; translated/native pixels and ROM review remain pending."
+}

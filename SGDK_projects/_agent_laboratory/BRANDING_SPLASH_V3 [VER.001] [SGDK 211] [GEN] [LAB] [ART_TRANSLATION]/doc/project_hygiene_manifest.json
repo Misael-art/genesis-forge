@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "project_root_policy": "all_project_material_inside_project",
+  "naming_policy": "portable_descriptive_v1",
+  "scratch_policy": {
+    "root": "rascunho",
+    "raw_inputs": "rascunho/entrada_bruta",
+    "processed_inputs": "rascunho/processado",
+    "temporary": "rascunho/temporario"
+  },
+  "allowed_root_entries": [
+    ".agent",
+    ".ai-memory.toml",
+    ".cursor",
+    ".mddev",
+    ".vscode",
+    "data",
+    "doc",
+    "inc",
+    "out",
+    "rascunho",
+    "rds",
+    "res",
+    "src",
+    "tools",
+    "README.md",
+    "build.bat",
+    "clean.bat",
+    "rebuild.bat",
+    "resolve_wrapper.bat",
+    "run.bat",
+    "sgdk_wrapper_env.bat"
+  ],
+  "canonical_shared_dependencies": [
+    "tools/sgdk_wrapper",
+    "sdk/sgdk-2.11",
+    "tools/emuladores"
+  ],
+  "external_inputs": [
+    {
+      "source": "User-provided Splash v3 plan attachment (2026-10-11)",
+      "copied_to": "rascunho/entrada_bruta/splash_v3_plan_20261011.txt",
+      "purpose": "Scope, design decisions, constraints, sequencing, and verification gates for the isolated splash prototype.",
+      "license_or_authorization": "Supplied by the user for this task; authorized for project-local implementation planning.",
+      "sha256": "fc08a6dc39d99a0090f9136b58cd01cac479e391c8d3deaef7121abc0d5f76ba"
+    },
+    {
+      "source": "Codex built-in ImageGen visual concept study (2026-10-12)",
+      "copied_to": "rascunho/visual_lab/branding_v3_backdrop_concept_20261012.png",
+      "purpose": "Non-production composition study for the Splash V3 blue/cyan energy backdrop; visual_lab_control only.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development request; not approved for production pixels or ROM use.",
+      "sha256": "d1e719488a7e21f0122c9a8a0680995988b887155a8c64c9992089a21ea94063"
+    },
+    {
+      "source": "Codex built-in ImageGen particle strip concept (2026-10-13)",
+      "copied_to": "rascunho/visual_lab/branding_v3_particle_strip_concept_20261013.png",
+      "purpose": "Exploratory energy-shard animation direction only; not a native sprite strip or production asset.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development task; exploratory only, no final asset approval.",
+      "sha256": "f27219421ce39a62979d46e09a3291e61f2234d80f07a0040052de5f2e325f7c"
+    },
+    {
+      "source": "Codex built-in ImageGen backdrop concept revision 2 (2026-10-13)",
+      "copied_to": "rascunho/visual_lab/branding_v3_backdrop_concept_ai_v002_20261013.png",
+      "purpose": "Alternative crystal-energy BG_B source study with a large dark center; visual_lab_control only.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development task; exploratory only, no final asset approval.",
+      "sha256": "c06fdcbc9a4ae481bb1652c6fa3260132eaff66c982eb9d19c71d7a827cf9f48"
+    },
+    {
+      "source": "Codex built-in ImageGen Splash V3 composition concept (2026-10-13)",
+      "copied_to": "rascunho/visual_lab/branding_v3_composition_concept_ai_v003_20261013.png",
+      "purpose": "Combined lockup and crystal backdrop study for curatorial review; not model-sheet approval or production pixels.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development task; exploratory only, no final asset approval.",
+      "sha256": "bbae39df46cc432043f1c9853fa2bb691ad0c8f8fab1fd5cb78bb220df4ba90a"
+    },
+    {
+      "source": "Codex built-in ImageGen lettering direction board (2026-10-14)",
+      "copied_to": "rascunho/visual_lab/source_lettering_model_sheet_ai_v003_20261014.png",
+      "purpose": "Three lettering design directions for Splash V3 review; visual_lab_control only, not model sheet or production pixels.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development task; no lettering direction or runtime use approved.",
+      "sha256": "d28a90d516d1d04dd77bd84211dbd5cc21e49637b08c7879004225f4878796e8"
+    },
+    {
+      "source": "Codex built-in ImageGen lettering context comparison (2026-10-14)",
+      "copied_to": "rascunho/visual_lab/source_lettering_runtime_context_ai_v001_20261014.png",
+      "purpose": "Compare three lettering directions over the selected V005 backdrop; 1024x1536 concept contact sheet only, not exact 320x224 plates or runtime pixels.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development task; no lettering direction or runtime use approved.",
+      "sha256": "20fa2e32a125d829f26bf33287103339699b4e1fb99a55b32e42ce2341fee7d7"
+    },
+    {
+      "source": "Codex built-in ImageGen asymmetric crystal-energy backdrop concept (2026-10-14)",
+      "copied_to": "rascunho/visual_lab/source_backdrop_concept_ai_v007_20261014.png",
+      "purpose": "Alternative Splash V3 source study with asymmetric crystal clusters and diagonal energy streaks; visual_lab_control only, not a runtime asset.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development task; not selected for ROM use or approved as final art.",
+      "sha256": "3888fb24313aa17a8f246fd769db07e22cfe93ecae6e62ac28b8a323992f04ac"
+    },
+    {
+      "source": "Codex built-in ImageGen simplified crystal backdrop concept (2026-10-14)",
+      "copied_to": "rascunho/visual_lab/source_backdrop_concept_ai_v008_20261014.png",
+      "purpose": "Cleaner large-facet Splash V3 backdrop study with a broad dark logo-safe center; visual_lab_control only, not runtime art.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development task; exploratory only, not selected for ROM use or approved as final art.",
+      "sha256": "feb571791d496fc9085d49bcb20ebbfe5caea5b60ef30d18bd1dc3f06ecc19af"
+    },
+    {
+      "source": "Codex built-in ImageGen asymmetric directional backdrop revision (2026-10-14)",
+      "copied_to": "rascunho/visual_lab/source_backdrop_concept_ai_v009_20261014.png",
+      "purpose": "Asymmetric large-facet Splash V3 backdrop study; visual_lab_control only, not runtime art.",
+      "license_or_authorization": "Generated for the user-authorized Splash V3 visual-development task; exploratory only, not selected for ROM use or approved as final art.",
+      "sha256": "730df0013734861a5b07d32e1eba1bb41df4a4e9d77e5c5d4d4bf7f841b8a947"
+    },
+    {
+      "source": "https://www.retrodev.com/repos/blastem/raw-file/2b2a182f4522/debug.c",
+      "copied_to": "rascunho/blastem_v1_0_debug_reference/debug.c",
+      "purpose": "Read-only official BlastEm v1.0.0 debugger cycle/VDP semantics for external CPU profiling; no runtime dependency.",
+      "license_or_authorization": "Official upstream source retained with its original copyright notices for local analysis.",
+      "sha256": "dfc74249bae0ebd1c5dea87adc52d3b33e2470a52b3898fdaf916f34c4a092f8"
+    },
+    {
+      "source": "https://www.retrodev.com/repos/blastem/raw-file/2b2a182f4522/debug.h",
+      "copied_to": "rascunho/blastem_v1_0_debug_reference/debug.h",
+      "purpose": "Read-only official BlastEm v1.0.0 debugger cycle/VDP semantics for external CPU profiling; no runtime dependency.",
+      "license_or_authorization": "Official upstream source retained with its original copyright notices for local analysis.",
+      "sha256": "1def451a8abefbfa730f636bb14fe98355837b360c9d69f9bb0d78fa13c10d37"
+    },
+    {
+      "source": "https://www.retrodev.com/repos/blastem/raw-file/2b2a182f4522/genesis.c",
+      "copied_to": "rascunho/blastem_v1_0_debug_reference/genesis.c",
+      "purpose": "Read-only official BlastEm v1.0.0 debugger cycle/VDP semantics for external CPU profiling; no runtime dependency.",
+      "license_or_authorization": "Official upstream source retained with its original copyright notices for local analysis.",
+      "sha256": "142e8271076752ae602aa7ad70bdc5c91cfc8c0d32777c50cb523416dc148403"
+    },
+    {
+      "source": "https://www.retrodev.com/repos/blastem/raw-file/2b2a182f4522/vdp.c",
+      "copied_to": "rascunho/blastem_v1_0_debug_reference/vdp.c",
+      "purpose": "Read-only official BlastEm v1.0.0 debugger cycle/VDP semantics for external CPU profiling; no runtime dependency.",
+      "license_or_authorization": "Official upstream source retained with its original copyright notices for local analysis.",
+      "sha256": "4c30c5b36a2c82eb056adff31a122196845ffe892a14ea1bc058e8e1e9576144"
+    }
+  ]
+}

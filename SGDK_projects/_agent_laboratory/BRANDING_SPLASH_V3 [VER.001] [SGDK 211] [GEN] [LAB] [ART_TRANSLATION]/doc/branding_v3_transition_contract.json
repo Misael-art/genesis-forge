@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "state_transition_contract",
+  "project": "BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]",
+  "states": [
+    "APP_SCENE_BRANDING",
+    "front_end_main_menu"
+  ],
+  "transition_mutex": {
+    "enabled": true,
+    "blocks_input": true,
+    "blocks_scene_update": true,
+    "blocks_nested_transition": true,
+    "menu_enter_runs_while_locked": true,
+    "readiness_condition": "sceneNeedsEnter == false && PAL_isDoingFade() == false && DMA_getQueueSize() == 0",
+    "hud_countdown_frames": 12,
+    "countdown_releases_lock": false
+  },
+  "sequence": [
+    "run_splash_v3_for_240_nominal_frames",
+    "finish_palette_fade",
+    "wait_for_dma_queue_empty",
+    "stop_splash_audio_and_reset_scroll_window_shadow_highlight",
+    "clear_sprite_list_and_commit_empty_sat",
+    "switch_to_menu_and_hold_transition_lock",
+    "draw_menu_and_start_12_frame_palette_fade_in",
+    "keep_menu_input_and_update_locked_until_destination_entered_fade_idle_and_dma_empty",
+    "unlock_menu_input",
+    "complete"
+  ],
+  "resource_handoff": [
+    {
+      "resource": "VRAM",
+      "old_owner": "branding_v3",
+      "action": "menu clears and redraws planes after scene entry",
+      "new_owner": "scene_menu"
+    },
+    {
+      "resource": "CRAM",
+      "old_owner": "branding_v3_palette_controller",
+      "action": "menu assigns palettes; capture target colors; fade from black",
+      "new_owner": "scene_menu"
+    },
+    {
+      "resource": "VSRAM",
+      "old_owner": "branding_v3_static_planes",
+      "action": "reset BG_A/B scroll to zero",
+      "new_owner": "scene_menu"
+    },
+    {
+      "resource": "SAT",
+      "old_owner": "branding_v3",
+      "action": "SPR_reset and SPR_update empty list during manager-owned switch",
+      "new_owner": "scene_menu"
+    },
+    {
+      "resource": "HSCROLL",
+      "old_owner": "branding_v3_no_scroll",
+      "action": "restore plane scroll mode and zero offsets",
+      "new_owner": "scene_menu"
+    },
+    {
+      "resource": "WINDOW",
+      "old_owner": "branding_v3_unused",
+      "action": "disable window before menu owns text/layout",
+      "new_owner": "scene_menu"
+    },
+    {
+      "resource": "AUDIO",
+      "old_owner": "branding_v3_audio_director",
+      "action": "AUDIO_stopAll before scene switch; menu BGM starts on menu enter",
+      "new_owner": "scene_menu_audio"
+    },
+    {
+      "resource": "INPUT",
+      "old_owner": "splash_input_lock",
+      "action": "block updates and nested transitions until destination entry, fade and DMA finish",
+      "new_owner": "scene_menu_input"
+    },
+    {
+      "resource": "DMA_QUEUE",
+      "old_owner": "branding_v3_resource_preload",
+      "action": "wait until DMA_getQueueSize returns zero; do not flush manually",
+      "new_owner": "scene_menu_loader"
+    }
+  ],
+  "input_lock_policy": "Ignore input for the entire splash. Hold menu input and scene updates until its enter completes, its asynchronous fade ends and its DMA queue is empty. The 12-frame HUD countdown cannot release the mutex.",
+  "fixtures": [
+    "boot_reaches_branding_before_menu",
+    "splash_runs_nominal_240_ntsc_frames_without_skip",
+    "menu_handoff_waits_for_fade_and_dma_drain",
+    "input_and_nested_scene_change_remain_locked_until_destination_ready",
+    "menu_palette_fades_from_black",
+    "menu_input_resumes_after_unlock",
+    "menu_reentry_repeats_branding_without_stale_state",
+    "audio_stops_cleanly_at_handoff"
+  ],
+  "status": "needs_review",
+  "blockers": [
+    "Canonical Flatpak delivery gate remains open; native debugger is supplementary.",
+    "Inherited menu still uses FORJA/V2 art and BGM; remove that dependency before archiving the active V2 assets.",
+    "Full scene audio/performance/VDP budgets and final human visual/audio acceptance remain open."
+  ],
+  "build_profile": {
+    "macro": "SPLASH_V3_MENU_HANDOFF",
+    "backdrop_macro": "SPLASH_V3_BACKDROP_V019",
+    "candidate_status": "buildado_native_functional_cases_observed",
+    "observed_rom_sha256": "04f24e1cd52f227c5e01547f2d30b9b915b45fde84a197873687243d5ef35c90",
+    "observed_build_report": "out/logs/splash_v3_visible_deadline_v015_20261016/linux_wine_build_report.json",
+    "observed_evidence_record": "out/evidence/splash_v3_visible_deadline_v015_20261016/native_handoff_01/handoff_observation.json",
+    "emulator_route": "isolated_session_experimental",
+    "canonical_gate_status": "unproven_installed_blastem_1_0_pinned_0_6_2",
+    "default_build_unchanged": true
+  },
+  "nominal_timeline": {
+    "splash_frames_ntsc": 240,
+    "post_timeline_wait": "Wait until PAL fade is idle and DMA queue is empty; actual menu entry can occur after frame 240 if either is still pending."
+  },
+  "callback_ownership": {
+    "scene_local_vint_callbacks": false,
+    "hint_or_timer_callbacks_used_by_splash": false,
+    "global_vblank_owner": "application_vblank_dispatcher",
+    "note": "No scene-owned interrupt callback is registered or reset by this handoff candidate."
+  },
+  "transition_pattern": {
+    "pattern_catalog_id": "fade_transition",
+    "registry_ids": [
+      "palette_state_transitions",
+      "dma_transfer_safety"
+    ],
+    "owner": "application_scene_manager",
+    "fallback": "Keep input blocked until destination readiness. A permanent load/fade failure still requires a diagnostic recovery route; no fixed-delay unlock."
+  },
+  "runtime_facts": {
+    "exit_function": "SCENE_brandingV3Exit",
+    "exit_actions": [
+      "AUDIO_stopAll",
+      "disable Shadow/Highlight",
+      "restore plane scrolling and zero offsets",
+      "disable WINDOW",
+      "set text plane BG_A"
+    ],
+    "menu_entry": "SCENE_menuEnter draws inherited menu, reads 64 palette entries, begins PAL_fadeInAll over 12 frames",
+    "input_lock_owner": "APP_update"
+  },
+  "verification_current": {
+    "scope": "supplementary_native_transition_functional_cases",
+    "eight_cases_passed": true,
+    "rom_side_input_confirmed": true,
+    "evidence": "out/evidence/splash_v3_visible_deadline_v015_20261016/native_handoff_01/handoff_observation.json",
+    "observation": "Eight ROM-side cases pass in selected O. Full150-frame post-warmup snapshot exported before handoff at F239; scene readiness/fade/DMA mutex unchanged.",
+    "canonical_delivery_gate_passed": false,
+    "human_approval": false
+  }
+}

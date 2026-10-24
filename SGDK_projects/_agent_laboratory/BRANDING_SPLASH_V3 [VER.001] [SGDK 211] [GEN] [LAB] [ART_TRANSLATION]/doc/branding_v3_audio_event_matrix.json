@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "matrix_id": "branding_v3_audio_event_matrix_v015_candidate",
+  "scene_id": "branding_sequence_v3",
+  "timebase": {
+    "region": "NTSC",
+    "frames_per_second": 60,
+    "frame_ranges": "left-inclusive, right-exclusive"
+  },
+  "music": {
+    "asset_symbol": "mus_splash_v3",
+    "start_frame": 60,
+    "stop_frame": 240,
+    "start_policy": "one start on scene entry timeline; never retrigger from AUDIO_update",
+    "loop_frame_count": 180,
+    "stop_policy": "stop at scene exit after the 180-frame score has reached its final silent tail"
+  },
+  "events": [
+    {
+      "event_id": "splash_energy_rise",
+      "trigger_frame": 24,
+      "expected_state": "energy",
+      "asset_symbol": "sfx_splash_v3_energy_rise",
+      "channel": "SOUND_PCM_CH2",
+      "priority": 9,
+      "duration_frames_max": 56,
+      "fallback_event": "psg_energy_rise",
+      "repeat_policy": "once_per_enter"
+    },
+    {
+      "event_id": "splash_mark_lock",
+      "trigger_frame": 118,
+      "expected_state": "outline_to_fill",
+      "asset_symbol": "sfx_splash_v3_mark_lock",
+      "channel": "SOUND_PCM_CH3",
+      "priority": 13,
+      "duration_frames_max": 18,
+      "fallback_event": "psg_mark_lock",
+      "repeat_policy": "once_per_enter"
+    },
+    {
+      "event_id": "splash_sweep_pass",
+      "trigger_frame": 178,
+      "expected_state": "sweep",
+      "asset_symbol": "sfx_splash_v3_sweep_pass",
+      "channel": "SOUND_PCM_CH2",
+      "priority": 11,
+      "duration_frames_max": 32,
+      "fallback_event": "psg_sweep_pass",
+      "repeat_policy": "once_per_enter"
+    },
+    {
+      "event_id": "splash_tail",
+      "trigger_frame": 210,
+      "expected_state": "hold_and_fade",
+      "asset_symbol": "sfx_splash_v3_tail",
+      "channel": "SOUND_PCM_CH3",
+      "priority": 8,
+      "duration_frames_max": 30,
+      "fallback_event": "psg_splash_tail",
+      "repeat_policy": "once_per_enter"
+    }
+  ],
+  "overlap_policy": {
+    "same_pcm_channel": "never start a second cue before the prior cue completes or is explicitly stopped",
+    "max_concurrent_pcm": 2,
+    "music_masking": "V015 preserves the V012 eight-note contour but uses sharply clipped syncopated phrases: lead gates occupy 52/180 score frames, bass and harmony are short stabs, and fast FM releases prevent phrases blurring together. E6/G6/C7 additive crystal pings are 3-4 frames at score 26/88/106. The mark-lock cue fills a true musical rest; all music ends before sweep and tail cues. PSG is silent."
+  },
+  "status": "v013_and_v014_rejected_by_user_v015_candidate_pending_hash_bound_listening",
+  "blockers": [
+    "human_audio_review_pending_v015",
+    "production_v3_scene_audio_integration_pending",
+    "dac_runtime_budget_unmeasured",
+    "canonical_blastem_qa_pending"
+  ]
+}

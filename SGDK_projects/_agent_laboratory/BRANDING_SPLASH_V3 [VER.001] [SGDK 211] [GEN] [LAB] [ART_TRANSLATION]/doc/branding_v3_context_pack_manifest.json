@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "manifest_id": "branding_v3_context_pack",
+  "project": "BRANDING_SPLASH_V3 [VER.001] [SGDK 211] [GEN] [LAB] [ART_TRANSLATION]",
+  "scene_id": "branding_sequence_v3",
+  "runtime_scene_id": "APP_SCENE_BRANDING",
+  "status": "planning_only",
+  "primary_brief": {
+    "source": "rascunho/entrada_bruta/splash_v3_plan_20261011.txt",
+    "source_kind": "user_supplied_text",
+    "use": "Narrative sequence, timing target, blue-energy direction, and open lettering-source decision",
+    "pixels_copied": false
+  },
+  "reference_profiles": [
+    {
+      "id": "xemu_startup_identity",
+      "game": "Xemu startup identity (emulator reference, not a game)",
+      "inheritance": "Blue energy emergence, central lockup, and left-to-right glow timing only.",
+      "source_ref": "rascunho/entrada_bruta/splash_v3_plan_20261011.txt",
+      "asset_copying": "none"
+    },
+    {
+      "id": "rheo_vdp_density_craft",
+      "game": "Real Bout Fatal Fury Genesis",
+      "inheritance": "Compose deliberately while measuring the legal VDP limits; no stage or sprite copying.",
+      "source_ref": "doc/00-diretrizes-agente.md",
+      "asset_copying": "none"
+    },
+    {
+      "id": "pigsy_native_pixel_translation",
+      "game": "KOF Mega Drive",
+      "inheritance": "Translate visual intent into original native clusters and palette roles; no character, pixel, or IP copying.",
+      "source_ref": "doc/00-diretrizes-agente.md",
+      "asset_copying": "none"
+    }
+  ],
+  "hardware_context": {
+    "display": "320x224 H40",
+    "planes": ["BG_A", "BG_B"],
+    "window": "unused",
+    "h_int": "unused",
+    "alpha_blending": "not available",
+    "sprite_definition_geometry": "one frame width and height per SpriteDefinition"
+  },
+  "human_decisions": {
+    "lettering_master_route": {
+      "status": "pending",
+      "options": ["hand_authored_pixel", "imagegen_authored_master_then_crop"],
+      "recommended": "hand_authored_pixel",
+      "approval_required_before": ["model_sheet", "asset_contract", "production_pixels"]
+    },
+    "sweep_route": {
+      "status": "selected_by_user_brief",
+      "choice": "sprite_band",
+      "alternative_not_selected": "WINDOW in 16-pixel steps"
+    }
+  },
+  "scope": {
+    "lab_only": true,
+    "template_changes_allowed": false,
+    "consumer_migrations_allowed": false,
+    "conditional_template_promotion_authorized": true,
+    "promotion_gate": "Promote only after all lab validation and hash-bound BlastEm evidence gates pass.",
+    "final_visual_assets_created": false
+  }
+}

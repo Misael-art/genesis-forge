@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "lab_baseline_document_snapshot",
+  "status": "archived_reference_only",
+  "reason": "audit_tile_residency selects the first doc/*storyboard*.json; the copied v2 storyboard would shadow the v3 residency plan.",
+  "original_path": "doc/branding_v2_cinematic_storyboard.json",
+  "snapshot_path": "rascunho/baseline_branding_v2/branding_v2_cinematic_storyboard.json",
+  "sha256": "7f3374b8f2810c0ed10d0ac5720af899f7a767ce194226c5b525573cb2f7385f",
+  "references_updated": [
+    "doc/asset_production_brief_v2.md",
+    "doc/branding_sequence_contract.json",
+    "doc/branding_v2_dma_queue_contract.json",
+    "doc/branding_v2_scene_conception.md",
+    "src/scenes/scene_branding_v2.c"
+  ]
+}

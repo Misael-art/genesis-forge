@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "inventory_id": "splash_v3_external_visual_input_v017_20261015",
+  "purpose": "Project-local copies and hashes for the generated V017 source and its intermediate reference.",
+  "files": [
+    {
+      "path": "rascunho/entrada_visual/visual_generation_input_v017_20261015.png",
+      "sha256": "4bb6bc3cf60fff57dc396eafd9d21bdee86b03349800ba6e9c40eec8ebc38033",
+      "size_bytes": 2218348,
+      "authoritative_translation_copy": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "placeholder"
+    },
+    {
+      "path": "rascunho/entrada_visual/visual_generation_input_v017_intermediate_20261015.png",
+      "sha256": "28dc2e4d5faa579a46c77eac94d5edb434f1db1c8e17ee850369dc8239ce2e0c",
+      "size_bytes": 2305388,
+      "used_as_reference_for": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.png",
+      "source_kind": "ai_generated",
+      "acceptance_status": "visual_lab_control"
+    }
+  ]
+}

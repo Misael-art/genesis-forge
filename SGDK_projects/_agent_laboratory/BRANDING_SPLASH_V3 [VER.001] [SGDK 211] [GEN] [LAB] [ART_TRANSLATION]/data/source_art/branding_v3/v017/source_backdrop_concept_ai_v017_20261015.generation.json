@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "source_kind": "ai_generated",
+  "acceptance_status": "placeholder",
+  "generator": "Codex image_gen built-in",
+  "generated_at": "2026-10-15",
+  "generation_mode": "edit_reference",
+  "source_path": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.png",
+  "source_sha256": "4bb6bc3cf60fff57dc396eafd9d21bdee86b03349800ba6e9c40eec8ebc38033",
+  "canvas_px": [
+    1500,
+    1049
+  ],
+  "mode": "RGB",
+  "reference_path": "rascunho/entrada_visual/visual_generation_input_v017_intermediate_20261015.png",
+  "reference_sha256": "28dc2e4d5faa579a46c77eac94d5edb434f1db1c8e17ee850369dc8239ce2e0c",
+  "prompt": "Make a focused corrective edit to this image. Preserve its deep-blue crystalline cavern, the newly filled center with subtle low-contrast angular facets, the strong bright crystal at upper-left, scattered upper-right shards, and large lower-right crystal cluster. The lower half still has a lake-like reflective floor and a bright horizontal waterline. REMOVE the lake, water, horizon, and every long horizontal luminous stripe completely. Replace that entire lower reflective surface with an irregular, dark crystalline floor made of separated angular shards and broken diagonal energy paths that point toward one small glint at the bottom center. No straight or continuous line may cross more than one quarter of the image width. The edge between the central chamber and lower crystals must be jagged and diagonal, not a horizon. Keep the logo safe zone around x=15%..85%, y=31%..73% calm and readable; the middle can have soft layered midnight-indigo facets, not bright shards. Preserve restrained icy-cyan highlights only on selected crystal edges, with cobalt/indigo midtones and no washed-out glow. No text, logos, symbols, border, UI, character, or watermark. Concept art for later manual Mega Drive translation.",
+  "generation_lineage": [
+    {
+      "step": 1,
+      "reference_path": "data/source_art/branding_v3/v015/source_backdrop_concept_ai_v015_20261015.png",
+      "reference_sha256": "87293cf5275564733d27d5a166f1071f04bb2b447257a07c5a3f0c6b9c0c9188",
+      "generated_intermediate_input": "rascunho/entrada_visual/visual_generation_input_v017_intermediate_20261015.png",
+      "generated_intermediate_sha256": "28dc2e4d5faa579a46c77eac94d5edb434f1db1c8e17ee850369dc8239ce2e0c",
+      "prompt": "Create one revised 16-bit-era splash background concept, editing the supplied image as a visual reference. Preserve the asymmetric blue crystal-cavern identity, with the tall bright crystal cluster upper-left, lighter sparse shards upper-right, and stronger right-side cluster lower. Correct the overly empty, sharply dark central oval: do not draw a vignette, oval mask, rectangle, title plate, or uniform black hole. Let the center stay readable through layered midnight-indigo crystalline facets and soft deep-blue reflected light, with texture visible across the field but low contrast. Keep the current lockup safe zone approximately x=15%..85%, y=31%..73% free of bright sharp shards and hard streaks; dark facets may pass through it at low contrast. Add restrained energy and depth with a few short broken diagonal blue filaments flowing inward from the perimeter, varied angles and lengths, no continuous horizontal waterline. Keep one small restrained lower-center glint below the title area. Bright icy cyan only on selected crystal edges; rich cobalt and indigo midtones, avoid washed-out glow and avoid adding detail everywhere. Cinematic wide composition, clean silhouette hierarchy, balanced asymmetry, premium game-company splash feeling, no text, no logos, no symbols, no border, no UI, no character, no watermark. This is high-resolution concept art for later manual Mega Drive pixel translation, not finished pixel art."
+    },
+    {
+      "step": 2,
+      "reference_path": "rascunho/entrada_visual/visual_generation_input_v017_intermediate_20261015.png",
+      "reference_sha256": "28dc2e4d5faa579a46c77eac94d5edb434f1db1c8e17ee850369dc8239ce2e0c",
+      "generated_source_path": "data/source_art/branding_v3/v017/source_backdrop_concept_ai_v017_20261015.png",
+      "generated_source_sha256": "4bb6bc3cf60fff57dc396eafd9d21bdee86b03349800ba6e9c40eec8ebc38033",
+      "prompt": "Make a focused corrective edit to this image. Preserve its deep-blue crystalline cavern, the newly filled center with subtle low-contrast angular facets, the strong bright crystal at upper-left, scattered upper-right shards, and large lower-right crystal cluster. The lower half still has a lake-like reflective floor and a bright horizontal waterline. REMOVE the lake, water, horizon, and every long horizontal luminous stripe completely. Replace that entire lower reflective surface with an irregular, dark crystalline floor made of separated angular shards and broken diagonal energy paths that point toward one small glint at the bottom center. No straight or continuous line may cross more than one quarter of the image width. The edge between the central chamber and lower crystals must be jagged and diagonal, not a horizon. Keep the logo safe zone around x=15%..85%, y=31%..73% calm and readable; the middle can have soft layered midnight-indigo facets, not bright shards. Preserve restrained icy-cyan highlights only on selected crystal edges, with cobalt/indigo midtones and no washed-out glow. No text, logos, symbols, border, UI, character, or watermark. Concept art for later manual Mega Drive translation."
+    }
+  ],
+  "review": "V017 fills the former empty center with low-contrast angular crystal facets and replaces the continuous reflective floor with a jagged crystalline base and broken diagonals. It remains high-resolution AI concept art, not native pixel art. Review safe-area contrast, horizontal streaks at 320x224, tile economy, ROM appearance and human approval before any promotion.",
+  "external_input_registry": "rascunho/entrada_visual/visual_source_inventory_v017_20261015.json"
+}
