@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0.0",
+  "authorization": "explicit user request commit and PR after investigation",
+  "owner": "workspace_curator",
+  "scope": "documentary publication only; no canonical skill/runtime modifications",
+  "base_commit": "c22479cb7af203d42afb0b357aa02acba575d959",
+  "branch": "codex/learning-investigation-20261024",
+  "source_branch_preserved": "feat/mugenesis-impact-fx-v2",
+  "qualification": "investigation reports and host-test records only, no new game build/emulator/audio qualification",
+  "copy_hashes_verified": 14,
+  "mugen_lessons": 39,
+  "candidate_groups": 10,
+  "recorded_host_runs": [
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/focused_tests.xml",
+      "tests": 42,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/openbor_display_tests.xml",
+      "tests": 14,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/overlay_tests.xml",
+      "tests": 1,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/sff_v2_tests.xml",
+      "tests": 58,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    }
+  ],
+  "recorded_host_tests": 115,
+  "new_runtime_tests_for_publication": false,
+  "canonical_promotion_performed": false,
+  "public_payload": "text reports only, no ROMs, licensed media, input capsules or SRAM",
+  "files": [
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/README.md",
+      "sha256": "814f8bfc40baaddbc14e7d976272c11d05e44b29058a4e6baac6fbe08db02427",
+      "bytes": 7387
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/candidates.json",
+      "sha256": "962af661351b52ed353f16117e9170c345114f66abf0ea3569648102c9855ff3",
+      "bytes": 25645
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/evidence_binding_audit.json",
+      "sha256": "2083770c0d27da7adb78518ea1146423ae2878cf941ca596a25ce4eb4b6b23fc",
+      "bytes": 17653
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/focused_test_summary.json",
+      "sha256": "d96281d08279f60ff02eef418dcb07912014bd995acb0ecabbaef9dff618c4ac",
+      "bytes": 655
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/focused_tests.log",
+      "sha256": "aaaef62c5efe0c9dc1b48ec421f4a6595c8055da4cc79638788c23176b72828d",
+      "bytes": 99
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/focused_tests.xml",
+      "sha256": "419266425b12d5b8fe164c51d5fbf6fc9b8dc3a10a004b7a5b77d4c04d3e5caa",
+      "bytes": 5827
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/font_stack_source_check.json",
+      "sha256": "5fd57bd7c12d753d4f083bb196658cadaf0e052262918b7d4ea01cde5132226d",
+      "bytes": 464
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/mugen_audit_summary.json",
+      "sha256": "19872511df297680123c7f98210d5bf34772911255654b2bb59618917aa10f0c",
+      "bytes": 434
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/openbor_audit_summary.json",
+      "sha256": "e360cce711739ae58d543370a582dbabdcca3679aa2a0c5dca364abbbabdf673",
+      "bytes": 470
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/openbor_display_tests.log",
+      "sha256": "0c4614095072d15105c2e5ff447592cb6e5cdcf053185346f10f3931b14e85b0",
+      "bytes": 2843
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/openbor_display_tests.xml",
+      "sha256": "d70157685543a10135902f8129f08a6c985477cf39a01689223e0a48cb8ba536",
+      "bytes": 2153
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/overlay_tests.log",
+      "sha256": "43db26f998bc22eb28c0a45cbdbba6a1e973537f513c2dcd663ff6df3a77cac6",
+      "bytes": 98
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/overlay_tests.xml",
+      "sha256": "2ad3412b032137f9734f592f5514a40472d301f3ac218322f8d4086818f83d45",
+      "bytes": 385
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/sat_window_reparse.json",
+      "sha256": "31d663dc6a39b36de5a0033419d2c27063102ec6a2f6bbd11efe91c2d6d94426",
+      "bytes": 547
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/sff_v2_tests.log",
+      "sha256": "cb0cf225a724a88897a113c6082d0b5b84412237d7c830d5f6c350587f9ab8f2",
+      "bytes": 99
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/sff_v2_tests.xml",
+      "sha256": "168529c5d0bba90a50dfbf9b13cf8edb122b0938efe60b1c257292079eb661ec",
+      "bytes": 8270
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/source_manifest.json",
+      "sha256": "2151bedfe40e313ce0a42d6793e19dcdc080193f89fd2941e00674efee865235",
+      "bytes": 2371
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence/v008_identity.json",
+      "sha256": "b3b614dab195270cf62802d67200bc4f7134d222c7a26f106875c3b777fc6625",
+      "bytes": 1141
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/evidence_manifest.json",
+      "sha256": "0ddeff77c6ca21a6deddd486d0e6915be1094e4e32421a49404f2b78c4fdb6a1",
+      "bytes": 5733
+    }
+  ]
+}

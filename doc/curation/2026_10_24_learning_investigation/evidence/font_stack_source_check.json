@@ -1,0 +1,11 @@
+{
+  "scope": "arithmetic and current source inspection only; target reports read, no new machine code generation or watch",
+  "reported_partition_bytes": 65536,
+  "heap_allocated": 15696,
+  "heap_free": 28022,
+  "heap_span": 43718,
+  "source_workspace_is_static": true,
+  "cpu_upload_synchronous_in_source": true,
+  "canary_interpretation": "observed lower bound of touched stack, not proven maximum or safety margin",
+  "point_account_not_lifetime_proof": true
+}

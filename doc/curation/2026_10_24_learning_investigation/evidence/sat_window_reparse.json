@@ -1,0 +1,16 @@
+{
+  "scope": "same recorded ROM/SRAM verified and parsed again; no new emulation",
+  "path_base": "workspace",
+  "session": "sess-20261024T081409-109e0b82",
+  "sram_sha256": "fc6f60c3d87168cae47d99da3c1c325693995e6a926c56440ce019c73d7e6a9f",
+  "rom_sha256": "fa58d1644fcd84fa33dd79229924ce8f2fc37668622b14f4d68f7199a1ea9e11",
+  "self_check": "passed",
+  "seen_frames": 1200,
+  "stored": 21,
+  "overflow_seen": 21,
+  "lossless": true,
+  "first_frame": 91,
+  "last_frame": 1290,
+  "physical_dma_qualified": false,
+  "performance_qualified": false
+}

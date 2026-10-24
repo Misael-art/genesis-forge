@@ -1,0 +1,115 @@
+{
+  "owner": "workspace_curator",
+  "base": "repository",
+  "scope": "byte-identical copies of selected investigation reports; source paths retain original workspace base",
+  "files": [
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/focused_tests.log",
+      "destination": "evidence/focused_tests.log",
+      "sha256": "aaaef62c5efe0c9dc1b48ec421f4a6595c8055da4cc79638788c23176b72828d",
+      "bytes": 99,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/focused_tests.log"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/focused_tests.xml",
+      "destination": "evidence/focused_tests.xml",
+      "sha256": "419266425b12d5b8fe164c51d5fbf6fc9b8dc3a10a004b7a5b77d4c04d3e5caa",
+      "bytes": 5827,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/focused_tests.xml"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/focused_test_summary.json",
+      "destination": "evidence/focused_test_summary.json",
+      "sha256": "d96281d08279f60ff02eef418dcb07912014bd995acb0ecabbaef9dff618c4ac",
+      "bytes": 655,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/focused_test_summary.json"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/font_stack_source_check.json",
+      "destination": "evidence/font_stack_source_check.json",
+      "sha256": "5fd57bd7c12d753d4f083bb196658cadaf0e052262918b7d4ea01cde5132226d",
+      "bytes": 464,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/font_stack_source_check.json"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/openbor_display_tests.log",
+      "destination": "evidence/openbor_display_tests.log",
+      "sha256": "0c4614095072d15105c2e5ff447592cb6e5cdcf053185346f10f3931b14e85b0",
+      "bytes": 2843,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/openbor_display_tests.log"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/openbor_display_tests.xml",
+      "destination": "evidence/openbor_display_tests.xml",
+      "sha256": "d70157685543a10135902f8129f08a6c985477cf39a01689223e0a48cb8ba536",
+      "bytes": 2153,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/openbor_display_tests.xml"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/overlay_tests.log",
+      "destination": "evidence/overlay_tests.log",
+      "sha256": "43db26f998bc22eb28c0a45cbdbba6a1e973537f513c2dcd663ff6df3a77cac6",
+      "bytes": 98,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/overlay_tests.log"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/overlay_tests.xml",
+      "destination": "evidence/overlay_tests.xml",
+      "sha256": "2ad3412b032137f9734f592f5514a40472d301f3ac218322f8d4086818f83d45",
+      "bytes": 385,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/overlay_tests.xml"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/sat_window_reparse.json",
+      "destination": "evidence/sat_window_reparse.json",
+      "sha256": "31d663dc6a39b36de5a0033419d2c27063102ec6a2f6bbd11efe91c2d6d94426",
+      "bytes": 547,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/sat_window_reparse.json"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/sff_v2_tests.log",
+      "destination": "evidence/sff_v2_tests.log",
+      "sha256": "cb0cf225a724a88897a113c6082d0b5b84412237d7c830d5f6c350587f9ab8f2",
+      "bytes": 99,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/sff_v2_tests.log"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/sff_v2_tests.xml",
+      "destination": "evidence/sff_v2_tests.xml",
+      "sha256": "168529c5d0bba90a50dfbf9b13cf8edb122b0938efe60b1c257292079eb661ec",
+      "bytes": 8270,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/sff_v2_tests.xml"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/source_manifest.json",
+      "destination": "evidence/source_manifest.json",
+      "sha256": "2151bedfe40e313ce0a42d6793e19dcdc080193f89fd2941e00674efee865235",
+      "bytes": 2371,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/source_manifest.json"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/v008_identity.json",
+      "destination": "evidence/v008_identity.json",
+      "sha256": "b3b614dab195270cf62802d67200bc4f7134d222c7a26f106875c3b777fc6625",
+      "bytes": 1141,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/v008_identity.json"
+    },
+    {
+      "source_path": "out/curation/2026_10_24_learning_investigation/evidence_binding_audit.json",
+      "destination": "evidence/evidence_binding_audit.json",
+      "sha256": "2083770c0d27da7adb78518ea1146423ae2878cf941ca596a25ce4eb4b6b23fc",
+      "bytes": 17653,
+      "published_path": "doc/curation/2026_10_24_learning_investigation/evidence/evidence_binding_audit.json"
+    }
+  ],
+  "input_document_sources": [
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/README.md",
+      "sha256": "6048657556c277ce4f7c41483cb236a7695ff07ce920009b9046bba9a5525a91"
+    },
+    {
+      "path": "doc/curation/2026_10_24_learning_investigation/candidates.json",
+      "sha256": "dd6d0b8bb6b2be98e8f18ec08fb5c6325e5e3f71e6f2b8840b410609281f14d9"
+    }
+  ]
+}

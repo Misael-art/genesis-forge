@@ -1,0 +1,26 @@
+{
+  "capsule_sha256": "8b528eb51cad379c4a90be2c1dbfa6acdd04132f618f754f6cde471ce9a17d48",
+  "tree": "84350f683f8bec98a9832b7d90a5731555eed64aa99705a1317872ea14e204fa",
+  "entries": 402,
+  "verified": 402,
+  "missing": [],
+  "mismatch": [],
+  "roms": [
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/rom.bin",
+      "sha256": "ff909dbf499b23bbc06c7951e4bdde698834a4eb2ac66ff9a1e7ec3575b533b9",
+      "expected_matches": true
+    },
+    {
+      "path": "SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/doc/changelog/roms/build_v008/rom.bin",
+      "sha256": "ff909dbf499b23bbc06c7951e4bdde698834a4eb2ac66ff9a1e7ec3575b533b9",
+      "expected_matches": true
+    },
+    {
+      "path": "/mnt/sdcard/Projects/Sgdk Forge/SGDK_projects/Mugenesis_Demo [VER.001] [SGDK 211] [GEN] [GAME] [FIGHTING]/out/profiling/engine_resilience_m5_normal_font_r17/rom.bin",
+      "sha256": "ff909dbf499b23bbc06c7951e4bdde698834a4eb2ac66ff9a1e7ec3575b533b9",
+      "expected_matches": true
+    }
+  ],
+  "claim": "identity_of_ordinary_partial_v008_and_frozen_inputs_only_no_new_runtime"
+}
