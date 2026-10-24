@@ -3260,3 +3260,21 @@ Fora do escopo desta remediacao, ainda abertos:
 Limite factual: `framework_conformance_validated` cobre infraestrutura de
 conformance. Nao use `ready_for_aaa`. Nada aqui prova ROM, gameplay, audio,
 budget VDP ou execucao no BlastEm.
+
+## 2026-10-24 — Preparacao de migracao de host
+
+Owner: curador/wrapper. Diagnostico e retomada em
+`doc/curation/2026_10_24_host_migration/handoff.md`; operacao em
+`doc/HOST_BOOTSTRAP_AND_CONTINUITY.md`. Installer Linux x86-64 separa plano,
+provisionamento portavel e cadeia completa; downloads/venv sao locais e
+verificaveis. Transferencia privada com hashes preserva fontes nao commitadas
+e .agent local real; omite estado vivo/caches e nao publica assets no GitHub.
+MUGEN build_v008 continua parcial; M5 e OpenBOR nao recebem runtime novo nesta
+tarefa. Primeira instalacao apt/Flatpak e QA no host novo permanecem aceites
+proprios. Nao confundir pacote privado de continuidade com clone do remoto.
+
+A copia TAR usa blocos limitados de 1MiB para evitar as escritas de 16KiB
+do default tarfile em mounts de alta latencia; novo teste cruza fronteiras
+de bloco com rehash/restauracao. O probe pequeno e somente I/O, nao performance
+de jogo. Git bundle adicional foi interrompido para nao disputar I/O do SD;
+historico original permanece na origem, fora do pacote de fontes ativas.

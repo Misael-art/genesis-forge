@@ -1,0 +1,8 @@
+# Full agent/build/conversion/test toolset; no project runtime installation.
+uv==0.12.10
+graphifyy==0.9.25
+pytest==9.1.0
+build==1.4.0
+setuptools==84.0.0
+pillow==12.3.0
+jsonschema==4.25.1

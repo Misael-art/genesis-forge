@@ -1,0 +1,15 @@
+{
+  "scope": "5MiB file copy on actual SD/FUSE; timing excludes fsync, not game performance",
+  "samples": [
+    {
+      "buffer_bytes": 16384,
+      "bytes": 5242880,
+      "seconds": 0.6118932729996232
+    },
+    {
+      "buffer_bytes": 1048576,
+      "bytes": 5242880,
+      "seconds": 0.037362942999607185
+    }
+  ]
+}

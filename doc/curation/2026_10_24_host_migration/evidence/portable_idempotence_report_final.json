@@ -1,0 +1,104 @@
+{
+  "schema": "forge_host_bootstrap_report.v1",
+  "profile": "portable",
+  "claim_ceiling": "host_dependencies_only",
+  "game_qa": "not_executed",
+  "steps": [
+    {
+      "name": "python_dependencies",
+      "argv": [
+        "/tmp/sgdk_host_migration_publish_20261024/out/host_tools/python/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--require-hashes",
+        "--only-binary=:all:",
+        "-r",
+        "/tmp/sgdk_host_migration_publish_20261024/tools/sgdk_wrapper/host_python_requirements.lock"
+      ],
+      "log": "out/host_tools/bootstrap_logs/00_python_dependencies.log",
+      "exit_code": 0,
+      "log_sha256": "b6b72eee8678437c955ba4d7f927c978bf650b9bae9ba888fbf2fbddc528109e"
+    },
+    {
+      "name": "python_check",
+      "argv": [
+        "/tmp/sgdk_host_migration_publish_20261024/out/host_tools/python/venv/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "log": "out/host_tools/bootstrap_logs/01_python_check.log",
+      "exit_code": 0,
+      "log_sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "name": "pwsh_probe",
+      "argv": [
+        "pwsh",
+        "-NoProfile",
+        "-Command",
+        "$PSVersionTable.PSVersion.ToString()"
+      ],
+      "log": "out/host_tools/bootstrap_logs/02_pwsh_probe.log",
+      "exit_code": 0,
+      "log_sha256": "75ee3b405374287616506201aeb9aa9da073dd0ab61623b67c765d51f3204d1f"
+    },
+    {
+      "name": "java_probe",
+      "argv": [
+        "java",
+        "-version"
+      ],
+      "log": "out/host_tools/bootstrap_logs/03_java_probe.log",
+      "exit_code": 0,
+      "log_sha256": "e5203250be03bb77d7977e9ab4a3115297821d1b24bd1e481e5cde0776d5b9d2"
+    },
+    {
+      "name": "rtk_probe",
+      "argv": [
+        "rtk",
+        "--version"
+      ],
+      "log": "out/host_tools/bootstrap_logs/04_rtk_probe.log",
+      "exit_code": 0,
+      "log_sha256": "0d93d57058e53977ac72c5e2c5d60fb942924a9e1754358e23f0cad706749706"
+    }
+  ],
+  "diagnosis": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "python": "3.14.7",
+    "free_bytes": 5936648192,
+    "commands": {
+      "7z": "/usr/sbin/7z"
+    },
+    "blockers": []
+  },
+  "installed": {
+    "directory_publication": "atomic_no_clobber_supported",
+    "sdk": {
+      "path": "sdk/sgdk-2.11",
+      "status": "verified_receipt"
+    },
+    "powershell": {
+      "path": "out/host_tools/powershell/7.6.2",
+      "status": "verified_receipt"
+    },
+    "java": {
+      "path": "out/host_tools/java/21.0.11+10",
+      "status": "verified_receipt"
+    },
+    "rtk": {
+      "path": "out/host_tools/rtk",
+      "status": "verified_receipt"
+    }
+  },
+  "status": "portable_only_system_and_emulator_pending",
+  "resource_policy": {
+    "workers": 1,
+    "emulator_sessions": 1,
+    "automatic_cleanup": false,
+    "parallel_builds": false
+  }
+}

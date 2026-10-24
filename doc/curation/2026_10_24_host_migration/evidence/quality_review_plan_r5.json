@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "quality_review_plan",
+  "tool": {
+    "name": "quality_review_router",
+    "version": "1.2.0"
+  },
+  "generated_at": "2026-10-24T12:58:01.271235Z",
+  "review_id": "host_migration_20261024_r5",
+  "request_digest": "40cbd217a6a5bee6f197635af479cc37e88d6c3479c4c9f8c5e83c527e8ef8d4",
+  "plan_digest": "0ebb24fb836435ec9e9e6507e59e37653ce52306b96fd7e0ebbe825e9c0f69f3",
+  "review_stage": "release_candidate",
+  "selected_reviews": [
+    {
+      "domain": "code",
+      "owner_skill": "code/sgdk-code-reviewer",
+      "score": 265,
+      "selection_reasons": [
+        "explicitly_requested",
+        "changed_domain",
+        "stage_priority:release_candidate",
+        "risk:runtime_risk"
+      ],
+      "model_tier": "balanced",
+      "evidence_requirements": [
+        "code_diff",
+        "build_or_validation_report"
+      ]
+    }
+  ],
+  "deferred_domains": [],
+  "required_harness_skills": [
+    "code/sgdk-code-reviewer",
+    "governance/independent-quality-review",
+    "operation/harness-orchestration"
+  ],
+  "status": "ready",
+  "blockers": [],
+  "claim_ceiling": "quality_review_plan_only"
+}

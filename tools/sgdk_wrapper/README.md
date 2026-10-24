@@ -111,3 +111,9 @@ call "%~dp0build.bat"
 - `SGDK_AUTO_PREPARE_ASSETS=1` e `SGDK_AUTO_FIX_RESOURCES=1` podem ser usados juntos.
 - O caminho recomendado para novos projetos e deixar os brutos em `res/data/` e o wrapper gerar a saida final em `res/`.
 - O diretorio `res/data/backup/` e reservado para snapshots dos arquivos antigos antes da correcao ou sobrescrita.
+
+## Novo host e transferencia privada
+
+Entrada sem pwsh: `bash tools/sgdk_wrapper/bootstrap_host.sh` (plano); adicionar
+`--apply` para instalar em Linux x86-64 suportado. Depois: `source out/host_tools/activate.sh`.
+Ver [instalacao, transferencia e aceites](../../doc/HOST_BOOTSTRAP_AND_CONTINUITY.md).
