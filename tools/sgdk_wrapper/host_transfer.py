@@ -121,7 +121,9 @@ def create(repo, scopes, output):
     with tempfile.NamedTemporaryFile(dir=output.parent, suffix=".partial", delete=False) as tmp:
         temporary = Path(tmp.name)
     try:
-        with tarfile.open(temporary, "w") as tf:
+        # TarFile otherwise issues 16KiB payload writes. A bounded 1MiB block
+        # avoids excessive FUSE round trips without buffering large assets.
+        with tarfile.open(temporary, "w", copybufsize=1024 * 1024) as tf:
             for entry in manifest["files"]:
                 path = repo / entry["path"]
                 info = tarfile.TarInfo("payload/" + entry["path"])

@@ -3272,3 +3272,9 @@ e .agent local real; omite estado vivo/caches e nao publica assets no GitHub.
 MUGEN build_v008 continua parcial; M5 e OpenBOR nao recebem runtime novo nesta
 tarefa. Primeira instalacao apt/Flatpak e QA no host novo permanecem aceites
 proprios. Nao confundir pacote privado de continuidade com clone do remoto.
+
+A copia TAR usa blocos limitados de 1MiB para evitar as escritas de 16KiB
+do default tarfile em mounts de alta latencia; novo teste cruza fronteiras
+de bloco com rehash/restauracao. O probe pequeno e somente I/O, nao performance
+de jogo. Git bundle adicional foi interrompido para nao disputar I/O do SD;
+historico original permanece na origem, fora do pacote de fontes ativas.

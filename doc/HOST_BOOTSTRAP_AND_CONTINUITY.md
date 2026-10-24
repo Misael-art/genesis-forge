@@ -120,7 +120,7 @@ rtk proxy python3 tools/sgdk_wrapper/host_transfer.py create \
 
 Copiar o TAR e seu recibo `.tar.json` para o novo host. A publicacao e atomica
 sem sobrescrever destino e recusa fonte que mude durante a copia. Arquivos
-grandes permanecem streaming; catalogo e metadados tem limites explicitos.
+grandes permanecem streaming em blocos de 1 MiB; catalogo e metadados tem limites explicitos.
 Nao executar limpeza no host original depois de copiar: preservar ate a
 restauracao, as provas e o primeiro build no destino terem sido conferidos.
 

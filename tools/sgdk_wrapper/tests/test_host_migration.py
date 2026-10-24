@@ -92,6 +92,14 @@ class MigrationTests(unittest.TestCase):
         self.assertFalse((dest / "src/.env").exists())
         self.assertFalse((dest / ".git").exists())
 
+    def test_payload_crossing_copy_blocks_restores_exact_bytes(self):
+        payload = b"bounded io block" * 140001
+        (self.repo / "src/large.dat").write_bytes(payload)
+        receipt, archive = self.roundtrip()
+        dest = Path(self.tmp.name) / "restore"
+        transfer.verify(archive, receipt["sha256"], dest)
+        self.assertEqual((dest / "src/large.dat").read_bytes(), payload)
+
     def test_forbidden_explicit_scope_rejected(self):
         for name in (".git", ".ssh", "src/.env", "src/.env.local", "src/.env.local/inner", "src/signing.key", "src/client.pem", "out/host_tools"):
             with self.subTest(name=name), self.assertRaisesRegex(ValueError, "forbidden_scope"):

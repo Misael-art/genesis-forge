@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_kind": "independent_quality_review",
+  "review_id": "host_migration_20261024_r5",
+  "request_digest": "40cbd217a6a5bee6f197635af479cc37e88d6c3479c4c9f8c5e83c527e8ef8d4",
+  "plan_digest": "0ebb24fb836435ec9e9e6507e59e37653ce52306b96fd7e0ebbe825e9c0f69f3",
+  "artifact_bindings": [
+    {
+      "path": "tools/sgdk_wrapper/bootstrap_host.py",
+      "sha256": "c864a9139eaa7e8be59c2d0da42184a875c481d885c48adbb4fead4b730be38a",
+      "role": "code_diff"
+    },
+    {
+      "path": "tools/sgdk_wrapper/bootstrap_host.sh",
+      "sha256": "7817c32e008e7505e94f996075057c29e3003ed536901def4a02d78f4b213fa6",
+      "role": "code_diff"
+    },
+    {
+      "path": "tools/sgdk_wrapper/bootstrap_host.json",
+      "sha256": "442f97bc5c1663f81e969bbb15eb8b83d5d0c80e54f60b1699d3468838781164",
+      "role": "code_diff"
+    },
+    {
+      "path": "tools/sgdk_wrapper/host_transfer.py",
+      "sha256": "c5e03dccf6664495384ce76dcc1176a7d0bb9877fb915d44610e45d7dd99f391",
+      "role": "code_diff"
+    },
+    {
+      "path": "tools/sgdk_wrapper/tests/test_host_migration.py",
+      "sha256": "f5c886ba9407ec9a36b404fcdbc757ca9f550bc103911373674d9a47ea39e30b",
+      "role": "code_diff"
+    }
+  ],
+  "reviewers": [
+    {
+      "domain": "code",
+      "owner_skill": "code/sgdk-code-reviewer",
+      "reviewer_id": "host_migration_review",
+      "producer_context_visible": false,
+      "status": "needs_evidence",
+      "code_review_status": "passed",
+      "findings": [],
+      "evidence_gaps": [
+        "Provisionamento completo apt/Flatpak ainda nao executado em host Linux x64 virgem.",
+        "Captura BlastEm 1.0 nao requalificada; blocked_legacy_catalog_identity_drift."
+      ],
+      "resolved_findings": [
+        "local_agent_customizations_dropped",
+        "explicit_secret_scope_bypasses_filter",
+        "concurrent_publication_overwrites_destination",
+        "manifest_budget_rejects_valid_transfer",
+        "secret_alias_ancestor_bypasses_filter"
+      ],
+      "validation": {
+        "host_migration_tests": "37 passed",
+        "workspace_writes": false,
+        "installations_executed": false,
+        "claim_ceiling": "independent_quality_review_only",
+        "snapshot": "orchestration_plan_r5.json"
+      }
+    }
+  ],
+  "growth_decision": "proceed_with_tracked_risks",
+  "immediate_priorities": [],
+  "claim_ceiling": "independent_quality_review_only",
+  "quality_claim": "unproven",
+  "ready_for_aaa": false,
+  "synthesis": {
+    "growth_decision": "proceed_with_tracked_risks",
+    "priority_finding_ids": []
+  }
+}
