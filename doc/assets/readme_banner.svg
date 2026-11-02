@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">SGDK Forge</title>
+  <desc id="desc">Engenharia e criação para Mega Drive e Genesis. Tipografia clara sobre fundo azul escuro, com um emblema geométrico em verde e laranja.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#172842"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#8cb8dd" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="360" rx="24" fill="url(#background)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+  <path d="M0 304H1280" stroke="#67e8c3" stroke-opacity=".18"/>
+  <rect x="56" y="55" width="32" height="5" rx="2.5" fill="#67e8c3"/>
+  <text x="101" y="64" fill="#b2c5db" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="3">MEGA DRIVE / GENESIS</text>
+  <text x="52" y="174" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="83" font-weight="800" letter-spacing="-3">SGDK <tspan fill="#67e8c3">FORGE</tspan></text>
+  <text x="56" y="222" fill="#c0cfe2" font-family="Arial, Helvetica, sans-serif" font-size="23">Engenharia e criação para o hardware real.</text>
+  <text x="56" y="333" fill="#a0b8d3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">DESIGN</text>
+  <circle cx="129" cy="329" r="2" fill="#67e8c3"/>
+  <text x="149" y="333" fill="#a0b8d3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">CODE</text>
+  <circle cx="208" cy="329" r="2" fill="#67e8c3"/>
+  <text x="228" y="333" fill="#a0b8d3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">ART</text>
+  <circle cx="275" cy="329" r="2" fill="#67e8c3"/>
+  <text x="295" y="333" fill="#a0b8d3" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">AUDIO</text>
+  <path d="M899 75H1131L1179 123V219L1131 267H899L851 219V123Z" fill="#0c192a" stroke="#35516e" stroke-width="2"/>
+  <path d="M936 113H1092V145H972V177H1060V209H972V241H936Z" fill="#67e8c3"/>
+  <path d="M1092 177H1124V209H1092Z" fill="#ffc078"/>
+  <path d="M819 155H851M1179 187H1211" stroke="#67e8c3" stroke-width="3"/>
+  <circle cx="813" cy="155" r="5" fill="#67e8c3"/>
+  <circle cx="1217" cy="187" r="5" fill="#ffc078"/>
+</svg>
